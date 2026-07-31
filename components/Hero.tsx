@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section
+      id="home"
+      className="relative flex min-h-screen items-center pt-24"
+    >
 
       <Image
         src="/images/hero.jpg"
@@ -15,7 +18,7 @@ export default function Hero() {
         className="object-cover"
       />
 
-      <div className="absolute inset-0 bg-slate-950/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-900/70 to-slate-900/40" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
 
@@ -42,19 +45,25 @@ export default function Hero() {
         </motion.p>
 
         <motion.div
-          className="mt-10 flex flex-wrap gap-4"
+          className="mt-10 flex flex-col gap-4 sm:flex-row"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <button className="rounded-lg bg-blue-600 px-8 py-4 font-semibold hover:bg-blue-700 transition">
-            Get a Cash Offer
-          </button>
+          <a
+    href="#contact"
+    className="rounded-lg bg-blue-600 px-8 py-4 font-semibold text-white transition hover:bg-blue-700"
+  >
+    Get a Cash Offer
+  </a>
 
-          <button className="rounded-lg border border-slate-600 px-8 py-4 font-semibold hover:border-white transition">
-            Explore Investments
-          </button>
-        </motion.div>
+  <a
+    href="#services"
+    className="rounded-lg border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900"
+  >
+    Explore Our Services
+  </a>
+</motion.div>
 
       </div>
 
