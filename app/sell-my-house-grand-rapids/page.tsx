@@ -29,7 +29,7 @@ export default function SellMyHouseGrandRapidsPage() {
         {/* Hero */}
         <section className="relative flex min-h-[650px] items-center overflow-hidden">
           <Image
-            src="/images/service-cash-home.jpg"
+            src="/images/service-cash-home1.jpg"
             alt="Sell your house in Grand Rapids, Michigan"
             fill
             priority

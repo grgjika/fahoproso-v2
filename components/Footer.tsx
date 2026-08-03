@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-slate-200 bg-neutral-200 text-slate-00">
-      <div className="mx-auto grid max-w-7xl gap-16 px-6 py-16 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid max-w-7xl gap-16 px-6 py-16 md:grid-cols-2 lg:grid-cols-5">
 
         {/* Company */}
         <div>
@@ -149,6 +149,62 @@ export default function Footer() {
             <li>Property Solutions</li>
           </ul>
         </div>
+
+        {/* Service Areas */}
+<div>
+  <h3 className="text-xl font-bold text-slate-900">
+    Service Areas
+  </h3>
+
+  <div className="mt-3 h-1 w-12 rounded-full bg-[#C9A227]" />
+
+  <ul className="mt-6 space-y-3">
+    <li>
+      <Link
+        href="/sell-my-house-kent-county"
+        className="transition hover:text-[#C9A227]"
+      >
+        Kent County
+      </Link>
+    </li>
+
+    <li>
+      <Link
+        href="/sell-my-house-ottawa-county"
+        className="transition hover:text-[#C9A227]"
+      >
+        Ottawa County
+      </Link>
+    </li>
+
+    <li>
+      <Link
+        href="/sell-my-house-grand-rapids"
+        className="transition hover:text-[#C9A227]"
+      >
+        Grand Rapids
+      </Link>
+    </li>
+
+    <li>
+      <Link
+        href="/sell-my-house-troy"
+        className="transition hover:text-[#C9A227]"
+      >
+        Troy
+      </Link>
+    </li>
+
+    <li>
+      <Link
+        href="/sell-my-house-michigan"
+        className="transition hover:text-[#C9A227]"
+      >
+        Michigan
+      </Link>
+    </li>
+  </ul>
+</div>
 
         {/* Connect */}
         <div>

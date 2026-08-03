@@ -25,21 +25,21 @@ const secondaryAreas = [
     description:
       "Serving homeowners in Holland, Grand Haven, Hudsonville, Jenison, Zeeland, Allendale, and surrounding communities.",
     href: "/sell-my-house-ottawa-county",
-    image: "/images/property2.jpg",
+    image: "/images/Ottawa.jpg",
   },
   {
     name: "Grand Rapids",
     description:
       "Professional property solutions for homeowners across Grand Rapids and its established residential neighborhoods.",
     href: "/sell-my-house-grand-rapids",
-    image: "/images/hero.jpg",
+    image: "/images/Grand Rapids.jpg",
   },
   {
     name: "Troy",
     description:
       "Evaluating selected residential and investment opportunities in Troy as FAHOPROSO expands across Michigan.",
     href: "/sell-my-house-troy",
-    image: "/images/service-commercial.jpg",
+    image: "/images/Troy.jpg",
   },
 ];
 
@@ -85,13 +85,13 @@ export default function ServiceAreasPage() {
               </Link>
             </div>
 
-            <div className="relative h-[430px] overflow-hidden rounded-3xl border border-white/15 shadow-2xl">
+            <div className="relative h-[550px] overflow-hidden rounded-2xl">
               <Image
-                src="/images/process-background.jpg"
+                src="/images/Michigan1.jpg"
                 alt="Michigan real estate service areas"
                 fill
                 priority
-                className="object-cover"
+                className="h-full w-full object-cover scale-65"
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-[#14213D]/85 via-[#14213D]/15 to-transparent" />
@@ -102,7 +102,7 @@ export default function ServiceAreasPage() {
                 </p>
 
                 <p className="mt-2 max-w-md text-2xl font-bold">
-                  Serving West Michigan while expanding into carefully selected
+                  Serving Michigan while expanding into carefully selected
                   communities.
                 </p>
               </div>
@@ -116,7 +116,7 @@ export default function ServiceAreasPage() {
             <div className="grid overflow-hidden rounded-3xl border border-slate-300 bg-slate-100 shadow-lg lg:grid-cols-2">
               <div className="relative min-h-[420px]">
                 <Image
-                  src="/images/property1.jpg"
+                  src="/images/Kent County.jpg"
                   alt="Kent County real estate"
                   fill
                   className="object-cover"

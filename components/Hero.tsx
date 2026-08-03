@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -9,7 +9,6 @@ export default function Hero() {
       id="home"
       className="relative flex min-h-screen items-center pt-24"
     >
-
       <Image
         src="/images/hero.jpg"
         alt="FAHOPROSO Hero"
@@ -20,10 +19,10 @@ export default function Hero() {
 
       <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-900/70 to-slate-900/40" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 text-white sm:px-6 lg:px-8">
 
         <motion.h1
-          className="text-6xl md:text-7xl font-extrabold leading-tight"
+          className="text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl lg:text-7xl"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -35,38 +34,38 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p
-          className="mt-8 max-w-2xl text-xl text-slate-300 leading-8"
+          className="mt-6 max-w-2xl text-base leading-7 text-slate-300 sm:mt-8 sm:text-lg sm:leading-8 md:text-xl"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           We acquire, renovate, develop, and manage residential and commercial
-          properties while delivering innovative real estate investment solutions.
+          properties while delivering innovative real estate investment
+          solutions throughout Michigan.
         </motion.p>
 
         <motion.div
-          className="mt-10 flex flex-col gap-4 sm:flex-row"
+          className="mt-8 flex w-full flex-col gap-4 sm:mt-10 sm:w-auto sm:flex-row"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <a
-    href="#contact"
-    className="rounded-lg bg-blue-600 px-8 py-4 font-semibold text-white transition hover:bg-blue-700"
-  >
-    Get a Cash Offer
-  </a>
+            href="#contact"
+            className="inline-flex w-full items-center justify-center rounded-xl bg-blue-600 px-6 py-4 text-center font-semibold text-white transition hover:bg-blue-700 sm:w-auto"
+          >
+            Get a Cash Offer
+          </a>
 
-  <a
-    href="#services"
-    className="rounded-lg border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900"
-  >
-    Explore Our Services
-  </a>
-</motion.div>
+          <a
+            href="#services"
+            className="inline-flex w-full items-center justify-center rounded-xl border border-white px-6 py-4 text-center font-semibold text-white transition hover:bg-white hover:text-slate-900 sm:w-auto"
+          >
+            Explore Our Services
+          </a>
+        </motion.div>
 
       </div>
-
     </section>
   );
 }

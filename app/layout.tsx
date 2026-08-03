@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
+
+import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://fahoproso.com"),
@@ -11,17 +12,19 @@ export const metadata: Metadata = {
   },
 
   description:
-    "FAHOPROSO provides residential and commercial real estate investment and property solutions in Grand Rapids, Michigan, and surrounding communities.",
+    "FAHOPROSO provides residential and commercial real estate investment and property solutions throughout Michigan.",
 
   keywords: [
-    "real estate investment",
-    "cash home buyers",
-    "property solutions",
+    "real estate investment Michigan",
+    "cash home buyers Michigan",
+    "property solutions Michigan",
     "Grand Rapids real estate",
-    "Michigan real estate investors",
+    "Kent County real estate investors",
+    "Ottawa County real estate investors",
     "residential investments",
     "commercial real estate",
     "sell house for cash Grand Rapids",
+    "sell my house Michigan",
   ],
 
   authors: [
@@ -33,14 +36,10 @@ export const metadata: Metadata = {
   creator: "Faithfull Home & Property Solutions, LLC",
   publisher: "Faithfull Home & Property Solutions, LLC",
 
-  alternates: {
-    canonical: "https://fahoproso.com",
-  },
-
   openGraph: {
     title: "FAHOPROSO | Real Estate Investment",
     description:
-      "Residential and commercial real estate investment and property solutions in Grand Rapids, Michigan.",
+      "Residential and commercial real estate investment and property solutions throughout Michigan.",
     url: "https://fahoproso.com",
     siteName: "FAHOPROSO",
     images: [
@@ -59,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FAHOPROSO | Real Estate Investment",
     description:
-      "Residential and commercial real estate investment and property solutions in Grand Rapids, Michigan.",
+      "Residential and commercial real estate investment and property solutions throughout Michigan.",
     images: ["/images/social-preview.jpg"],
   },
 
@@ -89,6 +88,64 @@ export const viewport: Viewport = {
   themeColor: "#14213D",
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://fahoproso.com/#organization",
+  name: "Faithfull Home & Property Solutions, LLC",
+  alternateName: "FAHOPROSO",
+  url: "https://fahoproso.com",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://fahoproso.com/images/logo-transparent.png",
+  },
+  image: "https://fahoproso.com/images/social-preview.jpg",
+  description:
+    "FAHOPROSO provides residential and commercial real estate investment and property solutions throughout Michigan.",
+  email: "info@fahoproso.com",
+  areaServed: [
+    {
+      "@type": "AdministrativeArea",
+      name: "Michigan",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Kent County, Michigan",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Ottawa County, Michigan",
+    },
+    {
+      "@type": "City",
+      name: "Grand Rapids, Michigan",
+    },
+    {
+      "@type": "City",
+      name: "Troy, Michigan",
+    },
+  ],
+  knowsAbout: [
+    "Residential real estate investment",
+    "Rental property investment",
+    "Commercial real estate investment",
+    "Property acquisitions",
+    "Property solutions",
+  ],
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://fahoproso.com/#website",
+  url: "https://fahoproso.com",
+  name: "FAHOPROSO",
+  publisher: {
+    "@id": "https://fahoproso.com/#organization",
+  },
+  inLanguage: "en-US",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -96,9 +153,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-     <body>{children}</body>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
 
-     <GoogleAnalytics gaId="G-5F9RJMGDCF" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
+
+        {children}
+      </body>
+
+      <GoogleAnalytics gaId="G-5F9RJMGDCF" />
     </html>
   );
 }
