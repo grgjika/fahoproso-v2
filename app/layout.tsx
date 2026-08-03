@@ -75,11 +75,21 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
+  icon: [
+    { url: "/favicon.ico" },
+    { url: "/favicon.svg", type: "image/svg+xml" },
+    {
+      url: "/favicon-96x96.png",
+      sizes: "96x96",
+      type: "image/png",
+    },
+  ],
+  apple: "/apple-touch-icon.png",
+},
 
-  category: "real estate",
+manifest: "/site.webmanifest",
+
+category: "real estate",
 };
 
 export const viewport: Viewport = {
