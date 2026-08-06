@@ -112,8 +112,9 @@ export default function Contact() {
               </h3>
 
               <p className="mt-3 leading-7 text-slate-600">
-                We work with property owners, investors, and partners
-                throughout Grand Rapids and surrounding communities.
+                We work with homeowners, property owners, investors, and partners throughout
+                West Michigan, the Greater Grand Rapids area, Troy, and surrounding Michigan 
+                communities.
               </p>
 
               <div className="mt-8 space-y-6">
@@ -149,7 +150,7 @@ export default function Contact() {
                   </p>
 
                   <p className="mt-1 font-semibold text-slate-900">
-                    Grand Rapids, Michigan, and throughout the state of Michigan
+                    Grand Rapids and communities throughout Michigan
                   </p>
                 </div>
 
@@ -169,7 +170,7 @@ export default function Contact() {
 
                          <div className="mt-8 rounded-xl border border-slate-300 bg-slate-100 p-5 shadow-sm">
               <p className="font-semibold text-[#14213D]">
-                We aim to respond to new property inquiries within one business day.
+                We aim to respond to all property inquiries within one business day.
               </p>
             </div>
           </div>

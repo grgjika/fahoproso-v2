@@ -110,7 +110,7 @@ export default function SellMyHouseMichiganPage() {
       <p className="mt-8 text-lg leading-8 text-slate-600">
         Selling a home is one of the biggest financial decisions you'll ever
         make. At FAHOPROSO, we believe homeowners deserve honest
-        communication, respect, and a straightforward process—not pressure.
+        communication, respect, and a straightforward process not pressure.
       </p>
     </div>
 
@@ -146,7 +146,7 @@ export default function SellMyHouseMichiganPage() {
 
         <p className="mt-4 leading-8 text-slate-600">
           We believe homeowners should have time to make informed decisions.
-          Our role is to provide information and professional guidance—not
+          Our role is to provide information and professional guidance not
           pressure.
         </p>
       </div>
@@ -438,7 +438,7 @@ export default function SellMyHouseMichiganPage() {
     <div className="mx-auto mt-16 max-w-4xl text-center">
 
       <p className="text-lg leading-8 text-slate-300">
-        At FAHOPROSO, we believe homeowners deserve honest information—not
+        At FAHOPROSO, we believe homeowners deserve honest information not
         pressure. Whether you ultimately work with us, list with an agent, or
         choose another path, we want you to feel confident in your decision.
       </p>
