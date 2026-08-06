@@ -42,7 +42,7 @@ export default function SellInheritedHousePage() {
   <div>
 
     <Image
-      src="/images/sell-inherited-house1.jpg"
+      src="/images/inherited-house-new.jpg"
       alt="Selling an inherited house in Michigan"
       width={1200}
       height={700}
