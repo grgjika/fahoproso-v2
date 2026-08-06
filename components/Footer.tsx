@@ -64,10 +64,10 @@ export default function Footer() {
               <Mail className="h-5 w-5 text-[#C9A227]" />
 
               <a
-                href="mailto:info@fahoproso.com"
+                href="mailto:offers@fahoproso.com"
                 className="transition hover:text-[#C9A227]"
               >
-                info@fahoproso.com
+                offers@fahoproso.com
               </a>
             </div>
           </div>

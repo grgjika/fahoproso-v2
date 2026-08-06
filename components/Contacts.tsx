@@ -137,10 +137,10 @@ export default function Contact() {
                   </p>
 
                   <a
-                    href="mailto:info@fahoproso.com"
+                    href="mailto:offers@fahoproso.com"
                     className="mt-1 inline-block font-semibold text-slate-900 transition hover:text-blue-600"
                   >
-                    info@fahoproso.com
+                    offers@fahoproso.com
                   </a>
                 </div>
 
