@@ -331,7 +331,7 @@ export default function Contact() {
   </p>
 
   <a
-    href="https://g.page/r/Cdu7vMQv41J6EBN/review"
+    href="https://g.page/r/Cdu7vBWv41J6EBM/review"
     target="_blank"
     rel="noopener noreferrer"
     className="mt-8 inline-flex rounded-xl bg-[#C9A227] px-8 py-4 font-semibold text-[#14213D] transition hover:bg-white"
