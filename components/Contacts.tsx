@@ -318,6 +318,28 @@ export default function Contact() {
         </form>
       </div>
     </div>
+    <section className="mt-16 rounded-3xl bg-[#14213D] px-8 py-10 text-center text-white">
+  <h3 className="text-3xl font-bold">
+    Share Your Experience
+  </h3>
+
+  <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-300">
+    Your feedback means a lot to our family-owned business.
+    If we had the opportunity to help you, we'd truly appreciate
+    you sharing your experience with a Google review.
+    Your review helps other homeowners find a local business they can trust.
+  </p>
+
+  <a
+    href="https://g.page/r/Cdu7vMQv41J6EBN/review"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-8 inline-flex rounded-xl bg-[#C9A227] px-8 py-4 font-semibold text-[#14213D] transition hover:bg-white"
+  >
+    ⭐ Leave a Google Review
+  </a>
+</section>
+    
   </section>
 );
 }

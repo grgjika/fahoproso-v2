@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Phone, Mail, Globe } from "lucide-react";
+import { FaStar } from "react-icons/fa";
 
 export default function Footer() {
   const [showPhone, setShowPhone] = useState(false);
@@ -224,6 +225,20 @@ export default function Footer() {
             >
               <Globe className="h-5 w-5" />
             </a>
+            
+
+                <a
+                href="https://g.page/r/Cdu7vBWv41J6EBM/review"
+                  aria-label="Leave a review for FAHOPROSO on Google"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="group flex flex-col items-center gap-2"
+                >
+                 <div className="rounded-full border border-slate-300 p-3 transition-all duration-300 hover:border-[#C9A227] hover:bg-[#C9A227] hover:text-white">
+                 <FaStar className="text-2xl text-[#C9A227] group-hover:text-white" />
+                 </div>
+                </a>
+              
 
              <Link
                href="/contact"
@@ -242,22 +257,29 @@ export default function Footer() {
                 className="rounded-full border border-slate-300 p-3 transition-all duration-300 hover:border-[#C9A227] hover:bg-[#C9A227] hover:text-white"
               >
                 <Phone className="h-5 w-5" />
+                
               </button>
-
+              
               {showPhone && (
                 <div className="absolute bottom-14 right-0 w-52 rounded-xl border border-slate-200 bg-white p-4 shadow-xl">
                   <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
                     Call FAHOPROSO
                   </p>
+                  
 
                   <a
                     href="tel:+16162754443"
                     className="mt-2 block text-lg font-bold text-[#14213D] transition hover:text-[#C9A227]"
                   >
                     (616) 275-4443
+                    
                   </a>
+                  
                 </div>
+                
+                
               )}
+              
             </div>
           </div>
         </div>

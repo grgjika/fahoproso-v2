@@ -30,19 +30,19 @@ const guides = [
   },
   {
     title: "Selling a Vacant House",
-    href: "#",
+    href: "/resources/selling-vacant-house/",
   },
   {
     title: "Downsizing Your Home",
-    href: "#",
+    href: "/resources/downsizing-your-home/",
   },
   {
     title: "Selling a House That Needs Repairs",
-    href: "#",
+    href: "/resources/selling-house-needs-repairs/",
   },
   {
     title: "First-Time Home Seller Guide",
-    href: "#",
+    href: "/resources/first-time-home-seller-guide/",
   },
   {
   title: "View All Michigan Guides",
