@@ -254,7 +254,7 @@ export default function ResourcesPage() {
           </div>
 
         </section>
-
+       
         {/* CTA */}
 
         <section className="bg-[#14213D] py-24 text-white">
@@ -282,7 +282,31 @@ export default function ResourcesPage() {
           </div>
 
         </section>
+        
+{/* Mentorship Section */}
 
+<section className="bg-[#14213D] py-20 text-white">
+  <div className="mx-auto max-w-5xl px-6 text-center">
+
+    <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#C9A227]">
+      Mentorship & Education
+    </p>
+
+    <h2 className="mb-6 text-3xl font-bold md:text-4xl">
+      Built Through Mentorship
+    </h2>
+
+    <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-200">
+  FAHOPROSO is where it is today because of the mentorship and guidance of{" "}
+  <span className="font-semibold text-[#C9A227]">
+    Kingdom320
+  </span>.
+  Their knowledge and support helped us to build a strong foundation in faith and real
+  estate investing.
+</p>
+
+  </div>
+</section>
       </main>
 
       <Footer />

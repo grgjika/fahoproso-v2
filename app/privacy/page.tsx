@@ -171,10 +171,10 @@ export default function PrivacyPage() {
                   <p className="mt-2">
                     Email:{" "}
                     <a
-                      href="mailto:info@fahoproso.com"
+                      href="mailto:offers@fahoproso.com"
                       className="font-semibold text-[#C9A227]"
                     >
-                      info@fahoproso.com
+                      offers@fahoproso.com
                     </a>
                   </p>
 

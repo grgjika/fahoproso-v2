@@ -186,14 +186,14 @@ export default function TermsPage() {
                   <p className="mt-2">
                     Email:{" "}
                     <a
-                      href="mailto:info@fahoproso.com"
+                      href="mailto:offers@fahoproso.com"
                       className="font-semibold text-[#C9A227]"
                     >
-                      info@fahoproso.com
+                      offers@fahoproso.com
                     </a>
                   </p>
 
-                  <p className="mt-2">Phone: (616) 275-0000</p>
+                  <p className="mt-2">Phone: (616) 275-4443</p>
                 </div>
               </div>
 

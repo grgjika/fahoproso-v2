@@ -39,9 +39,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          We acquire, renovate, develop, and manage residential and commercial
-          properties while delivering innovative real estate investment
-          solutions throughout Michigan.
+          We invest in residential and commercial properties while helping property owners find practical real estate solutions throughout Michigan.
         </motion.p>
 
         <motion.div
