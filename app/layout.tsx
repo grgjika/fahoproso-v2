@@ -4,7 +4,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fahoproso.com"),
+  metadataBase: new URL("https://www.fahoproso.com"),
 
   title: {
     default: "FAHOPROSO | Real Estate Investment",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "FAHOPROSO | Real Estate Investment",
     description:
       "Residential and commercial real estate investment and property solutions throughout Michigan.",
-    url: "https://fahoproso.com",
+    url: "https://www.fahoproso.com",
     siteName: "FAHOPROSO",
     images: [
       {
@@ -75,14 +75,14 @@ export const metadata: Metadata = {
   },
 
   icons: {
-  icon: "/favicon.ico",
-  shortcut: "/favicon.ico",
-  apple: "/apple-touch-icon.png",
-},
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 
-manifest: "/site.webmanifest",
+  manifest: "/site.webmanifest",
 
-category: "real estate",
+  category: "real estate",
 };
 
 export const viewport: Viewport = {
@@ -94,18 +94,23 @@ export const viewport: Viewport = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://fahoproso.com/#organization",
+  "@id": "https://www.fahoproso.com/#organization",
   name: "Faithfull Home & Property Solutions, LLC",
   alternateName: "FAHOPROSO",
-  url: "https://fahoproso.com",
+  url: "https://www.fahoproso.com",
+
   logo: {
     "@type": "ImageObject",
-    url: "https://fahoproso.com/images/logo-transparent.png",
+    url: "https://www.fahoproso.com/images/logo-transparent.png",
   },
-  image: "https://fahoproso.com/images/social-preview.jpg",
+
+  image: "https://www.fahoproso.com/images/social-preview.jpg",
+
   description:
     "FAHOPROSO provides residential and commercial real estate investment and property solutions throughout Michigan.",
+
   email: "info@fahoproso.com",
+
   areaServed: [
     {
       "@type": "AdministrativeArea",
@@ -128,6 +133,7 @@ const organizationSchema = {
       name: "Troy, Michigan",
     },
   ],
+
   knowsAbout: [
     "Residential real estate investment",
     "Rental property investment",
@@ -140,12 +146,14 @@ const organizationSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://fahoproso.com/#website",
-  url: "https://fahoproso.com",
+  "@id": "https://www.fahoproso.com/#website",
+  url: "https://www.fahoproso.com",
   name: "FAHOPROSO",
+
   publisher: {
-    "@id": "https://fahoproso.com/#organization",
+    "@id": "https://www.fahoproso.com/#organization",
   },
+
   inLanguage: "en-US",
 };
 
@@ -172,9 +180,9 @@ export default function RootLayout({
         />
 
         {children}
-      </body>
 
-      <GoogleAnalytics gaId="G-5F9RJMGDCF" />
+        <GoogleAnalytics gaId="G-5F9RJMGDCF" />
+      </body>
     </html>
   );
 }
