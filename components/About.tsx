@@ -27,9 +27,9 @@ export default function About() {
           FAHOPROSO is a real estate investment company focused on acquiring,
           improving, and managing residential and commercial properties. We
           help homeowners find practical solutions while creating long-term
-          value for investors and the communities we serve. If you're looking
-          to sell your property, we can provide a fast, fair, and hassle-free
-          cash offer.
+          value for investors and the communities we serve. If you're looking 
+          to sell your property, we can evaluate it and, if it's a good fit, 
+          provide a fair, no-obligation cash offer.
         </p>
 
         <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">

@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "How quickly can you close?",
     answer:
-      "The timeline depends on the property, title work, financing, and transaction details. Our closings typically take just 1 to 2 weeks, though we always work closely with you to choose a realistic timeline that fits your needs.",
+      "The timeline depends on the property, title work, financing, and transaction details. We work with you to choose a realistic closing timeline that fits your needs.",
   },
   {
     question: "Can I choose the closing date?",

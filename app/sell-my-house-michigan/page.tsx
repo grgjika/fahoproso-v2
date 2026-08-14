@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Sell My House in Michigan | FAHOPROSO",
   description:
     "Looking to sell your house anywhere in Michigan? FAHOPROSO provides professional property solutions for homeowners across the state.",
+  alternates: {
+    canonical: "https://www.fahoproso.com/sell-my-house-michigan",
+  },
   keywords: [
     "sell my house Michigan",
     "cash home buyers Michigan",

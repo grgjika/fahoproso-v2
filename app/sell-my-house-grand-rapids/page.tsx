@@ -10,7 +10,10 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Sell My House in Grand Rapids, MI | FAHOPROSO",
   description:
-    "Looking to sell your house in Grand Rapids, Michigan? FAHOPROSO provides professional property solutions for homeowners throughout Grand Rapids.",
+    "Looking to sell your house in Grand Rapids, MI? FAHOPROSO helps homeowners explore simple selling options for as-is, inherited, vacant, rental, and repair-needed properties.",
+  alternates: {
+    canonical: "https://www.fahoproso.com/sell-my-house-grand-rapids",
+  },
   keywords: [
     "sell my house Grand Rapids",
     "cash home buyers Grand Rapids",
@@ -216,19 +219,35 @@ export default function SellMyHouseGrandRapidsPage() {
 
       <article className="rounded-2xl bg-white p-8 shadow-sm">
         <h3 className="text-2xl font-bold text-[#14213D]">
+         <Link
+          href="/resources/selling-house-needs-repairs"
+          className="transition hover:text-[#C9A227]"
+        >
           Homes Needing Repairs
+         </Link>
         </h3>
 
         <p className="mt-4 leading-8 text-slate-600">
           Whether your home needs cosmetic updates or significant repairs,
           we'll review the property and discuss options without requiring you
-          to complete renovations first.
+          to complete renovations first. You can also learn more about{" "}
+          <Link
+            href="/resources/sell-house-as-is"
+            className="font-semibold text-[#14213D] hover:text-[#C9A227]"
+          >
+            selling your house as-is
+          </Link>.
         </p>
       </article>
 
       <article className="rounded-2xl bg-white p-8 shadow-sm">
         <h3 className="text-2xl font-bold text-[#14213D]">
+         <Link
+          href="/resources/sell-inherited-house"
+          className="transition hover:text-[#C9A227]"
+        >
           Inherited Property
+         </Link>
         </h3>
 
         <p className="mt-4 leading-8 text-slate-600">
@@ -240,7 +259,12 @@ export default function SellMyHouseGrandRapidsPage() {
 
       <article className="rounded-2xl bg-white p-8 shadow-sm">
         <h3 className="text-2xl font-bold text-[#14213D]">
+        <Link
+         href="/resources/sell-rental-property"
+         className="transition hover:text-[#C9A227]"
+        >
           Rental Properties
+         </Link>
         </h3>
 
         <p className="mt-4 leading-8 text-slate-600">

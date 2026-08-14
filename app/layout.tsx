@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.fahoproso.com"),
 
   title: {
-    default: "FAHOPROSO | Real Estate Investment",
+    default: "FAHOPROSO | Sell Your House & Real Estate Investment Michigan",
     template: "%s | FAHOPROSO",
   },
 
   description:
-    "FAHOPROSO provides residential and commercial real estate investment and property solutions throughout Michigan.",
+    "Faithful Home & Property Solutions, LLC (FAHOPROSO) is a Michigan real estate investment company that buys residential properties and helps homeowners explore simple, straightforward options for selling their homes.",
 
   keywords: [
     "real estate investment Michigan",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   publisher: "Faithfull Home & Property Solutions, LLC",
 
   openGraph: {
-    title: "FAHOPROSO | Real Estate Investment",
+    title: "FAHOPROSO | Sell Your House & Real Estate Investment Michigan",
     description:
       "Residential and commercial real estate investment and property solutions throughout Michigan.",
     url: "https://www.fahoproso.com",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "FAHOPROSO | Real Estate Investment",
+    title: "FAHOPROSO | Sell Your House & Real Estate Investment Michigan",
     description:
       "Residential and commercial real estate investment and property solutions throughout Michigan.",
     images: ["/images/social-preview.jpg"],
