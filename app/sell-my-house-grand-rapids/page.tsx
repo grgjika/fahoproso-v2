@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Looking to sell your house in Grand Rapids, MI? FAHOPROSO helps homeowners explore simple selling options for as-is, inherited, vacant, rental, and repair-needed properties.",
   alternates: {
-    canonical: "https://www.fahoproso.com/sell-my-house-grand-rapids",
+    canonical: "https://www.fahoproso.com/sell-my-house-grand-rapids/",
   },
   keywords: [
     "sell my house Grand Rapids",
@@ -52,7 +52,7 @@ export default function SellMyHouseGrandRapidsPage() {
               </div>
 
               <h1 className="mt-6 text-5xl font-extrabold leading-tight md:text-7xl">
-                Sell Your House
+                Sell Your House Fast
                 <span className="block text-[#C9A227]">
                   in Grand Rapids
                 </span>
@@ -60,17 +60,18 @@ export default function SellMyHouseGrandRapidsPage() {
 
               <div className="mt-6 h-1 w-24 rounded-full bg-[#C9A227]" />
 
-              <p className="mt-8 max-w-2xl text-xl leading-9 text-slate-200">
-                Whether your property needs repairs, you've inherited a home,
-                are relocating, facing foreclosure, or simply want a
-                straightforward selling experience, FAHOPROSO is here to help.
-              </p>
+               <p className="mt-8 max-w-2xl text-xl leading-9 text-slate-200">
+                 Need to sell your house in Grand Rapids without making repairs or going
+                 through a traditional listing? FAHOPROSO works with homeowners who are
+                 considering an as-is sale, including inherited, vacant, rental, and
+                 repair-needed properties.
+               </p>
 
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
                 We proudly serve homeowners throughout Grand Rapids by providing
                 honest communication, professional guidance, and fair property
                 solutions tailored to each unique situation.
-              </p>
+               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
 
