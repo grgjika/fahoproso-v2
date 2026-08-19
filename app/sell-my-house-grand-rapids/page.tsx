@@ -8,10 +8,9 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Sell My House in Grand Rapids, MI | FAHOPROSO",
-  description:
-    "Looking to sell your house in Grand Rapids, MI? FAHOPROSO helps homeowners explore simple selling options for as-is, inherited, vacant, rental, and repair-needed properties.",
-  alternates: {
+   title: "Sell My House Fast in Grand Rapids, MI | FAHOPROSO",
+    description:
+   "Sell your house fast in Grand Rapids, MI with FAHOPROSO. We buy houses as-is, including inherited, vacant, rental, and repair-needed properties. Request a no-obligation offer.",  alternates: {
     canonical: "https://www.fahoproso.com/sell-my-house-grand-rapids",
   },
   keywords: [

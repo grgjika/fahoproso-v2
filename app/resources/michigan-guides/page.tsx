@@ -20,31 +20,31 @@ export const metadata: Metadata = {
 };
 
 const westMichiganGuides = [
-  {
-    title: "Kent County",
+ {
+    title: "Sell Your House in Kent County",
     description:
-      "Explore property solutions throughout Grand Rapids, Wyoming, Kentwood, Walker, Grandville, Rockford, Ada, and surrounding communities.",
+      "Explore straightforward property solutions for homeowners throughout Grand Rapids, Wyoming, Kentwood, Walker, Grandville, Rockford, Ada, and surrounding communities.",
     href: "/sell-my-house-kent-county",
   },
   {
-    title: "Ottawa County",
+    title: "Sell Your House in Ottawa County",
     description:
-      "Learn about property solutions throughout Holland, Grand Haven, Hudsonville, Jenison, Zeeland, Allendale, and nearby communities.",
+      "Explore straightforward property solutions for homeowners throughout Holland, Grand Haven, Hudsonville, Jenison, Zeeland, Allendale, and nearby communities.",
     href: "/sell-my-house-ottawa-county",
   },
   {
-    title: "Grand Rapids",
+    title: "Sell Your House in Grand Rapids",
     description:
-      "Explore homeowner information and professional property solutions throughout Grand Rapids.",
+      "Explore options for selling an as-is, inherited, vacant, rental, or repair-needed property in Grand Rapids.",
     href: "/sell-my-house-grand-rapids",
   },
 ];
 
 const southeastMichiganGuides = [
   {
-    title: "Troy",
+    title: "Sell Your House in Troy",
     description:
-      "Learn about selected residential and investment opportunities in Troy, Michigan.",
+      "Explore straightforward property solutions for homeowners considering selling an as-is, inherited, vacant, rental, or repair-needed property in Troy, Michigan.",
     href: "/sell-my-house-troy",
   },
 ];

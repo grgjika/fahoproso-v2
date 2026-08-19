@@ -30,7 +30,7 @@ const secondaryAreas = [
   {
     name: "Grand Rapids",
     description:
-      "Professional property solutions for homeowners across Grand Rapids and its established residential neighborhoods.",
+      "Sell your house in Grand Rapids with a straightforward, professional solution for As-Is, inherited, vacant, rental, and repair needed properties.",
     href: "/sell-my-house-grand-rapids",
     image: "/images/Grand Rapids.jpg",
   },

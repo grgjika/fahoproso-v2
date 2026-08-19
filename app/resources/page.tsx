@@ -52,19 +52,19 @@ const investingResources = [
 
 const michiganResources = [
   {
-    title: "Kent County Guide",
+    title: "Sell Your House in Kent County",
     href: "/sell-my-house-kent-county",
   },
   {
-    title: "Ottawa County Guide",
+    title: "Sell Your House in Ottawa County",
     href: "/sell-my-house-ottawa-county",
   },
   {
-    title: "Grand Rapids Guide",
+    title: "Sell Your House in Grand Rapids",
     href: "/sell-my-house-grand-rapids",
   },
   {
-    title: "Troy Guide",
+    title: "Sell Your House in Troy",
     href: "/sell-my-house-troy",
   },
   {

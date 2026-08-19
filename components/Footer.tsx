@@ -165,7 +165,7 @@ export default function Footer() {
         href="/sell-my-house-kent-county"
         className="transition hover:text-[#C9A227]"
       >
-        Kent County
+        Sell Your House in Kent County
       </Link>
     </li>
 
@@ -174,7 +174,7 @@ export default function Footer() {
         href="/sell-my-house-ottawa-county"
         className="transition hover:text-[#C9A227]"
       >
-        Ottawa County
+        Sell Your House in Ottawa County
       </Link>
     </li>
 
@@ -183,7 +183,7 @@ export default function Footer() {
         href="/sell-my-house-grand-rapids"
         className="transition hover:text-[#C9A227]"
       >
-        Grand Rapids
+        Sell Your House in Grand Rapids
       </Link>
     </li>
 
@@ -192,7 +192,7 @@ export default function Footer() {
         href="/sell-my-house-troy"
         className="transition hover:text-[#C9A227]"
       >
-        Troy
+        Sell Your House in Troy
       </Link>
     </li>
 
@@ -201,7 +201,7 @@ export default function Footer() {
         href="/sell-my-house-michigan"
         className="transition hover:text-[#C9A227]"
       >
-        Michigan
+        Sell Your House in Michigan
       </Link>
     </li>
   </ul>
