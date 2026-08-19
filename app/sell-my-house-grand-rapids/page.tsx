@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Looking to sell your house in Grand Rapids, MI? FAHOPROSO helps homeowners explore simple selling options for as-is, inherited, vacant, rental, and repair-needed properties.",
   alternates: {
-    canonical: "https://www.fahoproso.com/sell-my-house-grand-rapids/",
+    canonical: "https://www.fahoproso.com/sell-my-house-grand-rapids",
   },
   keywords: [
     "sell my house Grand Rapids",

@@ -14,31 +14,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     {
-      url: `${baseUrl}/about/`,
+      url: `${baseUrl}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/`,
+      url: `${baseUrl}/services`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/projects/`,
+      url: `${baseUrl}/projects`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/faq/`,
+      url: `${baseUrl}/faq`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/contact/`,
+      url: `${baseUrl}/contact`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
@@ -46,19 +46,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Investment Focus
     {
-      url: `${baseUrl}/investment-focus/residential/`,
+      url: `${baseUrl}/investment-focus/residential`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/investment-focus/rentals/`,
+      url: `${baseUrl}/investment-focus/rentals`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/investment-focus/commercial/`,
+      url: `${baseUrl}/investment-focus/commercial`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
@@ -66,43 +66,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Resources
     {
-      url: `${baseUrl}/resources/`,
+      url: `${baseUrl}/resources`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/resources/homeowner-guides/`,
+      url: `${baseUrl}/resources/homeowner-guides`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/resources/property-evaluation/`,
+      url: `${baseUrl}/resources/property-evaluation`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/resources/residential-investments/`,
+      url: `${baseUrl}/resources/residential-investments`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/resources/commercial-investments/`,
+      url: `${baseUrl}/resources/commercial-investments`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/resources/rental-strategies/`,
+      url: `${baseUrl}/resources/rental-strategies`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/resources/michigan-guides/`,
+      url: `${baseUrl}/resources/michigan-guides`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
@@ -110,49 +110,49 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Homeowner Guides
     {
-      url: `${baseUrl}/resources/sell-house-as-is/`,
+      url: `${baseUrl}/resources/sell-house-as-is`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/resources/sell-inherited-house/`,
+      url: `${baseUrl}/resources/sell-inherited-house`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/resources/probate-guide/`,
+      url: `${baseUrl}/resources/probate-guide`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/resources/sell-rental-property/`,
+      url: `${baseUrl}/resources/sell-rental-property`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/resources/selling-vacant-house/`,
+      url: `${baseUrl}/resources/selling-vacant-house`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/resources/downsizing-your-home/`,
+      url: `${baseUrl}/resources/downsizing-your-home`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/resources/selling-house-needs-repairs/`,
+      url: `${baseUrl}/resources/selling-house-needs-repairs`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/resources/first-time-home-seller-guide/`,
+      url: `${baseUrl}/resources/first-time-home-seller-guide`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
@@ -160,37 +160,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Service Areas
     {
-      url: `${baseUrl}/service-areas/`,
+      url: `${baseUrl}/service-areas`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/sell-my-house-michigan/`,
+      url: `${baseUrl}/sell-my-house-michigan`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/sell-my-house-grand-rapids/`,
+      url: `${baseUrl}/sell-my-house-grand-rapids`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/sell-my-house-kent-county/`,
+      url: `${baseUrl}/sell-my-house-kent-county`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/sell-my-house-ottawa-county/`,
+      url: `${baseUrl}/sell-my-house-ottawa-county`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/sell-my-house-troy/`,
+      url: `${baseUrl}/sell-my-house-troy`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
