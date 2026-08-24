@@ -8,7 +8,11 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "Read the FAHOPROSO privacy policy and learn how we collect, use, disclose, and protect information submitted through our website.",
-};
+
+    alternates: {
+     canonical: "https://www.fahoproso.com/privacy",
+    },
+  };
 
 export default function PrivacyPage() {
   return (

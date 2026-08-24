@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: "Selling a Rental Property in Michigan | FAHOPROSO",
   description:
     "Learn about selling a rental property in Michigan, understand your options as a landlord, and explore important considerations before selling.",
+
+    alternates: {
+     canonical: "https://www.fahoproso.com/resources/sell-rental-property",
+    },
 };
 
 export default function SellRentalPropertyPage() {

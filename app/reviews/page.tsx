@@ -9,7 +9,11 @@ export const metadata: Metadata = {
   title: "Customer Reviews | FAHOPROSO",
   description:
     "Customer reviews and feedback for Faithfull Home & Property Solutions, LLC.",
-};
+
+    alternates: {
+     canonical: "https://www.fahoproso.com/reviews",
+    },
+  };
 
 export default function ReviewsPage() {
   return (

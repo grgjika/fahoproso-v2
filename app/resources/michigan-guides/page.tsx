@@ -17,7 +17,11 @@ export const metadata: Metadata = {
   title: "Michigan Real Estate Guides | FAHOPROSO",
   description:
     "Explore FAHOPROSO real estate guides for Kent County, Ottawa County, Grand Rapids, Troy, and communities across Michigan.",
-};
+
+    alternates: {
+     canonical: "https://www.fahoproso.com/resources/michigan-guides",
+    },
+  };
 
 const westMichiganGuides = [
  {

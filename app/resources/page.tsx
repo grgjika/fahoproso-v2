@@ -10,7 +10,10 @@ export const metadata: Metadata = {
   title: "Real Estate Resources | FAHOPROSO",
   description:
     "Helpful real estate resources, homeowner guides, investment insights, and Michigan market information from FAHOPROSO.",
-};
+    alternates: {
+     canonical: "https://www.fahoproso.com/resources",
+    },
+  };
 
 const homeownerResources = [
   {

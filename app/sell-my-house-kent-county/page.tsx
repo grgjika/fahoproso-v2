@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     "real estate investor Kent County",
     "we buy houses Kent County",
   ],
+  alternates: {
+    canonical: "https://www.fahoproso.com/sell-my-house-kent-county",
+  },
 };
 
 export default function SellMyHouseKentCountyPage() {

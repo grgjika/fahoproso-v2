@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: "Downsizing Your Home in Michigan | FAHOPROSO",
   description:
     "Learn about downsizing your home in Michigan, including planning, organizing, selling options, and preparing for your next chapter.",
+
+    alternates: {
+     canonical: "https://www.fahoproso.com/resources/downsizing-your-home",
+    },
 };
 
 export default function DownsizingYourHomePage() {

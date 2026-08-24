@@ -11,7 +11,11 @@ export const metadata: Metadata = {
   title: "About Us",
   description:
     "Learn more about FAHOPROSO and our residential and commercial real estate investment approach in Grand Rapids, Michigan.",
-};
+
+    alternates: {
+     canonical: "https://www.fahoproso.com/about",
+    },
+  };
 
 export default function AboutPage() {
   return (

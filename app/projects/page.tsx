@@ -10,7 +10,11 @@ export const metadata: Metadata = {
   title: "Real Estate Projects",
   description:
     "Explore FAHOPROSO residential and commercial real estate projects and investment opportunities.",
-};
+
+    alternates: {
+     canonical: "https://www.fahoproso.com/projects",
+    },
+  };
 
 export default function ProjectsPage() {
   return (

@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: "Residential Real Estate Investing in Michigan | FAHOPROSO",
   description:
     "Explore residential real estate investing in Michigan, including single-family homes, multifamily properties, cash flow, appreciation, and long-term investment strategy.",
+
+    alternates: {
+     canonical: "https://www.fahoproso.com/resources/residential-investments",
+    },
 };
 
 export default function ResidentialInvestmentsPage() {

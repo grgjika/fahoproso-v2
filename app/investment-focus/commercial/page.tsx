@@ -26,7 +26,11 @@ export const metadata: Metadata = {
   title: "Commercial Real Estate Investments",
   description:
     "Learn how FAHOPROSO evaluates commercial real estate acquisitions, partnerships, development opportunities, and long-term investment potential.",
-};
+
+    alternates: {
+     canonical: "https://www.fahoproso.com/investment-focus/commercial",
+    },
+  };
 
 const evaluationFactors = [
   {

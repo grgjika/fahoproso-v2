@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Service Areas",
   description:
     "Explore the Michigan communities served by FAHOPROSO, including Kent County, Ottawa County, Grand Rapids, Troy, and additional markets across the state.",
+     alternates: {
+      canonical: "https://www.fahoproso.com/service-areas",
+    },
 };
 
 const secondaryAreas = [

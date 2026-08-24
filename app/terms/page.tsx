@@ -8,7 +8,10 @@ export const metadata: Metadata = {
   title: "Terms and Conditions",
   description:
     "Read the terms and conditions governing use of the FAHOPROSO website and submission of property inquiries.",
-};
+    alternates: {
+     canonical: "https://www.fahoproso.com/terms",
+    },
+  };
 
 export default function TermsPage() {
   return (

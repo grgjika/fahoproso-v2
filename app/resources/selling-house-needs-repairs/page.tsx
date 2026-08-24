@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: "Selling a House That Needs Repairs in Michigan | FAHOPROSO",
   description:
     "Learn your options for selling a house that needs repairs in Michigan, including repairing, listing, or selling the property as-is.",
+
+    alternates: {
+     canonical: "https://www.fahoproso.com/resources/selling-house-needs-repairs",
+    },
 };
 
 export default function SellingHouseNeedsRepairsPage() {

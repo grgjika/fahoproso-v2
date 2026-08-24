@@ -9,7 +9,11 @@ export const metadata: Metadata = {
   title: "Contact Us",
   description:
     "Contact FAHOPROSO to discuss selling a property, receiving a cash offer, investing, or partnering on residential and commercial real estate opportunities.",
-};
+
+    alternates: {
+     canonical: "https://www.fahoproso.com/contact",
+    },
+  };
 
 export default function ContactPage() {
   return (

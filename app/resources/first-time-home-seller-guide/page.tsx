@@ -10,7 +10,11 @@ export const metadata: Metadata = {
   title: "First-Time Home Seller Guide in Michigan | FAHOPROSO",
   description:
     "A helpful guide for first-time home sellers in Michigan covering preparation, property evaluation, offers, closing, and common mistakes.",
-};
+
+    alternates: {
+     canonical: "https://www.fahoproso.com/resources/first-time-home-seller-guide",
+    },
+  };
 
 export default function FirstTimeHomeSellerGuidePage() {
   return (

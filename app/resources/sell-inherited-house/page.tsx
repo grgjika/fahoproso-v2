@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   title: "Selling an Inherited House in Michigan | FAHOPROSO",
   description:
     "Learn about selling an inherited house in Michigan with this guide from FAHOPROSO.",
+
+    alternates: {
+     canonical: "https://www.fahoproso.com/resources/sell-inherited-house",
+    },
 };
 
 export default function SellInheritedHousePage() {

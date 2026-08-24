@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: "Michigan Probate Guide | FAHOPROSO",
   description:
     "Learn how probate works in Michigan, when a property can be sold, and understand the probate process with this homeowner guide from FAHOPROSO.",
+
+    alternates: {
+     canonical: "https://www.fahoproso.com/resources/probate-guide",
+    },
 };
 
 export default function ProbateGuidePage() {

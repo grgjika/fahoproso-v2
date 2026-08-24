@@ -26,6 +26,9 @@ export const metadata: Metadata = {
           "property investors Troy",
           "Realtor to sell my house fast in Troy",
         ],
+        alternates: {
+         canonical: "https://www.fahoproso.com/sell-my-house-troy",
+        },
    };
 
 export default function SellMyHouseTroyPage() {

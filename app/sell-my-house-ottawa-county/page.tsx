@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     "real estate investor Ottawa County",
     "we buy houses Ottawa County",
   ],
+  alternates: {
+    canonical: "https://www.fahoproso.com/sell-my-house-ottawa-county",
+  },
 };
 
 export default function SellMyHouseOttawaCountyPage() {

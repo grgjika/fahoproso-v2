@@ -24,6 +24,10 @@ export const metadata: Metadata = {
   title: "Rental Property Investments",
   description:
     "Learn how FAHOPROSO evaluates rental property opportunities and creates long-term value through responsible ownership and professional real estate investment.",
+
+    alternates: {
+     canonical: "https://www.fahoproso.com/investment-focus/rentals",
+    },
 };
 
 const evaluationFactors = [
