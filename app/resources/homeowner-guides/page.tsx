@@ -9,7 +9,10 @@ export const metadata: Metadata = {
   title: "Homeowner Guides | FAHOPROSO",
   description:
     "Educational homeowner guides from FAHOPROSO covering selling, probate, inherited homes, rental properties, and more.",
-};
+    alternates: {
+     canonical: "https://www.fahoproso.com/resources/homeowner-guides",
+    },
+  };
 
 const guides = [
   {
@@ -30,19 +33,19 @@ const guides = [
   },
   {
     title: "Selling a Vacant House",
-    href: "/resources/selling-vacant-house/",
+    href: "/resources/selling-vacant-house",
   },
   {
     title: "Downsizing Your Home",
-    href: "/resources/downsizing-your-home/",
+    href: "/resources/downsizing-your-home",
   },
   {
     title: "Selling a House That Needs Repairs",
-    href: "/resources/selling-house-needs-repairs/",
+    href: "/resources/selling-house-needs-repairs",
   },
   {
     title: "First-Time Home Seller Guide",
-    href: "/resources/first-time-home-seller-guide/",
+    href: "/resources/first-time-home-seller-guide",
   },
   {
   title: "View All Michigan Guides",
