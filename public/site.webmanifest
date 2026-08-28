@@ -1,0 +1,16 @@
+{
+  "name": "Faithfull Home & Property Solutions, LLC",
+  "short_name": "FAHOPROSO",
+  "description": "Real estate investment and property solutions in Michigan.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#14213D",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

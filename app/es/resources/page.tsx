@@ -1,0 +1,74 @@
+import type { Metadata } from "next";
+
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
+
+export const metadata: Metadata = {
+  title: "Recursos",
+  description:
+    "Explore guías y recursos de FAHOPROSO sobre venta de propiedades, inversiones inmobiliarias y temas para propietarios en Michigan.",
+  alternates: {
+    canonical: "https://www.fahoproso.com/es/resources",
+  },
+};
+
+export default function ResourcesPageES() {
+  return (
+    <>
+      <Navbar locale="es" />
+
+      <main className="pt-24">
+        <section className="bg-[#14213D] py-20 text-white">
+          <div className="mx-auto max-w-6xl px-6 text-center">
+            <p className="font-semibold uppercase tracking-[0.25em] text-[#C9A227]">
+              Recursos FAHOPROSO
+            </p>
+
+            <h1 className="mt-4 text-4xl font-bold md:text-6xl">
+              Guías y Recursos Inmobiliarios
+            </h1>
+
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+              Explore información útil sobre venta de propiedades, inversiones
+              inmobiliarias y temas importantes para propietarios en Michigan.
+            </p>
+          </div>
+        </section>
+
+        <section className="bg-slate-50 py-24">
+          <div className="mx-auto grid max-w-5xl gap-6 px-6 md:grid-cols-2">
+            <a
+              href="/es/resources/homeowner-guides"
+              className="rounded-2xl bg-white p-8 shadow transition hover:-translate-y-1 hover:shadow-lg"
+            >
+              <h2 className="text-2xl font-bold text-[#14213D]">
+                Guías para Propietarios
+              </h2>
+              <p className="mt-3 text-slate-600">
+                Información práctica para propietarios que están considerando
+                vender o necesitan entender sus opciones.
+              </p>
+            </a>
+
+            <a
+              href="/es/resources/residential-investments"
+              className="rounded-2xl bg-white p-8 shadow transition hover:-translate-y-1 hover:shadow-lg"
+            >
+              <h2 className="text-2xl font-bold text-[#14213D]">
+                Información para Inversionistas
+              </h2>
+              <p className="mt-3 text-slate-600">
+                Explore temas sobre inversión residencial, propiedades de
+                alquiler y bienes raíces comerciales.
+              </p>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <Footer locale="es" />
+      <ScrollToTop />
+    </>
+  );
+}

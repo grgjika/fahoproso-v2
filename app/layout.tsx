@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
-
+import ExitIntentPopup from "@/components/ExitIntentPopup";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -163,7 +163,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body>
         <script
           type="application/ld+json"
@@ -180,6 +180,8 @@ export default function RootLayout({
         />
 
         {children}
+        
+        <ExitIntentPopup />
 
         <GoogleAnalytics gaId="G-5F9RJMGDCF" />
       </body>

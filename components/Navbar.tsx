@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 import {
   ArrowRight,
   BookOpen,
@@ -10,6 +12,7 @@ import {
   ChevronDown,
   CircleHelp,
   FolderKanban,
+  Globe2,
   Home,
   MapPinned,
   Menu,
@@ -17,77 +20,284 @@ import {
   X,
 } from "lucide-react";
 
-const mainNavigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
-];
+type Locale = "en" | "es" | "el" | "sq";
 
-const resourceNavigation = [
-  {
-    name: "All Resources",
-    description: "Explore every guide and article",
-    href: "/resources",
-    icon: BookOpen,
-  },
-  {
-    name: "Homeowner Guides",
-    description: "Helpful information for property owners",
-    href: "/resources/homeowner-guides",
-    icon: Home,
-  },
-  {
-    name: "Investment Insights",
-    description: "Residential and commercial investing",
-    href: "/resources/residential-investments",
-    icon: BriefcaseBusiness,
-  },
-  {
-    name: "Michigan Guides",
-    description: "Explore the areas we currently serve",
-    href: "/resources/michigan-guides",
-    icon: MapPinned,
-  },
-  {
-    name: "FAQs",
-    description: "Answers to common property questions",
-    href: "/faq",
-    icon: CircleHelp,
-  },
-];
+type NavbarProps = {
+  locale?: Locale;
+};
 
-const additionalNavigation = [
-  {
-    name: "Projects",
-    href: "/projects",
-    icon: FolderKanban,
-  },
-  {
-    name: "Service Areas",
-    href: "/service-areas",
-    icon: MapPinned,
-  },
-];
+const navText = {
+  en: {
+    home: "Home",
+    about: "About",
+    services: "Services",
+    resources: "Resources",
 
-export default function Navbar() {
+    explore: "Explore FAHOPROSO",
+    exploreDescription:
+      "Guides, answers, projects, and service areas.",
+
+    allResources: "All Resources",
+    allResourcesDescription: "Explore every guide and article",
+
+    homeownerGuides: "Homeowner Guides",
+    homeownerGuidesDescription:
+      "Helpful information for property owners",
+
+    investmentInsights: "Investment Insights",
+    investmentInsightsDescription:
+      "Residential and commercial investing",
+
+    michiganGuides: "Michigan Guides",
+    michiganGuidesDescription:
+      "Explore the areas we currently serve",
+
+    faqs: "FAQs",
+    faqsDescription:
+      "Answers to common property questions",
+
+    projects: "Projects",
+    serviceAreas: "Service Areas",
+
+    contactUs: "Contact Us",
+    callUs: "Call Us",
+    language: "Language",
+  },
+
+  es: {
+    home: "Inicio",
+    about: "Nosotros",
+    services: "Servicios",
+    resources: "Recursos",
+
+    explore: "Explore FAHOPROSO",
+    exploreDescription:
+      "Guías, respuestas, proyectos y áreas de servicio.",
+
+    allResources: "Todos los Recursos",
+    allResourcesDescription:
+      "Explore todas nuestras guías y artículos",
+
+    homeownerGuides: "Guías para Propietarios",
+    homeownerGuidesDescription:
+      "Información útil para propietarios de inmuebles",
+
+    investmentInsights: "Información para Inversionistas",
+    investmentInsightsDescription:
+      "Inversiones residenciales y comerciales",
+
+    michiganGuides: "Guías de Michigan",
+    michiganGuidesDescription:
+      "Explore las áreas que actualmente atendemos",
+
+    faqs: "Preguntas Frecuentes",
+    faqsDescription:
+      "Respuestas a preguntas comunes sobre propiedades",
+
+    projects: "Proyectos",
+    serviceAreas: "Áreas de Servicio",
+
+    contactUs: "Contáctenos",
+    callUs: "Llámenos",
+    language: "Idioma",
+  },
+
+  el: {
+    home: "Αρχική",
+    about: "Σχετικά με Εμάς",
+    services: "Υπηρεσίες",
+    resources: "Πληροφορίες",
+
+    explore: "Εξερευνήστε τη FAHOPROSO",
+    exploreDescription:
+      "Οδηγοί, απαντήσεις, έργα και περιοχές εξυπηρέτησης.",
+
+    allResources: "Όλες οι Πληροφορίες",
+    allResourcesDescription:
+      "Εξερευνήστε όλους τους οδηγούς και τα άρθρα μας",
+
+    homeownerGuides: "Οδηγοί για Ιδιοκτήτες",
+    homeownerGuidesDescription:
+      "Χρήσιμες πληροφορίες για ιδιοκτήτες ακινήτων",
+
+    investmentInsights: "Επενδυτικές Πληροφορίες",
+    investmentInsightsDescription:
+      "Επενδύσεις σε οικιστικά και επαγγελματικά ακίνητα",
+
+    michiganGuides: "Οδηγοί Michigan",
+    michiganGuidesDescription:
+      "Εξερευνήστε τις περιοχές που εξυπηρετούμε",
+
+    faqs: "Συχνές Ερωτήσεις",
+    faqsDescription:
+      "Απαντήσεις σε συχνές ερωτήσεις σχετικά με ακίνητα",
+
+    projects: "Έργα",
+    serviceAreas: "Περιοχές Εξυπηρέτησης",
+
+    contactUs: "Επικοινωνήστε Μαζί μας",
+    callUs: "Καλέστε μας",
+    language: "Γλώσσα",
+  },
+
+  sq: {
+    home: "Kryefaqja",
+    about: "Rreth Nesh",
+    services: "Shërbimet",
+    resources: "Burime",
+
+    explore: "Eksploroni FAHOPROSO",
+    exploreDescription:
+      "Udhëzues, përgjigje, projekte dhe zona shërbimi.",
+
+    allResources: "Të Gjitha Burimet",
+    allResourcesDescription:
+      "Eksploroni të gjithë udhëzuesit dhe artikujt",
+
+    homeownerGuides: "Udhëzues për Pronarët",
+    homeownerGuidesDescription:
+      "Informacion i dobishëm për pronarët e pronave",
+
+    investmentInsights: "Informacion për Investime",
+    investmentInsightsDescription:
+      "Investime rezidenciale dhe komerciale",
+
+    michiganGuides: "Udhëzues për Michigan",
+    michiganGuidesDescription:
+      "Eksploroni zonat që aktualisht shërbejmë",
+
+    faqs: "Pyetje të Shpeshta",
+    faqsDescription:
+      "Përgjigje për pyetjet e zakonshme rreth pronave",
+
+    projects: "Projektet",
+    serviceAreas: "Zonat e Shërbimit",
+
+    contactUs: "Na Kontaktoni",
+    callUs: "Na Telefononi",
+    language: "Gjuha",
+  },
+};
+
+export default function Navbar({ locale = "en" }: NavbarProps) {
+  const pathname = usePathname();
+  const text = navText[locale];
+
+  const [showLanguage, setShowLanguage] = useState(false);
+  const [showMobileLanguage, setShowMobileLanguage] =
+    useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [showPhone, setShowPhone] = useState(false);
   const [showResources, setShowResources] = useState(false);
-  const [showMobileResources, setShowMobileResources] = useState(false);
+  const [showMobileResources, setShowMobileResources] =
+    useState(false);
+
+  const localePrefix = locale === "en" ? "" : `/${locale}`;
+
+   const mainNavigation = [
+  {
+    name: text.home,
+    href: locale === "en" ? "/" : `/${locale}`,
+  },
+  {
+    name: text.about,
+    href: `${localePrefix}/about`,
+  },
+  {
+    name: text.services,
+    href: `${localePrefix}/services`,
+  },
+  ];
+
+  const resourceNavigation = [
+    {
+      name: text.allResources,
+      description: text.allResourcesDescription,
+      href: `${localePrefix}/resources`,
+      icon: BookOpen,
+    },
+    {
+      name: text.homeownerGuides,
+      description: text.homeownerGuidesDescription,
+      href: `${localePrefix}/resources/homeowner-guides`,
+      icon: Home,
+    },
+   {
+      name: text.investmentInsights,
+      description: text.investmentInsightsDescription,
+      href: `${localePrefix}/resources/residential-investments`,
+      icon: BriefcaseBusiness,
+    },
+    
+    {
+      name: text.faqs,
+      description: text.faqsDescription,
+      href: `${localePrefix}/faq`,
+      icon: CircleHelp,
+    },
+  ];
+
+  const additionalNavigation = [
+    {
+      name: text.projects,
+      href: `${localePrefix}/projects`,
+      icon: FolderKanban,
+    },
+    {
+      name: text.serviceAreas,
+      href: "/service-areas",
+      icon: MapPinned,
+    },
+  ];
 
   const closeMenu = () => {
+    setShowLanguage(false);
+    setShowMobileLanguage(false);
     setIsOpen(false);
     setShowPhone(false);
     setShowResources(false);
     setShowMobileResources(false);
   };
 
+  const currentLanguage =
+    pathname === "/el" || pathname.startsWith("/el/")
+      ? "EL"
+      : pathname === "/es" || pathname.startsWith("/es/")
+        ? "ES"
+        : pathname === "/sq" || pathname.startsWith("/sq/")
+          ? "SQ"
+          : "EN";
+
+  const languages = [
+    {
+      code: "EN",
+      label: "English",
+      href: "/",
+    },
+    {
+      code: "ES",
+      label: "Español",
+      href: "/es",
+    },
+    {
+      code: "EL",
+      label: "Ελληνικά",
+      href: "/el",
+    },
+    {
+      code: "SQ",
+      label: "Shqip",
+      href: "/sq",
+    },
+  ];
+
   return (
     <header className="fixed left-0 top-0 z-[1000] w-full border-b border-slate-200 bg-white/95 shadow-sm backdrop-blur-md">
       <nav className="mx-auto flex h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+
         {/* Logo */}
         <Link
-          href="/"
+          href={locale === "en" ? "/" : `/${locale}`}
           onClick={closeMenu}
           aria-label="FAHOPROSO homepage"
           className="shrink-0"
@@ -122,12 +332,14 @@ export default function Navbar() {
           >
             <button
               type="button"
-              onClick={() => setShowResources((current) => !current)}
+              onClick={() =>
+                setShowResources((current) => !current)
+              }
               aria-expanded={showResources}
               aria-haspopup="true"
               className="flex items-center gap-1 font-medium text-slate-700 transition hover:text-[#C9A227]"
             >
-              Resources
+              {text.resources}
 
               <ChevronDown
                 className={`h-4 w-4 transition-transform duration-300 ${
@@ -144,13 +356,14 @@ export default function Navbar() {
               }`}
             >
               <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-2xl">
+
                 <div className="px-3 pb-3 pt-2">
                   <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#C9A227]">
-                    Explore FAHOPROSO
+                    {text.explore}
                   </p>
 
                   <p className="mt-1 text-sm text-slate-500">
-                    Guides, answers, projects, and service areas.
+                    {text.exploreDescription}
                   </p>
                 </div>
 
@@ -208,18 +421,78 @@ export default function Navbar() {
             </div>
           </div>
 
+          {/* Language Selector */}
+          <div
+            className="relative"
+            onMouseEnter={() => setShowLanguage(true)}
+            onMouseLeave={() => setShowLanguage(false)}
+          >
+            <button
+              type="button"
+              onClick={() =>
+                setShowLanguage((current) => !current)
+              }
+              aria-expanded={showLanguage}
+              aria-haspopup="true"
+              aria-label="Choose language"
+              className="flex items-center gap-1.5 rounded-xl border border-slate-300 px-3 py-2.5 font-semibold text-slate-700 transition hover:border-[#C9A227] hover:text-[#C9A227]"
+            >
+              <Globe2 className="h-4 w-4" />
+
+              {currentLanguage}
+
+              <ChevronDown
+                className={`h-4 w-4 transition-transform ${
+                  showLanguage ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+
+            <div
+              className={`absolute right-0 top-full w-44 pt-3 transition-all duration-200 ${
+                showLanguage
+                  ? "visible translate-y-0 opacity-100"
+                  : "invisible -translate-y-2 opacity-0"
+              }`}
+            >
+              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-xl">
+                {languages.map((language) => (
+                  <Link
+                    key={language.code}
+                    href={language.href}
+                    onClick={closeMenu}
+                    className={`flex items-center justify-between rounded-xl px-4 py-3 text-sm font-medium transition ${
+                      currentLanguage === language.code
+                        ? "bg-[#FFF9EC] text-[#14213D]"
+                        : "text-slate-700 hover:bg-slate-100"
+                    }`}
+                  >
+                    <span>{language.label}</span>
+
+                    <span className="text-xs font-bold text-[#C9A227]">
+                      {language.code}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Contact */}
           <Link
-            href="/contact"
+            href={`${localePrefix}/contact`}
             className="rounded-xl bg-[#C9A227] px-5 py-3 font-semibold text-[#14213D] transition hover:bg-[#b89220] hover:shadow-lg"
           >
-            Contact Us
+            {text.contactUs}
           </Link>
 
           {/* Phone Popup */}
           <div className="relative">
             <button
               type="button"
-              onClick={() => setShowPhone((current) => !current)}
+              onClick={() =>
+                setShowPhone((current) => !current)
+              }
               aria-label="Show FAHOPROSO phone number"
               aria-expanded={showPhone}
               className="flex h-11 w-11 items-center justify-center rounded-full border border-slate-300 text-slate-700 transition hover:border-[#C9A227] hover:bg-[#C9A227] hover:text-white"
@@ -230,7 +503,7 @@ export default function Navbar() {
             {showPhone && (
               <div className="absolute right-0 top-14 w-56 rounded-xl border border-slate-200 bg-white p-4 shadow-xl">
                 <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
-                  Call Us
+                  {text.callUs}
                 </p>
 
                 <a
@@ -247,9 +520,13 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           type="button"
-          onClick={() => setIsOpen((current) => !current)}
+          onClick={() =>
+            setIsOpen((current) => !current)
+          }
           aria-label={
-            isOpen ? "Close navigation menu" : "Open navigation menu"
+            isOpen
+              ? "Close navigation menu"
+              : "Open navigation menu"
           }
           aria-expanded={isOpen}
           className="flex h-11 w-11 items-center justify-center rounded-lg border border-slate-300 text-slate-900 transition hover:border-[#C9A227] hover:text-[#C9A227] lg:hidden"
@@ -271,6 +548,7 @@ export default function Navbar() {
         }`}
       >
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-6 sm:px-6">
+
           {mainNavigation.map((item) => (
             <Link
               key={item.name}
@@ -286,12 +564,14 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() =>
-              setShowMobileResources((current) => !current)
+              setShowMobileResources(
+                (current) => !current
+              )
             }
             aria-expanded={showMobileResources}
             className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-left font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#C9A227]"
           >
-            Resources
+            {text.resources}
 
             <ChevronDown
               className={`h-5 w-5 transition-transform duration-300 ${
@@ -302,6 +582,7 @@ export default function Navbar() {
 
           {showMobileResources && (
             <div className="ml-2 space-y-2 border-l-2 border-[#C9A227]/40 pl-3">
+
               {resourceNavigation.map((item) => {
                 const Icon = item.icon;
 
@@ -338,12 +619,66 @@ export default function Navbar() {
             </div>
           )}
 
+          {/* Mobile Language Selector */}
+          <div className="mt-2">
+            <button
+              type="button"
+              onClick={() =>
+                setShowMobileLanguage(
+                  (current) => !current
+                )
+              }
+              aria-expanded={showMobileLanguage}
+              className="flex w-full items-center justify-between rounded-xl border border-slate-200 px-4 py-3 font-medium text-slate-700"
+            >
+              <span className="flex items-center gap-2">
+                <Globe2 className="h-5 w-5 text-[#C9A227]" />
+                {text.language}
+              </span>
+
+              <span className="flex items-center gap-2">
+                {currentLanguage}
+
+                <ChevronDown
+                  className={`h-4 w-4 transition-transform ${
+                    showMobileLanguage
+                      ? "rotate-180"
+                      : ""
+                  }`}
+                />
+              </span>
+            </button>
+
+            {showMobileLanguage && (
+              <div className="mt-2 space-y-1 rounded-xl bg-slate-50 p-2">
+                {languages.map((language) => (
+                  <Link
+                    key={language.code}
+                    href={language.href}
+                    onClick={closeMenu}
+                    className={`flex items-center justify-between rounded-lg px-4 py-3 text-sm font-medium ${
+                      currentLanguage === language.code
+                        ? "bg-[#FFF9EC] text-[#14213D]"
+                        : "text-slate-600 hover:bg-white"
+                    }`}
+                  >
+                    {language.label}
+
+                    <span className="font-bold text-[#C9A227]">
+                      {language.code}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
           <Link
-            href="/contact"
+            href={`${localePrefix}/contact`}
             onClick={closeMenu}
             className="mt-3 rounded-xl bg-[#C9A227] px-5 py-3 text-center font-semibold text-[#14213D] transition hover:bg-[#b89220]"
           >
-            Contact Us
+            {text.contactUs}
           </Link>
 
           <a

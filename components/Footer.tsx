@@ -6,11 +6,157 @@ import Image from "next/image";
 import { MapPin, Phone, Mail, Globe } from "lucide-react";
 import { FaStar } from "react-icons/fa";
 
-export default function Footer() {
+type Locale = "en" | "es" | "el" | "sq";
+
+type FooterProps = {
+  locale?: Locale;
+};
+
+const content = {
+  en: {
+    tagline1: "Investing in Real Estate.",
+    tagline2: "Creating Opportunities.",
+    showPhone: "Show phone number",
+
+    navigation: "Navigation",
+    home: "Home",
+    about: "About",
+    services: "Services",
+    projects: "Projects",
+    faq: "FAQ",
+    contact: "Contact",
+
+    servicesTitle: "Services",
+    residential: "Residential Investments",
+    commercial: "Commercial Real Estate",
+    rentals: "Rental Properties",
+    solutions: "Property Solutions",
+
+    serviceAreas: "Service Areas",
+    kent: "Sell Your House in Kent County",
+    ottawa: "Sell Your House in Ottawa County",
+    grandRapids: "Sell Your House in Grand Rapids",
+    troy: "Sell Your House in Troy",
+    michigan: "Sell Your House in Michigan",
+
+    connect: "Connect",
+    call: "Call FAHOPROSO",
+
+    rights: "All Rights Reserved.",
+    privacy: "Privacy Policy",
+    terms: "Terms & Conditions",
+  },
+
+  es: {
+    tagline1: "Invirtiendo en Bienes Raíces.",
+    tagline2: "Creando Oportunidades.",
+    showPhone: "Mostrar número de teléfono",
+
+    navigation: "Navegación",
+    home: "Inicio",
+    about: "Nosotros",
+    services: "Servicios",
+    projects: "Proyectos",
+    faq: "Preguntas Frecuentes",
+    contact: "Contacto",
+
+    servicesTitle: "Servicios",
+    residential: "Inversiones Residenciales",
+    commercial: "Bienes Raíces Comerciales",
+    rentals: "Propiedades de Alquiler",
+    solutions: "Soluciones Inmobiliarias",
+
+    serviceAreas: "Áreas de Servicio",
+    kent: "Venda su Casa en Kent County",
+    ottawa: "Venda su Casa en Ottawa County",
+    grandRapids: "Venda su Casa en Grand Rapids",
+    troy: "Venda su Casa en Troy",
+    michigan: "Venda su Casa en Michigan",
+
+    connect: "Conéctese",
+    call: "Llame a FAHOPROSO",
+
+    rights: "Todos los Derechos Reservados.",
+    privacy: "Política de Privacidad",
+    terms: "Términos y Condiciones",
+  },
+
+  el: {
+    tagline1: "Επενδύουμε στα Ακίνητα.",
+    tagline2: "Δημιουργούμε Ευκαιρίες.",
+    showPhone: "Εμφάνιση τηλεφώνου",
+
+    navigation: "Πλοήγηση",
+    home: "Αρχική",
+    about: "Σχετικά με Εμάς",
+    services: "Υπηρεσίες",
+    projects: "Έργα",
+    faq: "Συχνές Ερωτήσεις",
+    contact: "Επικοινωνία",
+
+    servicesTitle: "Υπηρεσίες",
+    residential: "Επενδύσεις σε Κατοικίες",
+    commercial: "Επαγγελματικά Ακίνητα",
+    rentals: "Ακίνητα προς Ενοικίαση",
+    solutions: "Λύσεις Ακινήτων",
+
+    serviceAreas: "Περιοχές Εξυπηρέτησης",
+    kent: "Πουλήστε το Σπίτι σας στο Kent County",
+    ottawa: "Πουλήστε το Σπίτι σας στο Ottawa County",
+    grandRapids: "Πουλήστε το Σπίτι σας στο Grand Rapids",
+    troy: "Πουλήστε το Σπίτι σας στο Troy",
+    michigan: "Πουλήστε το Σπίτι σας στο Michigan",
+
+    connect: "Συνδεθείτε",
+    call: "Καλέστε τη FAHOPROSO",
+
+    rights: "Με Επιφύλαξη Παντός Δικαιώματος.",
+    privacy: "Πολιτική Απορρήτου",
+    terms: "Όροι & Προϋποθέσεις",
+  },
+
+  sq: {
+    tagline1: "Investojmë në Pasuri të Paluajtshme.",
+    tagline2: "Krijojmë Mundësi.",
+    showPhone: "Shfaq numrin e telefonit",
+
+    navigation: "Navigimi",
+    home: "Kryefaqja",
+    about: "Rreth Nesh",
+    services: "Shërbimet",
+    projects: "Projektet",
+    faq: "Pyetje të Shpeshta",
+    contact: "Kontakt",
+
+    servicesTitle: "Shërbimet",
+    residential: "Investime Rezidenciale",
+    commercial: "Pasuri të Paluajtshme Komerciale",
+    rentals: "Prona me Qira",
+    solutions: "Zgjidhje për Pronat",
+
+    serviceAreas: "Zonat e Shërbimit",
+    kent: "Shisni Shtëpinë Tuaj në Kent County",
+    ottawa: "Shisni Shtëpinë Tuaj në Ottawa County",
+    grandRapids: "Shisni Shtëpinë Tuaj në Grand Rapids",
+    troy: "Shisni Shtëpinë Tuaj në Troy",
+    michigan: "Shisni Shtëpinë Tuaj në Michigan",
+
+    connect: "Lidhuni me Ne",
+    call: "Telefononi FAHOPROSO",
+
+    rights: "Të Gjitha të Drejtat e Rezervuara.",
+    privacy: "Politika e Privatësisë",
+    terms: "Termat & Kushtet",
+  },
+};
+
+export default function Footer({ locale = "en" }: FooterProps) {
+  const text = content[locale];
+
   const [showPhone, setShowPhone] = useState(false);
 
   return (
-    <footer className="border-t border-slate-200 bg-neutral-200 text-slate-00">
+    <footer className="border-t border-slate-200 bg-neutral-200 text-slate-700">
       <div className="mx-auto grid max-w-7xl gap-16 px-6 py-16 md:grid-cols-2 lg:grid-cols-5">
 
         {/* Company */}
@@ -24,9 +170,9 @@ export default function Footer() {
           />
 
           <p className="leading-7 text-slate-600">
-            Investing in Real Estate.
+            {text.tagline1}
             <br />
-            Creating Opportunities.
+            {text.tagline2}
           </p>
 
           <div className="mt-6 h-1 w-16 rounded-full bg-[#C9A227]" />
@@ -45,7 +191,7 @@ export default function Footer() {
                 onClick={() => setShowPhone((current) => !current)}
                 className="transition hover:text-[#C9A227]"
               >
-                Show phone number
+                {text.showPhone}
               </button>
             </div>
 
@@ -76,7 +222,7 @@ export default function Footer() {
         {/* Navigation */}
         <div>
           <h3 className="text-xl font-bold text-slate-900">
-            Navigation
+            {text.navigation}
           </h3>
 
           <div className="mt-3 h-1 w-12 rounded-full bg-[#C9A227]" />
@@ -84,7 +230,7 @@ export default function Footer() {
           <ul className="mt-6 space-y-3">
             <li>
               <Link href="/" className="transition hover:text-[#C9A227]">
-                Home
+                {text.home}
               </Link>
             </li>
 
@@ -93,7 +239,7 @@ export default function Footer() {
                 href="/about"
                 className="transition hover:text-[#C9A227]"
               >
-                About
+                {text.about}
               </Link>
             </li>
 
@@ -102,7 +248,7 @@ export default function Footer() {
                 href="/services"
                 className="transition hover:text-[#C9A227]"
               >
-                Services
+                {text.services}
               </Link>
             </li>
 
@@ -111,7 +257,7 @@ export default function Footer() {
                 href="/projects"
                 className="transition hover:text-[#C9A227]"
               >
-                Projects
+                {text.projects}
               </Link>
             </li>
 
@@ -120,7 +266,7 @@ export default function Footer() {
                 href="/faq"
                 className="transition hover:text-[#C9A227]"
               >
-                FAQ
+                {text.faq}
               </Link>
             </li>
 
@@ -129,7 +275,7 @@ export default function Footer() {
                 href="/contact"
                 className="transition hover:text-[#C9A227]"
               >
-                Contact
+                {text.contact}
               </Link>
             </li>
           </ul>
@@ -138,23 +284,23 @@ export default function Footer() {
         {/* Services */}
         <div>
           <h3 className="text-xl font-bold text-slate-900">
-            Services
+            {text.servicesTitle}
           </h3>
 
           <div className="mt-3 h-1 w-12 rounded-full bg-[#C9A227]" />
 
           <ul className="mt-6 space-y-3">
-            <li>Residential Investments</li>
-            <li>Commercial Real Estate</li>
-            <li>Rental Properties</li>
-            <li>Property Solutions</li>
+            <li>{text.residential}</li>
+            <li>{text.commercial}</li>
+            <li>{text.rentals}</li>
+            <li>{text.solutions}</li>
           </ul>
         </div>
 
         {/* Service Areas */}
 <div>
   <h3 className="text-xl font-bold text-slate-900">
-    Service Areas
+    {text.serviceAreas}
   </h3>
 
   <div className="mt-3 h-1 w-12 rounded-full bg-[#C9A227]" />
@@ -165,7 +311,7 @@ export default function Footer() {
         href="/sell-my-house-kent-county"
         className="transition hover:text-[#C9A227]"
       >
-        Sell Your House in Kent County
+        {text.kent}
       </Link>
     </li>
 
@@ -174,7 +320,7 @@ export default function Footer() {
         href="/sell-my-house-ottawa-county"
         className="transition hover:text-[#C9A227]"
       >
-        Sell Your House in Ottawa County
+        {text.ottawa}
       </Link>
     </li>
 
@@ -183,7 +329,7 @@ export default function Footer() {
         href="/sell-my-house-grand-rapids"
         className="transition hover:text-[#C9A227]"
       >
-        Sell Your House in Grand Rapids
+        {text.grandRapids}
       </Link>
     </li>
 
@@ -192,7 +338,7 @@ export default function Footer() {
         href="/sell-my-house-troy"
         className="transition hover:text-[#C9A227]"
       >
-        Sell Your House in Troy
+        {text.troy}
       </Link>
     </li>
 
@@ -201,7 +347,7 @@ export default function Footer() {
         href="/sell-my-house-michigan"
         className="transition hover:text-[#C9A227]"
       >
-        Sell Your House in Michigan
+        {text.michigan}
       </Link>
     </li>
   </ul>
@@ -210,7 +356,7 @@ export default function Footer() {
         {/* Connect */}
         <div>
           <h3 className="text-xl font-bold text-slate-900">
-            Connect
+            {text.connect}
           </h3>
 
           <div className="mt-3 h-1 w-12 rounded-full bg-[#C9A227]" />
@@ -263,7 +409,7 @@ export default function Footer() {
               {showPhone && (
                 <div className="absolute bottom-14 right-0 w-52 rounded-xl border border-slate-200 bg-white p-4 shadow-xl">
                   <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
-                    Call FAHOPROSO
+                    {text.call}
                   </p>
                   
 
@@ -288,7 +434,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-6 text-sm text-slate-500 md:flex-row">
   <p>
     © 2026 FAHOPROSO | Faithfull Home & Property Solutions, LLC.
-    All Rights Reserved.
+    {text.rights}
   </p>
 
   <div className="flex gap-6">
@@ -296,14 +442,14 @@ export default function Footer() {
       href="/privacy"
       className="transition hover:text-[#C9A227]"
     >
-      Privacy Policy
+      {text.privacy}
     </Link>
 
     <Link
       href="/terms"
       className="transition hover:text-[#C9A227]"
     >
-      Terms & Conditions
+      {text.terms}
     </Link>
   </div>
 </div>

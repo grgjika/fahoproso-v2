@@ -3,7 +3,57 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export default function Hero() {
+type Locale = "en" | "el" | "es" | "sq";
+
+type HeroProps = {
+  locale?: Locale;
+};
+
+const content = {
+  en: {
+    line1: "Investing in",
+    highlight: " Real Estate",
+    line2: "Creating Opportunities.",
+    description:
+      "We invest in residential and commercial properties while helping property owners find practical real estate solutions throughout Michigan.",
+    primaryButton: "Get a Cash Offer",
+    secondaryButton: "Explore Our Services",
+  },
+
+  el: {
+    line1: "Επενδύουμε στα",
+    highlight: " Ακίνητα",
+    line2: "Δημιουργούμε Ευκαιρίες.",
+    description:
+      "Επενδύουμε σε οικιστικά και επαγγελματικά ακίνητα, βοηθώντας παράλληλα τους ιδιοκτήτες να βρουν πρακτικές λύσεις για τα ακίνητά τους σε όλο το Michigan.",
+    primaryButton: "Ζητήστε Προσφορά",
+    secondaryButton: "Δείτε τις Υπηρεσίες μας",
+  },
+
+  es: {
+    line1: "Invertimos en",
+    highlight: " Bienes Raíces",
+    line2: "Creamos Oportunidades.",
+    description:
+      "Invertimos en propiedades residenciales y comerciales mientras ayudamos a los propietarios a encontrar soluciones inmobiliarias prácticas en todo Michigan.",
+    primaryButton: "Solicite una Oferta",
+    secondaryButton: "Explore Nuestros Servicios",
+  },
+
+  sq: {
+    line1: "Investojmë në",
+    highlight: " Pasuri të Paluajtshme",
+    line2: "Krijojmë Mundësi.",
+    description:
+      "Investojmë në prona rezidenciale dhe komerciale, duke ndihmuar njëkohësisht pronarët të gjejnë zgjidhje praktike për pronat e tyre në të gjithë Michigan-in.",
+    primaryButton: "Kërkoni një Ofertë",
+    secondaryButton: "Shikoni Shërbimet Tona",
+  },
+};
+
+export default function Hero({ locale = "en" }: HeroProps) {
+  const text = content[locale];
+
   return (
     <section
       id="home"
@@ -11,7 +61,7 @@ export default function Hero() {
     >
       <Image
         src="/images/hero.jpg"
-        alt="FAHOPROSO Hero"
+        alt="FAHOPROSO Real Estate"
         fill
         priority
         className="object-cover"
@@ -20,17 +70,16 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-900/70 to-slate-900/40" />
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 text-white sm:px-6 lg:px-8">
-
         <motion.h1
           className="text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl lg:text-7xl"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Investing in
-          <span className="text-blue-500"> Real Estate</span>
+          {text.line1}
+          <span className="text-blue-500">{text.highlight}</span>
           <br />
-          Creating Opportunities.
+          {text.line2}
         </motion.h1>
 
         <motion.p
@@ -39,7 +88,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          We invest in residential and commercial properties while helping property owners find practical real estate solutions throughout Michigan.
+          {text.description}
         </motion.p>
 
         <motion.div
@@ -52,17 +101,16 @@ export default function Hero() {
             href="#contact"
             className="inline-flex w-full items-center justify-center rounded-xl bg-blue-600 px-6 py-4 text-center font-semibold text-white transition hover:bg-blue-700 sm:w-auto"
           >
-            Get a Cash Offer
+            {text.primaryButton}
           </a>
 
           <a
             href="#services"
             className="inline-flex w-full items-center justify-center rounded-xl border border-white px-6 py-4 text-center font-semibold text-white transition hover:bg-white hover:text-slate-900 sm:w-auto"
           >
-            Explore Our Services
+            {text.secondaryButton}
           </a>
         </motion.div>
-
       </div>
     </section>
   );
