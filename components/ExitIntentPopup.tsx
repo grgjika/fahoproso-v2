@@ -88,44 +88,71 @@ export default function ExitIntentPopup() {
     locale === "en" ? "/contact" : `/${locale}/contact`;
 
   useEffect(() => {
-    const alreadyShown = sessionStorage.getItem(
-      "fahoproso-exit-popup"
-    );
+  const alreadyShown = sessionStorage.getItem(
+    "fahoproso-exit-popup"
+  );
 
-    if (alreadyShown) return;
+  if (alreadyShown) return;
 
-    const handleMouseLeave = (event: MouseEvent) => {
-      if (event.clientY <= 0) {
-        setIsOpen(true);
+  let hasScrolled = false;
+  let timeRequirementMet = false;
 
-        sessionStorage.setItem(
-          "fahoproso-exit-popup",
-          "shown"
-        );
+  const handleScroll = () => {
+    if (window.scrollY > 300) {
+      hasScrolled = true;
+    }
+  };
 
-        document.removeEventListener(
-          "mouseout",
-          handleMouseLeave
-        );
-      }
-    };
+  const handleMouseLeave = (event: MouseEvent) => {
+    if (
+      event.clientY <= 0 &&
+      hasScrolled &&
+      timeRequirementMet
+    ) {
+      setIsOpen(true);
 
-    const timer = window.setTimeout(() => {
-      document.addEventListener(
-        "mouseout",
-        handleMouseLeave
+      sessionStorage.setItem(
+        "fahoproso-exit-popup",
+        "shown"
       );
-    }, 1000);
-
-    return () => {
-      window.clearTimeout(timer);
 
       document.removeEventListener(
         "mouseout",
         handleMouseLeave
       );
-    };
-  }, []);
+
+      window.removeEventListener(
+        "scroll",
+        handleScroll
+      );
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  const timer = window.setTimeout(() => {
+    timeRequirementMet = true;
+
+    document.addEventListener(
+      "mouseout",
+      handleMouseLeave
+    );
+  }, 15000);
+
+  return () => {
+    window.clearTimeout(timer);
+
+    window.removeEventListener(
+      "scroll",
+      handleScroll
+    );
+
+    document.removeEventListener(
+      "mouseout",
+      handleMouseLeave
+    );
+  };
+}, []);
 
   if (!isOpen) return null;
 
