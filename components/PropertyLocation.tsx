@@ -3,6 +3,7 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 
+
 type AddressResult = {
   x: number;
   y: number;
@@ -107,7 +108,7 @@ export default function PropertyLocation({ value, onChange }: Props) {
         onChange={(event) =>
           handleAddressChange(event.target.value)
         }
-        placeholder="123 Main Street, Grand Rapids, MI 49503"
+        placeholder="123 Main Street, City, State ZIP"
         autoComplete="street-address"
         className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
       />
