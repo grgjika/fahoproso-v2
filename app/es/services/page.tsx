@@ -12,8 +12,14 @@ export const metadata: Metadata = {
   description:
     "Explore los servicios de inversión inmobiliaria residencial, comercial y de propiedades de alquiler de FAHOPROSO en Michigan.",
   alternates: {
-    canonical: "https://www.fahoproso.com/es/services",
+  canonical: "https://www.fahoproso.com/es/services",
+  languages: {
+    "en-US": "https://www.fahoproso.com/services",
+    "es-US": "https://www.fahoproso.com/es/services",
+    "el-GR": "https://www.fahoproso.com/el/services",
+    sq: "https://www.fahoproso.com/sq/services",
   },
+},
 };
 
 export default function ServicesPageES() {

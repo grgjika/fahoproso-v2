@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     "Educational homeowner guides from FAHOPROSO covering selling, probate, inherited homes, rental properties, and more.",
     alternates: {
      canonical: "https://www.fahoproso.com/resources/homeowner-guides",
+     languages: {
+    "en-US": "https://www.fahoproso.com/resources/homeowner-guides",
+    "es-US": "https://www.fahoproso.com/es/resources/homeowner-guides",
+    "el-GR": "https://www.fahoproso.com/el/resources/homeowner-guides",
+    sq: "https://www.fahoproso.com/sq/resources/homeowner-guides",
+  },
     },
   };
 

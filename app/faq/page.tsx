@@ -12,8 +12,14 @@ export const metadata: Metadata = {
     "Find answers to common questions about selling property, cash offers, closing timelines, fees, and FAHOPROSO real estate services.",
 
     alternates: {
-     canonical: "https://www.fahoproso.com/faq",
-    },
+  canonical: "https://www.fahoproso.com/faq",
+  languages: {
+    "en-US": "https://www.fahoproso.com/faq",
+    "es-US": "https://www.fahoproso.com/es/faq",
+    "el-GR": "https://www.fahoproso.com/el/faq",
+    sq: "https://www.fahoproso.com/sq/faq",
+  },
+},
   };
 
 export default function FAQPage() {

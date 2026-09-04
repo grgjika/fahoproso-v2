@@ -11,8 +11,14 @@ export const metadata: Metadata = {
   description:
     "Encuentre respuestas claras a preguntas comunes sobre vender una propiedad, recibir una oferta, el cierre, propiedades heredadas y más.",
   alternates: {
-    canonical: "https://www.fahoproso.com/es/faq",
+  canonical: "https://www.fahoproso.com/es/faq",
+  languages: {
+    "en-US": "https://www.fahoproso.com/faq",
+    "es-US": "https://www.fahoproso.com/es/faq",
+    "el-GR": "https://www.fahoproso.com/el/faq",
+    sq: "https://www.fahoproso.com/sq/faq",
   },
+},
 };
 
 export default function FAQPageES() {

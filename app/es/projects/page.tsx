@@ -12,6 +12,12 @@ export const metadata: Metadata = {
     "Explore el enfoque de FAHOPROSO para inversiones residenciales, propiedades de alquiler y oportunidades inmobiliarias comerciales en Michigan.",
   alternates: {
     canonical: "https://www.fahoproso.com/es/projects",
+    languages: {
+    "en-US": "https://www.fahoproso.com/projects",
+    "es-US": "https://www.fahoproso.com/es/projects",
+    "el-GR": "https://www.fahoproso.com/el/projects",
+    sq: "https://www.fahoproso.com/sq/projects",
+  },
   },
 };
 

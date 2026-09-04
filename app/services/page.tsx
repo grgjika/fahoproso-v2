@@ -11,9 +11,15 @@ export const metadata: Metadata = {
   title: "Real Estate Services",
   description:
     "Explore FAHOPROSO residential, commercial, rental property, and real estate investment services in Grand Rapids, Michigan.",
-     alternates: {
-     canonical: "https://www.fahoproso.com/services",
+    alternates: {
+  canonical: "https://www.fahoproso.com/services",
+  languages: {
+      "en-US": "https://www.fahoproso.com/services",
+      "es-US": "https://www.fahoproso.com/es/services",
+      "el-GR": "https://www.fahoproso.com/el/services",
+     sq: "https://www.fahoproso.com/sq/services",
     },
+  },
 };
 
 export default function ServicesPage() {

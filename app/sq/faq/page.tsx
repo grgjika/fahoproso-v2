@@ -11,8 +11,14 @@ export const metadata: Metadata = {
   description:
     "Gjeni përgjigje të qarta për pyetjet e zakonshme rreth shitjes së një prone, ofertave, mbylljes, pronave të trashëguara dhe më shumë.",
   alternates: {
-    canonical: "https://www.fahoproso.com/sq/faq",
+  canonical: "https://www.fahoproso.com/sq/faq",
+  languages: {
+    "en-US": "https://www.fahoproso.com/faq",
+    "es-US": "https://www.fahoproso.com/es/faq",
+    "el-GR": "https://www.fahoproso.com/el/faq",
+    sq: "https://www.fahoproso.com/sq/faq",
   },
+},
 };
 
 export default function FAQPageSQ() {

@@ -12,6 +12,12 @@ export const metadata: Metadata = {
     "Eksploroni informacione lokale për pronarët dhe shitësit e pronave në Grand Rapids, Kent County, Ottawa County, Troy dhe komunitete të tjera në Michigan.",
   alternates: {
     canonical: "https://www.fahoproso.com/sq/resources/michigan-guides",
+    languages: {
+    "en-US": "https://www.fahoproso.com/resources/michigan-guides",
+    "es-US": "https://www.fahoproso.com/es/resources/michigan-guides",
+    "el-GR": "https://www.fahoproso.com/el/resources/michigan-guides",
+    sq: "https://www.fahoproso.com/sq/resources/michigan-guides",
+  },
   },
 };
 

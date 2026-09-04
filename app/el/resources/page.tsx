@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     "Εξερευνήστε οδηγούς και πληροφορίες της FAHOPROSO σχετικά με πωλήσεις ακινήτων, επενδύσεις και θέματα για ιδιοκτήτες στο Michigan.",
   alternates: {
     canonical: "https://www.fahoproso.com/el/resources",
+    languages: {
+    "en-US": "https://www.fahoproso.com/resources",
+    "es-US": "https://www.fahoproso.com/es/resources",
+    "el-GR": "https://www.fahoproso.com/el/resources",
+    sq: "https://www.fahoproso.com/sq/resources",
+  },
   },
 };
 

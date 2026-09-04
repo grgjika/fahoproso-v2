@@ -10,9 +10,15 @@ export const metadata: Metadata = {
   description:
     "Contact FAHOPROSO to discuss selling a property, receiving a cash offer, investing, or partnering on residential and commercial real estate opportunities.",
 
-    alternates: {
-     canonical: "https://www.fahoproso.com/contact",
-    },
+   alternates: {
+  canonical: "https://www.fahoproso.com/contact",
+  languages: {
+    "en-US": "https://www.fahoproso.com/contact",
+    "es-US": "https://www.fahoproso.com/es/contact",
+    "el-GR": "https://www.fahoproso.com/el/contact",
+    sq: "https://www.fahoproso.com/sq/contact",
+  },
+},
   };
 
 export default function ContactPage() {

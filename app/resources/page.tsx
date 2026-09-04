@@ -12,6 +12,12 @@ export const metadata: Metadata = {
     "Helpful real estate resources, homeowner guides, investment insights, and Michigan market information from FAHOPROSO.",
     alternates: {
      canonical: "https://www.fahoproso.com/resources",
+     languages: {
+    "en-US": "https://www.fahoproso.com/resources",
+    "es-US": "https://www.fahoproso.com/es/resources",
+    "el-GR": "https://www.fahoproso.com/el/resources",
+    sq: "https://www.fahoproso.com/sq/resources",
+  },
     },
   };
 

@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     "Një udhëzues praktik për pronarët dhe familjet në Michigan që po menaxhojnë një pronë të trashëguar ose një proces probate.",
   alternates: {
     canonical: "https://www.fahoproso.com/sq/resources/probate-guide",
+    languages: {
+    "en-US": "https://www.fahoproso.com/resources/probate-guide",
+    "es-US": "https://www.fahoproso.com/es/resources/probate-guide",
+    "el-GR": "https://www.fahoproso.com/el/resources/probate-guide",
+    sq: "https://www.fahoproso.com/sq/resources/probate-guide",
+  },
   },
 };
 

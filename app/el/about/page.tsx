@@ -13,6 +13,12 @@ export const metadata: Metadata = {
     "Μάθετε περισσότερα για τη FAHOPROSO και την προσέγγισή μας στις επενδύσεις οικιστικών και επαγγελματικών ακινήτων στο Michigan.",
   alternates: {
     canonical: "https://www.fahoproso.com/el/about",
+    languages: {
+      "en-US": "https://www.fahoproso.com/about",
+      "es-US": "https://www.fahoproso.com/es/about",
+      "el-GR": "https://www.fahoproso.com/el/about",
+      sq: "https://www.fahoproso.com/sq/about",
+    },
   },
 };
 

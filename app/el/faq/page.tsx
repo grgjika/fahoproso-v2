@@ -11,8 +11,14 @@ export const metadata: Metadata = {
   description:
     "Βρείτε ξεκάθαρες απαντήσεις σε συχνές ερωτήσεις σχετικά με την πώληση ακινήτου, τις προσφορές, την ολοκλήρωση συναλλαγών, τα κληρονομημένα ακίνητα και άλλα.",
   alternates: {
-    canonical: "https://www.fahoproso.com/el/faq",
+  canonical: "https://www.fahoproso.com/el/faq",
+  languages: {
+    "en-US": "https://www.fahoproso.com/faq",
+    "es-US": "https://www.fahoproso.com/es/faq",
+    "el-GR": "https://www.fahoproso.com/el/faq",
+    sq: "https://www.fahoproso.com/sq/faq",
   },
+},
 };
 
 export default function FAQPageEL() {

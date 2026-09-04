@@ -12,8 +12,14 @@ export const metadata: Metadata = {
   description:
     "Eksploroni shërbimet e FAHOPROSO për investime rezidenciale, komerciale dhe prona me qira në Michigan.",
   alternates: {
-    canonical: "https://www.fahoproso.com/sq/services",
+  canonical: "https://www.fahoproso.com/sq/services",
+  languages: {
+    "en-US": "https://www.fahoproso.com/services",
+    "es-US": "https://www.fahoproso.com/es/services",
+    "el-GR": "https://www.fahoproso.com/el/services",
+    sq: "https://www.fahoproso.com/sq/services",
   },
+},
 };
 
 export default function ServicesPageSQ() {

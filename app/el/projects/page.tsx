@@ -12,6 +12,12 @@ export const metadata: Metadata = {
     "Εξερευνήστε την προσέγγιση της FAHOPROSO στις οικιστικές επενδύσεις, τα ενοικιαζόμενα ακίνητα και τις επαγγελματικές ευκαιρίες ακινήτων στο Michigan.",
   alternates: {
     canonical: "https://www.fahoproso.com/el/projects",
+    languages: {
+    "en-US": "https://www.fahoproso.com/projects",
+    "es-US": "https://www.fahoproso.com/es/projects",
+    "el-GR": "https://www.fahoproso.com/el/projects",
+    sq: "https://www.fahoproso.com/sq/projects",
+  },
   },
 };
 

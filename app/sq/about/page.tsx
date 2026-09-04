@@ -12,7 +12,13 @@ export const metadata: Metadata = {
   description:
     "Mësoni më shumë rreth FAHOPROSO dhe qasjes sonë ndaj investimeve në pasuri të paluajtshme rezidenciale dhe komerciale në Michigan.",
   alternates: {
-    canonical: "https://www.fahoproso.com/sq/about",
+  canonical: "https://www.fahoproso.com/sq/about",
+  languages: {
+      "en-US": "https://www.fahoproso.com/about",
+      "es-US": "https://www.fahoproso.com/es/about",
+      "el-GR": "https://www.fahoproso.com/el/about",
+      sq: "https://www.fahoproso.com/sq/about",
+    },
   },
 };
 

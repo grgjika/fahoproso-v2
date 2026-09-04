@@ -9,13 +9,20 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "About Us",
+
   description:
     "Learn more about FAHOPROSO and our residential and commercial real estate investment approach in Grand Rapids, Michigan.",
 
-    alternates: {
-     canonical: "https://www.fahoproso.com/about",
+  alternates: {
+    canonical: "https://www.fahoproso.com/about",
+    languages: {
+      "en-US": "https://www.fahoproso.com/about",
+      "es-US": "https://www.fahoproso.com/es/about",
+      "el-GR": "https://www.fahoproso.com/el/about",
+      sq: "https://www.fahoproso.com/sq/about",
     },
-  };
+  },
+};
 
 export default function AboutPage() {
   return (
