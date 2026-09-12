@@ -634,6 +634,18 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
                   </Link>
                 );
               })}
+              <div className="my-2 border-t border-slate-200" />
+
+               <a
+               href="https://fahoproso-app.vercel.app/login"
+               target="_blank"
+               rel="noopener noreferrer"
+               onClick={closeMenu}
+               className="flex items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-[#C9A227]"
+              >
+               <LockKeyhole className="h-5 w-5 shrink-0 text-[#C9A227]" />
+               Login
+              </a>
             </div>
           )}
 
