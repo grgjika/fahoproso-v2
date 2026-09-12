@@ -14,6 +14,7 @@ import {
   FolderKanban,
   Globe2,
   Home,
+  LockKeyhole,
   MapPinned,
   Menu,
   Phone,
@@ -416,6 +417,23 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
                       </Link>
                     );
                   })}
+                </div>
+                {/* Team Login */}
+                <div className="mt-3 border-t border-slate-200 pt-3">
+                  <a
+                    href="https://fahoproso-app.vercel.app/login"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={closeMenu}
+                    className="group flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium text-slate-500 transition hover:bg-slate-50 hover:text-[#14213D]"
+                  >
+                    <span className="flex items-center gap-3">
+                      <LockKeyhole className="h-4 w-4 text-[#C9A227]" />
+                      Login
+                    </span>
+
+                    <ArrowRight className="h-4 w-4 opacity-0 transition group-hover:translate-x-1 group-hover:opacity-100" />
+                  </a>
                 </div>
               </div>
             </div>
