@@ -44,6 +44,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/sell-my-house-kent-county",
     "/sell-my-house-ottawa-county",
     "/sell-my-house-troy",
+
+    // Company / Legal
+    "/reviews",
+    "/privacy",
+    "/terms",
   ];
 
   const translatedRoutes = [
