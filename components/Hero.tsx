@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { Banknote, Clock, ShieldCheck } from "lucide-react";
 
 type Locale = "en" | "el" | "es" | "sq";
 
@@ -18,6 +20,11 @@ const content = {
       "We invest in residential and commercial properties while helping property owners find practical real estate solutions throughout Michigan.",
     primaryButton: "Get a Cash Offer",
     secondaryButton: "Explore Our Services",
+    features: [
+      { title: "Any Condition", text: "Buy homes as-is" },
+      { title: "Fast Cash Offers", text: "Clear, fair terms" },
+      { title: "No Hidden Fees", text: "Straightforward process" },
+    ],
   },
 
   el: {
@@ -28,6 +35,11 @@ const content = {
       "Επενδύουμε σε οικιστικά και επαγγελματικά ακίνητα, βοηθώντας παράλληλα τους ιδιοκτήτες να βρουν πρακτικές λύσεις για τα ακίνητά τους σε όλο το Michigan.",
     primaryButton: "Ζητήστε Προσφορά",
     secondaryButton: "Δείτε τις Υπηρεσίες μας",
+    features: [
+      { title: "Σε Οποιαδήποτε Κατάσταση", text: "Αγορά ακινήτων ως έχουν" },
+      { title: "Γρήγορες Προσφορές", text: "Σαφείς, δίκαιοι όροι" },
+      { title: "Χωρίς Κρυφές Χρεώσεις", text: "Απλή διαδικασία" },
+    ],
   },
 
   es: {
@@ -38,6 +50,11 @@ const content = {
       "Invertimos en propiedades residenciales y comerciales mientras ayudamos a los propietarios a encontrar soluciones inmobiliarias prácticas en todo Michigan.",
     primaryButton: "Solicite una Oferta",
     secondaryButton: "Explore Nuestros Servicios",
+    features: [
+      { title: "Cualquier Condición", text: "Compramos tal como está" },
+      { title: "Ofertas Rápidas en Efectivo", text: "Términos claros y justos" },
+      { title: "Sin Cargos Ocultos", text: "Proceso sencillo" },
+    ],
   },
 
   sq: {
@@ -48,11 +65,42 @@ const content = {
       "Investojmë në prona rezidenciale dhe komerciale, duke ndihmuar njëkohësisht pronarët të gjejnë zgjidhje praktike për pronat e tyre në të gjithë Michigan-in.",
     primaryButton: "Kërkoni një Ofertë",
     secondaryButton: "Shikoni Shërbimet Tona",
+    features: [
+      { title: "Në Çdo Gjendje", text: "Blejmë pronat siç janë" },
+      { title: "Oferta të Shpejta", text: "Kushte të qarta dhe të drejta" },
+      { title: "Pa Tarifa të Fshehura", text: "Proces i thjeshtë" },
+    ],
   },
 };
 
+const featureIcons = [ShieldCheck, Clock, Banknote];
+
 export default function Hero({ locale = "en" }: HeroProps) {
   const text = content[locale];
+  const [hovering, setHovering] = useState(false);
+
+  const mx = useMotionValue(0);
+  const my = useMotionValue(0);
+  const rotateY = useSpring(useTransform(mx, [-0.5, 0.5], [-12, 12]), {
+    stiffness: 120,
+    damping: 18,
+  });
+  const rotateX = useSpring(useTransform(my, [-0.5, 0.5], [10, -10]), {
+    stiffness: 120,
+    damping: 18,
+  });
+
+  function handleMove(event: React.PointerEvent<HTMLDivElement>) {
+    const rect = event.currentTarget.getBoundingClientRect();
+    mx.set((event.clientX - rect.left) / rect.width - 0.5);
+    my.set((event.clientY - rect.top) / rect.height - 0.5);
+  }
+
+  function handleLeave() {
+    setHovering(false);
+    mx.set(0);
+    my.set(0);
+  }
 
   return (
     <section
@@ -69,7 +117,8 @@ export default function Hero({ locale = "en" }: HeroProps) {
 
       <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-900/70 to-slate-900/40" />
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 text-white sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-12 px-4 text-white sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:px-8">
+        <div>
         <motion.h1
           className="text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl lg:text-7xl"
           initial={{ opacity: 0, y: -20 }}
@@ -110,6 +159,56 @@ export default function Hero({ locale = "en" }: HeroProps) {
           >
             {text.secondaryButton}
           </a>
+        </motion.div>
+        </div>
+
+        <motion.div
+          className="hidden lg:block"
+          style={{ perspective: 1200 }}
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.9, delay: 0.3 }}
+          onPointerMove={handleMove}
+          onPointerEnter={() => setHovering(true)}
+          onPointerLeave={handleLeave}
+          aria-hidden="true"
+        >
+          <motion.div
+            className="relative mx-auto h-[420px] w-full max-w-md"
+            style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
+          >
+            {text.features.map((feature, i) => {
+              const Icon = featureIcons[i];
+              return (
+                <div
+                  key={feature.title}
+                  className="absolute left-0 right-0"
+                  style={{
+                    top: i * 128,
+                    transform: `translateZ(${(2 - i) * 38 + (hovering ? 18 : 0)}px) translateX(${i % 2 ? 28 : -12}px)`,
+                    transition: "transform 0.4s ease",
+                  }}
+                >
+                  <div
+                    className="hero-float hero-glass flex items-center gap-4 rounded-2xl p-5"
+                    style={{ animationDelay: `${i * 0.8}s` }}
+                  >
+                    <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-400 to-blue-700 shadow-lg shadow-blue-900/50">
+                      <Icon className="h-7 w-7 text-white" />
+                    </span>
+                    <span>
+                      <span className="block text-lg font-bold">
+                        {feature.title}
+                      </span>
+                      <span className="block text-sm text-slate-200">
+                        {feature.text}
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </motion.div>
         </motion.div>
       </div>
     </section>
