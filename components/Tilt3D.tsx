@@ -8,7 +8,7 @@ const CARD_SELECTOR = [
   '[class*="rounded-3xl"][class*="bg-white"][class*="shadow"]',
 ].join(",");
 
-const MAX_TILT = 6;
+const MAX_TILT = 3;
 const MAX_CARD_WIDTH = 640;
 
 /**

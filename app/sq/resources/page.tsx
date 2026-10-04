@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ResourcesHub from "@/components/ResourcesHub";
+import CTA from "@/components/CTA";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
@@ -42,35 +44,8 @@ export default function ResourcesPageSQ() {
           </div>
         </section>
 
-        <section className="bg-slate-50 py-24">
-          <div className="mx-auto grid max-w-5xl gap-6 px-6 md:grid-cols-2">
-            <a
-              href="/sq/resources/homeowner-guides"
-              className="rounded-2xl bg-white p-8 shadow transition hover:-translate-y-1 hover:shadow-lg"
-            >
-              <h2 className="text-2xl font-bold text-[#14213D]">
-                Udhëzues për Pronarët
-              </h2>
-              <p className="mt-3 text-slate-600">
-                Informacion praktik për pronarët që po mendojnë të shesin ose
-                duan të kuptojnë mundësitë e tyre.
-              </p>
-            </a>
-
-            <a
-              href="/sq/resources/residential-investments"
-              className="rounded-2xl bg-white p-8 shadow transition hover:-translate-y-1 hover:shadow-lg"
-            >
-              <h2 className="text-2xl font-bold text-[#14213D]">
-                Informacion për Investime
-              </h2>
-              <p className="mt-3 text-slate-600">
-                Eksploroni tema rreth investimeve rezidenciale, pronave me qira
-                dhe pasurive të paluajtshme komerciale.
-              </p>
-            </a>
-          </div>
-        </section>
+        <ResourcesHub locale="sq" />
+        <CTA locale="sq" />
       </main>
 
       <Footer locale="sq" />

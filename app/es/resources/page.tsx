@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ResourcesHub from "@/components/ResourcesHub";
+import CTA from "@/components/CTA";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
@@ -42,35 +44,8 @@ export default function ResourcesPageES() {
           </div>
         </section>
 
-        <section className="bg-slate-50 py-24">
-          <div className="mx-auto grid max-w-5xl gap-6 px-6 md:grid-cols-2">
-            <a
-              href="/es/resources/homeowner-guides"
-              className="rounded-2xl bg-white p-8 shadow transition hover:-translate-y-1 hover:shadow-lg"
-            >
-              <h2 className="text-2xl font-bold text-[#14213D]">
-                Guías para Propietarios
-              </h2>
-              <p className="mt-3 text-slate-600">
-                Información práctica para propietarios que están considerando
-                vender o necesitan entender sus opciones.
-              </p>
-            </a>
-
-            <a
-              href="/es/resources/residential-investments"
-              className="rounded-2xl bg-white p-8 shadow transition hover:-translate-y-1 hover:shadow-lg"
-            >
-              <h2 className="text-2xl font-bold text-[#14213D]">
-                Información para Inversionistas
-              </h2>
-              <p className="mt-3 text-slate-600">
-                Explore temas sobre inversión residencial, propiedades de
-                alquiler y bienes raíces comerciales.
-              </p>
-            </a>
-          </div>
-        </section>
+        <ResourcesHub locale="es" />
+        <CTA locale="es" />
       </main>
 
       <Footer locale="es" />

@@ -192,10 +192,6 @@ export default function About({ locale = "en" }: AboutProps) {
                   key={card.title}
                   className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-[#C9A227]"
                 >
-                  <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#C9A227] to-[#E5C766]" />
-                  <span className="pointer-events-none absolute -right-2 -top-4 select-none text-7xl font-black text-slate-100 transition group-hover:text-[#C9A227]/15">
-                    0{index + 1}
-                  </span>
 
                   <span className="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#14213D] to-[#2b3f6e] shadow-lg shadow-slate-900/20">
                     <Icon className="h-7 w-7 text-[#E5C766]" />

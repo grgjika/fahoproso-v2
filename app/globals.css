@@ -281,7 +281,7 @@ main > section[class*="bg-[#14213D]"]:first-child > div {
 }
 
 .about-badge {
-  animation: hero-bob 6s ease-in-out infinite;
+  animation: none;
 }
 
 @keyframes hero-bob {
