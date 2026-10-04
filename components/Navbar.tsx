@@ -293,7 +293,7 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
   ];
 
   return (
-    <header className="fixed left-0 top-0 z-[1000] w-full border-b border-slate-200 bg-white/95 shadow-sm backdrop-blur-md">
+    <header className="fixed left-0 top-0 z-[1000] w-full border-b border-white/40 bg-white/75 backdrop-blur-xl">
       <nav className="mx-auto flex h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
         {/* Logo */}
