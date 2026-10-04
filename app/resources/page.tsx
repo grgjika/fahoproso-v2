@@ -146,7 +146,7 @@ export default function ResourcesPage() {
 
             {/* HOMEOWNERS */}
 
-            <div className="relative overflow-hidden rounded-3xl border-t-4 border-[#C9A227] bg-white p-10 shadow-lg">
+            <div className="relative overflow-hidden rounded-3xl border border-slate-200 border-t-4 border-t-[#C9A227] bg-white p-10 shadow-lg">
 
               <Home className="h-16 w-16 rounded-2xl bg-gradient-to-br from-[#14213D] to-[#2b3f6e] p-4 text-[#E5C766] shadow-lg shadow-slate-900/20" />
 
@@ -186,7 +186,7 @@ export default function ResourcesPage() {
 
             {/* INVESTORS */}
 
-            <div className="relative overflow-hidden rounded-3xl border-t-4 border-[#C9A227] bg-white p-10 shadow-lg">
+            <div className="relative overflow-hidden rounded-3xl border border-slate-200 border-t-4 border-t-[#C9A227] bg-white p-10 shadow-lg">
 
               <Building2 className="h-16 w-16 rounded-2xl bg-gradient-to-br from-[#14213D] to-[#2b3f6e] p-4 text-[#E5C766] shadow-lg shadow-slate-900/20" />
 
@@ -224,7 +224,7 @@ export default function ResourcesPage() {
 
             {/* MICHIGAN */}
 
-            <div className="relative overflow-hidden rounded-3xl border-t-4 border-[#C9A227] bg-white p-10 shadow-lg">
+            <div className="relative overflow-hidden rounded-3xl border border-slate-200 border-t-4 border-t-[#C9A227] bg-white p-10 shadow-lg">
 
               <MapPinned className="h-16 w-16 rounded-2xl bg-gradient-to-br from-[#14213D] to-[#2b3f6e] p-4 text-[#E5C766] shadow-lg shadow-slate-900/20" />
 

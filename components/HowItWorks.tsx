@@ -178,9 +178,6 @@ export default function HowItWorks({
                 key={step.title}
                 className="group relative overflow-hidden rounded-2xl border bg-white/95 p-8 shadow-md transition-all duration-300 hover:-translate-y-2 hover:border-[#C9A227] hover:shadow-2xl"
               >
-                <span className="pointer-events-none absolute -right-1 -top-6 select-none text-9xl font-black text-slate-100 transition group-hover:text-[#C9A227]/15">
-                  {index + 1}
-                </span>
 
                 <div className="relative flex h-16 w-16 items-center justify-center rounded-xl bg-[#C9A227]/10 transition-all duration-300 group-hover:bg-[#C9A227]">
                   <Icon className="h-8 w-8 text-[#C9A227] group-hover:text-white" />
