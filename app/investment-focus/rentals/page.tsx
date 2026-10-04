@@ -9,7 +9,6 @@ import {
   KeyRound,
   LineChart,
   MapPin,
-  Search,
   ShieldCheck,
   TrendingUp,
   Users,
@@ -226,7 +225,7 @@ export default function RentalsPage() {
 
                 <p>
                   We evaluate each opportunity individually, considering the
-                  property's location, physical condition, current occupancy,
+                  property&apos;s location, physical condition, current occupancy,
                   rental demand, operating history, and long-term potential.
                   This disciplined process helps us identify opportunities that
                   align with our investment standards and business goals.
@@ -432,7 +431,7 @@ export default function RentalsPage() {
 
                 <p>
                   Before pursuing an opportunity, we seek to understand both the
-                  property's current operation and the improvements necessary to
+                  property&apos;s current operation and the improvements necessary to
                   support its future. This prevents decisions based only on
                   surface-level projections or unrealistic assumptions.
                 </p>

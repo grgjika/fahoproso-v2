@@ -107,9 +107,9 @@ export default function ResourcesPage() {
             <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
 
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-300">
-              Whether you're preparing to sell your home, exploring investment
+              Whether you&apos;re preparing to sell your home, exploring investment
               opportunities, or simply learning about Michigan real estate,
-              you'll find practical information and helpful guides here.
+              you&apos;ll find practical information and helpful guides here.
             </p>
 
           </div>
@@ -275,9 +275,9 @@ export default function ResourcesPage() {
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-300">
-              Every homeowner's situation is different.
-              If you can't find the answer you're looking for,
-              contact FAHOPROSO and we'll be happy to discuss
+              Every homeowner&apos;s situation is different.
+              If you can&apos;t find the answer you&apos;re looking for,
+              contact FAHOPROSO and we&apos;ll be happy to discuss
               your property and your goals.
             </p>
 

@@ -51,7 +51,7 @@ export default function ProbateGuidePage() {
               <div className="mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
 
               <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-300">
-                Probate is the legal process used to settle a person's estate.
+                Probate is the legal process used to settle a person&apos;s estate.
                 This guide explains what probate is, when it may be required,
                 and how it can affect the sale of real estate in Michigan.
               </p>
@@ -103,7 +103,7 @@ export default function ProbateGuidePage() {
               <div className="mt-8 space-y-6 text-lg leading-8 text-slate-600">
 
                 <p>
-                  Probate is the legal process of administering a person's
+                  Probate is the legal process of administering a person&apos;s
                   estate after they pass away. Depending on the circumstances,
                   the court may oversee the distribution of assets and the
                   payment of debts.
@@ -399,11 +399,11 @@ export default function ProbateGuidePage() {
             </p>
 
             <h2 className="mt-4 text-5xl font-bold">
-              We're Here to Help
+              We&apos;re Here to Help
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-300">
-              If you're dealing with a probate property in Michigan and want to
+              If you&apos;re dealing with a probate property in Michigan and want to
               better understand your options, contact FAHOPROSO for a
               conversation about your situation.
             </p>

@@ -70,7 +70,7 @@ export default function SellMyHouseTroyPage() {
               <div className="mt-6 h-1 w-24 rounded-full bg-[#C9A227]" />
 
               <p className="mt-8 max-w-2xl text-xl leading-9 text-slate-200">
-                Whether your property needs repairs, you've inherited a home,
+                Whether your property needs repairs, you&apos;ve inherited a home,
                 are relocating, facing foreclosure, or simply want a
                 straightforward selling experience, FAHOPROSO is here to help.
               </p>
@@ -120,7 +120,7 @@ export default function SellMyHouseTroyPage() {
       <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
 
       <p className="mt-8 text-lg leading-8 text-slate-600">
-        Selling a home is one of the biggest financial decisions you'll ever
+        Selling a home is one of the biggest financial decisions you&apos;ll ever
         make. At FAHOPROSO, we believe homeowners deserve honest
         communication, respect, and a straightforward process not pressure.
       </p>
@@ -212,7 +212,7 @@ export default function SellMyHouseTroyPage() {
       </p>
 
       <h2 className="mt-4 text-4xl font-bold text-[#14213D] md:text-5xl">
-        We Understand Life Doesn't Always Go As Planned
+        We Understand Life Doesn&apos;t Always Go As Planned
       </h2>
 
       <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
@@ -233,7 +233,7 @@ export default function SellMyHouseTroyPage() {
 
         <p className="mt-4 leading-8 text-slate-600">
           Whether your home needs cosmetic updates or significant repairs,
-          we'll review the property and discuss options without requiring you
+          we&apos;ll review the property and discuss options without requiring you
           to complete renovations first.
         </p>
       </article>
@@ -256,7 +256,7 @@ export default function SellMyHouseTroyPage() {
         </h3>
 
         <p className="mt-4 leading-8 text-slate-600">
-          Whether the property is occupied or vacant, we'll evaluate your
+          Whether the property is occupied or vacant, we&apos;ll evaluate your
           rental investment and discuss potential options that align with your
           goals.
         </p>
@@ -268,7 +268,7 @@ export default function SellMyHouseTroyPage() {
         </h3>
 
         <p className="mt-4 leading-8 text-slate-600">
-          If you're relocating for work, family, or another opportunity, we
+          If you&apos;re relocating for work, family, or another opportunity, we
           aim to make the transition as smooth as possible.
         </p>
       </article>
@@ -291,7 +291,7 @@ export default function SellMyHouseTroyPage() {
 
         <p className="mt-4 leading-8 text-slate-600">
           Sometimes homeowners simply want a different selling experience. If
-          you're exploring your options, we're happy to have a conversation.
+          you&apos;re exploring your options, we&apos;re happy to have a conversation.
         </p>
       </article>
 
@@ -311,14 +311,14 @@ export default function SellMyHouseTroyPage() {
       </p>
 
       <h2 className="mt-4 text-4xl font-bold text-[#14213D] md:text-5xl">
-        Selling Your Home Doesn't Have to Be Complicated
+        Selling Your Home Doesn&apos;t Have to Be Complicated
       </h2>
 
       <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
 
       <p className="mt-8 text-lg leading-8 text-slate-600">
         We believe every homeowner deserves a clear, transparent process.
-        Here's what you can expect when you contact FAHOPROSO.
+        Here&apos;s what you can expect when you contact FAHOPROSO.
       </p>
     </div>
 
@@ -349,7 +349,7 @@ export default function SellMyHouseTroyPage() {
         </h3>
 
         <p className="mt-4 leading-8 text-slate-600">
-          We review the property's condition, location, and other important
+          We review the property&apos;s condition, location, and other important
           details before discussing available options.
         </p>
       </article>
@@ -364,7 +364,7 @@ export default function SellMyHouseTroyPage() {
         </h3>
 
         <p className="mt-4 leading-8 text-slate-600">
-          We'll explain the process, answer your questions, and discuss a
+          We&apos;ll explain the process, answer your questions, and discuss a
           solution that fits your circumstances.
         </p>
       </article>
@@ -379,7 +379,7 @@ export default function SellMyHouseTroyPage() {
         </h3>
 
         <p className="mt-4 leading-8 text-slate-600">
-          If you decide to proceed, we'll work together toward a smooth,
+          If you decide to proceed, we&apos;ll work together toward a smooth,
           professional closing based on an agreed timeline.
         </p>
       </article>
@@ -401,16 +401,16 @@ export default function SellMyHouseTroyPage() {
       </p>
 
       <h2 className="mt-4 text-4xl font-bold md:text-5xl">
-        Every Homeowner's Situation Is Different
+        Every Homeowner&apos;s Situation Is Different
       </h2>
 
       <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
 
       <p className="mt-8 text-lg leading-8 text-slate-300">
-        Selling directly isn't the right solution for everyone. However,
+        Selling directly isn&apos;t the right solution for everyone. However,
         depending on your circumstances, it may offer a simpler alternative to
         the traditional listing process. Our goal is to help you understand
-        your options so you can make the decision that's right for you.
+        your options so you can make the decision that&apos;s right for you.
       </p>
 
     </div>
@@ -516,7 +516,7 @@ export default function SellMyHouseTroyPage() {
     <div className="mx-auto mt-16 max-w-4xl">
 
       <p className="text-lg leading-8 text-slate-600">
-        Don't see your community listed? Contact us anyway. We regularly review
+        Don&apos;t see your community listed? Contact us anyway. We regularly review
         opportunities throughout Michigan and may be able to assist with
         properties in surrounding communities as well.
       </p>
@@ -551,8 +551,8 @@ export default function SellMyHouseTroyPage() {
         </h3>
 
         <p className="mt-4 leading-8 text-slate-600">
-          No. Every property is different, and we're happy to review your
-          situation regardless of the home's current condition.
+          No. Every property is different, and we&apos;re happy to review your
+          situation regardless of the home&apos;s current condition.
         </p>
       </article>
 
@@ -562,7 +562,7 @@ export default function SellMyHouseTroyPage() {
         </h3>
 
         <p className="mt-4 leading-8 text-slate-600">
-          No. Contacting us simply starts a conversation. You'll have the
+          No. Contacting us simply starts a conversation. You&apos;ll have the
           opportunity to ask questions and decide what is best for your
           situation.
         </p>
@@ -602,7 +602,7 @@ export default function SellMyHouseTroyPage() {
   <div className="mx-auto max-w-5xl px-6 text-center">
 
     <p className="font-semibold uppercase tracking-[0.25em] text-[#C9A227]">
-      Let's Start the Conversation
+      Let&apos;s Start the Conversation
     </p>
 
     <h2 className="mt-4 text-4xl font-bold md:text-5xl">
@@ -612,7 +612,7 @@ export default function SellMyHouseTroyPage() {
     <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
 
     <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-slate-300">
-      Every homeowner's situation is unique. Whether you're considering
+      Every homeowner&apos;s situation is unique. Whether you&apos;re considering
       selling now or simply exploring your options, FAHOPROSO is here to
       answer your questions and provide honest, professional guidance.
     </p>

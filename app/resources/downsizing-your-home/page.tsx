@@ -130,7 +130,7 @@ export default function DownsizingYourHomePage() {
                 <li>Determine your future housing needs.</li>
                 <li>Organize personal belongings.</li>
                 <li>Estimate moving expenses.</li>
-                <li>Review your home's condition.</li>
+                <li>Review your home&apos;s condition.</li>
                 <li>Compare your selling options.</li>
               </ul>
 
@@ -475,11 +475,11 @@ export default function DownsizingYourHomePage() {
             </p>
 
             <h2 className="mt-4 text-5xl font-bold">
-              Let's Discuss Your Property
+              Let&apos;s Discuss Your Property
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-300">
-              If you're thinking about downsizing, we are here to help you
+              If you&apos;re thinking about downsizing, we are here to help you
               understand your options and move forward with confidence.
             </p>
 

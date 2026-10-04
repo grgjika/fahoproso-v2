@@ -78,7 +78,7 @@ export default function FirstTimeHomeSellerGuideSQ() {
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">
               Shitja e një shtëpie për herë të parë mund të duket e ndërlikuar.
-              Kuptimi i hapave kryesorë mund t'ju ndihmojë të merrni vendime me
+              Kuptimi i hapave kryesorë mund t&apos;ju ndihmojë të merrni vendime me
               më shumë siguri.
             </p>
           </div>

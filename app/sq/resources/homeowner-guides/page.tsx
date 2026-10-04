@@ -65,7 +65,7 @@ export default function HomeownerGuidesPageSQ() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-              Informacion praktik për t'ju ndihmuar të kuptoni situata të
+              Informacion praktik për t&apos;ju ndihmuar të kuptoni situata të
               ndryshme që lidhen me pronësinë dhe shitjen e pasurive të
               paluajtshme në Michigan.
             </p>

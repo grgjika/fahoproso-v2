@@ -336,7 +336,7 @@ export default function CommercialInvestmentsPage() {
             </p>
 
             <h2 className="mt-4 text-5xl font-bold">
-              Let's Talk About Your Investment Goals
+              Let&apos;s Talk About Your Investment Goals
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-300">

@@ -334,7 +334,7 @@ export default function SellInheritedHousePage() {
       </h2>
 
       <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-        Every inherited property is unique. Before making a decision, it's
+        Every inherited property is unique. Before making a decision, it&apos;s
         helpful to understand the common options available to Michigan
         homeowners.
       </p>
