@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const CARD_SELECTOR = [
   '[class*="rounded-2xl"][class*="bg-white"][class*="shadow"]',
@@ -15,12 +16,32 @@ const MAX_CARD_WIDTH = 640;
  * Uses event delegation so it works for every page without per-card wiring.
  */
 export default function Tilt3D() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (!finePointer.matches || reduceMotion.matches) return;
 
     let active: HTMLElement | null = null;
+
+    // Page banners: feed pointer position to CSS for layered parallax.
+    const banner = document.querySelector<HTMLElement>(
+      'main > section[class*="bg-[#14213D]"]:first-child'
+    );
+    const onBannerMove = (event: PointerEvent) => {
+      if (!banner) return;
+      const rect = banner.getBoundingClientRect();
+      banner.style.setProperty(
+        "--bx",
+        String((event.clientX - rect.left) / rect.width - 0.5)
+      );
+      banner.style.setProperty(
+        "--by",
+        String((event.clientY - rect.top) / rect.height - 0.5)
+      );
+    };
+    banner?.addEventListener("pointermove", onBannerMove, { passive: true });
 
     const reset = (el: HTMLElement | null) => {
       if (!el) return;
@@ -60,11 +81,12 @@ export default function Tilt3D() {
     document.addEventListener("pointermove", onMove, { passive: true });
     document.addEventListener("pointerleave", onLeave);
     return () => {
+      banner?.removeEventListener("pointermove", onBannerMove);
       document.removeEventListener("pointermove", onMove);
       document.removeEventListener("pointerleave", onLeave);
       onLeave();
     };
-  }, []);
+  }, [pathname]);
 
   return null;
 }

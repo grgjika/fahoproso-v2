@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Home,
   Building2,
@@ -131,12 +132,6 @@ const content = {
 
 const icons = [Home, Building2, Handshake, TrendingUp];
 
-const backgrounds = [
-  "bg-stone-100",
-  "bg-stone-200",
-  "bg-stone-300",
-  "bg-stone-400",
-];
 
 export default function About({ locale = "en" }: AboutProps) {
   const text = content[locale];
@@ -161,27 +156,62 @@ export default function About({ locale = "en" }: AboutProps) {
           {text.description}
         </p>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {text.cards.map((card, index) => {
-            const Icon = icons[index];
+        <div className="mt-16 grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+          {/* Framed photo with floating badge */}
+          <div className="relative mx-auto w-full max-w-md lg:max-w-none">
+            <div className="absolute -bottom-5 -right-5 h-full w-full rounded-3xl border-2 border-[#C9A227]/70" />
+            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-2xl">
+              <Image
+                src="/images/property1.jpg"
+                alt="Bright, modern living room"
+                fill
+                sizes="(min-width: 1024px) 40vw, 90vw"
+                className="object-cover transition-transform duration-700 hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#14213D]/50 via-transparent to-transparent" />
+            </div>
+            <div className="about-badge absolute -left-4 bottom-8 max-w-[15rem] rounded-2xl bg-white p-5 shadow-2xl sm:-left-8">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#C9A227]">
+                FAHOPROSO
+              </p>
+              <p className="mt-1 text-sm font-semibold leading-snug text-[#14213D]">
+                Faithfull Home &amp; Property Solutions, LLC
+              </p>
+              <p className="mt-1 text-xs text-slate-500">
+                Grand Rapids, Michigan
+              </p>
+            </div>
+          </div>
 
-            return (
-              <div
-                key={card.title}
-                className={`rounded-2xl border border-slate-200 ${backgrounds[index]} p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg`}
-              >
-                <Icon className="mb-4 h-10 w-10 text-blue-600" />
+          <div className="grid gap-5 sm:grid-cols-2">
+            {text.cards.map((card, index) => {
+              const Icon = icons[index];
 
-                <h3 className="text-xl font-bold text-slate-900">
-                  {card.title}
-                </h3>
+              return (
+                <div
+                  key={card.title}
+                  className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-[#C9A227]"
+                >
+                  <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#C9A227] to-[#E5C766]" />
+                  <span className="pointer-events-none absolute -right-2 -top-4 select-none text-7xl font-black text-slate-100 transition group-hover:text-[#C9A227]/15">
+                    0{index + 1}
+                  </span>
 
-                <p className="mt-3 text-slate-600">
-                  {card.description}
-                </p>
-              </div>
-            );
-          })}
+                  <span className="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#14213D] to-[#2b3f6e] shadow-lg shadow-slate-900/20">
+                    <Icon className="h-7 w-7 text-[#E5C766]" />
+                  </span>
+
+                  <h3 className="relative mt-5 text-xl font-bold text-slate-900">
+                    {card.title}
+                  </h3>
+
+                  <p className="relative mt-3 leading-7 text-slate-600">
+                    {card.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
