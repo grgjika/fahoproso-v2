@@ -52,6 +52,8 @@ const content = {
   },
 };
 
+const LAYERS = 14;
+
 export default function Hero({ locale = "en" }: HeroProps) {
   const text = content[locale];
 
@@ -94,8 +96,8 @@ export default function Hero({ locale = "en" }: HeroProps) {
       >
         <div className="hero-kenburns absolute inset-0">
           <Image
-            src="/images/hero.jpg"
-            alt="FAHOPROSO Real Estate"
+            src="/images/property3.jpg"
+            alt="Modern townhomes"
             fill
             priority
             className="object-cover"
@@ -103,11 +105,10 @@ export default function Hero({ locale = "en" }: HeroProps) {
         </div>
       </motion.div>
 
-      {/* Soft, airy haze */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/35 to-slate-900/45" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.55)_0%,rgba(255,255,255,0)_60%)]" />
+      {/* Depth grade: deep navy at the edges, clear in the middle */}
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/70 via-slate-900/30 to-slate-950/80" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(2,6,23,0.0)_30%,rgba(2,6,23,0.55)_100%)]" />
 
-      {/* Copy floats above the photo */}
       <motion.div
         className="relative z-10 flex flex-col items-center px-6 text-center"
         style={{
@@ -118,43 +119,58 @@ export default function Hero({ locale = "en" }: HeroProps) {
           transformStyle: "preserve-3d",
         }}
       >
+        {/* Extruded 3D wordmark: stacked layers give true depth when tilted */}
         <motion.div
-          initial={{ opacity: 0, y: 24, scale: 0.96 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 1.1, ease: [0.2, 0.8, 0.2, 1] }}
-          style={{ transform: "translateZ(80px)" }}
+          className="hero-wordmark relative"
+          initial={{ opacity: 0, y: 30, rotateX: 25 }}
+          animate={{ opacity: 1, y: 0, rotateX: 0 }}
+          transition={{ duration: 1.2, ease: [0.2, 0.8, 0.2, 1] }}
+          style={{ transformStyle: "preserve-3d" }}
         >
-          <Image
-            src="/images/logo-transparent.png"
-            alt="FAHOPROSO"
-            width={520}
-            height={347}
-            priority
-            className="h-auto w-[min(440px,72vw)] drop-shadow-[0_18px_30px_rgba(255,255,255,0.7)]"
-          />
+          {Array.from({ length: LAYERS }, (_, i) => (
+            <span
+              key={i}
+              aria-hidden="true"
+              className="hero-wordmark-layer absolute inset-0"
+              style={{
+                transform: `translateZ(${-(LAYERS - i) * 3}px)`,
+                color: `hsl(${215 + i} 70% ${18 + i * 2}%)`,
+              }}
+            >
+              FAHOPROSO
+            </span>
+          ))}
+          <h1 className="hero-wordmark-front relative">FAHOPROSO</h1>
         </motion.div>
 
-        <motion.h1
-          className="mt-2 text-xl font-light tracking-[0.12em] text-slate-900 sm:text-2xl md:text-3xl"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.35 }}
-          style={{ transform: "translateZ(50px)" }}
-        >
-          {text.line1}
-          <span className="font-normal text-blue-700">{text.highlight}</span>
-          <span className="mx-3 hidden text-slate-500 sm:inline">·</span>
-          <br className="sm:hidden" />
-          {text.line2}
-        </motion.h1>
+        <motion.div
+          className="mt-3 h-px w-24 bg-gradient-to-r from-transparent via-[#C9A227] to-transparent"
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          style={{ transform: "translateZ(40px)" }}
+        />
 
-        <motion.a
-          href="#contact"
-          className="hero-cta mt-10 inline-flex items-center justify-center rounded-full px-9 py-3.5 text-sm font-medium uppercase tracking-[0.2em] text-slate-900"
+        <motion.p
+          className="mt-5 text-base font-light uppercase tracking-[0.28em] text-white/90 sm:text-lg"
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
-          style={{ transform: "translateZ(40px)" }}
+          style={{ transform: "translateZ(50px)" }}
+        >
+          {text.line1}
+          <span className="font-medium text-[#E5C766]">{text.highlight}</span>
+          <br />
+          {text.line2}
+        </motion.p>
+
+        <motion.a
+          href="#contact"
+          className="hero-cta mt-10 inline-flex items-center justify-center rounded-full px-9 py-3.5 text-sm font-medium uppercase tracking-[0.2em] text-white"
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.8 }}
+          style={{ transform: "translateZ(70px)" }}
         >
           {text.primaryButton}
         </motion.a>

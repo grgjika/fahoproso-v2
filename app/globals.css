@@ -139,20 +139,47 @@ button[class*="bg-blue-600"]:disabled {
   animation: hero-bounce 2.4s ease-in-out infinite;
 }
 
+.hero-wordmark {
+  font-size: clamp(2.6rem, 9.5vw, 8rem);
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  padding-left: 0.1em;
+}
+
+.hero-wordmark h1,
+.hero-wordmark-layer {
+  margin: 0;
+  font: inherit;
+  letter-spacing: inherit;
+  white-space: nowrap;
+}
+
+.hero-wordmark-front {
+  background: linear-gradient(180deg, #ffffff 0%, #dbeafe 60%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 24px rgb(147 197 253 / 0.35));
+}
+
+.hero-wordmark-layer {
+  text-shadow: 0 0 1px rgb(0 0 0 / 0.4);
+}
+
 a.hero-cta {
-  background: rgb(255 255 255 / 0.55);
-  border: 1px solid rgb(15 23 42 / 0.35);
+  background: rgb(255 255 255 / 0.1);
+  border: 1px solid rgb(255 255 255 / 0.55);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 18px 36px -16px rgb(15 23 42 / 0.45),
-    inset 0 1px 0 rgb(255 255 255 / 0.8);
+  box-shadow: 0 20px 40px -16px rgb(2 6 23 / 0.7),
+    inset 0 1px 0 rgb(255 255 255 / 0.4);
   transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 a.hero-cta:hover {
-  background: #0f172a;
-  color: #fff;
-  border-color: #0f172a;
+  background: #fff;
+  color: #0f172a;
+  border-color: #fff;
   filter: none;
-  transform: translateZ(40px) translateY(-2px);
 }
