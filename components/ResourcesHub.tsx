@@ -115,7 +115,7 @@ export default function ResourcesHub({ locale }: { locale: Locale }) {
             return (
               <div
                 key={group.title}
-                className="rounded-3xl border border-slate-200 bg-white p-10 shadow-lg"
+                className="rounded-3xl border border-slate-200 border-t-4 border-t-[#C9A227] bg-white p-10 shadow-lg"
               >
                 <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#14213D] to-[#2b3f6e] shadow-lg shadow-slate-900/20">
                   <Icon className="h-7 w-7 text-[#E5C766]" />

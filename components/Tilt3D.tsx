@@ -4,8 +4,8 @@ import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
 const CARD_SELECTOR = [
-  '[class*="rounded-2xl"][class*="bg-white"][class*="shadow"]',
-  '[class*="rounded-3xl"][class*="bg-white"][class*="shadow"]',
+  '[class*="rounded-2xl"][class*="bg-white"][class*="shadow"]:not([class~="absolute"])',
+  '[class*="rounded-3xl"][class*="bg-white"][class*="shadow"]:not([class~="absolute"])',
 ].join(",");
 
 const MAX_TILT = 3;

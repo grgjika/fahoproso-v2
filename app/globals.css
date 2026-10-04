@@ -39,8 +39,8 @@ h3 {
 }
 
 /* ---------- 3D cards ---------- */
-[class*="rounded-2xl"][class*="bg-white"][class*="shadow"],
-[class*="rounded-3xl"][class*="bg-white"][class*="shadow"] {
+[class*="rounded-2xl"][class*="bg-white"][class*="shadow"]:not([class~="absolute"]),
+[class*="rounded-3xl"][class*="bg-white"][class*="shadow"]:not([class~="absolute"]) {
   --tilt-x: 0deg;
   --tilt-y: 0deg;
   position: relative;
@@ -49,8 +49,8 @@ h3 {
   transition: transform 0.18s ease-out, box-shadow 0.3s ease;
 }
 
-[class*="rounded-2xl"][class*="bg-white"][class*="shadow"]:hover,
-[class*="rounded-3xl"][class*="bg-white"][class*="shadow"]:hover {
+[class*="rounded-2xl"][class*="bg-white"][class*="shadow"]:not([class~="absolute"]):hover,
+[class*="rounded-3xl"][class*="bg-white"][class*="shadow"]:not([class~="absolute"]):hover {
   box-shadow: var(--depth-2), inset 0 1px 0 rgb(255 255 255 / 0.9);
 }
 
@@ -101,8 +101,8 @@ button[class*="bg-blue-600"]:disabled {
   html {
     scroll-behavior: auto;
   }
-  [class*="rounded-2xl"][class*="bg-white"][class*="shadow"],
-  [class*="rounded-3xl"][class*="bg-white"][class*="shadow"],
+  [class*="rounded-2xl"][class*="bg-white"][class*="shadow"]:not([class~="absolute"]),
+  [class*="rounded-3xl"][class*="bg-white"][class*="shadow"]:not([class~="absolute"]),
   a[class*="bg-blue-600"],
   button[class*="bg-blue-600"] {
     transition: none;
