@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import PropertyLocation from "@/components/PropertyLocation";
 
 type Locale = "en" | "es" | "el" | "sq";
@@ -215,6 +215,16 @@ export default function Contact({ locale = "en" }: ContactProps) {
   const [status, setStatus] = useState("");
   const [isSending, setIsSending] = useState(false);
   const [propertyAddress, setPropertyAddress] = useState("");
+
+  useEffect(() => {
+    const onPrefill = (event: Event) => {
+      const address = (event as CustomEvent<string>).detail;
+      if (typeof address === "string") setPropertyAddress(address);
+    };
+    window.addEventListener("fahoproso:prefill-address", onPrefill);
+    return () =>
+      window.removeEventListener("fahoproso:prefill-address", onPrefill);
+  }, []);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();

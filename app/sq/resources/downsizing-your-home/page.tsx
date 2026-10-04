@@ -72,7 +72,7 @@ export default function DownsizingYourHomeSQ() {
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">
               Kalimi në një banesë më të vogël mund ta thjeshtojë jetën tuaj,
-              por kërkon planifikim. Këta hapa mund t'ju ndihmojnë ta
+              por kërkon planifikim. Këta hapa mund t&apos;ju ndihmojnë ta
               organizoni procesin.
             </p>
           </div>

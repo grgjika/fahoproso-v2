@@ -338,7 +338,7 @@ export default function RentalStrategiesPage() {
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-300">
-              Whether you're purchasing your first rental property or expanding
+              Whether you&apos;re purchasing your first rental property or expanding
               an existing portfolio, FAHOPROSO is committed to thoughtful,
               long-term real estate investing throughout Michigan.
             </p>

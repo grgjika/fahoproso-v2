@@ -118,12 +118,12 @@ export default function HomeownerGuidesPage() {
   <div className="mx-auto max-w-4xl px-6 text-center">
 
     <h2 className="text-4xl font-bold">
-      Can't Find the Guide You Need?
+      Can&apos;t Find the Guide You Need?
     </h2>
 
     <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-      We're continually adding new homeowner resources. If you have questions
-      about your property, we're here to help.
+      We&apos;re continually adding new homeowner resources. If you have questions
+      about your property, we&apos;re here to help.
     </p>
 
     <Link

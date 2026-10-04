@@ -107,9 +107,9 @@ export default function ResourcesPage() {
             <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
 
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-300">
-              Whether you're preparing to sell your home, exploring investment
+              Whether you&apos;re preparing to sell your home, exploring investment
               opportunities, or simply learning about Michigan real estate,
-              you'll find practical information and helpful guides here.
+              you&apos;ll find practical information and helpful guides here.
             </p>
 
           </div>
@@ -121,7 +121,7 @@ export default function ResourcesPage() {
 
           <div className="mx-auto max-w-5xl px-6 text-center">
 
-            <BookOpen className="mx-auto h-16 w-16 text-[#C9A227]" />
+            <BookOpen className="mx-auto h-16 w-16 rounded-2xl bg-gradient-to-br from-[#14213D] to-[#2b3f6e] p-4 text-[#E5C766] shadow-lg shadow-slate-900/20" />
 
             <h2 className="mt-8 text-4xl font-bold text-[#14213D]">
               Learn Before You Decide
@@ -146,9 +146,9 @@ export default function ResourcesPage() {
 
             {/* HOMEOWNERS */}
 
-            <div className="rounded-3xl bg-white p-10 shadow-lg">
+            <div className="relative overflow-hidden rounded-3xl border-t-4 border-[#C9A227] bg-white p-10 shadow-lg">
 
-              <Home className="h-12 w-12 text-[#C9A227]" />
+              <Home className="h-16 w-16 rounded-2xl bg-gradient-to-br from-[#14213D] to-[#2b3f6e] p-4 text-[#E5C766] shadow-lg shadow-slate-900/20" />
 
               <h2 className="mt-6 text-3xl font-bold text-[#14213D]">
                 Homeowner Guides
@@ -186,9 +186,9 @@ export default function ResourcesPage() {
 
             {/* INVESTORS */}
 
-            <div className="rounded-3xl bg-white p-10 shadow-lg">
+            <div className="relative overflow-hidden rounded-3xl border-t-4 border-[#C9A227] bg-white p-10 shadow-lg">
 
-              <Building2 className="h-12 w-12 text-[#C9A227]" />
+              <Building2 className="h-16 w-16 rounded-2xl bg-gradient-to-br from-[#14213D] to-[#2b3f6e] p-4 text-[#E5C766] shadow-lg shadow-slate-900/20" />
 
               <h2 className="mt-6 text-3xl font-bold text-[#14213D]">
                 Investment Insights
@@ -224,9 +224,9 @@ export default function ResourcesPage() {
 
             {/* MICHIGAN */}
 
-            <div className="rounded-3xl bg-white p-10 shadow-lg">
+            <div className="relative overflow-hidden rounded-3xl border-t-4 border-[#C9A227] bg-white p-10 shadow-lg">
 
-              <MapPinned className="h-12 w-12 text-[#C9A227]" />
+              <MapPinned className="h-16 w-16 rounded-2xl bg-gradient-to-br from-[#14213D] to-[#2b3f6e] p-4 text-[#E5C766] shadow-lg shadow-slate-900/20" />
 
               <h2 className="mt-6 text-3xl font-bold text-[#14213D]">
                 Michigan Guides
@@ -275,9 +275,9 @@ export default function ResourcesPage() {
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-300">
-              Every homeowner's situation is different.
-              If you can't find the answer you're looking for,
-              contact FAHOPROSO and we'll be happy to discuss
+              Every homeowner&apos;s situation is different.
+              If you can&apos;t find the answer you&apos;re looking for,
+              contact FAHOPROSO and we&apos;ll be happy to discuss
               your property and your goals.
             </p>
 

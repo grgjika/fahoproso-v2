@@ -105,7 +105,7 @@ export default function SellRentalPropertyPage() {
 
                 <p>
                   Before listing the property, consider whether it is occupied,
-                  the terms of any lease agreements, and the property's current
+                  the terms of any lease agreements, and the property&apos;s current
                   condition.
                 </p>
 
@@ -130,7 +130,7 @@ export default function SellRentalPropertyPage() {
 
                 <li>✓ Understand tenant occupancy.</li>
 
-                <li>✓ Evaluate the property's condition.</li>
+                <li>✓ Evaluate the property&apos;s condition.</li>
 
                 <li>✓ Estimate repair or update costs.</li>
 
@@ -363,7 +363,7 @@ export default function SellRentalPropertyPage() {
                 </h3>
 
                 <p className="mt-4 leading-8 text-slate-600">
-                  It depends on your goals, budget, timeline, and the property's
+                  It depends on your goals, budget, timeline, and the property&apos;s
                   condition. Every investment property is different.
                 </p>
               </div>
@@ -396,7 +396,7 @@ export default function SellRentalPropertyPage() {
             </p>
 
             <h2 className="mt-4 text-5xl font-bold">
-              Let's Talk About Your Rental Property
+              Let&apos;s Talk About Your Rental Property
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-300">

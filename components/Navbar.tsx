@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -188,6 +188,7 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
   const [showMobileLanguage, setShowMobileLanguage] =
     useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [atTop, setAtTop] = useState(true);
   const [showPhone, setShowPhone] = useState(false);
   const [showResources, setShowResources] = useState(false);
   const [showMobileResources, setShowMobileResources] =
@@ -260,6 +261,19 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
     setShowMobileResources(false);
   };
 
+  const isHome = ["/", "/es", "/el", "/sq"].includes(
+    pathname.replace(/\/$/, "") || "/"
+  );
+
+  useEffect(() => {
+    const onScroll = () => setAtTop(window.scrollY < window.innerHeight * 0.6);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const hideLogo = isHome && atTop;
+
   const currentLanguage =
     pathname === "/el" || pathname.startsWith("/el/")
       ? "EL"
@@ -293,7 +307,7 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
   ];
 
   return (
-    <header className="fixed left-0 top-0 z-[1000] w-full border-b border-slate-200 bg-white/95 shadow-sm backdrop-blur-md">
+    <header className="fixed left-0 top-0 z-[1000] w-full border-b border-white/40 bg-white/75 backdrop-blur-xl">
       <nav className="mx-auto flex h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
         {/* Logo */}
@@ -301,7 +315,9 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
           href={locale === "en" ? "/" : `/${locale}`}
           onClick={closeMenu}
           aria-label="FAHOPROSO homepage"
-          className="shrink-0"
+          className={`shrink-0 transition-opacity duration-500 ${
+            hideLogo ? "pointer-events-none opacity-0" : "opacity-100"
+          }`}
         >
           <Image
             src="/images/logo-transparent.png"

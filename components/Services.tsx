@@ -183,7 +183,7 @@ export default function Services({ locale = "en" }: ServicesProps) {
             return (
               <article
                 key={service.title}
-                className="group overflow-hidden rounded-2xl border border-slate-300 bg-slate-100 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#C9A227] hover:shadow-xl"
+                className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#C9A227] hover:shadow-xl"
               >
                 <div className="relative h-60 overflow-hidden">
                   <Image
@@ -193,9 +193,13 @@ export default function Services({ locale = "en" }: ServicesProps) {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-slate-950/10 to-transparent" />
 
-                  <div className="absolute bottom-5 left-6 flex h-14 w-14 items-center justify-center rounded-xl bg-[#C9A227]">
+                  <span className="absolute right-6 top-4 select-none text-6xl font-black text-white/25">
+                    0{index + 1}
+                  </span>
+
+                  <div className="absolute bottom-5 left-6 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-[#E5C766] to-[#B8901F] shadow-lg shadow-black/30 ring-2 ring-white/40">
                     <Icon className="h-7 w-7 text-white" />
                   </div>
                 </div>

@@ -90,7 +90,7 @@ export default function SellHouseAsIsPage() {
               <div className="mt-3 h-1 w-16 rounded-full bg-[#C9A227]" />
 
               <h2 className="mt-6 text-4xl font-bold text-[#14213D] md:text-5xl">
-                Selling As-Is Doesn't Mean Selling Without Options
+                Selling As-Is Doesn&apos;t Mean Selling Without Options
               </h2>
 
               <div className="mt-8 space-y-6 text-lg leading-8 text-slate-600">
@@ -125,7 +125,7 @@ export default function SellHouseAsIsPage() {
 
               <ul className="mt-8 space-y-5 text-slate-700">
 
-                <li>✓ Understand your home's current condition.</li>
+                <li>✓ Understand your home&apos;s current condition.</li>
 
                 <li>✓ Estimate possible repair costs.</li>
 
@@ -204,7 +204,7 @@ export default function SellHouseAsIsPage() {
                   </h3>
 
                   <p className="mt-4 leading-8 text-slate-600">
-                    Every homeowner's situation is unique. Understanding your
+                    Every homeowner&apos;s situation is unique. Understanding your
                     options before investing additional time or money can help
                     you make an informed decision.
                   </p>
@@ -305,7 +305,7 @@ export default function SellHouseAsIsPage() {
                 </h3>
 
                 <p className="mt-5 leading-8 text-slate-600">
-                  Selling in the property's current condition may be a practical
+                  Selling in the property&apos;s current condition may be a practical
                   choice when repairs are not part of your plan.
                 </p>
               </div>
@@ -397,7 +397,7 @@ export default function SellHouseAsIsPage() {
             </p>
 
             <h2 className="mt-4 text-5xl font-bold">
-              Let's Discuss Your Property
+              Let&apos;s Discuss Your Property
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-300">

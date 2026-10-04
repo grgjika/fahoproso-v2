@@ -9,7 +9,6 @@ import {
   Home,
   MapPin,
   MessageSquare,
-  Search,
   ShieldCheck,
   TrendingUp,
   Wrench,
