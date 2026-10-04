@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import Skyline3D from "@/components/Skyline3D";
 import { Banknote, Clock, ShieldCheck } from "lucide-react";
 
 type Locale = "en" | "el" | "es" | "sq";
@@ -20,6 +21,8 @@ const content = {
       "We invest in residential and commercial properties while helping property owners find practical real estate solutions throughout Michigan.",
     primaryButton: "Get a Cash Offer",
     secondaryButton: "Explore Our Services",
+    addressPlaceholder: "Enter your property address",
+    addressButton: "Get My Offer",
     features: [
       { title: "Any Condition", text: "Buy homes as-is" },
       { title: "Fast Cash Offers", text: "Clear, fair terms" },
@@ -35,6 +38,8 @@ const content = {
       "Επενδύουμε σε οικιστικά και επαγγελματικά ακίνητα, βοηθώντας παράλληλα τους ιδιοκτήτες να βρουν πρακτικές λύσεις για τα ακίνητά τους σε όλο το Michigan.",
     primaryButton: "Ζητήστε Προσφορά",
     secondaryButton: "Δείτε τις Υπηρεσίες μας",
+    addressPlaceholder: "Εισάγετε τη διεύθυνση του ακινήτου",
+    addressButton: "Η Προσφορά μου",
     features: [
       { title: "Σε Οποιαδήποτε Κατάσταση", text: "Αγορά ακινήτων ως έχουν" },
       { title: "Γρήγορες Προσφορές", text: "Σαφείς, δίκαιοι όροι" },
@@ -50,6 +55,8 @@ const content = {
       "Invertimos en propiedades residenciales y comerciales mientras ayudamos a los propietarios a encontrar soluciones inmobiliarias prácticas en todo Michigan.",
     primaryButton: "Solicite una Oferta",
     secondaryButton: "Explore Nuestros Servicios",
+    addressPlaceholder: "Ingrese la dirección de su propiedad",
+    addressButton: "Obtener Mi Oferta",
     features: [
       { title: "Cualquier Condición", text: "Compramos tal como está" },
       { title: "Ofertas Rápidas en Efectivo", text: "Términos claros y justos" },
@@ -65,6 +72,8 @@ const content = {
       "Investojmë në prona rezidenciale dhe komerciale, duke ndihmuar njëkohësisht pronarët të gjejnë zgjidhje praktike për pronat e tyre në të gjithë Michigan-in.",
     primaryButton: "Kërkoni një Ofertë",
     secondaryButton: "Shikoni Shërbimet Tona",
+    addressPlaceholder: "Shkruani adresën e pronës",
+    addressButton: "Merr Ofertën Time",
     features: [
       { title: "Në Çdo Gjendje", text: "Blejmë pronat siç janë" },
       { title: "Oferta të Shpejta", text: "Kushte të qarta dhe të drejta" },
@@ -94,6 +103,19 @@ export default function Hero({ locale = "en" }: HeroProps) {
     const rect = event.currentTarget.getBoundingClientRect();
     mx.set((event.clientX - rect.left) / rect.width - 0.5);
     my.set((event.clientY - rect.top) / rect.height - 0.5);
+  }
+
+  function handleOffer(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const address = String(
+      new FormData(event.currentTarget).get("address") ?? ""
+    ).trim();
+    window.dispatchEvent(
+      new CustomEvent("fahoproso:prefill-address", { detail: address })
+    );
+    document
+      .getElementById("contact")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function handleLeave() {
@@ -160,6 +182,29 @@ export default function Hero({ locale = "en" }: HeroProps) {
             {text.secondaryButton}
           </a>
         </motion.div>
+
+        <motion.form
+          onSubmit={handleOffer}
+          className="hero-input mt-8 flex w-full max-w-xl flex-col gap-2 rounded-2xl p-2 sm:flex-row"
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          <input
+            name="address"
+            type="text"
+            autoComplete="street-address"
+            placeholder={text.addressPlaceholder}
+            aria-label={text.addressPlaceholder}
+            className="min-w-0 flex-1 rounded-xl bg-transparent px-4 py-3 text-white placeholder:text-slate-300 focus:outline-none"
+          />
+          <button
+            type="submit"
+            className="rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white"
+          >
+            {text.addressButton}
+          </button>
+        </motion.form>
         </div>
 
         <motion.div
@@ -174,33 +219,44 @@ export default function Hero({ locale = "en" }: HeroProps) {
           aria-hidden="true"
         >
           <motion.div
-            className="relative mx-auto h-[420px] w-full max-w-md"
+            className="relative mx-auto h-[460px] w-full max-w-md"
             style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
           >
+            <div
+              className="absolute left-1/2 top-[110px] -ml-[150px]"
+              style={{
+                transformStyle: "preserve-3d",
+                transform: "rotateX(58deg) rotateZ(45deg) scale(1.15)",
+              }}
+            >
+              <Skyline3D />
+            </div>
+
             {text.features.map((feature, i) => {
               const Icon = featureIcons[i];
               return (
                 <div
                   key={feature.title}
-                  className="absolute left-0 right-0"
+                  className="absolute"
                   style={{
-                    top: i * 128,
-                    transform: `translateZ(${(2 - i) * 38 + (hovering ? 18 : 0)}px) translateX(${i % 2 ? 28 : -12}px)`,
+                    top: [10, 190, 400][i],
+                    left: [-70, 250, -40][i],
+                    transform: `translateZ(${220 + i * 30 + (hovering ? 30 : 0)}px)`,
                     transition: "transform 0.4s ease",
                   }}
                 >
                   <div
-                    className="hero-float hero-glass flex items-center gap-4 rounded-2xl p-5"
+                    className="hero-float hero-glass flex items-center gap-3 rounded-2xl p-3 pr-5"
                     style={{ animationDelay: `${i * 0.8}s` }}
                   >
-                    <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-400 to-blue-700 shadow-lg shadow-blue-900/50">
-                      <Icon className="h-7 w-7 text-white" />
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-400 to-blue-700 shadow-lg shadow-blue-900/50">
+                      <Icon className="h-5 w-5 text-white" />
                     </span>
                     <span>
-                      <span className="block text-lg font-bold">
+                      <span className="block text-sm font-bold">
                         {feature.title}
                       </span>
-                      <span className="block text-sm text-slate-200">
+                      <span className="block text-xs text-slate-200">
                         {feature.text}
                       </span>
                     </span>

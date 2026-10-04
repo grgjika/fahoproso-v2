@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
 import Tilt3D from "@/components/Tilt3D";
+import ScrollFX from "@/components/ScrollFX";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -185,6 +186,8 @@ export default function RootLayout({
         <ExitIntentPopup />
 
         <Tilt3D />
+
+        <ScrollFX />
 
         <GoogleAnalytics gaId="G-5F9RJMGDCF" />
       </body>
