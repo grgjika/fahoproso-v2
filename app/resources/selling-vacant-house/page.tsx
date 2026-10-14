@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Learn your options for selling a vacant house in Michigan, including maintenance, security, insurance, repairs, and selling as-is.",
 
     alternates: {
-     canonical: "https://www.fahoproso.com/resources/selling-vacant-house",
+     canonical: "https://www.fahoproso.com/resources/selling-vacant-house/",
     },
 };
 

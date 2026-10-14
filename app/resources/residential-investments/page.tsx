@@ -12,12 +12,12 @@ export const metadata: Metadata = {
     "Explore residential real estate investing in Michigan, including single-family homes, multifamily properties, cash flow, appreciation, and long-term investment strategy.",
 
     alternates: {
-     canonical: "https://www.fahoproso.com/resources/residential-investments",
+     canonical: "https://www.fahoproso.com/resources/residential-investments/",
      languages: {
-    "en-US": "https://www.fahoproso.com/resources/residential-investments",
-    "es-US": "https://www.fahoproso.com/es/resources/residential-investments",
-    "el-GR": "https://www.fahoproso.com/el/resources/residential-investments",
-    sq: "https://www.fahoproso.com/sq/resources/residential-investments",
+    "en-US": "https://www.fahoproso.com/resources/residential-investments/",
+    "es-US": "https://www.fahoproso.com/es/resources/residential-investments/",
+    "el-GR": "https://www.fahoproso.com/el/resources/residential-investments/",
+    sq: "https://www.fahoproso.com/sq/resources/residential-investments/",
   },
     },
 };

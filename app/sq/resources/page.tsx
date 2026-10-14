@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   description:
     "Eksploroni udhëzues dhe burime të FAHOPROSO rreth shitjes së pronave, investimeve dhe temave për pronarët në Michigan.",
   alternates: {
-    canonical: "https://www.fahoproso.com/sq/resources",
+    canonical: "https://www.fahoproso.com/sq/resources/",
     languages: {
-    "en-US": "https://www.fahoproso.com/resources",
-    "es-US": "https://www.fahoproso.com/es/resources",
-    "el-GR": "https://www.fahoproso.com/el/resources",
-    sq: "https://www.fahoproso.com/sq/resources",
+    "en-US": "https://www.fahoproso.com/resources/",
+    "es-US": "https://www.fahoproso.com/es/resources/",
+    "el-GR": "https://www.fahoproso.com/el/resources/",
+    sq: "https://www.fahoproso.com/sq/resources/",
   },
   },
 };

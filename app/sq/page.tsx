@@ -20,12 +20,12 @@ export const metadata: Metadata = {
     "FAHOPROSO ndihmon pronarët në Michigan të shqyrtojnë mundësi të thjeshta dhe të qarta për shitjen e pronave të tyre.",
 
   alternates: {
-    canonical: "https://www.fahoproso.com/sq",
+    canonical: "https://www.fahoproso.com/sq/",
     languages: {
       "en-US": "https://www.fahoproso.com/",
-      "el-GR": "https://www.fahoproso.com/el",
-      "es-US": "https://www.fahoproso.com/es",
-      "sq": "https://www.fahoproso.com/sq",
+      "el-GR": "https://www.fahoproso.com/el/",
+      "es-US": "https://www.fahoproso.com/es/",
+      "sq": "https://www.fahoproso.com/sq/",
     },
   },
 };

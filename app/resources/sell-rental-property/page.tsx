@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Learn about selling a rental property in Michigan, understand your options as a landlord, and explore important considerations before selling.",
 
     alternates: {
-     canonical: "https://www.fahoproso.com/resources/sell-rental-property",
+     canonical: "https://www.fahoproso.com/resources/sell-rental-property/",
     },
 };
 

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "Explore commercial real estate investing in Michigan, including office, retail, industrial, mixed-use properties, due diligence, and long-term investment strategy.",
     alternates: {
-     canonical: "https://www.fahoproso.com/resources/commercial-investments",
+     canonical: "https://www.fahoproso.com/resources/commercial-investments/",
     },
 };
 

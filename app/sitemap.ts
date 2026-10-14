@@ -71,7 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const englishPages: MetadataRoute.Sitemap = englishRoutes.map(
     (route) => ({
-      url: `${baseUrl}${route}`,
+      url: `${baseUrl}${route}/`,
       lastModified: new Date(),
       changeFrequency: route === "" ? "weekly" : "monthly",
       priority:
@@ -88,7 +88,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const translatedPages: MetadataRoute.Sitemap = languages.flatMap(
     (language) =>
       translatedRoutes.map((route) => ({
-        url: `${baseUrl}/${language}${route}`,
+        url: `${baseUrl}/${language}${route}/`,
         lastModified: new Date(),
         changeFrequency: route === "" ? "weekly" : "monthly",
         priority:

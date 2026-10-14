@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "Explore rental property strategies in Michigan, including cash flow, tenant quality, maintenance, reserves, and long-term portfolio planning.",
     alternates: {
-     canonical: "https://www.fahoproso.com/resources/rental-strategies",
+     canonical: "https://www.fahoproso.com/resources/rental-strategies/",
     },
 };
 

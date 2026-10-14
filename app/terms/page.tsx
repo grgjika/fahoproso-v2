@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Read the terms and conditions governing use of the FAHOPROSO website and submission of property inquiries.",
     alternates: {
-     canonical: "https://www.fahoproso.com/terms",
+     canonical: "https://www.fahoproso.com/terms/",
     },
   };
 

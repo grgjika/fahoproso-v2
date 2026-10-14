@@ -11,12 +11,12 @@ export const metadata: Metadata = {
     "Një udhëzues praktik për pronarët që po shesin një shtëpi për herë të parë në Michigan, nga përgatitja deri në mbylljen e shitjes.",
   alternates: {
     canonical:
-      "https://www.fahoproso.com/sq/resources/first-time-home-seller-guide",
+      "https://www.fahoproso.com/sq/resources/first-time-home-seller-guide/",
       languages: {
-    "en-US": "https://www.fahoproso.com/resources/first-time-home-seller-guide",
-    "es-US": "https://www.fahoproso.com/es/resources/first-time-home-seller-guide",
-    "el-GR": "https://www.fahoproso.com/el/resources/first-time-home-seller-guide",
-    sq: "https://www.fahoproso.com/sq/resources/first-time-home-seller-guide",
+    "en-US": "https://www.fahoproso.com/resources/first-time-home-seller-guide/",
+    "es-US": "https://www.fahoproso.com/es/resources/first-time-home-seller-guide/",
+    "el-GR": "https://www.fahoproso.com/el/resources/first-time-home-seller-guide/",
+    sq: "https://www.fahoproso.com/sq/resources/first-time-home-seller-guide/",
   },
   },
 };

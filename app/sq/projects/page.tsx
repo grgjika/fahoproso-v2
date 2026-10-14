@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   description:
     "Eksploroni qasjen e FAHOPROSO ndaj investimeve rezidenciale, pronave me qira dhe mundësive komerciale të pasurive të paluajtshme në Michigan.",
   alternates: {
-    canonical: "https://www.fahoproso.com/sq/projects",
+    canonical: "https://www.fahoproso.com/sq/projects/",
     languages: {
-    "en-US": "https://www.fahoproso.com/projects",
-    "es-US": "https://www.fahoproso.com/es/projects",
-    "el-GR": "https://www.fahoproso.com/el/projects",
-    sq: "https://www.fahoproso.com/sq/projects",
+    "en-US": "https://www.fahoproso.com/projects/",
+    "es-US": "https://www.fahoproso.com/es/projects/",
+    "el-GR": "https://www.fahoproso.com/el/projects/",
+    sq: "https://www.fahoproso.com/sq/projects/",
   },
   },
 };

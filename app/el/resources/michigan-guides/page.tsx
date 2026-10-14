@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   description:
     "Εξερευνήστε τοπικές πληροφορίες για ιδιοκτήτες και πωλητές ακινήτων στο Grand Rapids, Kent County, Ottawa County, Troy και άλλες περιοχές του Michigan.",
   alternates: {
-    canonical: "https://www.fahoproso.com/el/resources/michigan-guides",
+    canonical: "https://www.fahoproso.com/el/resources/michigan-guides/",
     languages: {
-    "en-US": "https://www.fahoproso.com/resources/michigan-guides",
-    "es-US": "https://www.fahoproso.com/es/resources/michigan-guides",
-    "el-GR": "https://www.fahoproso.com/el/resources/michigan-guides",
-    sq: "https://www.fahoproso.com/sq/resources/michigan-guides",
+    "en-US": "https://www.fahoproso.com/resources/michigan-guides/",
+    "es-US": "https://www.fahoproso.com/es/resources/michigan-guides/",
+    "el-GR": "https://www.fahoproso.com/el/resources/michigan-guides/",
+    sq: "https://www.fahoproso.com/sq/resources/michigan-guides/",
   },
   },
 };

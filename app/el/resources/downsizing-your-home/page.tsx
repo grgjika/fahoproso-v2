@@ -11,12 +11,12 @@ export const metadata: Metadata = {
     "Ένας πρακτικός οδηγός για ιδιοκτήτες στο Michigan που σκέφτονται να μετακομίσουν σε μικρότερη κατοικία.",
   alternates: {
     canonical:
-      "https://www.fahoproso.com/el/resources/downsizing-your-home",
+      "https://www.fahoproso.com/el/resources/downsizing-your-home/",
       languages: {
-    "en-US": "https://www.fahoproso.com/resources/downsizing-your-home",
-    "es-US": "https://www.fahoproso.com/es/resources/downsizing-your-home",
-    "el-GR": "https://www.fahoproso.com/el/resources/downsizing-your-home",
-    sq: "https://www.fahoproso.com/sq/resources/downsizing-your-home",
+    "en-US": "https://www.fahoproso.com/resources/downsizing-your-home/",
+    "es-US": "https://www.fahoproso.com/es/resources/downsizing-your-home/",
+    "el-GR": "https://www.fahoproso.com/el/resources/downsizing-your-home/",
+    sq: "https://www.fahoproso.com/sq/resources/downsizing-your-home/",
   },
   },
 };

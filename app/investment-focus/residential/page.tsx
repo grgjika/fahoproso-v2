@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description:
     "Learn how FAHOPROSO evaluates residential properties and provides practical real estate solutions for homeowners throughout Grand Rapids and West Michigan.",
     alternates: {
-     canonical: "https://www.fahoproso.com/investment-focus/residential",
+     canonical: "https://www.fahoproso.com/investment-focus/residential/",
     },
   };
 

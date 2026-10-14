@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Learn the key factors that influence property value, including location, condition, comparable sales, market trends, and investment potential.",
 
     alternates: {
-     canonical: "https://www.fahoproso.com/resources/property-evaluation",
+     canonical: "https://www.fahoproso.com/resources/property-evaluation/",
     },
 };
 

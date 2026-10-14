@@ -12,12 +12,12 @@ export const metadata: Metadata = {
     "A helpful guide for first-time home sellers in Michigan covering preparation, property evaluation, offers, closing, and common mistakes.",
 
     alternates: {
-     canonical: "https://www.fahoproso.com/resources/first-time-home-seller-guide",
+     canonical: "https://www.fahoproso.com/resources/first-time-home-seller-guide/",
      languages: {
-    "en-US": "https://www.fahoproso.com/resources/first-time-home-seller-guide",
-    "es-US": "https://www.fahoproso.com/es/resources/first-time-home-seller-guide",
-    "el-GR": "https://www.fahoproso.com/el/resources/first-time-home-seller-guide",
-    sq: "https://www.fahoproso.com/sq/resources/first-time-home-seller-guide",
+    "en-US": "https://www.fahoproso.com/resources/first-time-home-seller-guide/",
+    "es-US": "https://www.fahoproso.com/es/resources/first-time-home-seller-guide/",
+    "el-GR": "https://www.fahoproso.com/el/resources/first-time-home-seller-guide/",
+    sq: "https://www.fahoproso.com/sq/resources/first-time-home-seller-guide/",
   },
     },
   };

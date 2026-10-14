@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   description:
     "Contacte a FAHOPROSO para hablar sobre su propiedad, una posible venta o una oportunidad inmobiliaria en Michigan.",
   alternates: {
-    canonical: "https://www.fahoproso.com/es/contact",
+    canonical: "https://www.fahoproso.com/es/contact/",
     languages: {
-    "en-US": "https://www.fahoproso.com/contact",
-    "es-US": "https://www.fahoproso.com/es/contact",
-    "el-GR": "https://www.fahoproso.com/el/contact",
-    sq: "https://www.fahoproso.com/sq/contact",
+    "en-US": "https://www.fahoproso.com/contact/",
+    "es-US": "https://www.fahoproso.com/es/contact/",
+    "el-GR": "https://www.fahoproso.com/el/contact/",
+    sq: "https://www.fahoproso.com/sq/contact/",
   },
   },
 };

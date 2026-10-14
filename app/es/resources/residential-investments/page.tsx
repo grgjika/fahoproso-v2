@@ -11,12 +11,12 @@ export const metadata: Metadata = {
     "Explore los factores principales que los inversionistas pueden considerar al evaluar oportunidades de inversión residencial en Michigan.",
   alternates: {
     canonical:
-      "https://www.fahoproso.com/es/resources/residential-investments",
+      "https://www.fahoproso.com/es/resources/residential-investments/",
       languages: {
-    "en-US": "https://www.fahoproso.com/resources/residential-investments",
-    "es-US": "https://www.fahoproso.com/es/resources/residential-investments",
-    "el-GR": "https://www.fahoproso.com/el/resources/residential-investments",
-    sq: "https://www.fahoproso.com/sq/resources/residential-investments",
+    "en-US": "https://www.fahoproso.com/resources/residential-investments/",
+    "es-US": "https://www.fahoproso.com/es/resources/residential-investments/",
+    "el-GR": "https://www.fahoproso.com/el/resources/residential-investments/",
+    sq: "https://www.fahoproso.com/sq/resources/residential-investments/",
   },
   },
 };
