@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   description:
     "Kontaktoni FAHOPROSO për të diskutuar pronën tuaj, një shitje të mundshme ose një mundësi investimi në Michigan.",
   alternates: {
-    canonical: "https://www.fahoproso.com/sq/contact",
+    canonical: "https://www.fahoproso.com/sq/contact/",
     languages: {
-    "en-US": "https://www.fahoproso.com/contact",
-    "es-US": "https://www.fahoproso.com/es/contact",
-    "el-GR": "https://www.fahoproso.com/el/contact",
-    sq: "https://www.fahoproso.com/sq/contact",
+    "en-US": "https://www.fahoproso.com/contact/",
+    "es-US": "https://www.fahoproso.com/es/contact/",
+    "el-GR": "https://www.fahoproso.com/el/contact/",
+    sq: "https://www.fahoproso.com/sq/contact/",
   },
   },
 };

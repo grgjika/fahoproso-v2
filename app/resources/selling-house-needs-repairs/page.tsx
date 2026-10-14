@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Learn your options for selling a house that needs repairs in Michigan, including repairing, listing, or selling the property as-is.",
 
     alternates: {
-     canonical: "https://www.fahoproso.com/resources/selling-house-needs-repairs",
+     canonical: "https://www.fahoproso.com/resources/selling-house-needs-repairs/",
     },
 };
 

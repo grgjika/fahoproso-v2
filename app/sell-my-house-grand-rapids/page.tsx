@@ -11,7 +11,7 @@ export const metadata: Metadata = {
    title: "Sell My House Fast in Grand Rapids, MI | FAHOPROSO",
     description:
    "Sell your house fast in Grand Rapids, MI with FAHOPROSO. We buy houses as-is, including inherited, vacant, rental, and repair-needed properties. Request a no-obligation offer.",  alternates: {
-    canonical: "https://www.fahoproso.com/sell-my-house-grand-rapids",
+    canonical: "https://www.fahoproso.com/sell-my-house-grand-rapids/",
   },
   keywords: [
     "sell my house Grand Rapids",

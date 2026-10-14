@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "Customer reviews and feedback for Faithfull Home & Property Solutions, LLC.",
 
     alternates: {
-     canonical: "https://www.fahoproso.com/reviews",
+     canonical: "https://www.fahoproso.com/reviews/",
     },
   };
 

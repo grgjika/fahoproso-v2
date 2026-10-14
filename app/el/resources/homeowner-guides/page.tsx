@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   description:
     "Εξερευνήστε πρακτικούς οδηγούς της FAHOPROSO για ιδιοκτήτες που σκέφτονται να πουλήσουν ένα ακίνητο στο Michigan.",
   alternates: {
-    canonical: "https://www.fahoproso.com/el/resources/homeowner-guides",
+    canonical: "https://www.fahoproso.com/el/resources/homeowner-guides/",
     languages: {
-    "en-US": "https://www.fahoproso.com/resources/homeowner-guides",
-    "es-US": "https://www.fahoproso.com/es/resources/homeowner-guides",
-    "el-GR": "https://www.fahoproso.com/el/resources/homeowner-guides",
-    sq: "https://www.fahoproso.com/sq/resources/homeowner-guides",
+    "en-US": "https://www.fahoproso.com/resources/homeowner-guides/",
+    "es-US": "https://www.fahoproso.com/es/resources/homeowner-guides/",
+    "el-GR": "https://www.fahoproso.com/el/resources/homeowner-guides/",
+    sq: "https://www.fahoproso.com/sq/resources/homeowner-guides/",
   },
   },
 };

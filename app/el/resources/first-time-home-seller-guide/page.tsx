@@ -11,12 +11,12 @@ export const metadata: Metadata = {
     "Ένας πρακτικός οδηγός για ιδιοκτήτες που πουλούν κατοικία για πρώτη φορά στο Michigan, από την προετοιμασία μέχρι το κλείσιμο.",
   alternates: {
     canonical:
-      "https://www.fahoproso.com/el/resources/first-time-home-seller-guide",
+      "https://www.fahoproso.com/el/resources/first-time-home-seller-guide/",
       languages: {
-    "en-US": "https://www.fahoproso.com/resources/first-time-home-seller-guide",
-    "es-US": "https://www.fahoproso.com/es/resources/first-time-home-seller-guide",
-    "el-GR": "https://www.fahoproso.com/el/resources/first-time-home-seller-guide",
-    sq: "https://www.fahoproso.com/sq/resources/first-time-home-seller-guide",
+    "en-US": "https://www.fahoproso.com/resources/first-time-home-seller-guide/",
+    "es-US": "https://www.fahoproso.com/es/resources/first-time-home-seller-guide/",
+    "el-GR": "https://www.fahoproso.com/el/resources/first-time-home-seller-guide/",
+    sq: "https://www.fahoproso.com/sq/resources/first-time-home-seller-guide/",
   },
   },
 };

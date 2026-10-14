@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Learn what it means to sell your house as-is in Michigan, understand your options, and make an informed decision with this complete guide from FAHOPROSO.",
 
     alternates: {
-     canonical: "https://www.fahoproso.com/resources/sell-house-as-is",
+     canonical: "https://www.fahoproso.com/resources/sell-house-as-is/",
     },
 };
 

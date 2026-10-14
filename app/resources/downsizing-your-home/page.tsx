@@ -12,12 +12,12 @@ export const metadata: Metadata = {
     "Learn about downsizing your home in Michigan, including planning, organizing, selling options, and preparing for your next chapter.",
 
     alternates: {
-     canonical: "https://www.fahoproso.com/resources/downsizing-your-home",
+     canonical: "https://www.fahoproso.com/resources/downsizing-your-home/",
      languages: {
-    "en-US": "https://www.fahoproso.com/resources/downsizing-your-home",
-    "es-US": "https://www.fahoproso.com/es/resources/downsizing-your-home",
-    "el-GR": "https://www.fahoproso.com/el/resources/downsizing-your-home",
-    sq: "https://www.fahoproso.com/sq/resources/downsizing-your-home",
+    "en-US": "https://www.fahoproso.com/resources/downsizing-your-home/",
+    "es-US": "https://www.fahoproso.com/es/resources/downsizing-your-home/",
+    "el-GR": "https://www.fahoproso.com/el/resources/downsizing-your-home/",
+    sq: "https://www.fahoproso.com/sq/resources/downsizing-your-home/",
   },
     },
 };

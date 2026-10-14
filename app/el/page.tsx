@@ -20,12 +20,12 @@ export const metadata: Metadata = {
     "Η FAHOPROSO βοηθά ιδιοκτήτες ακινήτων στο Michigan να εξετάσουν απλές και ξεκάθαρες επιλογές για την πώληση του ακινήτου τους.",
 
   alternates: {
-    canonical: "https://www.fahoproso.com/el",
+    canonical: "https://www.fahoproso.com/el/",
     languages: {
       "en-US": "https://www.fahoproso.com/",
-      "el-GR": "https://www.fahoproso.com/el",
-      "es-US": "https://www.fahoproso.com/es",
-      "sq": "https://www.fahoproso.com/sq",
+      "el-GR": "https://www.fahoproso.com/el/",
+      "es-US": "https://www.fahoproso.com/es/",
+      "sq": "https://www.fahoproso.com/sq/",
     },
   },
 };

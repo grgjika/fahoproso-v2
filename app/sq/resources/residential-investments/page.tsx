@@ -11,12 +11,12 @@ export const metadata: Metadata = {
     "Eksploroni faktorët kryesorë që investitorët mund të marrin parasysh gjatë vlerësimit të mundësive për investime rezidenciale në Michigan.",
   alternates: {
     canonical:
-      "https://www.fahoproso.com/sq/resources/residential-investments",
+      "https://www.fahoproso.com/sq/resources/residential-investments/",
       languages: {
-    "en-US": "https://www.fahoproso.com/resources/residential-investments",
-    "es-US": "https://www.fahoproso.com/es/resources/residential-investments",
-    "el-GR": "https://www.fahoproso.com/el/resources/residential-investments",
-    sq: "https://www.fahoproso.com/sq/resources/residential-investments",
+    "en-US": "https://www.fahoproso.com/resources/residential-investments/",
+    "es-US": "https://www.fahoproso.com/es/resources/residential-investments/",
+    "el-GR": "https://www.fahoproso.com/el/resources/residential-investments/",
+    sq: "https://www.fahoproso.com/sq/resources/residential-investments/",
   },
   },
 };
