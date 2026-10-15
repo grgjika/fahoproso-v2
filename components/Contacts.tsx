@@ -237,6 +237,14 @@ export default function Contact({ locale = "en" }: ContactProps) {
     const form = event.currentTarget;
     const formData = new FormData(form);
 
+    // A filled honeypot means a bot: pretend success and send nothing.
+    if (String(formData.get("_gotcha") ?? "").trim() !== "") {
+      form.reset();
+      setPropertyAddress("");
+      setStatus(text.success);
+      return;
+    }
+
     formData.set("propertyAddress", propertyAddress);
 
     setIsSending(true);
@@ -394,6 +402,27 @@ export default function Contact({ locale = "en" }: ContactProps) {
           onSubmit={handleSubmit}
           className="w-full rounded-xl border border-slate-300 bg-slate-100 px-4 py-3 text-slate-900 shadow-sm outline-none transition-all duration-300 focus:border-[#C9A227] focus:bg-white focus:ring-2 focus:ring-[#C9A227]/20"
         >
+          {/* Honeypot: invisible to people, filled in by spam bots */}
+          <div
+            aria-hidden="true"
+            style={{
+              position: "absolute",
+              left: "-9999px",
+              width: "1px",
+              height: "1px",
+              overflow: "hidden",
+            }}
+          >
+            <label>
+              Leave this field empty
+              <input
+                type="text"
+                name="_gotcha"
+                tabIndex={-1}
+                autoComplete="off"
+              />
+            </label>
+          </div>
           <div>
             <h3 className="text-2xl font-bold text-[#14213D]">
               {text.inquiry}
