@@ -111,7 +111,8 @@ const organizationSchema = {
   description:
     "FAHOPROSO provides residential and commercial real estate investment and property solutions throughout Michigan.",
 
-  email: "info@fahoproso.com",
+  email: "offers@fahoproso.com",
+  telephone: "+1-616-275-4443",
 
   areaServed: [
     {

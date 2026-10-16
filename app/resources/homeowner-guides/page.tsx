@@ -50,6 +50,10 @@ const guides = [
     href: "/resources/selling-house-needs-repairs",
   },
   {
+    title: "Selling a Fire-Damaged House",
+    href: "/resources/sell-fire-damaged-house",
+  },
+  {
     title: "First-Time Home Seller Guide",
     href: "/resources/first-time-home-seller-guide",
   },

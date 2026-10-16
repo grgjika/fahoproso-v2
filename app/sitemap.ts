@@ -35,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/resources/selling-vacant-house",
     "/resources/downsizing-your-home",
     "/resources/selling-house-needs-repairs",
+    "/resources/sell-fire-damaged-house",
     "/resources/first-time-home-seller-guide",
 
     // Service Areas
