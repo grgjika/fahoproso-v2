@@ -40,9 +40,9 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "Sell a Fire-Damaged House in Michigan | FAHOPROSO",
+  title: "Sell a Fire-Damaged House in Michigan",
   description:
-    "Your options for selling a fire-damaged house in Michigan: insurance first steps, repairing, listing, or selling as-is to a cash buyer. Free, no-obligation conversation.",
+    "Options for selling a fire-damaged house in Michigan: insurance first steps, repairing, listing or selling as-is to a cash buyer.",
   alternates: {
     canonical:
       "https://www.fahoproso.com/resources/sell-fire-damaged-house/",

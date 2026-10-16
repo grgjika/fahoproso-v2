@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Homeowner Guides | FAHOPROSO",
+  title: "Homeowner Guides",
   description:
     "Educational homeowner guides from FAHOPROSO covering selling, probate, inherited homes, rental properties, and more.",
     alternates: {

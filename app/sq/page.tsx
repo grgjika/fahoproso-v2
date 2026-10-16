@@ -14,7 +14,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "FAHOPROSO | Zgjidhje për Pasuri të Paluajtshme në Michigan",
+  title: { absolute: "FAHOPROSO | Zgjidhje për Pasuri të Paluajtshme në Michigan" },
 
   description:
     "FAHOPROSO ndihmon pronarët në Michigan të shqyrtojnë mundësi të thjeshta dhe të qarta për shitjen e pronave të tyre.",

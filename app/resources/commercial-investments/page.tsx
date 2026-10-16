@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Commercial Real Estate Investing in Michigan | FAHOPROSO",
+  title: "Commercial Real Estate Investing in Michigan",
   description:
     "Explore commercial real estate investing in Michigan, including office, retail, industrial, mixed-use properties, due diligence, and long-term investment strategy.",
     alternates: {

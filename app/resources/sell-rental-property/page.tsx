@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Selling a Rental Property in Michigan | FAHOPROSO",
+  title: "Selling a Rental Property in Michigan",
   description:
     "Learn about selling a rental property in Michigan, understand your options as a landlord, and explore important considerations before selling.",
 

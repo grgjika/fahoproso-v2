@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Property Evaluation Guide | FAHOPROSO",
+  title: "Property Evaluation Guide",
   description:
     "Learn the key factors that influence property value, including location, condition, comparable sales, market trends, and investment potential.",
 

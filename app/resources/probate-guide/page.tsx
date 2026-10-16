@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Michigan Probate Guide | FAHOPROSO",
+  title: "Michigan Probate Guide",
   description:
     "Learn how probate works in Michigan, when a property can be sold, and understand the probate process with this homeowner guide from FAHOPROSO.",
 

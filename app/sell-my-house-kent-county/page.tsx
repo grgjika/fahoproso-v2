@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Sell My House in Kent County, MI | FAHOPROSO",
+  title: "Sell My House in Kent County, MI",
   description:
     "Looking to sell your house in Kent County, Michigan? FAHOPROSO provides fair property solutions for homeowners looking to sell quickly and confidently.",
   keywords: [
