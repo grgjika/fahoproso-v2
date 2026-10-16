@@ -6,6 +6,8 @@ import Image from "next/image";
 import { MapPin, Phone, Mail, Globe } from "lucide-react";
 import { FaStar } from "react-icons/fa";
 
+import SiteFinder from "@/components/SiteFinder";
+
 const TEAM_LOGIN_URL = "https://fahoproso-app.vercel.app/login";
 
 type Locale = "en" | "es" | "el" | "sq";
@@ -173,6 +175,8 @@ export default function Footer({ locale = "en" }: FooterProps) {
   }
 
   return (
+    <>
+    <SiteFinder locale={locale} />
     <footer className="border-t border-slate-200 bg-neutral-200 text-slate-700">
       <div className="mx-auto grid max-w-7xl gap-16 px-6 py-16 md:grid-cols-2 lg:grid-cols-5">
 
@@ -477,5 +481,6 @@ export default function Footer({ locale = "en" }: FooterProps) {
   </div>
 </div>
     </footer>
+    </>
   );
 }
