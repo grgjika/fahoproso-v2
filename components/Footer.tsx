@@ -1,10 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Phone, Mail, Globe } from "lucide-react";
 import { FaStar } from "react-icons/fa";
+
+const TEAM_LOGIN_URL = "https://fahoproso-app.vercel.app/login";
 
 type Locale = "en" | "es" | "el" | "sq";
 
@@ -154,6 +156,21 @@ export default function Footer({ locale = "en" }: FooterProps) {
   const text = content[locale];
 
   const [showPhone, setShowPhone] = useState(false);
+
+  // Hidden entrance to the team app: two quick clicks/taps on the © symbol.
+  const lastCopyrightClick = useRef(0);
+
+  function handleCopyrightClick() {
+    const now = Date.now();
+
+    if (now - lastCopyrightClick.current < 600) {
+      lastCopyrightClick.current = 0;
+      window.open(TEAM_LOGIN_URL, "_blank", "noopener,noreferrer");
+      return;
+    }
+
+    lastCopyrightClick.current = now;
+  }
 
   return (
     <footer className="border-t border-slate-200 bg-neutral-200 text-slate-700">
@@ -433,7 +450,13 @@ export default function Footer({ locale = "en" }: FooterProps) {
 
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-6 text-sm text-slate-500 md:flex-row">
   <p>
-    © 2026 FAHOPROSO | Faithfull Home & Property Solutions, LLC.
+    <span
+      onClick={handleCopyrightClick}
+      className="cursor-default touch-manipulation select-none"
+    >
+      ©
+    </span>{" "}
+    2026 FAHOPROSO | Faithfull Home & Property Solutions, LLC.
     {text.rights}
   </p>
 
