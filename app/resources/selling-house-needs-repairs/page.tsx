@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Selling a House That Needs Repairs in Michigan | FAHOPROSO",
+  title: "Selling a House That Needs Repairs in Michigan",
   description:
     "Learn your options for selling a house that needs repairs in Michigan, including repairing, listing, or selling the property as-is.",
 

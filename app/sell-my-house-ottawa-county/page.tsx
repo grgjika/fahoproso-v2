@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Sell My House in Ottawa County, MI | FAHOPROSO",
+  title: "Sell My House in Ottawa County, MI",
   description:
     "Looking to sell your house in Ottawa County, Michigan? FAHOPROSO provides fair property solutions for homeowners looking to sell quickly and confidently.",
   keywords: [

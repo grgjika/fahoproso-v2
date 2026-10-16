@@ -26,7 +26,7 @@ export default function ContactPageSQ() {
       <Navbar locale="sq" />
 
       <main className="pt-24">
-        <Contact locale="sq" />
+        <Contact locale="sq" asH1 />
       </main>
 
       <Footer locale="sq" />

@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Selling a Vacant House in Michigan | FAHOPROSO",
+  title: "Selling a Vacant House in Michigan",
   description:
     "Learn your options for selling a vacant house in Michigan, including maintenance, security, insurance, repairs, and selling as-is.",
 

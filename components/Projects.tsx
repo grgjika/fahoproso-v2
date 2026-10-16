@@ -14,6 +14,8 @@ type Locale = "en" | "es" | "el" | "sq";
 
 type ProjectsProps = {
   locale?: Locale;
+  /** Render the main heading as the page's H1 (used on pages without a banner). */
+  asH1?: boolean;
 };
 
 const content = {
@@ -257,8 +259,10 @@ const investmentDetails = [
 
 export default function Projects({
   locale = "en",
+  asH1 = false,
 }: ProjectsProps) {
   const text = content[locale];
+  const Heading = asH1 ? "h1" : "h2";
 
  const contactHref =
   locale === "en" ? "/contact" : `/${locale}/contact`;
@@ -277,9 +281,9 @@ export default function Projects({
 
             <div className="mt-3 h-1 w-16 rounded-full bg-[#C9A227]" />
 
-            <h2 className="mt-6 text-3xl font-bold leading-tight text-[#14213D] sm:text-4xl lg:text-5xl">
+            <Heading className="mt-6 text-3xl font-bold leading-tight text-[#14213D] sm:text-4xl lg:text-5xl">
               {text.title}
-            </h2>
+            </Heading>
 
             <p className="mt-6 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
               {text.description}

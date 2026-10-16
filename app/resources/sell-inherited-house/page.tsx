@@ -6,7 +6,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 
 export const metadata: Metadata = {
-  title: "Selling an Inherited House in Michigan | FAHOPROSO",
+  title: "Selling an Inherited House in Michigan",
   description:
     "Learn about selling an inherited house in Michigan with this guide from FAHOPROSO.",
 
