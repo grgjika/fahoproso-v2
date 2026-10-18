@@ -27,7 +27,7 @@ export default function ProjectsPageSQ() {
       <Navbar locale="sq" />
 
       <main className="pt-24">
-        <Projects locale="sq" />
+        <Projects locale="sq" asH1 />
         <CTA locale="sq" />
       </main>
 

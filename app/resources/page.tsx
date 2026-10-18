@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Real Estate Resources | FAHOPROSO",
+  title: "Real Estate Resources",
   description:
     "Helpful real estate resources, homeowner guides, investment insights, and Michigan market information from FAHOPROSO.",
     alternates: {

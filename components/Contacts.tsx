@@ -8,6 +8,8 @@ type Locale = "en" | "es" | "el" | "sq";
 
 type ContactProps = {
   locale?: Locale;
+  /** Render the main heading as the page's H1 (used on pages without a banner). */
+  asH1?: boolean;
 };
 
 const content = {
@@ -210,8 +212,9 @@ const content = {
   },
 };
 
-export default function Contact({ locale = "en" }: ContactProps) {
+export default function Contact({ locale = "en", asH1 = false }: ContactProps) {
   const text = content[locale];
+  const Heading = asH1 ? "h1" : "h2";
   const [status, setStatus] = useState("");
   const [isSending, setIsSending] = useState(false);
   const [propertyAddress, setPropertyAddress] = useState("");
@@ -297,9 +300,9 @@ export default function Contact({ locale = "en" }: ContactProps) {
           
           
 
-          <h2 className="mt-6 text-4xl font-bold text-slate-900 md:text-5xl">
+          <Heading className="mt-6 text-4xl font-bold text-slate-900 md:text-5xl">
             {text.heading}
-          </h2>
+          </Heading>
 
           <p className="mt-6 text-lg leading-8 text-slate-600">
             {text.intro}

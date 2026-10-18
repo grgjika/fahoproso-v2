@@ -6,7 +6,8 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Customer Reviews | FAHOPROSO",
+  title: "Customer Reviews",
+  robots: { index: false, follow: true },
   description:
     "Customer reviews and feedback for Faithfull Home & Property Solutions, LLC.",
 

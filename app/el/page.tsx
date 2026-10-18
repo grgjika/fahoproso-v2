@@ -14,7 +14,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "FAHOPROSO | Λύσεις Ακινήτων στο Michigan",
+  title: { absolute: "FAHOPROSO | Λύσεις Ακινήτων στο Michigan" },
 
   description:
     "Η FAHOPROSO βοηθά ιδιοκτήτες ακινήτων στο Michigan να εξετάσουν απλές και ξεκάθαρες επιλογές για την πώληση του ακινήτου τους.",

@@ -27,7 +27,7 @@ export default function FAQPageEL() {
       <Navbar locale="el" />
 
       <main className="pt-24">
-        <FAQ locale="el" />
+        <FAQ locale="el" asH1 />
         <CTA locale="el" />
       </main>
 

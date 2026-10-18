@@ -14,7 +14,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Michigan Real Estate Guides | FAHOPROSO",
+  title: "Michigan Real Estate Guides",
   description:
     "Explore FAHOPROSO real estate guides for Kent County, Ottawa County, Grand Rapids, Troy, and communities across Michigan.",
 

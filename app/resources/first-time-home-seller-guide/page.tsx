@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "First-Time Home Seller Guide in Michigan | FAHOPROSO",
+  title: "First-Time Home Seller Guide in Michigan",
   description:
     "A helpful guide for first-time home sellers in Michigan covering preparation, property evaluation, offers, closing, and common mistakes.",
 

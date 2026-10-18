@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Rental Property Strategies in Michigan | FAHOPROSO",
+  title: "Rental Property Strategies in Michigan",
   description:
     "Explore rental property strategies in Michigan, including cash flow, tenant quality, maintenance, reserves, and long-term portfolio planning.",
     alternates: {

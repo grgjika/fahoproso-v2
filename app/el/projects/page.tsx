@@ -27,7 +27,7 @@ export default function ProjectsPageEL() {
       <Navbar locale="el" />
 
       <main className="pt-24">
-        <Projects locale="el" />
+        <Projects locale="el" asH1 />
         <CTA locale="el" />
       </main>
 

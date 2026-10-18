@@ -47,7 +47,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/sell-my-house-troy",
 
     // Company / Legal
-    "/reviews",
     "/privacy",
     "/terms",
   ];

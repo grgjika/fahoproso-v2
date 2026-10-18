@@ -7,6 +7,8 @@ type Locale = "en" | "es" | "el" | "sq";
 
 type FAQProps = {
   locale?: Locale;
+  /** Render the main heading as the page's H1 (used on pages without a banner). */
+  asH1?: boolean;
 };
 
 const content = {
@@ -407,10 +409,11 @@ const content = {
   },
 };
 
-export default function FAQ({ locale = "en" }: FAQProps) {
+export default function FAQ({ locale = "en", asH1 = false }: FAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const text = content[locale];
+  const Heading = asH1 ? "h1" : "h2";
 
   return (
     <section id="faq" className="bg-[#F5F5F0] py-16 sm:py-20 lg:py-24">
@@ -420,9 +423,9 @@ export default function FAQ({ locale = "en" }: FAQProps) {
             {text.eyebrow}
           </p>
 
-          <h2 className="mt-4 text-3xl font-bold leading-tight text-[#14213D] sm:text-4xl md:text-5xl">
+          <Heading className="mt-4 text-3xl font-bold leading-tight text-[#14213D] sm:text-4xl md:text-5xl">
             {text.title}
-          </h2>
+          </Heading>
 
           <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
 

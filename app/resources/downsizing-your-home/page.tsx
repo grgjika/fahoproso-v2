@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Downsizing Your Home in Michigan | FAHOPROSO",
+  title: "Downsizing Your Home in Michigan",
   description:
     "Learn about downsizing your home in Michigan, including planning, organizing, selling options, and preparing for your next chapter.",
 

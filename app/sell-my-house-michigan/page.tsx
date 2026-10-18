@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Sell My House in Michigan | FAHOPROSO",
+  title: "Sell My House in Michigan",
   description:
     "Looking to sell your house anywhere in Michigan? FAHOPROSO provides professional property solutions for homeowners across the state.",
   alternates: {

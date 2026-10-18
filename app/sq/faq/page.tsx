@@ -27,7 +27,7 @@ export default function FAQPageSQ() {
       <Navbar locale="sq" />
 
       <main className="pt-24">
-        <FAQ locale="sq" />
+        <FAQ locale="sq" asH1 />
         <CTA locale="sq" />
       </main>
 

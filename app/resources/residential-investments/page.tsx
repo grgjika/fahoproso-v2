@@ -7,9 +7,9 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Residential Real Estate Investing in Michigan | FAHOPROSO",
+  title: "Residential Real Estate Investing in Michigan",
   description:
-    "Explore residential real estate investing in Michigan, including single-family homes, multifamily properties, cash flow, appreciation, and long-term investment strategy.",
+    "Residential real estate investing in Michigan: single-family and multifamily homes, cash flow, appreciation and long-term strategy.",
 
     alternates: {
      canonical: "https://www.fahoproso.com/resources/residential-investments/",

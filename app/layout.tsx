@@ -3,6 +3,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
 import Tilt3D from "@/components/Tilt3D";
 import ScrollFX from "@/components/ScrollFX";
+import LangSetter from "@/components/LangSetter";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Faithful Home & Property Solutions, LLC (FAHOPROSO) is a Michigan real estate investment company that buys residential properties and helps homeowners explore simple, straightforward options for selling their homes.",
+    "FAHOPROSO is a Michigan real estate investment company that buys houses as-is and helps homeowners explore simple, fair options for selling.",
 
   keywords: [
     "real estate investment Michigan",
@@ -189,6 +190,8 @@ export default function RootLayout({
         <Tilt3D />
 
         <ScrollFX />
+
+        <LangSetter />
 
         <GoogleAnalytics gaId="G-5F9RJMGDCF" />
       </body>
