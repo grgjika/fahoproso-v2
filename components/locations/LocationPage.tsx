@@ -37,16 +37,16 @@ const steps = [
     text: "Send us the address and a few details, or call us.",
   },
   {
-    title: "We Review the Property",
-    text: "We look at its condition, location and your goals.",
+    title: "We Look at the House",
+    text: "We look at its condition, where it is and what you want.",
   },
   {
-    title: "Discuss Your Options",
+    title: "Talk About Your Options",
     text: "We explain what we can offer and answer your questions.",
   },
   {
-    title: "Decide on Your Timeline",
-    text: "You choose whether to move forward and when.",
+    title: "Decide When You're Ready",
+    text: "You choose if you want to move forward, and when.",
   },
 ];
 
@@ -116,7 +116,7 @@ export default function LocationPage({ data }: { data: LocationData }) {
                   href="/contact"
                   className="inline-flex items-center gap-2 rounded-xl bg-[#C9A227] px-8 py-4 font-semibold text-[#14213D] transition hover:bg-white"
                 >
-                  Request a Free Consultation
+                  Ask for a Free Offer
                   <ArrowRight className="h-5 w-5" />
                 </Link>
 
@@ -177,7 +177,7 @@ export default function LocationPage({ data }: { data: LocationData }) {
           <div className="mx-auto max-w-7xl px-6">
             <div className="mx-auto max-w-3xl text-center">
               <p className="font-semibold uppercase tracking-[0.25em] text-[#C9A227]">
-                Common Situations
+                Why People Sell
               </p>
 
               <h2 className="mt-4 text-4xl font-bold text-[#14213D] md:text-5xl">
@@ -253,7 +253,7 @@ export default function LocationPage({ data }: { data: LocationData }) {
               </p>
 
               <h2 className="mt-4 text-4xl font-bold text-[#14213D]">
-                A Simple, No-Pressure Process
+                A Simple Process With No Pressure
               </h2>
             </div>
 
@@ -404,7 +404,7 @@ export default function LocationPage({ data }: { data: LocationData }) {
             <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
 
             <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-slate-300">
-              Tell us about your property. There is no obligation, and you
+              Tell us about your house. There is no obligation, and you
               decide what happens next.
             </p>
 
