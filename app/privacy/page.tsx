@@ -37,7 +37,7 @@ export default function PrivacyPage() {
         <section className="bg-white py-20">
           <div className="mx-auto max-w-4xl px-6 text-slate-700">
             <p className="mb-10 text-lg leading-8">
-              Faithfull Home &amp; Property Solutions, LLC
+              Faithful Home &amp; Property Solutions, LLC
               (&quot;FAHOPROSO,&quot; &quot;we,&quot; &quot;our,&quot; or
               &quot;us&quot;) is committed to protecting your privacy. This
               Privacy Policy explains how we collect, use, disclose, and
@@ -167,7 +167,7 @@ export default function PrivacyPage() {
 
                 <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-6">
                   <p className="font-bold text-slate-900">
-                    Faithfull Home &amp; Property Solutions, LLC
+                    Faithful Home &amp; Property Solutions, LLC
                   </p>
 
                   <p className="mt-2">Grand Rapids, Michigan</p>

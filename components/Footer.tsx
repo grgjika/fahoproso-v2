@@ -460,7 +460,7 @@ export default function Footer({ locale = "en" }: FooterProps) {
     >
       ©
     </span>{" "}
-    2026 FAHOPROSO | Faithfull Home & Property Solutions, LLC.
+    2026 FAHOPROSO | Faithful Home & Property Solutions, LLC.
     {text.rights}
   </p>
 

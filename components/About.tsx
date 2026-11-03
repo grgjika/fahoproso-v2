@@ -174,7 +174,7 @@ export default function About({ locale = "en" }: AboutProps) {
                 FAHOPROSO
               </p>
               <p className="mt-1 text-sm font-semibold leading-snug text-[#14213D]">
-                Faithfull Home &amp; Property Solutions, LLC
+                Faithful Home &amp; Property Solutions, LLC
               </p>
               <p className="mt-1 text-xs text-slate-500">
                 Grand Rapids, Michigan
