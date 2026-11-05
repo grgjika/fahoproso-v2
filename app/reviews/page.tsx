@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Customer Reviews",
   robots: { index: false, follow: true },
   description:
-    "Customer reviews and feedback for Faithfull Home & Property Solutions, LLC.",
+    "Customer reviews and feedback for Faithful Home & Property Solutions, LLC.",
 
     alternates: {
      canonical: "https://www.fahoproso.com/reviews/",

@@ -32,12 +32,12 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "Faithfull Home & Property Solutions, LLC",
+      name: "Faithful Home & Property Solutions, LLC",
     },
   ],
 
-  creator: "Faithfull Home & Property Solutions, LLC",
-  publisher: "Faithfull Home & Property Solutions, LLC",
+  creator: "Faithful Home & Property Solutions, LLC",
+  publisher: "Faithful Home & Property Solutions, LLC",
 
   openGraph: {
     title: "FAHOPROSO | Sell Your House & Real Estate Investment Michigan",
@@ -98,7 +98,7 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": "https://www.fahoproso.com/#organization",
-  name: "Faithfull Home & Property Solutions, LLC",
+  name: "Faithful Home & Property Solutions, LLC",
   alternateName: "FAHOPROSO",
   url: "https://www.fahoproso.com",
 

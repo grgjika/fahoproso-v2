@@ -37,7 +37,7 @@ export default function TermsPage() {
           <div className="mx-auto max-w-4xl px-6 text-slate-700">
             <p className="mb-10 text-lg leading-8">
               These Terms and Conditions govern your use of the FAHOPROSO
-              website operated by Faithfull Home &amp; Property Solutions, LLC.
+              website operated by Faithful Home &amp; Property Solutions, LLC.
               By accessing or using this website, you agree to these terms.
             </p>
 
@@ -117,7 +117,7 @@ export default function TermsPage() {
 
                 <p className="mt-4 leading-8">
                   Website content, branding, graphics, text, logos, and design
-                  elements are owned by or licensed to Faithfull Home &amp;
+                  elements are owned by or licensed to Faithful Home &amp;
                   Property Solutions, LLC and may not be copied, reproduced, or
                   distributed without permission.
                 </p>
@@ -143,7 +143,7 @@ export default function TermsPage() {
 
                 <p className="mt-4 leading-8">
                   To the fullest extent permitted by law, FAHOPROSO and
-                  Faithfull Home &amp; Property Solutions, LLC will not be
+                  Faithful Home &amp; Property Solutions, LLC will not be
                   liable for losses or damages arising from use of this website,
                   reliance on its content, website interruptions, or third-party
                   services.
@@ -181,7 +181,7 @@ export default function TermsPage() {
 
                 <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-6">
                   <p className="font-bold text-slate-900">
-                    Faithfull Home &amp; Property Solutions, LLC
+                    Faithful Home &amp; Property Solutions, LLC
                   </p>
 
                   <p className="mt-2">Grand Rapids, Michigan</p>

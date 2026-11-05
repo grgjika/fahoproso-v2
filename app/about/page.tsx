@@ -45,7 +45,7 @@ export default function AboutPage() {
             <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-200">
-              Faithfull Home & Property Solutions, LLC provides practical,
+              Faithful Home & Property Solutions, LLC provides practical,
               transparent, and professionally managed real estate investment
               solutions.
             </p>
