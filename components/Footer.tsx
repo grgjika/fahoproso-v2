@@ -16,7 +16,7 @@ type FooterProps = {
   locale?: Locale;
 };
 
-const content = {
+export const content = {
   en: {
     tagline1: "Investing in Real Estate.",
     tagline2: "Creating Opportunities.",

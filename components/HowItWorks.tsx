@@ -14,7 +14,7 @@ type HowItWorksProps = {
   locale?: Locale;
 };
 
-const content = {
+export const content = {
   en: {
     eyebrow: "HOW IT WORKS",
     titleLine1: "A Simple and Straightforward",
@@ -120,7 +120,7 @@ const content = {
   },
 };
 
-const icons = [
+export const icons = [
   PhoneCall,
   BadgeDollarSign,
   Handshake,
