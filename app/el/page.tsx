@@ -2,14 +2,8 @@ import type { Metadata } from "next";
 
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Services from "@/components/Services";
-import HowItWorks from "@/components/HowItWorks";
-import Projects from "@/components/Projects";
-import WhyChooseUs from "@/components/WhyChooseUs";
-import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
-import Contact from "@/components/Contacts";
+import HomeSections from "@/components/HomeSections";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
@@ -35,14 +29,8 @@ export default function GreekHome() {
     <>
       <Navbar locale="el" />
       <Hero locale="el" />
-      <About locale="el" />
-      <Services locale="el" />
-      <HowItWorks locale="el" />
-      <Projects locale="el" />
-      <WhyChooseUs locale="el" />
-      <FAQ locale="el" />
+      <HomeSections locale="el" />
       <CTA locale="el" />
-      <Contact locale="el" />
       <Footer locale="el" />
       <ScrollToTop />
     </>

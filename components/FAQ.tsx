@@ -11,7 +11,7 @@ type FAQProps = {
   asH1?: boolean;
 };
 
-const content = {
+export const content = {
   en: {
     eyebrow: "Frequently Asked Questions",
     title: "Clear Answers to Common Property Questions",

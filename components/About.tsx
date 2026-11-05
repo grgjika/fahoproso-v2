@@ -12,7 +12,7 @@ type AboutProps = {
   locale?: Locale;
 };
 
-const content = {
+export const content = {
   en: {
     eyebrow: "About FAHOPROSO",
     title: "Our Real Estate Investment Approach",
@@ -130,7 +130,7 @@ const content = {
   },
 };
 
-const icons = [Home, Building2, Handshake, TrendingUp];
+export const icons = [Home, Building2, Handshake, TrendingUp];
 
 
 export default function About({ locale = "en" }: AboutProps) {

@@ -15,7 +15,7 @@ type WhyChooseUsProps = {
   locale?: Locale;
 };
 
-const content = {
+export const content = {
   en: {
     eyebrow: "Why Choose FAHOPROSO",
     titleLine1: "A Trusted Partner for Your",
@@ -177,7 +177,7 @@ const content = {
   },
 };
 
-const benefitDetails = [
+export const benefitDetails = [
   {
     icon: BadgeDollarSign,
     color: "bg-gray-300",

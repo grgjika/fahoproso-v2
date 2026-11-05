@@ -13,7 +13,7 @@ type ServicesProps = {
   locale?: Locale;
 };
 
-const content = {
+export const content = {
   en: {
     eyebrow: "Our Services",
     title: "Real Estate Solutions You Can Trust",
@@ -131,7 +131,7 @@ const content = {
   },
 };
 
-const serviceDetails = [
+export const serviceDetails = [
   {
     icon: Home,
     image: "/images/service-cash-home.jpg",

@@ -148,7 +148,7 @@ export default function Hero({ locale = "en" }: HeroProps) {
         </motion.h1>
 
         <motion.a
-          href="#contact"
+          href={locale === "en" ? "/contact" : `/${locale}/contact`}
           className="hero-cta mt-9 inline-flex items-center justify-center rounded-full px-9 py-3.5 text-sm font-medium uppercase tracking-[0.2em] text-[#14213D]"
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
