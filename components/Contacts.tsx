@@ -42,6 +42,7 @@ const content = {
     lastName: "Last name",
     emailAddress: "Email address",
     phoneNumber: "Phone number",
+    optional: "(optional)",
     propertyAddress: "Property address",
     propertyDetails: "Tell us about the property",
     propertyPlaceholder:
@@ -91,6 +92,7 @@ const content = {
     lastName: "Apellido",
     emailAddress: "Correo electrónico",
     phoneNumber: "Número de teléfono",
+    optional: "(opcional)",
     propertyAddress: "Dirección de la propiedad",
     propertyDetails: "Cuéntenos sobre la propiedad",
     propertyPlaceholder:
@@ -140,6 +142,7 @@ const content = {
     lastName: "Επώνυμο",
     emailAddress: "Διεύθυνση email",
     phoneNumber: "Αριθμός τηλεφώνου",
+    optional: "(προαιρετικό)",
     propertyAddress: "Διεύθυνση ακινήτου",
     propertyDetails: "Πείτε μας για το ακίνητο",
     propertyPlaceholder:
@@ -190,6 +193,7 @@ const content = {
     lastName: "Mbiemri",
     emailAddress: "Adresa e email-it",
     phoneNumber: "Numri i telefonit",
+    optional: "(opsionale)",
     propertyAddress: "Adresa e pronës",
     propertyDetails: "Na tregoni për pronën",
     propertyPlaceholder:
@@ -460,11 +464,10 @@ export default function Contact({ locale = "en", asH1 = false }: ContactProps) {
                 htmlFor="lastName"
                 className="mb-2 block font-medium text-slate-700"
               >
-                {text.lastName}
+                {text.lastName}{" "}<span className="font-normal text-slate-500">{text.optional}</span>
               </label>
 
               <input
-                required
                 id="lastName"
                 name="lastName"
                 type="text"
@@ -479,11 +482,10 @@ export default function Contact({ locale = "en", asH1 = false }: ContactProps) {
               htmlFor="email"
               className="mb-2 block font-medium text-slate-700"
             >
-              {text.emailAddress}
+              {text.emailAddress}{" "}<span className="font-normal text-slate-500">{text.optional}</span>
             </label>
 
             <input
-              required
               id="email"
               name="email"
               type="email"
@@ -526,11 +528,10 @@ export default function Contact({ locale = "en", asH1 = false }: ContactProps) {
               htmlFor="message"
               className="mb-2 block font-medium text-slate-700"
             >
-              {text.propertyDetails}
+              {text.propertyDetails}{" "}<span className="font-normal text-slate-500">{text.optional}</span>
             </label>
 
             <textarea
-              required
               id="message"
               name="message"
               rows={5}

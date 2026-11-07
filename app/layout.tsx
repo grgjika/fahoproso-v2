@@ -5,6 +5,7 @@ import Tilt3D from "@/components/Tilt3D";
 import ScrollFX from "@/components/ScrollFX";
 import LangSetter from "@/components/LangSetter";
 import LanguageBanner from "@/components/LanguageBanner";
+import MobileCallBar from "@/components/MobileCallBar";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -97,7 +98,7 @@ export const viewport: Viewport = {
 
 const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": ["Organization", "RealEstateAgent"],
   "@id": "https://www.fahoproso.com/#organization",
   name: "Faithful Home & Property Solutions, LLC",
   alternateName: "FAHOPROSO",
@@ -115,6 +116,34 @@ const organizationSchema = {
 
   email: "offers@fahoproso.com",
   telephone: "+1-616-275-4443",
+
+  // Service-area business: no street address is published.
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Grand Rapids",
+    addressRegion: "MI",
+    addressCountry: "US",
+  },
+
+  sameAs: [
+    "https://www.facebook.com/Fahoproso",
+    "https://g.page/r/Cdu7vBWv41J6EBM/review",
+  ],
+
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "17:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Saturday",
+      opens: "10:00",
+      closes: "14:00",
+    },
+  ],
 
   areaServed: [
     {
@@ -137,6 +166,21 @@ const organizationSchema = {
       "@type": "City",
       name: "Troy, Michigan",
     },
+    ...[
+      "Wyoming",
+      "Kentwood",
+      "Walker",
+      "Grandville",
+      "Rockford",
+      "Ada",
+      "Byron Center",
+      "Hudsonville",
+      "Grand Haven",
+      "Holland",
+    ].map((city) => ({
+      "@type": "City",
+      name: `${city}, Michigan`,
+    })),
   ],
 
   knowsAbout: [
@@ -169,7 +213,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
-      <body>
+      <body className="pb-16 md:pb-0">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -195,6 +239,8 @@ export default function RootLayout({
         <LangSetter />
 
         <LanguageBanner />
+
+        <MobileCallBar />
 
         <GoogleAnalytics gaId="G-5F9RJMGDCF" />
       </body>

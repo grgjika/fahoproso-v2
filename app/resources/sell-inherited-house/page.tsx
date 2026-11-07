@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RelatedGuides from "@/components/RelatedGuides";
 import ScrollToTop from "@/components/ScrollToTop";
 
 
@@ -380,6 +381,7 @@ export default function SellInheritedHousePage() {
 
   </div>
 </section>
+        <RelatedGuides links={["probate-guide", "selling-vacant-house", "sell-house-as-is"]} />
       </main>
 
       <Footer />

@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RelatedGuides from "@/components/RelatedGuides";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
@@ -494,6 +495,7 @@ export default function DownsizingYourHomePage() {
           </div>
         </section>
 
+        <RelatedGuides links={["first-time-home-seller-guide", "sell-house-as-is", "probate-guide"]} />
       </main>
 
       <Footer />

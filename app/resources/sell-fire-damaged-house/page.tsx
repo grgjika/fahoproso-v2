@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RelatedGuides from "@/components/RelatedGuides";
 import ScrollToTop from "@/components/ScrollToTop";
 
 const faqs = [
@@ -377,6 +378,7 @@ export default function SellFireDamagedHousePage() {
             </Link>
           </div>
         </section>
+        <RelatedGuides links={["selling-house-needs-repairs", "sell-house-as-is", "selling-vacant-house"]} />
       </main>
 
       <Footer />

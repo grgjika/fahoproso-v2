@@ -300,3 +300,26 @@ main > section[class*="bg-[#14213D]"]:first-child > div {
     animation: none;
   }
 }
+
+
+/* ---------- Readable gold labels on light backgrounds (WCAG AA) ---------- */
+section:is(
+    [class*="bg-white"],
+    [class*="bg-slate-50"],
+    [class*="bg-slate-100"],
+    [class*="bg-stone-"],
+    [class*="bg-[#F5F5F0]"],
+    [class*="bg-blue-50"]
+  )
+  p[class*="uppercase"][class*="text-[#C9A227]"]:not(
+    :is(
+      [class*="bg-[#14213D]"],
+      [class*="bg-[#0e1a33]"],
+      [class*="bg-slate-9"],
+      [class*="bg-slate-8"],
+      [class*="bg-white/"]
+    )
+    *
+  ) {
+  color: #8a6a0a;
+}

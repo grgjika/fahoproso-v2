@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RelatedGuides from "@/components/RelatedGuides";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
@@ -451,6 +452,7 @@ export default function SellingVacantHousePage() {
             </Link>
           </div>
         </section>
+        <RelatedGuides links={["sell-house-as-is", "selling-house-needs-repairs", "sell-fire-damaged-house"]} />
       </main>
 
       <Footer />

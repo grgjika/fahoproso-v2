@@ -211,25 +211,13 @@ export default function Footer({ locale = "en" }: FooterProps) {
             <div className="flex items-center gap-3">
               <Phone className="h-5 w-5 text-[#C9A227]" />
 
-              <button
-                type="button"
-                onClick={() => setShowPhone((current) => !current)}
-                className="transition hover:text-[#C9A227]"
+              <a
+                href="tel:+16162754443"
+                className="font-semibold text-[#14213D] transition hover:text-[#8a6a0a]"
               >
-                {text.showPhone}
-              </button>
+                (616) 275-4443
+              </a>
             </div>
-
-            {showPhone && (
-              <div className="ml-8 rounded-lg border border-slate-300 bg-white px-4 py-3 shadow-sm">
-                <a
-                  href="tel:+16162754443"
-                  className="font-semibold text-[#14213D] transition hover:text-[#C9A227]"
-                >
-                  (616) 275-4443
-                </a>
-              </div>
-            )}
 
             <div className="flex items-center gap-3">
               <Mail className="h-5 w-5 text-[#C9A227]" />
@@ -432,7 +420,7 @@ export default function Footer({ locale = "en" }: FooterProps) {
 
               {showPhone && (
                 <div className="absolute right-0 top-12 z-20 w-52 rounded-xl border border-slate-200 bg-white p-4 shadow-xl">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-slate-600">
                     {text.call}
                   </p>
                   
@@ -455,7 +443,7 @@ export default function Footer({ locale = "en" }: FooterProps) {
         </div>
       </div>
 
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-6 text-sm text-slate-500 md:flex-row">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-6 text-sm text-slate-600 md:flex-row">
   <p>
     <span
       onClick={handleCopyrightClick}

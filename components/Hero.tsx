@@ -119,8 +119,8 @@ export default function Hero({ locale = "en" }: HeroProps) {
       >
         <motion.div
           className="hero-logo-wrap"
-          initial={{ opacity: 0, y: 30, rotateX: 20 }}
-          animate={{ opacity: 1, y: 0, rotateX: 0 }}
+          initial={{ y: 30, rotateX: 20 }}
+          animate={{ y: 0, rotateX: 0 }}
           transition={{ duration: 1.2, ease: [0.2, 0.8, 0.2, 1] }}
           style={{ transform: "translateZ(90px)" }}
         >

@@ -92,7 +92,7 @@ export default function LanguageBanner() {
       role="region"
       aria-label="Language"
       lang={target}
-      className="fixed bottom-4 left-4 right-4 z-[1500] mx-auto flex max-w-3xl flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl sm:left-6 sm:right-auto sm:w-[44rem] sm:max-w-[calc(100vw-3rem)] sm:flex-row sm:items-center"
+      className="fixed bottom-20 left-4 right-4 sm:bottom-4 z-[1500] mx-auto flex max-w-3xl flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl sm:left-6 sm:right-auto sm:w-[44rem] sm:max-w-[calc(100vw-3rem)] sm:flex-row sm:items-center"
       style={{ position: "fixed" }}
     >
       <span className="hidden h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[#14213D] to-[#2b3f6e] sm:flex">
