@@ -14,6 +14,7 @@ export const metadata: Metadata = {
       "https://www.fahoproso.com/el/resources/residential-investments/",
       languages: {
     "en-US": "https://www.fahoproso.com/resources/residential-investments/",
+    "x-default": "https://www.fahoproso.com/resources/residential-investments/",
     "es-US": "https://www.fahoproso.com/es/resources/residential-investments/",
     "el-GR": "https://www.fahoproso.com/el/resources/residential-investments/",
     sq: "https://www.fahoproso.com/sq/resources/residential-investments/",

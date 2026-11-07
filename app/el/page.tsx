@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     canonical: "https://www.fahoproso.com/el/",
     languages: {
       "en-US": "https://www.fahoproso.com/",
+      "x-default": "https://www.fahoproso.com/",
       "el-GR": "https://www.fahoproso.com/el/",
       "es-US": "https://www.fahoproso.com/es/",
       "sq": "https://www.fahoproso.com/sq/",

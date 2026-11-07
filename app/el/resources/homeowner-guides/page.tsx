@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     canonical: "https://www.fahoproso.com/el/resources/homeowner-guides/",
     languages: {
     "en-US": "https://www.fahoproso.com/resources/homeowner-guides/",
+    "x-default": "https://www.fahoproso.com/resources/homeowner-guides/",
     "es-US": "https://www.fahoproso.com/es/resources/homeowner-guides/",
     "el-GR": "https://www.fahoproso.com/el/resources/homeowner-guides/",
     sq: "https://www.fahoproso.com/sq/resources/homeowner-guides/",

@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     canonical: "https://www.fahoproso.com/el/resources/probate-guide/",
     languages: {
     "en-US": "https://www.fahoproso.com/resources/probate-guide/",
+    "x-default": "https://www.fahoproso.com/resources/probate-guide/",
     "es-US": "https://www.fahoproso.com/es/resources/probate-guide/",
     "el-GR": "https://www.fahoproso.com/el/resources/probate-guide/",
     sq: "https://www.fahoproso.com/sq/resources/probate-guide/",
