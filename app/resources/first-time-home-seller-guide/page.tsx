@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RelatedGuides from "@/components/RelatedGuides";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
@@ -398,6 +399,7 @@ export default function FirstTimeHomeSellerGuidePage() {
             </Link>
           </div>
         </section>
+        <RelatedGuides links={["downsizing-your-home", "property-evaluation", "sell-house-as-is"]} />
       </main>
 
       <Footer />

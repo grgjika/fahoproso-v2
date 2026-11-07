@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RelatedGuides from "@/components/RelatedGuides";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
@@ -420,6 +421,7 @@ export default function ProbateGuidePage() {
 
         </section>
 
+        <RelatedGuides links={["sell-inherited-house", "downsizing-your-home", "sell-house-as-is"]} />
       </main>
 
       <Footer />

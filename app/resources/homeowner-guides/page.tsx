@@ -25,42 +25,52 @@ const guides = [
   {
     title: "Selling an Inherited House",
     href: "/resources/sell-inherited-house",
+    description: "Next steps when you inherit a house, from ownership to the sale.",
   },
   {
     title: "Selling Your House As-Is",
     href: "/resources/sell-house-as-is",
+    description: "How selling without repairs works, and when it makes sense.",
   },
   {
     title: "Understanding Probate",
     href: "/resources/probate-guide",
+    description: "What probate means for selling a house in Michigan.",
   },
   {
     title: "Selling a Rental Property",
     href: "/resources/sell-rental-property",
+    description: "Options for selling a rental, with or without tenants.",
   },
   {
     title: "Selling a Vacant House",
     href: "/resources/selling-vacant-house",
+    description: "Costs and options for an empty house.",
   },
   {
     title: "Downsizing Your Home",
     href: "/resources/downsizing-your-home",
+    description: "Planning a move to a smaller home.",
   },
   {
     title: "Selling a House That Needs Repairs",
     href: "/resources/selling-house-needs-repairs",
+    description: "Compare repairing, listing and selling as-is.",
   },
   {
     title: "Selling a Fire-Damaged House",
     href: "/resources/sell-fire-damaged-house",
+    description: "First steps and options after a fire.",
   },
   {
     title: "First-Time Home Seller Guide",
     href: "/resources/first-time-home-seller-guide",
+    description: "The selling process explained, step by step.",
   },
   {
   title: "View All Michigan Guides",
   href: "/resources/michigan-guides",
+    description: "Guides for the Michigan communities we serve.",
 },
 ];
 
@@ -103,8 +113,15 @@ export default function HomeownerGuidesPage() {
                 href={guide.href}
                 className="flex items-center justify-between rounded-2xl bg-white p-6 shadow transition hover:border hover:border-[#C9A227]"
               >
-                <span className="text-xl font-semibold text-[#14213D]">
-                  {guide.title}
+                <span>
+                  <span className="block text-xl font-semibold text-[#14213D]">
+                    {guide.title}
+                  </span>
+                  {"description" in guide && (
+                    <span className="mt-1 block text-slate-600">
+                      {guide.description}
+                    </span>
+                  )}
                 </span>
 
                 <span className="font-semibold text-[#14213D]">

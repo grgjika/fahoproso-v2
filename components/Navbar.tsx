@@ -188,7 +188,6 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
     useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [atTop, setAtTop] = useState(true);
-  const [showPhone, setShowPhone] = useState(false);
   const [showResources, setShowResources] = useState(false);
   const [showMobileResources, setShowMobileResources] =
     useState(false);
@@ -255,7 +254,6 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
     setShowLanguage(false);
     setShowMobileLanguage(false);
     setIsOpen(false);
-    setShowPhone(false);
     setShowResources(false);
     setShowMobileResources(false);
   };
@@ -502,35 +500,17 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
             {text.contactUs}
           </Link>
 
-          {/* Phone Popup */}
-          <div className="relative">
-            <button
-              type="button"
-              onClick={() =>
-                setShowPhone((current) => !current)
-              }
-              aria-label="Show FAHOPROSO phone number"
-              aria-expanded={showPhone}
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-slate-300 text-slate-700 transition hover:border-[#C9A227] hover:bg-[#C9A227] hover:text-white"
-            >
-              <Phone className="h-5 w-5" />
-            </button>
-
-            {showPhone && (
-              <div className="absolute right-0 top-14 w-56 rounded-xl border border-slate-200 bg-white p-4 shadow-xl">
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
-                  {text.callUs}
-                </p>
-
-                <a
-                  href="tel:+16162754443"
-                  className="mt-2 block text-lg font-bold text-[#14213D] transition hover:text-[#C9A227]"
-                >
-                  (616) 275-4443
-                </a>
-              </div>
-            )}
-          </div>
+          {/* Phone: click-to-call, number visible on wide screens */}
+          <a
+            href="tel:+16162754443"
+            aria-label={`${text.callUs} (616) 275-4443`}
+            className="flex h-11 items-center justify-center gap-2 rounded-full border border-slate-300 px-3 text-slate-700 transition hover:border-[#C9A227] hover:bg-[#C9A227] hover:text-white xl:px-4"
+          >
+            <Phone className="h-5 w-5" />
+            <span className="hidden text-sm font-semibold xl:inline">
+              (616) 275-4443
+            </span>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { m, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
 type Locale = "en" | "el" | "es" | "sq";
@@ -88,26 +88,31 @@ export default function Hero({ locale = "en" }: HeroProps) {
       style={{ perspective: 1400 }}
     >
       {/* Sunset villa: slow push-in + mouse parallax */}
-      <motion.div
+      <m.div
         className="absolute -inset-10"
         style={{ x: bgX, y: bgY }}
       >
         <div className="hero-kenburns absolute inset-0">
-          <Image
-            src="/images/hero-sunset.jpg"
+          {/* Plain <img> so phones download a 37 KB version instead of 213 KB */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/hero-sunset-1100.jpg"
+            srcSet="/images/hero-sunset-640.jpg 640w, /images/hero-sunset-1100.jpg 1100w, /images/hero-sunset.jpg 1920w"
+            sizes="100vw"
             alt="Modern villa terrace overlooking the sea at sunset"
-            fill
-            priority
-            className="object-cover object-[35%_50%]"
+            width={1920}
+            height={1080}
+            decoding="async"
+            className="absolute inset-0 h-full w-full object-cover object-[35%_50%]"
           />
         </div>
-      </motion.div>
+      </m.div>
 
       {/* Light, warm grade so the navy copy stays crisp */}
       <div className="absolute inset-0 bg-gradient-to-b from-white/25 via-transparent to-slate-900/25" />
       <div className="hero-sun absolute inset-0" aria-hidden="true" />
 
-      <motion.div
+      <m.div
         className="relative z-10 flex -translate-y-6 flex-col items-center px-6 text-center sm:-translate-y-10"
         style={{
           x: fgX,
@@ -117,10 +122,10 @@ export default function Hero({ locale = "en" }: HeroProps) {
           transformStyle: "preserve-3d",
         }}
       >
-        <motion.div
+        <m.div
           className="hero-logo-wrap"
-          initial={{ opacity: 0, y: 30, rotateX: 20 }}
-          animate={{ opacity: 1, y: 0, rotateX: 0 }}
+          initial={{ y: 30, rotateX: 20 }}
+          animate={{ y: 0, rotateX: 0 }}
           transition={{ duration: 1.2, ease: [0.2, 0.8, 0.2, 1] }}
           style={{ transform: "translateZ(90px)" }}
         >
@@ -130,11 +135,12 @@ export default function Hero({ locale = "en" }: HeroProps) {
             width={620}
             height={413}
             priority
+            fetchPriority="high"
             className="hero-logo h-auto w-[min(600px,86vw)]"
           />
-        </motion.div>
+        </m.div>
 
-        <motion.h1
+        <m.h1
           className="hero-tagline -mt-10 font-serif text-2xl font-semibold leading-snug text-[#14213D] sm:-mt-20 sm:text-4xl"
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
@@ -145,9 +151,9 @@ export default function Hero({ locale = "en" }: HeroProps) {
           {text.highlight}.
           <br />
           <span className="text-[#7A5A08]">{text.line2}</span>
-        </motion.h1>
+        </m.h1>
 
-        <motion.a
+        <m.a
           href={locale === "en" ? "/contact" : `/${locale}/contact`}
           className="hero-cta mt-9 inline-flex items-center justify-center rounded-full px-9 py-3.5 text-sm font-medium uppercase tracking-[0.2em] text-[#14213D]"
           initial={{ opacity: 0, y: 16 }}
@@ -156,8 +162,8 @@ export default function Hero({ locale = "en" }: HeroProps) {
           style={{ transform: "translateZ(75px)" }}
         >
           {text.primaryButton}
-        </motion.a>
-      </motion.div>
+        </m.a>
+      </m.div>
 
       <a
         href="#services"

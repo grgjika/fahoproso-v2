@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { ArrowRight, ChevronDown, MapPin } from "lucide-react";
 
 import { content as aboutContent, icons as aboutIcons } from "@/components/About";
@@ -79,7 +79,7 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
       {/* ABOUT SUMMARY */}
       <section id="about" className="scroll-mt-32 bg-white py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-[0.9fr_1.1fr]">
-          <motion.div
+          <m.div
             className="relative mx-auto w-full max-w-md lg:max-w-none"
             style={{ perspective: 1200 }}
             initial={{ opacity: 0, rotateY: -18, x: -30 }}
@@ -109,7 +109,7 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </m.div>
 
           <div>
             <p className="font-semibold uppercase tracking-widest text-[#C9A227]">
@@ -175,7 +175,7 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
               const Icon = detail.icon;
 
               return (
-                <motion.article
+                <m.article
                   key={service.title}
                   className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md"
                   initial={{ opacity: 0, y: 40, rotateX: 18 }}
@@ -209,7 +209,7 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
                       {service.description}
                     </p>
                   </div>
-                </motion.article>
+                </m.article>
               );
             })}
           </div>
@@ -242,7 +242,7 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
 
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {areas.map((area, index) => (
-              <motion.div
+              <m.div
                 key={area.href}
                 initial={{ opacity: 0, y: 60, rotateX: 28 }}
                 whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
@@ -266,7 +266,7 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
                   </span>
                   <ArrowRight className="mt-4 h-5 w-5 text-[#E5C766] transition group-hover:translate-x-1" />
                 </Link>
-              </motion.div>
+              </m.div>
             ))}
           </div>
         </div>
@@ -291,7 +291,7 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
             {why.benefits.slice(0, 3).map((benefit, index) => {
               const Icon = benefitDetails[index].icon;
               return (
-                <motion.article
+                <m.article
                   key={benefit.title}
                   className="rounded-2xl border border-slate-200 bg-white p-8 shadow-md"
                   initial={{ opacity: 0, y: 40, rotateX: 18 }}
@@ -312,7 +312,7 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
                   <p className="mt-3 leading-7 text-slate-600">
                     {benefit.description}
                   </p>
-                </motion.article>
+                </m.article>
               );
             })}
           </div>
