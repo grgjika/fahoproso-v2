@@ -3,12 +3,16 @@
 import { useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Phone, Mail, Globe } from "lucide-react";
-import { FaStar } from "react-icons/fa";
+import { MapPin, Phone, Mail } from "lucide-react";
+import { FaFacebookF, FaStar } from "react-icons/fa";
 
 import SiteFinder from "@/components/SiteFinder";
 
 const TEAM_LOGIN_URL = "https://fahoproso-app.vercel.app/login";
+
+// One look for every icon in the Connect row: equal size, soft depth, gold on hover.
+const socialButton =
+  "flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 bg-white text-[#14213D] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#C9A227] hover:bg-[#C9A227] hover:text-white hover:shadow-lg";
 
 type Locale = "en" | "es" | "el" | "sq";
 
@@ -178,7 +182,7 @@ export default function Footer({ locale = "en" }: FooterProps) {
     <>
     <SiteFinder locale={locale} />
     <footer className="border-t border-slate-200 bg-neutral-200 text-slate-700">
-      <div className="mx-auto grid max-w-7xl gap-16 px-6 py-16 md:grid-cols-2 lg:grid-cols-5">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-2 lg:grid-cols-[1.1fr_1fr_1fr_1.2fr_1.3fr] lg:gap-10">
 
         {/* Company */}
         <div>
@@ -382,38 +386,37 @@ export default function Footer({ locale = "en" }: FooterProps) {
 
           <div className="mt-3 h-1 w-12 rounded-full bg-[#C9A227]" />
 
-          <div className="mt-6 flex gap-4">
+          <div className="mt-6 flex flex-wrap gap-2.5">
             <a
               href="https://www.facebook.com/Fahoproso"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit FAHOPROSO on Facebook"
-              className="rounded-full border border-slate-300 p-3 transition-all duration-300 hover:border-[#C9A227] hover:bg-[#C9A227] hover:text-white"
+              title="Facebook"
+              className={socialButton}
             >
-              <Globe className="h-5 w-5" />
+              <FaFacebookF className="h-[18px] w-[18px]" />
             </a>
-            
 
-                <a
-                href="https://g.page/r/Cdu7vBWv41J6EBM/review"
-                  aria-label="Leave a review for FAHOPROSO on Google"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 className="group flex flex-col items-center gap-2"
-                >
-                 <div className="rounded-full border border-slate-300 p-3 transition-all duration-300 hover:border-[#C9A227] hover:bg-[#C9A227] hover:text-white">
-                 <FaStar className="text-2xl text-[#C9A227] group-hover:text-white" />
-                 </div>
-                </a>
-              
+            <a
+              href="https://g.page/r/Cdu7vBWv41J6EBM/review"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Leave a review for FAHOPROSO on Google"
+              title="Google"
+              className={socialButton}
+            >
+              <FaStar className="h-[18px] w-[18px]" />
+            </a>
 
-             <Link
-               href="/contact"
-               aria-label="Contact FAHOPROSO"
-               className="rounded-full border border-slate-300 p-3 transition-all duration-300 hover:border-[#C9A227] hover:bg-[#C9A227] hover:text-white"
->
-               <Mail className="h-5 w-5" />
-             </Link>
+            <Link
+              href="/contact"
+              aria-label="Contact FAHOPROSO"
+              title="Contact"
+              className={socialButton}
+            >
+              <Mail className="h-[18px] w-[18px]" />
+            </Link>
 
             <div className="relative">
               <button
@@ -421,14 +424,14 @@ export default function Footer({ locale = "en" }: FooterProps) {
                 onClick={() => setShowPhone((current) => !current)}
                 aria-label="Show FAHOPROSO phone number"
                 aria-expanded={showPhone}
-                className="rounded-full border border-slate-300 p-3 transition-all duration-300 hover:border-[#C9A227] hover:bg-[#C9A227] hover:text-white"
+                title="Phone"
+                className={socialButton}
               >
-                <Phone className="h-5 w-5" />
-                
+                <Phone className="h-[18px] w-[18px]" />
               </button>
-              
+
               {showPhone && (
-                <div className="absolute bottom-14 right-0 w-52 rounded-xl border border-slate-200 bg-white p-4 shadow-xl">
+                <div className="absolute right-0 top-12 z-20 w-52 rounded-xl border border-slate-200 bg-white p-4 shadow-xl">
                   <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
                     {text.call}
                   </p>
