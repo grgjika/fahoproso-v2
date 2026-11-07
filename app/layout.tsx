@@ -4,6 +4,7 @@ import ExitIntentPopup from "@/components/ExitIntentPopup";
 import Tilt3D from "@/components/Tilt3D";
 import ScrollFX from "@/components/ScrollFX";
 import LangSetter from "@/components/LangSetter";
+import LanguageBanner from "@/components/LanguageBanner";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -192,6 +193,8 @@ export default function RootLayout({
         <ScrollFX />
 
         <LangSetter />
+
+        <LanguageBanner />
 
         <GoogleAnalytics gaId="G-5F9RJMGDCF" />
       </body>

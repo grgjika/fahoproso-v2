@@ -15,6 +15,7 @@ export const metadata: Metadata = {
      canonical: "https://www.fahoproso.com/resources/downsizing-your-home/",
      languages: {
     "en-US": "https://www.fahoproso.com/resources/downsizing-your-home/",
+    "x-default": "https://www.fahoproso.com/resources/downsizing-your-home/",
     "es-US": "https://www.fahoproso.com/es/resources/downsizing-your-home/",
     "el-GR": "https://www.fahoproso.com/el/resources/downsizing-your-home/",
     sq: "https://www.fahoproso.com/sq/resources/downsizing-your-home/",
