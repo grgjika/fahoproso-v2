@@ -6,6 +6,7 @@ import ScrollFX from "@/components/ScrollFX";
 import LangSetter from "@/components/LangSetter";
 import LanguageBanner from "@/components/LanguageBanner";
 import MobileCallBar from "@/components/MobileCallBar";
+import MotionProvider from "@/components/MotionProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -228,7 +229,7 @@ export default function RootLayout({
           }}
         />
 
-        {children}
+        <MotionProvider>{children}</MotionProvider>
         
         <ExitIntentPopup />
 
