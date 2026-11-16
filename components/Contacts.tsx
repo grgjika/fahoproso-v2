@@ -3,6 +3,14 @@
 import Image from "next/image";
 import { FormEvent, useEffect, useState } from "react";
 import PropertyLocation from "@/components/PropertyLocation";
+import HumanCheckModal from "@/components/HumanCheckModal";
+
+/**
+ * Public site key of the Cloudflare Turnstile widget (it is meant to be public).
+ * Leave empty to skip the check. Fill it in only after Turnstile is also
+ * enabled for this form in the Formspree dashboard, or sends will be rejected.
+ */
+const TURNSTILE_SITE_KEY = "";
 
 type Locale = "en" | "es" | "el" | "sq";
 
@@ -222,6 +230,10 @@ export default function Contact({ locale = "en", asH1 = false }: ContactProps) {
   const [status, setStatus] = useState("");
   const [isSending, setIsSending] = useState(false);
   const [propertyAddress, setPropertyAddress] = useState("");
+  const [pending, setPending] = useState<{
+    form: HTMLFormElement;
+    data: FormData;
+  } | null>(null);
 
   useEffect(() => {
     const onPrefill = (event: Event) => {
@@ -254,6 +266,17 @@ export default function Contact({ locale = "en", asH1 = false }: ContactProps) {
 
     formData.set("propertyAddress", propertyAddress);
 
+    // With the check enabled, ask for it first; the message is sent afterwards.
+    if (TURNSTILE_SITE_KEY) {
+      setStatus("");
+      setPending({ form, data: formData });
+      return;
+    }
+
+    await sendInquiry(form, formData);
+  }
+
+  async function sendInquiry(form: HTMLFormElement, formData: FormData) {
     setIsSending(true);
     setStatus("");
 
@@ -271,14 +294,12 @@ export default function Contact({ locale = "en", asH1 = false }: ContactProps) {
 
       if (response.ok) {
         window.gtag?.("event", "generate_lead", {
-         event_category: "Contact Form",
-         event_label: "Property Inquiry",
-      });
+          event_category: "Contact Form",
+          event_label: "Property Inquiry",
+        });
         form.reset();
         setPropertyAddress("");
-        setStatus(
-          text.success
-        );
+        setStatus(text.success);
       } else {
         setStatus(text.error);
       }
@@ -294,6 +315,20 @@ export default function Contact({ locale = "en", asH1 = false }: ContactProps) {
       id="contact"
       className="scroll-mt-32 bg-blue-50/40 py-24"
     >
+      {pending && (
+        <HumanCheckModal
+          siteKey={TURNSTILE_SITE_KEY}
+          locale={locale}
+          onCancel={() => setPending(null)}
+          onVerified={(token) => {
+            const { form, data } = pending;
+            data.set("cf-turnstile-response", token);
+            setPending(null);
+            void sendInquiry(form, data);
+          }}
+        />
+      )}
+
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-14 max-w-3xl">
           <p className="font-semibold uppercase tracking-wide text-blue-600">
