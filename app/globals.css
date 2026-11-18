@@ -322,3 +322,75 @@ section:is(
   ) {
   color: #8a6a0a;
 }
+
+
+/* ---------- Exit-intent popup ---------- */
+@keyframes exit-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes exit-left {
+  from {
+    opacity: 0;
+    transform: translateX(-70px) rotateY(24deg) scale(0.94);
+  }
+}
+
+@keyframes exit-right {
+  from {
+    opacity: 0;
+    transform: translateX(70px) rotateY(-24deg) scale(0.94);
+  }
+}
+
+@keyframes exit-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgb(20 33 61 / 0.45);
+  }
+  100% {
+    box-shadow: 0 0 0 26px rgb(20 33 61 / 0);
+  }
+}
+
+.exit-overlay {
+  animation: exit-fade 0.3s ease-out both;
+}
+
+.exit-card-left {
+  animation: exit-left 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) 0.1s both;
+}
+
+.exit-card-right {
+  animation: exit-right 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) 0.2s both;
+}
+
+.exit-ring {
+  animation: exit-pulse 2s ease-out infinite;
+}
+
+a.exit-cta {
+  box-shadow: 0 4px 0 rgb(0 0 0 / 0.28), 0 14px 24px -8px rgb(0 0 0 / 0.4);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.2s ease;
+}
+
+a.exit-cta:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  box-shadow: 0 6px 0 rgb(0 0 0 / 0.28), 0 18px 28px -8px rgb(0 0 0 / 0.45);
+}
+
+a.exit-cta:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 rgb(0 0 0 / 0.28);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exit-overlay,
+  .exit-card-left,
+  .exit-card-right,
+  .exit-ring {
+    animation: none;
+  }
+}
