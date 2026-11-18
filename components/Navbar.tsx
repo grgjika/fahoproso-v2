@@ -322,12 +322,12 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
             width={290}
             height={70}
             priority
-            className="h-auto w-[195px] sm:w-[220px] md:w-[245px]"
+            className="h-auto w-[195px] sm:w-[220px] md:w-[200px] xl:w-[245px]"
           />
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden items-center gap-7 lg:flex">
+        <div className="hidden items-center gap-3 whitespace-nowrap text-[15px] lg:flex xl:gap-7 xl:text-base">
           {mainNavigation.map((item) => (
             <Link
               key={item.name}
@@ -495,7 +495,7 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
           {/* Contact */}
           <Link
             href={`${localePrefix}/contact`}
-            className="rounded-xl bg-[#C9A227] px-5 py-3 font-semibold text-[#14213D] transition hover:bg-[#b89220] hover:shadow-lg"
+            className="rounded-xl bg-[#C9A227] px-3 py-3 font-semibold text-[#14213D] transition hover:bg-[#b89220] hover:shadow-lg xl:px-5"
           >
             {text.contactUs}
           </Link>
@@ -507,7 +507,11 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
             className="flex h-11 items-center justify-center gap-2 rounded-full border border-slate-300 px-3 text-slate-700 transition hover:border-[#C9A227] hover:bg-[#C9A227] hover:text-white xl:px-4"
           >
             <Phone className="h-5 w-5" />
-            <span className="hidden text-sm font-semibold xl:inline">
+            <span
+              className={`hidden text-sm font-semibold ${
+                locale === "en" ? "xl:inline" : "2xl:inline"
+              }`}
+            >
               (616) 275-4443
             </span>
           </a>
