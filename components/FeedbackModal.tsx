@@ -22,7 +22,6 @@ const copy: Record<
     thanks: string;
     close: string;
     error: string;
-    needRating: string;
   }
 > = {
   en: {
@@ -40,7 +39,6 @@ const copy: Record<
     thanks: "Thank you for your feedback!",
     close: "Close",
     error: "Sorry, the feedback did not send. You can skip it. Your request was already received.",
-    needRating: "Please choose a rating from 1 to 5 stars.",
   },
   es: {
     title: "Su mensaje fue enviado. ¡Gracias!",
@@ -57,7 +55,6 @@ const copy: Record<
     thanks: "¡Gracias por sus comentarios!",
     close: "Cerrar",
     error: "Lo sentimos, no se envió. Puede omitirlo. Su solicitud ya fue recibida.",
-    needRating: "Elija una calificación de 1 a 5 estrellas.",
   },
   el: {
     title: "Το μήνυμά σας στάλθηκε. Ευχαριστούμε!",
@@ -74,7 +71,6 @@ const copy: Record<
     thanks: "Ευχαριστούμε για τα σχόλιά σας!",
     close: "Κλείσιμο",
     error: "Λυπούμαστε, δεν στάλθηκε. Μπορείτε να το παραλείψετε. Το αίτημά σας ελήφθη.",
-    needRating: "Επιλέξτε βαθμολογία από 1 έως 5 αστέρια.",
   },
   sq: {
     title: "Mesazhi juaj u dërgua. Faleminderit!",
@@ -91,7 +87,6 @@ const copy: Record<
     thanks: "Faleminderit për komentin tuaj!",
     close: "Mbyll",
     error: "Na vjen keq, nuk u dërgua. Mund ta kaloni. Kërkesa juaj u mor.",
-    needRating: "Zgjidhni një vlerësim nga 1 deri në 5 yje.",
   },
 };
 
@@ -114,7 +109,6 @@ export default function FeedbackModal({
   const [how, setHow] = useState("");
   const [difficulty, setDifficulty] = useState("");
   const [state, setState] = useState<"idle" | "sending" | "done" | "error">("idle");
-  const [needRating, setNeedRating] = useState(false);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -131,16 +125,22 @@ export default function FeedbackModal({
   }, [state, onClose]);
 
   async function submit() {
-    if (!rating) {
-      setNeedRating(true);
+    // Nothing filled in: treat it like Skip. Nothing is ever required.
+    if (!rating && !how && !difficulty.trim()) {
+      onClose();
       return;
     }
-    setNeedRating(false);
     setState("sending");
     const data = new FormData();
-    data.set("_subject", `Website feedback: ${rating}/5 stars`);
+    data.set(
+      "_subject",
+      rating ? `Website feedback: ${rating}/5 stars` : "Website feedback (no rating)"
+    );
     data.set("formType", "Website feedback (after inquiry)");
-    data.set("rating", `${rating} / 5 (${text.stars[rating - 1]})`);
+    data.set(
+      "rating",
+      rating ? `${rating} / 5 (${text.stars[rating - 1]})` : "(not rated)"
+    );
     data.set("howTheyFoundUs", how || "(not answered)");
     data.set("whatWasDifficult", difficulty.trim() || "(nothing written)");
     data.set("fromVisitor", `${contact.name} ${contact.phone}`.trim());
@@ -197,10 +197,7 @@ export default function FeedbackModal({
                   role="radio"
                   aria-checked={rating === n}
                   aria-label={`${n} - ${text.stars[n - 1]}`}
-                  onClick={() => {
-                    setRating(n);
-                    setNeedRating(false);
-                  }}
+                  onClick={() => setRating(rating === n ? 0 : n)}
                   className="rounded-md p-1 transition hover:scale-110"
                 >
                   <Star
@@ -214,11 +211,6 @@ export default function FeedbackModal({
                 {rating ? text.stars[rating - 1] : ""}
               </span>
             </div>
-            {needRating && (
-              <p role="alert" className="mt-1 text-sm text-[#E5C766]">
-                {text.needRating}
-              </p>
-            )}
 
             <label className="mt-5 block font-semibold" htmlFor="fb-how">
               {text.how}
