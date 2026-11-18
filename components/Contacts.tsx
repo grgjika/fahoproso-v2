@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useCallback, useEffect, useState } from "react";
 import PropertyLocation from "@/components/PropertyLocation";
+import FeedbackModal from "@/components/FeedbackModal";
 import HumanCheckModal from "@/components/HumanCheckModal";
 
 /**
@@ -235,6 +236,12 @@ export default function Contact({ locale = "en", asH1 = false }: ContactProps) {
     data: FormData;
   } | null>(null);
 
+  const [feedbackFor, setFeedbackFor] = useState<{
+    name: string;
+    phone: string;
+  } | null>(null);
+  const closeFeedback = useCallback(() => setFeedbackFor(null), []);
+
   useEffect(() => {
     const onPrefill = (event: Event) => {
       const address = (event as CustomEvent<string>).detail;
@@ -297,9 +304,14 @@ export default function Contact({ locale = "en", asH1 = false }: ContactProps) {
           event_category: "Contact Form",
           event_label: "Property Inquiry",
         });
+        const who = {
+          name: String(formData.get("firstName") ?? ""),
+          phone: String(formData.get("phone") ?? ""),
+        };
         form.reset();
         setPropertyAddress("");
         setStatus(text.success);
+        setFeedbackFor(who);
       } else {
         setStatus(text.error);
       }
@@ -315,6 +327,14 @@ export default function Contact({ locale = "en", asH1 = false }: ContactProps) {
       id="contact"
       className="scroll-mt-32 bg-blue-50/40 py-24"
     >
+      {feedbackFor && (
+        <FeedbackModal
+          locale={locale}
+          contact={feedbackFor}
+          onClose={closeFeedback}
+        />
+      )}
+
       {pending && (
         <HumanCheckModal
           siteKey={TURNSTILE_SITE_KEY}
