@@ -6,10 +6,10 @@ import { CalendarClock, MailCheck, Video } from "lucide-react";
 type Locale = "en" | "es" | "el" | "sq";
 
 /**
- * Address of the Cloudflare Worker in /workers/booking-gate (it emails a code
- * and, for a correct code, returns the booking calendar address; that address
- * is stored only in the Worker, not on this site). Leave empty to hide this
- * section.
+ * Web app address of the Google Apps Script in /apps-script/booking-gate (it
+ * emails a code and, for a correct code, returns the booking calendar address;
+ * that address is stored only in the script, not on this site). Leave empty to
+ * hide this section.
  */
 const BOOKING_GATE_URL = "";
 
@@ -167,11 +167,12 @@ export default function BookCall({ locale }: { locale: Locale }) {
   if (!BOOKING_GATE_URL) return null;
   const text = copy[locale];
 
-  async function call(path: "send" | "verify", payload: Record<string, string>) {
-    const res = await fetch(`${BOOKING_GATE_URL.replace(/\/$/, "")}/${path}`, {
+  async function call(action: "send" | "verify", payload: Record<string, string>) {
+    // text/plain keeps this a "simple" request, which Apps Script web apps accept from other sites
+    const res = await fetch(BOOKING_GATE_URL, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({ action, ...payload }),
     });
     return (await res.json()) as { ok: boolean; error?: string; url?: string };
   }
