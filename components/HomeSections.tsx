@@ -131,10 +131,10 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
               {about.cards.map((card, index) => {
                 const Icon = aboutIcons[index];
                 const tileHref = [
-                  localized(locale, "/investment-focus/residential", "/services"),
-                  localized(locale, "/investment-focus/commercial", "/services"),
-                  `${prefix}/about`,
-                  localized(locale, "/investment-focus/rentals", "/services"),
+                  localized(locale, "/investment-focus/residential", "/resources/residential-investments"),
+                  localized(locale, "/investment-focus/commercial", "/projects"),
+                  `${prefix}/contact`,
+                  localized(locale, "/investment-focus/rentals", "/resources/michigan-guides"),
                 ][index];
                 return (
                   <li
@@ -213,9 +213,9 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
                       href={
                         [
                           localized(locale, "/sell-my-house-michigan", "/contact"),
-                          localized(locale, "/investment-focus/residential", "/services"),
-                          localized(locale, "/investment-focus/rentals", "/services"),
-                          localized(locale, "/investment-focus/commercial", "/services"),
+                          localized(locale, "/investment-focus/residential", "/resources/residential-investments"),
+                          localized(locale, "/investment-focus/rentals", "/resources/michigan-guides"),
+                          localized(locale, "/investment-focus/commercial", "/projects"),
                         ][index]
                       }
                     />

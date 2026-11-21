@@ -263,8 +263,11 @@ export default function WhyChooseUs({
                     [
                       `${locale === "en" ? "" : `/${locale}`}/contact`,
                       `${locale === "en" ? "" : `/${locale}`}/faq`,
+                      `${locale === "en" ? "" : `/${locale}`}/about`,
                       `${locale === "en" ? "" : `/${locale}`}/services`,
-                    ][index % 3]
+                      `${locale === "en" ? "" : `/${locale}`}/projects`,
+                      `${locale === "en" ? "" : `/${locale}`}/resources/homeowner-guides`,
+                    ][index]
                   }
                 />
               </article>

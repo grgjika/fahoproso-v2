@@ -220,9 +220,9 @@ export default function Services({ locale = "en" }: ServicesProps) {
                     href={
                       [
                         localized(locale, "/sell-my-house-michigan", "/contact"),
-                        localized(locale, "/investment-focus/residential", "/contact"),
-                        localized(locale, "/investment-focus/rentals", "/contact"),
-                        localized(locale, "/investment-focus/commercial", "/contact"),
+                        localized(locale, "/investment-focus/residential", "/resources/residential-investments"),
+                        localized(locale, "/investment-focus/rentals", "/resources/michigan-guides"),
+                        localized(locale, "/investment-focus/commercial", "/projects"),
                       ][index]
                     }
                   />

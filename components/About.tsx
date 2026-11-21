@@ -164,8 +164,10 @@ export default function About({ locale = "en" }: AboutProps) {
             <div className="absolute -bottom-5 -right-5 h-full w-full rounded-3xl border-2 border-[#C9A227]/70" />
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-2xl">
               <Link
-                href={locale === "en" ? "/contact" : `/${locale}/contact`}
-                aria-label={text.cards[0].title}
+                href={locale === "en" ? "/services" : `/${locale}/services`}
+                aria-label={
+                  { en: "Our services", es: "Nuestros servicios", el: "Οι υπηρεσίες μας", sq: "Shërbimet tona" }[locale]
+                }
                 className="absolute inset-0 z-10 focus-visible:outline focus-visible:outline-4 focus-visible:-outline-offset-4 focus-visible:outline-[#C9A227]"
               />
               <Image
@@ -220,10 +222,10 @@ export default function About({ locale = "en" }: AboutProps) {
                     title={card.title}
                     href={
                       [
-                        localized(locale, "/investment-focus/residential", "/services"),
-                        localized(locale, "/investment-focus/commercial", "/services"),
+                        localized(locale, "/investment-focus/residential", "/resources/residential-investments"),
+                        localized(locale, "/investment-focus/commercial", "/projects"),
                         localized(locale, "/contact", "/contact"),
-                        localized(locale, "/investment-focus/rentals", "/services"),
+                        localized(locale, "/investment-focus/rentals", "/resources/michigan-guides"),
                       ][index]
                     }
                   />
