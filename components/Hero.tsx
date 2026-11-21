@@ -75,9 +75,14 @@ export default function Hero({ locale = "en" }: HeroProps) {
       <HeroSlides />
 
       {/* Light, warm grade so the navy copy stays crisp */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/25 to-slate-900/20" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/55 via-white/30 to-slate-900/25" />
 
       <div className="relative z-10 flex -translate-y-4 flex-col items-center px-6 text-center sm:-translate-y-8">
+        {/* Soft light patch so the dark text stays easy to read over any photo */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 inset-y-6 -z-10 mx-auto max-w-3xl rounded-[3rem] bg-white/60 blur-2xl"
+        />
         <div className="hero-logo-wrap">
           <Image
             src="/images/logo-transparent.png"

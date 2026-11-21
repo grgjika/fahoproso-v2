@@ -4,30 +4,32 @@ import { useEffect, useState } from "react";
 
 /**
  * Front-page pictures that change by themselves (quick cross-fade).
- * To add real photos: put three sizes of each in /public/images/hero/ named
- * home-1-640.jpg (640 px wide), home-1-1100.jpg (1100 px), home-1.jpg (1920 px),
- * then add a line below, e.g. { base: "/images/hero/home-1", pos: "50% 50%", alt: "..." }.
- * With a single picture nothing rolls. `pos` keeps the subject in view when a
- * phone crops the picture.
+ * To change a picture: replace its three files in /public/images/hero/
+ * (home-N-640.jpg 640 px wide, home-N-1100.jpg 1100 px, home-N.jpg full size
+ * with its width in `w` below). To add one, add a line below. With a single
+ * picture nothing rolls. `pos` keeps the subject in view when a phone crops it.
+ * Only the first picture loads at once; the rest load after the page is ready,
+ * so the first screen stays fast.
  */
 const slides = [
-  {
-    base: "/images/hero-sunset",
-    pos: "35% 50%",
-    alt: "Modern home terrace at sunset",
-  },
+  { base: "/images/hero/home-1", w: 1500, pos: "50% 50%", alt: "Craftsman-style home with a front porch and two-car garage" },
+  { base: "/images/hero/home-2", w: 1500, pos: "50% 50%", alt: "Cozy gray cottage with a front porch in autumn" },
+  { base: "/images/hero/home-3", w: 1500, pos: "50% 50%", alt: "Two-story stone home at sunset" },
+  { base: "/images/hero/home-4", w: 1500, pos: "50% 50%", alt: "Large stone and timber home with a three-car garage" },
 ];
 
 const INTERVAL = 3500; // ms between pictures
 
 export default function HeroSlides() {
   const [index, setIndex] = useState(0);
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
     if (slides.length < 2) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     let id: number | undefined;
     const start = () => {
+      setReady(true);
       id = window.setInterval(() => {
         if (!document.hidden) setIndex((i) => (i + 1) % slides.length);
       }, INTERVAL);
@@ -43,18 +45,18 @@ export default function HeroSlides() {
   return (
     <>
       <div className="absolute inset-0">
-        {slides.map((s, i) => (
+        {slides.map((s, i) => (i === 0 || ready ? (
           // Plain <img> so phones download a small version of each picture
           // eslint-disable-next-line @next/next/no-img-element
           <img
             key={s.base}
             src={`${s.base}-1100.jpg`}
-            srcSet={`${s.base}-640.jpg 640w, ${s.base}-1100.jpg 1100w, ${s.base}.jpg 1920w`}
+            srcSet={`${s.base}-640.jpg 640w, ${s.base}-1100.jpg 1100w, ${s.base}.jpg ${s.w}w`}
             sizes="100vw"
             alt={i === index ? s.alt : ""}
             aria-hidden={i !== index}
-            width={1920}
-            height={1080}
+            width={1500}
+            height={844}
             decoding="async"
             loading={i === 0 ? "eager" : "lazy"}
             style={{ objectPosition: s.pos }}
@@ -62,7 +64,7 @@ export default function HeroSlides() {
               i === index ? "opacity-100" : "opacity-0"
             }`}
           />
-        ))}
+        ) : null))}
       </div>
 
       {slides.length > 1 && (
