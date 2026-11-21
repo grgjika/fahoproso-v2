@@ -1,0 +1,14 @@
+name = "fahoproso-booking-gate"
+main = "worker.mjs"
+compatibility_date = "2025-01-01"
+
+# Create the KV store first:  npx wrangler kv namespace create GATE
+# then paste the id it prints below.
+[[kv_namespaces]]
+binding = "GATE"
+id = "PASTE_KV_NAMESPACE_ID_HERE"
+
+[vars]
+ALLOWED_ORIGINS = "https://www.fahoproso.com,https://fahoproso.com"
+FROM_EMAIL = "FAHOPROSO <booking@fahoproso.com>"
+OWNER_EMAIL = ""
