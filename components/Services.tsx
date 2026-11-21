@@ -147,7 +147,7 @@ export const serviceDetails = [
   },
   {
     icon: Building2,
-    image: "/images/service-commercial.jpg",
+    image: "/images/service-commercial-building.jpg",
   },
 ];
 
