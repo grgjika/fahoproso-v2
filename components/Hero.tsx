@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ChevronDown, Phone } from "lucide-react";
+import HeroSlides from "@/components/HeroSlides";
 
 type Locale = "en" | "el" | "es" | "sq";
 
@@ -70,23 +71,11 @@ export default function Hero({ locale = "en" }: HeroProps) {
       id="home"
       className="relative flex min-h-screen items-center justify-center overflow-hidden pt-24"
     >
-      {/* Still photo (no motion). Plain <img> so phones download a small version. */}
-      <div className="absolute inset-0">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/images/hero-sunset-1100.jpg"
-          srcSet="/images/hero-sunset-640.jpg 640w, /images/hero-sunset-1100.jpg 1100w, /images/hero-sunset.jpg 1920w"
-          sizes="100vw"
-          alt="Modern home terrace at sunset"
-          width={1920}
-          height={1080}
-          decoding="async"
-          className="absolute inset-0 h-full w-full object-cover object-[35%_50%]"
-        />
-      </div>
+      {/* Four Michigan homes that change by themselves */}
+      <HeroSlides />
 
       {/* Light, warm grade so the navy copy stays crisp */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/5 to-slate-900/25" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/25 to-slate-900/20" />
 
       <div className="relative z-10 flex -translate-y-4 flex-col items-center px-6 text-center sm:-translate-y-8">
         <div className="hero-logo-wrap">
