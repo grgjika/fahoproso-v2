@@ -88,23 +88,24 @@ export default function ServiceAreasPage() {
               </Link>
             </div>
 
-            <div className="relative h-[550px] overflow-hidden rounded-2xl">
-              <Image
-                src="/images/Michigan1.jpg"
-                alt="Michigan real estate service areas"
-                fill
-                priority
-                className="h-full w-full object-cover scale-65"
-              />
+            <div>
+              <div className="relative aspect-[1345/1170] w-full overflow-hidden rounded-2xl bg-[#0b1f4a] shadow-2xl ring-1 ring-white/10">
+                <Image
+                  src="/images/michigan-service-map.jpg"
+                  alt="Map of Michigan highlighting our areas: Kent County, Grand Rapids, Ottawa County, Troy and Detroit"
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 560px, 92vw"
+                  className="object-cover"
+                />
+              </div>
 
-              <div className="absolute inset-0 bg-gradient-to-t from-[#14213D]/85 via-[#14213D]/15 to-transparent" />
-
-              <div className="absolute bottom-0 left-0 p-8">
+              <div className="mt-6">
                 <p className="font-semibold uppercase tracking-[0.2em] text-[#C9A227]">
                   Growing With Purpose
                 </p>
 
-                <p className="mt-2 max-w-md text-2xl font-bold">
+                <p className="mt-2 max-w-md text-xl font-bold">
                   Serving Michigan while expanding into carefully selected
                   communities.
                 </p>
