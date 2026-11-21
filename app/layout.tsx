@@ -1,12 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { GoogleAnalytics } from "@next/third-parties/google";
-import ExitIntentPopup from "@/components/ExitIntentPopup";
-import Tilt3D from "@/components/Tilt3D";
+import LazyAnalytics from "@/components/LazyAnalytics";
+import Deferred from "@/components/Deferred";
 import ScrollFX from "@/components/ScrollFX";
 import LangSetter from "@/components/LangSetter";
-import LanguageBanner from "@/components/LanguageBanner";
 import MobileCallBar from "@/components/MobileCallBar";
-import MotionProvider from "@/components/MotionProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -238,21 +235,17 @@ export default function RootLayout({
           }}
         />
 
-        <MotionProvider>{children}</MotionProvider>
-        
-        <ExitIntentPopup />
-
-        <Tilt3D />
+        {children}
 
         <ScrollFX />
 
         <LangSetter />
 
-        <LanguageBanner />
-
         <MobileCallBar />
 
-        <GoogleAnalytics gaId="G-5F9RJMGDCF" />
+        <Deferred />
+
+        <LazyAnalytics />
       </body>
     </html>
   );

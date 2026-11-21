@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 /**
  * Front-page pictures that change by themselves (quick cross-fade).
  * To change a picture: replace its three files in /public/images/hero/
- * (home-N-640.jpg 640 px wide, home-N-1100.jpg 1100 px, home-N.jpg full size
+ * (home-N-480.jpg 480 px wide, -800, -1200, and home-N.jpg full size
  * with its width in `w` below). To add one, add a line below. With a single
  * picture nothing rolls. `pos` keeps the subject in view when a phone crops it.
  * Only the first picture loads at once; the rest load after the page is ready,
@@ -50,8 +50,8 @@ export default function HeroSlides() {
           // eslint-disable-next-line @next/next/no-img-element
           <img
             key={s.base}
-            src={`${s.base}-1100.jpg`}
-            srcSet={`${s.base}-640.jpg 640w, ${s.base}-1100.jpg 1100w, ${s.base}.jpg ${s.w}w`}
+            src={`${s.base}-800.jpg`}
+            srcSet={`${s.base}-480.jpg 480w, ${s.base}-800.jpg 800w, ${s.base}-1200.jpg 1200w, ${s.base}.jpg ${s.w}w`}
             sizes="100vw"
             alt={i === index ? s.alt : ""}
             aria-hidden={i !== index}
@@ -59,6 +59,7 @@ export default function HeroSlides() {
             height={844}
             decoding="async"
             loading={i === 0 ? "eager" : "lazy"}
+            fetchPriority={i === 0 ? "low" : undefined}
             style={{ objectPosition: s.pos }}
             className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${
               i === index ? "opacity-100" : "opacity-0"

@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { m } from "framer-motion";
 import { ArrowRight, ChevronDown, MapPin } from "lucide-react";
 
 import { content as aboutContent, icons as aboutIcons } from "@/components/About";
@@ -80,13 +79,9 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
       {/* ABOUT SUMMARY */}
       <section id="about" className="scroll-mt-32 bg-white py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-[0.9fr_1.1fr]">
-          <m.div
+          <div
             className="relative mx-auto w-full max-w-md lg:max-w-none"
             style={{ perspective: 1200 }}
-            initial={{ opacity: 0, rotateY: -18, x: -30 }}
-            whileInView={{ opacity: 1, rotateY: 0, x: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.9, ease: [0.2, 0.8, 0.2, 1] }}
           >
             <div className="absolute -bottom-5 -right-5 h-full w-full rounded-3xl border-2 border-[#C9A227]/70" />
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-2xl">
@@ -115,7 +110,7 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
                 </p>
               </div>
             </div>
-          </m.div>
+          </div>
 
           <div>
             <p className="font-semibold uppercase tracking-widest text-[#C9A227]">
@@ -185,17 +180,9 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
               const Icon = detail.icon;
 
               return (
-                <m.article
+                <article
                   key={service.title}
                   className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md transition-shadow hover:border-[#C9A227] hover:shadow-xl"
-                  initial={{ opacity: 0, y: 40, rotateX: 18 }}
-                  whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
-                  viewport={{ once: true, margin: "-60px" }}
-                  transition={{
-                    duration: 0.7,
-                    delay: index * 0.1,
-                    ease: [0.2, 0.8, 0.2, 1],
-                  }}
                 >
                   <div className="relative h-44 overflow-hidden">
                     <Image
@@ -232,7 +219,7 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
                       }
                     />
                   </div>
-                </m.article>
+                </article>
               );
             })}
           </div>
@@ -264,18 +251,9 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
           </div>
 
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
-            {areas.map((area, index) => (
-              <m.div
+            {areas.map((area) => (
+              <div
                 key={area.href}
-                initial={{ opacity: 0, y: 60, rotateX: 28 }}
-                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{
-                  duration: 0.8,
-                  delay: index * 0.1,
-                  ease: [0.2, 0.8, 0.2, 1],
-                }}
-                whileHover={{ y: -10, rotateX: -4 }}
               >
                 <Link
                   href={area.href}
@@ -289,7 +267,7 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
                   </span>
                   <ArrowRight className="mt-4 h-5 w-5 text-[#E5C766] transition group-hover:translate-x-1" />
                 </Link>
-              </m.div>
+              </div>
             ))}
           </div>
         </div>
@@ -314,17 +292,9 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
             {why.benefits.slice(0, 3).map((benefit, index) => {
               const Icon = benefitDetails[index].icon;
               return (
-                <m.article
+                <article
                   key={benefit.title}
                   className="relative rounded-2xl border border-slate-200 bg-white p-8 shadow-md transition-shadow hover:border-[#C9A227] hover:shadow-xl"
-                  initial={{ opacity: 0, y: 40, rotateX: 18 }}
-                  whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
-                  viewport={{ once: true, margin: "-60px" }}
-                  transition={{
-                    duration: 0.7,
-                    delay: index * 0.1,
-                    ease: [0.2, 0.8, 0.2, 1],
-                  }}
                 >
                   <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#14213D] to-[#2b3f6e] shadow-lg shadow-slate-900/20">
                     <Icon className="h-7 w-7 text-[#E5C766]" />
@@ -341,7 +311,7 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
                     title={benefit.title}
                     href={[`${prefix}/contact`, `${prefix}/faq`, `${prefix}/about`][index]}
                   />
-                </m.article>
+                </article>
               );
             })}
           </div>
