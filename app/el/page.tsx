@@ -29,9 +29,11 @@ export default function GreekHome() {
   return (
     <>
       <Navbar locale="el" />
+      <main id="main">
       <Hero locale="el" />
       <HomeSections locale="el" />
       <CTA locale="el" />
+      </main>
       <Footer locale="el" />
       <ScrollToTop />
     </>

@@ -8,6 +8,7 @@ import {
   MapPin,
   ShieldCheck,
 } from "lucide-react";
+import CardLink from "@/components/CardLink";
 
 type Locale = "en" | "es" | "el" | "sq";
 
@@ -238,7 +239,7 @@ export default function WhyChooseUs({
             return (
               <article
                 key={benefit.title}
-                className={`group rounded-2xl border border-slate-200 ${detail.color} p-8 transition-all duration-300 hover:-translate-y-2 hover:border-2 hover:border-[#C9A227] hover:bg-white hover:shadow-xl`}
+                className={`group relative rounded-2xl border border-slate-200 ${detail.color} p-8 transition-all duration-300 hover:-translate-y-2 hover:border-2 hover:border-[#C9A227] hover:bg-white hover:shadow-xl`}
               >
                 <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#C9A227]/10 transition-all duration-300 group-hover:bg-[#C9A227]">
                   <Icon className="h-7 w-7 text-[#C9A227] transition-colors duration-300 group-hover:text-white" />
@@ -253,6 +254,22 @@ export default function WhyChooseUs({
                 </p>
 
                 <div className="mt-7 h-1 w-10 rounded-full bg-[#C9A227] transition-all duration-300 group-hover:w-20" />
+
+                <CardLink
+                  className="mt-6"
+                  locale={locale}
+                  title={benefit.title}
+                  href={
+                    [
+                      `${locale === "en" ? "" : `/${locale}`}/contact`,
+                      `${locale === "en" ? "" : `/${locale}`}/faq`,
+                      `${locale === "en" ? "" : `/${locale}`}/about`,
+                      `${locale === "en" ? "" : `/${locale}`}/services`,
+                      `${locale === "en" ? "" : `/${locale}`}/projects`,
+                      `${locale === "en" ? "" : `/${locale}`}/resources/homeowner-guides`,
+                    ][index]
+                  }
+                />
               </article>
             );
           })}

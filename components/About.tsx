@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import CardLink, { localized } from "@/components/CardLink";
 import {
   Home,
   Building2,
@@ -161,9 +163,16 @@ export default function About({ locale = "en" }: AboutProps) {
           <div className="relative mx-auto w-full max-w-md lg:max-w-none">
             <div className="absolute -bottom-5 -right-5 h-full w-full rounded-3xl border-2 border-[#C9A227]/70" />
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-2xl">
+              <Link
+                href={locale === "en" ? "/services" : `/${locale}/services`}
+                aria-label={
+                  { en: "Our services", es: "Nuestros servicios", el: "Οι υπηρεσίες μας", sq: "Shërbimet tona" }[locale]
+                }
+                className="absolute inset-0 z-10 focus-visible:outline focus-visible:outline-4 focus-visible:-outline-offset-4 focus-visible:outline-[#C9A227]"
+              />
               <Image
                 src="/images/property1.jpg"
-                alt="Bright, modern living room"
+                alt="Bright, modern living room in a Michigan home"
                 fill
                 sizes="(min-width: 1024px) 40vw, 90vw"
                 className="object-cover transition-transform duration-700 hover:scale-105"
@@ -206,6 +215,20 @@ export default function About({ locale = "en" }: AboutProps) {
                   <p className="relative mt-3 leading-7 text-slate-600">
                     {card.description}
                   </p>
+
+                  <CardLink
+                    className="mt-5"
+                    locale={locale}
+                    title={card.title}
+                    href={
+                      [
+                        localized(locale, "/investment-focus/residential", "/resources/residential-investments"),
+                        localized(locale, "/investment-focus/commercial", "/projects"),
+                        localized(locale, "/contact", "/contact"),
+                        localized(locale, "/investment-focus/rentals", "/resources/michigan-guides"),
+                      ][index]
+                    }
+                  />
                 </div>
               );
             })}

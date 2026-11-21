@@ -310,7 +310,15 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
         {/* Logo */}
         <Link
           href={locale === "en" ? "/" : `/${locale}`}
-          onClick={closeMenu}
+          onClick={(event) => {
+            closeMenu();
+            const home = locale === "en" ? "/" : `/${locale}`;
+            const here = window.location.pathname.replace(/\/$/, "") || "/";
+            if (here === (home.replace(/\/$/, "") || "/")) {
+              event.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
           aria-label="FAHOPROSO homepage"
           className={`shrink-0 transition-opacity duration-500 ${
             hideLogo ? "pointer-events-none opacity-0" : "opacity-100"

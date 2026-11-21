@@ -27,7 +27,7 @@ export default function ContactPage() {
     <>
       <Navbar />
 
-      <main className="pt-24">
+      <main id="main" className="pt-24">
          <section className="flex min-h-[420px] items-center bg-[#14213D] py-20 text-white">
           <div className="mx-auto max-w-7xl px-6 text-center">
             <p className="font-semibold uppercase tracking-[0.25em] text-[#C9A227]">

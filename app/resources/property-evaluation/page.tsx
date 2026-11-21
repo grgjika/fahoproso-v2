@@ -22,7 +22,7 @@ export default function PropertyEvaluationPage() {
     <>
       <Navbar />
 
-      <main className="pt-24">
+      <main id="main" className="pt-24">
 
         {/* HERO */}
 

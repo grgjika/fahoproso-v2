@@ -300,7 +300,7 @@ export default function Contact({ locale = "en", asH1 = false }: ContactProps) {
       );
 
       if (response.ok) {
-        window.gtag?.("event", "generate_lead", {
+        (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag?.("event", "generate_lead", {
           event_category: "Contact Form",
           event_label: "Property Inquiry",
         });

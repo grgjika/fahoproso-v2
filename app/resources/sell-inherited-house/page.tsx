@@ -21,7 +21,7 @@ export default function SellInheritedHousePage() {
     <>
       <Navbar />
 
-      <main className="pt-24">
+      <main id="main" className="pt-24">
          <section className="bg-[#14213D] py-24 text-white">
           <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-2">
 

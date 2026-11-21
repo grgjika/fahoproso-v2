@@ -29,9 +29,11 @@ export default function SpanishHome() {
   return (
     <>
       <Navbar locale="es" />
+      <main id="main">
       <Hero locale="es" />
       <HomeSections locale="es" />
       <CTA locale="es" />
+      </main>
       <Footer locale="es" />
       <ScrollToTop />
     </>

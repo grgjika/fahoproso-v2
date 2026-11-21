@@ -1,26 +1,29 @@
 import type { Metadata, Viewport } from "next";
-import { GoogleAnalytics } from "@next/third-parties/google";
-import ExitIntentPopup from "@/components/ExitIntentPopup";
-import Tilt3D from "@/components/Tilt3D";
+import LazyAnalytics from "@/components/LazyAnalytics";
+import Deferred from "@/components/Deferred";
 import ScrollFX from "@/components/ScrollFX";
 import LangSetter from "@/components/LangSetter";
-import LanguageBanner from "@/components/LanguageBanner";
 import MobileCallBar from "@/components/MobileCallBar";
-import MotionProvider from "@/components/MotionProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.fahoproso.com"),
 
   title: {
-    default: "FAHOPROSO | Sell Your House & Real Estate Investment Michigan",
+    default: "We Buy Houses in Michigan | Fair Cash Offer, Any Condition | FAHOPROSO",
     template: "%s | FAHOPROSO",
   },
 
   description:
-    "FAHOPROSO is a Michigan real estate investment company that buys houses as-is and helps homeowners explore simple, fair options for selling.",
+    "FAHOPROSO buys houses in Grand Rapids and across Michigan for cash. Sell your house as-is with no repairs, no fees and no commissions. Get a fair cash offer today.",
 
   keywords: [
+    "we buy houses Michigan",
+    "sell my house fast Grand Rapids",
+    "cash offer for my house Michigan",
+    "sell house as-is Michigan",
+    "sell inherited house Michigan",
+    "sell house without repairs Michigan",
     "real estate investment Michigan",
     "cash home buyers Michigan",
     "property solutions Michigan",
@@ -43,9 +46,9 @@ export const metadata: Metadata = {
   publisher: "Faithful Home & Property Solutions, LLC",
 
   openGraph: {
-    title: "FAHOPROSO | Sell Your House & Real Estate Investment Michigan",
+    title: "We Buy Houses in Michigan | Fair Cash Offer, Any Condition | FAHOPROSO",
     description:
-      "Residential and commercial real estate investment and property solutions throughout Michigan.",
+      "We buy houses in Grand Rapids and across Michigan. Fair cash offer, any condition, no repairs, no fees.",
     url: "https://www.fahoproso.com",
     siteName: "FAHOPROSO",
     images: [
@@ -62,9 +65,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "FAHOPROSO | Sell Your House & Real Estate Investment Michigan",
+    title: "We Buy Houses in Michigan | Fair Cash Offer, Any Condition | FAHOPROSO",
     description:
-      "Residential and commercial real estate investment and property solutions throughout Michigan.",
+      "We buy houses in Grand Rapids and across Michigan. Fair cash offer, any condition, no repairs, no fees.",
     images: ["/images/social-preview.jpg"],
   },
 
@@ -215,6 +218,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body className="pb-16 md:pb-0">
+        <a href="#main" className="skip-link">
+          Skip to main content
+        </a>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -229,21 +235,17 @@ export default function RootLayout({
           }}
         />
 
-        <MotionProvider>{children}</MotionProvider>
-        
-        <ExitIntentPopup />
-
-        <Tilt3D />
+        {children}
 
         <ScrollFX />
 
         <LangSetter />
 
-        <LanguageBanner />
-
         <MobileCallBar />
 
-        <GoogleAnalytics gaId="G-5F9RJMGDCF" />
+        <Deferred />
+
+        <LazyAnalytics />
       </body>
     </html>
   );

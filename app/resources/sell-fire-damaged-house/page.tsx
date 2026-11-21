@@ -70,7 +70,7 @@ export default function SellFireDamagedHousePage() {
 
       <Navbar />
 
-      <main className="pt-24">
+      <main id="main" className="pt-24">
         {/* HERO */}
 
         <section className="bg-[#14213D] py-24 text-white">
@@ -282,7 +282,7 @@ export default function SellFireDamagedHousePage() {
               ].map((item) => (
                 <article
                   key={item.title}
-                  className="rounded-2xl border border-slate-300 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:border-[#C9A227] hover:shadow-lg"
+                  className="rounded-2xl border border-slate-300 bg-white p-8 shadow-sm"
                 >
                   <h3 className="text-2xl font-bold text-[#14213D]">
                     {item.title}

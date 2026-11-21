@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import CardLink, { localized } from "@/components/CardLink";
 
 import {
   PhoneCall,
@@ -196,6 +197,13 @@ export default function HowItWorks({
                 </p>
 
                 <div className="mt-8 h-1 w-0 rounded-full bg-[#C9A227] transition-all duration-300 group-hover:w-24" />
+
+                <CardLink
+                  className="mt-6"
+                  locale={locale}
+                  title={step.title}
+                  href={[`${locale === "en" ? "" : `/${locale}`}/contact`, localized(locale, "/sell-my-house-michigan", "/services"), `${locale === "en" ? "" : `/${locale}`}/faq`][index]}
+                />
               </div>
             );
           })}
