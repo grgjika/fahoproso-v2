@@ -23,9 +23,11 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <main id="main">
       <Hero />
       <HomeSections />
       <CTA />
+      </main>
       <Footer />
       <ScrollToTop />
     </>

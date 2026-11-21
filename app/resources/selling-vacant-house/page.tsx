@@ -22,7 +22,7 @@ export default function SellingVacantHousePage() {
     <>
       <Navbar />
 
-      <main className="pt-24">
+      <main id="main" className="pt-24">
         {/* HERO */}
 
         <section className="bg-[#14213D] py-24 text-white">

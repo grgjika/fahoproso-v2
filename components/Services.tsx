@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CardLink, { localized } from "@/components/CardLink";
 
 import {
   Home,
@@ -183,7 +184,7 @@ export default function Services({ locale = "en" }: ServicesProps) {
             return (
               <article
                 key={service.title}
-                className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#C9A227] hover:shadow-xl"
+                className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#C9A227] hover:shadow-xl"
               >
                 <div className="relative h-60 overflow-hidden">
                   <Image
@@ -210,6 +211,20 @@ export default function Services({ locale = "en" }: ServicesProps) {
                   </p>
 
                   <div className="mt-6 h-0.5 w-12 bg-[#C9A227] transition-all duration-300 group-hover:w-24" />
+
+                  <CardLink
+                    className="mt-6"
+                    locale={locale}
+                    title={service.title}
+                    href={
+                      [
+                        localized(locale, "/sell-my-house-michigan", "/contact"),
+                        localized(locale, "/investment-focus/residential", "/contact"),
+                        localized(locale, "/investment-focus/rentals", "/contact"),
+                        localized(locale, "/investment-focus/commercial", "/contact"),
+                      ][index]
+                    }
+                  />
                 </div>
               </article>
             );

@@ -51,7 +51,7 @@ export default function ServiceAreasPage() {
     <>
       <Navbar />
 
-      <main className="pt-24">
+      <main id="main" className="pt-24">
         {/* Split Hero */}
         <section className="bg-[#14213D] text-white">
           <div className="mx-auto grid min-h-[560px] max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2">
