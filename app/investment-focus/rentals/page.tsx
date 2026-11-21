@@ -324,7 +324,7 @@ export default function RentalsPage() {
                 return (
                   <article
                     key={factor.title}
-                    className="group rounded-2xl border border-slate-300 bg-slate-100 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#C9A227] hover:shadow-xl"
+                    className="rounded-2xl border border-slate-300 bg-slate-100 p-8"
                   >
                     <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#C9A227]">
                       <Icon className="h-7 w-7 text-white" />

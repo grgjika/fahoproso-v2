@@ -6,7 +6,20 @@ import { ArrowRight, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import CardLink from "@/components/CardLink";
 import type { LocationData, LocationSlug } from "./types";
+
+/** Which guide best matches a situation card (by its title); otherwise the contact page. */
+function guideFor(title: string) {
+  const t = title.toLowerCase();
+  if (/inherit|estate|probate/.test(t)) return "/resources/sell-inherited-house";
+  if (/vacant|neglected/.test(t)) return "/resources/selling-vacant-house";
+  if (/rental|landlord|investment/.test(t)) return "/resources/sell-rental-property";
+  if (/downsiz/.test(t)) return "/resources/downsizing-your-home";
+  if (/damage|repair|code|maintenance|update|to-do|older|historic/.test(t))
+    return "/resources/selling-house-needs-repairs";
+  return "/contact";
+}
 
 const nearbyLabels: Record<LocationSlug, { label: string; text: string }> = {
   "sell-my-house-michigan": {
@@ -195,13 +208,20 @@ export default function LocationPage({ data }: { data: LocationData }) {
               {data.situations.items.map((item) => (
                 <article
                   key={item.title}
-                  className="rounded-2xl border border-slate-300 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:border-[#C9A227] hover:shadow-lg"
+                  className="relative rounded-2xl border border-slate-300 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:border-[#C9A227] hover:shadow-lg"
                 >
                   <h3 className="text-2xl font-bold text-[#14213D]">
                     {item.title}
                   </h3>
 
                   <p className="mt-4 leading-8 text-slate-600">{item.text}</p>
+
+                  <CardLink
+                    className="mt-6"
+                    locale="en"
+                    title={item.title}
+                    href={guideFor(item.title)}
+                  />
                 </article>
               ))}
             </div>

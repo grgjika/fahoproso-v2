@@ -13,6 +13,11 @@ const TEAM_LOGIN_URL = "https://fahoproso-app.vercel.app/login";
 // One look for every icon in the Connect row: equal size, soft depth, gold on hover.
 const socialButton =
   "flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 bg-white text-[#14213D] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#C9A227] hover:bg-[#C9A227] hover:text-white hover:shadow-lg";
+// Brand colors: Facebook blue, review star yellow.
+const facebookButton =
+  "flex h-10 w-10 items-center justify-center rounded-full border border-[#1877F2] bg-[#1877F2] text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-[#0f5fcc] hover:shadow-lg";
+const starButton =
+  "flex h-10 w-10 items-center justify-center rounded-full border border-[#FBBC04] bg-[#FBBC04] text-[#14213D] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-[#f5a900] hover:shadow-lg";
 
 type Locale = "en" | "es" | "el" | "sq";
 
@@ -186,13 +191,28 @@ export default function Footer({ locale = "en" }: FooterProps) {
 
         {/* Company */}
         <div>
-          <Image
-            src="/images/logo-transparent.png"
-            alt="FAHOPROSO"
-            width={250}
-            height={70}
-            className="mb-6 h-auto"
-          />
+          <Link
+            href={locale === "en" ? "/" : `/${locale}`}
+            aria-label="FAHOPROSO homepage"
+            onClick={(event) => {
+              // Already on the home page: go back to the very top instead of doing nothing
+              const home = locale === "en" ? "/" : `/${locale}`;
+              const here = window.location.pathname.replace(/\/$/, "") || "/";
+              if (here === (home.replace(/\/$/, "") || "/")) {
+                event.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+            className="mb-6 inline-block"
+          >
+            <Image
+              src="/images/logo-transparent.png"
+              alt="FAHOPROSO"
+              width={250}
+              height={70}
+              className="h-auto"
+            />
+          </Link>
 
           <p className="leading-7 text-slate-600">
             {text.tagline1}
@@ -303,10 +323,25 @@ export default function Footer({ locale = "en" }: FooterProps) {
           <div className="mt-3 h-1 w-12 rounded-full bg-[#C9A227]" />
 
           <ul className="mt-6 space-y-3">
-            <li>{text.residential}</li>
-            <li>{text.commercial}</li>
-            <li>{text.rentals}</li>
-            <li>{text.solutions}</li>
+            {[
+              [text.residential, "/investment-focus/residential"],
+              [text.commercial, "/investment-focus/commercial"],
+              [text.rentals, "/investment-focus/rentals"],
+              [text.solutions, "/services"],
+            ].map(([label, enPath]) => (
+              <li key={enPath}>
+                <Link
+                  href={
+                    locale === "en" || enPath === "/services"
+                      ? `${locale === "en" ? "" : `/${locale}`}${enPath}`
+                      : `/${locale}/services`
+                  }
+                  className="transition hover:text-[#C9A227]"
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -381,7 +416,7 @@ export default function Footer({ locale = "en" }: FooterProps) {
               rel="noopener noreferrer"
               aria-label="Visit FAHOPROSO on Facebook"
               title="Facebook"
-              className={socialButton}
+              className={facebookButton}
             >
               <FaFacebookF className="h-[18px] w-[18px]" />
             </a>
@@ -392,7 +427,7 @@ export default function Footer({ locale = "en" }: FooterProps) {
               rel="noopener noreferrer"
               aria-label="Leave a review for FAHOPROSO on Google"
               title="Google"
-              className={socialButton}
+              className={starButton}
             >
               <FaStar className="h-[18px] w-[18px]" />
             </a>
