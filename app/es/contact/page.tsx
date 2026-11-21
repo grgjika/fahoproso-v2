@@ -26,7 +26,7 @@ export default function ContactPageES() {
     <>
       <Navbar locale="es" />
 
-      <main className="pt-24">
+      <main id="main" className="pt-24">
         <Contact locale="es" asH1 />
       </main>
 

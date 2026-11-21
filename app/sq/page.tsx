@@ -29,9 +29,11 @@ export default function AlbanianHome() {
   return (
     <>
       <Navbar locale="sq" />
+      <main id="main">
       <Hero locale="sq" />
       <HomeSections locale="sq" />
       <CTA locale="sq" />
+      </main>
       <Footer locale="sq" />
       <ScrollToTop />
     </>

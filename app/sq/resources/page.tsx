@@ -27,7 +27,7 @@ export default function ResourcesPageSQ() {
     <>
       <Navbar locale="sq" />
 
-      <main className="pt-24">
+      <main id="main" className="pt-24">
         <section className="bg-[#14213D] py-20 text-white">
           <div className="mx-auto max-w-6xl px-6 text-center">
             <p className="font-semibold uppercase tracking-[0.25em] text-[#C9A227]">

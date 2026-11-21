@@ -29,7 +29,7 @@ export default function DownsizingYourHomePage() {
     <>
       <Navbar />
 
-      <main className="pt-24">
+      <main id="main" className="pt-24">
 
         {/* HERO */}
 

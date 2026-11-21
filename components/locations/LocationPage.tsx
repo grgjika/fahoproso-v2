@@ -76,7 +76,7 @@ export default function LocationPage({ data }: { data: LocationData }) {
     <>
       <Navbar />
 
-      <main className="pt-24">
+      <main id="main" className="pt-24">
         {/* HERO */}
         <section className="relative flex min-h-[620px] items-center overflow-hidden">
           <Image

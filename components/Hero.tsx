@@ -1,8 +1,5 @@
-"use client";
-
 import Image from "next/image";
-import { m, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Phone } from "lucide-react";
 
 type Locale = "en" | "el" | "es" | "sq";
 
@@ -19,6 +16,9 @@ const content = {
       "We invest in residential and commercial properties while helping property owners find practical real estate solutions throughout Michigan.",
     primaryButton: "Get a Cash Offer",
     secondaryButton: "Explore Our Services",
+    sellerLine:
+      "We buy houses in Grand Rapids and across Michigan. Fair cash offer, any condition, no repairs, no fees.",
+    callButton: "Call (616) 275-4443",
   },
 
   el: {
@@ -29,6 +29,9 @@ const content = {
       "Επενδύουμε σε οικιστικά και επαγγελματικά ακίνητα, βοηθώντας παράλληλα τους ιδιοκτήτες να βρουν πρακτικές λύσεις για τα ακίνητά τους σε όλο το Michigan.",
     primaryButton: "Ζητήστε Προσφορά",
     secondaryButton: "Δείτε τις Υπηρεσίες μας",
+    sellerLine:
+      "Αγοράζουμε σπίτια στο Grand Rapids και σε όλο το Michigan. Δίκαιη προσφορά τοις μετρητοίς, σε οποιαδήποτε κατάσταση, χωρίς επισκευές και χωρίς χρεώσεις.",
+    callButton: "Καλέστε (616) 275-4443",
   },
 
   es: {
@@ -39,6 +42,9 @@ const content = {
       "Invertimos en propiedades residenciales y comerciales mientras ayudamos a los propietarios a encontrar soluciones inmobiliarias prácticas en todo Michigan.",
     primaryButton: "Solicite una Oferta",
     secondaryButton: "Explore Nuestros Servicios",
+    sellerLine:
+      "Compramos casas en Grand Rapids y en todo Michigan. Oferta justa en efectivo, en cualquier condición, sin reparaciones y sin cargos.",
+    callButton: "Llame al (616) 275-4443",
   },
 
   sq: {
@@ -49,86 +55,41 @@ const content = {
       "Investojmë në prona rezidenciale dhe komerciale, duke ndihmuar njëkohësisht pronarët të gjejnë zgjidhje praktike për pronat e tyre në të gjithë Michigan-in.",
     primaryButton: "Kërkoni një Ofertë",
     secondaryButton: "Shikoni Shërbimet Tona",
+    sellerLine:
+      "Blejmë shtëpi në Grand Rapids dhe në të gjithë Michigan-in. Ofertë e drejtë me para në dorë, në çdo gjendje, pa riparime dhe pa tarifa.",
+    callButton: "Telefononi (616) 275-4443",
   },
 };
 
 export default function Hero({ locale = "en" }: HeroProps) {
   const text = content[locale];
-
-  const mx = useMotionValue(0);
-  const my = useMotionValue(0);
-  const spring = { stiffness: 70, damping: 20, mass: 0.8 };
-
-  // Three depth layers: background drifts most, copy least, so the scene
-  // reads as real parallax depth rather than a flat photo.
-  const bgX = useSpring(useTransform(mx, [-0.5, 0.5], [28, -28]), spring);
-  const bgY = useSpring(useTransform(my, [-0.5, 0.5], [18, -18]), spring);
-  const fgX = useSpring(useTransform(mx, [-0.5, 0.5], [-14, 14]), spring);
-  const fgY = useSpring(useTransform(my, [-0.5, 0.5], [-10, 10]), spring);
-  const rotY = useSpring(useTransform(mx, [-0.5, 0.5], [-5, 5]), spring);
-  const rotX = useSpring(useTransform(my, [-0.5, 0.5], [4, -4]), spring);
-
-  function handleMove(event: React.PointerEvent<HTMLElement>) {
-    const rect = event.currentTarget.getBoundingClientRect();
-    mx.set((event.clientX - rect.left) / rect.width - 0.5);
-    my.set((event.clientY - rect.top) / rect.height - 0.5);
-  }
-
-  function handleLeave() {
-    mx.set(0);
-    my.set(0);
-  }
+  const prefix = locale === "en" ? "" : `/${locale}`;
 
   return (
     <section
       id="home"
       className="relative flex min-h-screen items-center justify-center overflow-hidden pt-24"
-      onPointerMove={handleMove}
-      onPointerLeave={handleLeave}
-      style={{ perspective: 1400 }}
     >
-      {/* Sunset villa: slow push-in + mouse parallax */}
-      <m.div
-        className="absolute -inset-10"
-        style={{ x: bgX, y: bgY }}
-      >
-        <div className="hero-kenburns absolute inset-0">
-          {/* Plain <img> so phones download a 37 KB version instead of 213 KB */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/hero-sunset-1100.jpg"
-            srcSet="/images/hero-sunset-640.jpg 640w, /images/hero-sunset-1100.jpg 1100w, /images/hero-sunset.jpg 1920w"
-            sizes="100vw"
-            alt="Modern villa terrace overlooking the sea at sunset"
-            width={1920}
-            height={1080}
-            decoding="async"
-            className="absolute inset-0 h-full w-full object-cover object-[35%_50%]"
-          />
-        </div>
-      </m.div>
+      {/* Still photo (no motion). Plain <img> so phones download a small version. */}
+      <div className="absolute inset-0">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/hero-sunset-1100.jpg"
+          srcSet="/images/hero-sunset-640.jpg 640w, /images/hero-sunset-1100.jpg 1100w, /images/hero-sunset.jpg 1920w"
+          sizes="100vw"
+          alt="Modern home terrace at sunset"
+          width={1920}
+          height={1080}
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover object-[35%_50%]"
+        />
+      </div>
 
       {/* Light, warm grade so the navy copy stays crisp */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/25 via-transparent to-slate-900/25" />
-      <div className="hero-sun absolute inset-0" aria-hidden="true" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/5 to-slate-900/25" />
 
-      <m.div
-        className="relative z-10 flex -translate-y-6 flex-col items-center px-6 text-center sm:-translate-y-10"
-        style={{
-          x: fgX,
-          y: fgY,
-          rotateX: rotX,
-          rotateY: rotY,
-          transformStyle: "preserve-3d",
-        }}
-      >
-        <m.div
-          className="hero-logo-wrap"
-          initial={{ y: 30, rotateX: 20 }}
-          animate={{ y: 0, rotateX: 0 }}
-          transition={{ duration: 1.2, ease: [0.2, 0.8, 0.2, 1] }}
-          style={{ transform: "translateZ(90px)" }}
-        >
+      <div className="relative z-10 flex -translate-y-4 flex-col items-center px-6 text-center sm:-translate-y-8">
+        <div className="hero-logo-wrap">
           <Image
             src="/images/logo-transparent.png"
             alt="FAHOPROSO Real Estate Investment"
@@ -138,39 +99,42 @@ export default function Hero({ locale = "en" }: HeroProps) {
             fetchPriority="high"
             className="hero-logo h-auto w-[min(600px,86vw)]"
           />
-        </m.div>
+        </div>
 
-        <m.h1
-          className="hero-tagline -mt-10 font-serif text-2xl font-semibold leading-snug text-[#14213D] sm:-mt-20 sm:text-4xl"
-          initial={{ opacity: 0, y: 18 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
-          style={{ transform: "translateZ(55px)" }}
-        >
+        <h1 className="hero-tagline -mt-10 font-serif text-2xl font-semibold leading-snug text-[#14213D] sm:-mt-20 sm:text-4xl">
           {text.line1}
           {text.highlight}.
           <br />
           <span className="text-[#7A5A08]">{text.line2}</span>
-        </m.h1>
+        </h1>
 
-        <m.a
-          href={locale === "en" ? "/contact" : `/${locale}/contact`}
-          className="hero-cta mt-9 inline-flex items-center justify-center rounded-full px-9 py-3.5 text-sm font-medium uppercase tracking-[0.2em] text-[#14213D]"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.7 }}
-          style={{ transform: "translateZ(75px)" }}
-        >
-          {text.primaryButton}
-        </m.a>
-      </m.div>
+        <p className="hero-tagline mt-4 max-w-2xl text-base font-medium leading-7 text-[#14213D] sm:text-lg">
+          {text.sellerLine}
+        </p>
+
+        <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row">
+          <a
+            href={`${prefix}/contact`}
+            className="hero-cta inline-flex items-center justify-center rounded-full px-9 py-3.5 text-sm font-semibold uppercase tracking-[0.2em] text-[#14213D]"
+          >
+            {text.primaryButton}
+          </a>
+          <a
+            href="tel:+16162754443"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-[#14213D] px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition hover:bg-[#C9A227] hover:text-[#14213D]"
+          >
+            <Phone className="h-4 w-4" />
+            {text.callButton}
+          </a>
+        </div>
+      </div>
 
       <a
         href="#services"
         aria-label={text.secondaryButton}
         className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-white drop-shadow"
       >
-        <ChevronDown className="hero-bounce h-8 w-8" />
+        <ChevronDown className="h-8 w-8" />
       </a>
     </section>
   );

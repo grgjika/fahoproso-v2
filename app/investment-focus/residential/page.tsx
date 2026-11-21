@@ -146,7 +146,7 @@ export default function ResidentialPage() {
     <>
       <Navbar />
 
-      <main className="pt-24">
+      <main id="main" className="pt-24">
         {/* Hero */}
         <section className="relative flex min-h-[560px] items-center overflow-hidden">
           <Image

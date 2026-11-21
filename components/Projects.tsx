@@ -307,7 +307,7 @@ export default function Projects({
             return (
               <article
                 key={area.title}
-                className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#C9A227] hover:shadow-xl"
+                className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#C9A227] hover:shadow-xl"
               >
                 <div className="relative h-52 overflow-hidden sm:h-60">
                   <Image
@@ -341,7 +341,7 @@ export default function Projects({
 
                   <Link
                     href={detail.href}
-                    className="mt-7 inline-flex items-center gap-2 font-semibold text-[#14213D] transition hover:text-[#C9A227]"
+                    className="mt-7 inline-flex items-center gap-2 rounded-lg border-2 border-[#14213D] px-4 py-2 font-bold text-[#14213D] transition hover:bg-[#14213D] hover:text-white after:absolute after:inset-0 after:content-[''] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C9A227]"
                   >
                     {text.learnMore}
                     <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
