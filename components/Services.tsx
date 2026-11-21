@@ -139,7 +139,7 @@ export const serviceDetails = [
   },
   {
     icon: Hammer,
-    image: "/images/service-renovation.jpg",
+    image: "/images/service-renovation-kitchen.jpg",
   },
   {
     icon: KeyRound,
@@ -184,7 +184,7 @@ export default function Services({ locale = "en" }: ServicesProps) {
             return (
               <article
                 key={service.title}
-                className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#C9A227] hover:shadow-xl"
+                className="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#C9A227] hover:shadow-xl"
               >
                 <div className="relative h-60 overflow-hidden">
                   <Image
@@ -201,7 +201,7 @@ export default function Services({ locale = "en" }: ServicesProps) {
                   </div>
                 </div>
 
-                <div className="p-8">
+                <div className="flex flex-1 flex-col p-8">
                   <h3 className="text-2xl font-bold text-slate-900">
                     {service.title}
                   </h3>
@@ -212,8 +212,9 @@ export default function Services({ locale = "en" }: ServicesProps) {
 
                   <div className="mt-6 h-0.5 w-12 bg-[#C9A227] transition-all duration-300 group-hover:w-24" />
 
+                  <div className="mt-auto pt-6">
                   <CardLink
-                    className="mt-6"
+                    
                     locale={locale}
                     title={service.title}
                     href={
@@ -225,6 +226,7 @@ export default function Services({ locale = "en" }: ServicesProps) {
                       ][index]
                     }
                   />
+                  </div>
                 </div>
               </article>
             );

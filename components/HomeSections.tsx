@@ -182,7 +182,7 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
               return (
                 <article
                   key={service.title}
-                  className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md transition-shadow hover:border-[#C9A227] hover:shadow-xl"
+                  className="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md transition-shadow hover:border-[#C9A227] hover:shadow-xl"
                 >
                   <div className="relative h-44 overflow-hidden">
                     <Image
@@ -198,15 +198,16 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
                     </span>
                   </div>
 
-                  <div className="p-6">
+                  <div className="flex flex-1 flex-col p-6">
                     <h3 className="text-xl font-bold text-slate-900">
                       {service.title}
                     </h3>
                     <p className="mt-3 text-sm leading-7 text-slate-600">
                       {service.description}
                     </p>
+                    <div className="mt-auto pt-5">
                     <CardLink
-                      className="mt-5"
+                      
                       locale={locale}
                       title={service.title}
                       href={
@@ -218,6 +219,7 @@ export default function HomeSections({ locale = "en" }: { locale?: Locale }) {
                         ][index]
                       }
                     />
+                    </div>
                   </div>
                 </article>
               );
