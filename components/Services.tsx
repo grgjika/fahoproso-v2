@@ -143,7 +143,7 @@ export const serviceDetails = [
   },
   {
     icon: KeyRound,
-    image: "/images/service-rental2.jpg",
+    image: "/images/service-rental-neighborhood.jpg",
   },
   {
     icon: Building2,
