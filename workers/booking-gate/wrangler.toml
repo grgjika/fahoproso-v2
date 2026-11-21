@@ -10,5 +10,6 @@ id = "PASTE_KV_NAMESPACE_ID_HERE"
 
 [vars]
 ALLOWED_ORIGINS = "https://www.fahoproso.com,https://fahoproso.com"
-FROM_EMAIL = "FAHOPROSO <booking@fahoproso.com>"
+FROM_EMAIL = "FAHOPROSO <offers@fahoproso.com>"
+REPLY_TO = "offers@fahoproso.com"
 OWNER_EMAIL = ""

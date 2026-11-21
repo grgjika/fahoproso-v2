@@ -8,6 +8,7 @@
 //   Secrets:   RESEND_API_KEY, CODE_SECRET (any long random text), BOOKING_URL
 //   Variables: FROM_EMAIL (e.g. "FAHOPROSO <booking@fahoproso.com>"),
 //              ALLOWED_ORIGINS (e.g. "https://www.fahoproso.com"),
+//              REPLY_TO (optional: where replies go, e.g. offers@fahoproso.com)
 //              OWNER_EMAIL (optional: gets a note when someone verifies)
 //   KV binding: GATE (stores codes and counters)
 
@@ -59,7 +60,13 @@ async function sendMail(env, to, subject, text) {
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from: env.FROM_EMAIL, to: [to], subject, text }),
+    body: JSON.stringify({
+      from: env.FROM_EMAIL,
+      to: [to],
+      subject,
+      text,
+      ...(env.REPLY_TO ? { reply_to: env.REPLY_TO } : {}),
+    }),
   });
   return res.ok;
 }
