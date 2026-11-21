@@ -9,54 +9,54 @@ type HeroProps = {
 
 const content = {
   en: {
-    line1: "Investing in",
-    highlight: " Real Estate",
-    line2: "Creating Opportunities.",
+    line1: "Sell Your House",
+    highlight: " Fast",
+    line2: "We Buy Houses in Michigan.",
     description:
       "We invest in residential and commercial properties while helping property owners find practical real estate solutions throughout Michigan.",
     primaryButton: "Get a Cash Offer",
     secondaryButton: "Explore Our Services",
     sellerLine:
-      "We buy houses in Grand Rapids and across Michigan. Fair cash offer, any condition, no repairs, no fees.",
+      "Fair cash offer for your house in any condition. No repairs, no fees, no commissions. You choose the closing date.",
     callButton: "Call (616) 275-4443",
   },
 
   el: {
-    line1: "Επενδύουμε στα",
-    highlight: " Ακίνητα",
-    line2: "Δημιουργούμε Ευκαιρίες.",
+    line1: "Πουλήστε το σπίτι σας",
+    highlight: " γρήγορα",
+    line2: "Αγοράζουμε σπίτια στο Michigan.",
     description:
       "Επενδύουμε σε οικιστικά και επαγγελματικά ακίνητα, βοηθώντας παράλληλα τους ιδιοκτήτες να βρουν πρακτικές λύσεις για τα ακίνητά τους σε όλο το Michigan.",
     primaryButton: "Ζητήστε Προσφορά",
     secondaryButton: "Δείτε τις Υπηρεσίες μας",
     sellerLine:
-      "Αγοράζουμε σπίτια στο Grand Rapids και σε όλο το Michigan. Δίκαιη προσφορά τοις μετρητοίς, σε οποιαδήποτε κατάσταση, χωρίς επισκευές και χωρίς χρεώσεις.",
+      "Δίκαιη προσφορά τοις μετρητοίς για το σπίτι σας, σε οποιαδήποτε κατάσταση. Χωρίς επισκευές, χωρίς χρεώσεις, χωρίς προμήθειες. Εσείς επιλέγετε την ημερομηνία κλεισίματος.",
     callButton: "Καλέστε (616) 275-4443",
   },
 
   es: {
-    line1: "Invertimos en",
-    highlight: " Bienes Raíces",
-    line2: "Creamos Oportunidades.",
+    line1: "Venda su casa",
+    highlight: " rápido",
+    line2: "Compramos casas en Michigan.",
     description:
       "Invertimos en propiedades residenciales y comerciales mientras ayudamos a los propietarios a encontrar soluciones inmobiliarias prácticas en todo Michigan.",
     primaryButton: "Solicite una Oferta",
     secondaryButton: "Explore Nuestros Servicios",
     sellerLine:
-      "Compramos casas en Grand Rapids y en todo Michigan. Oferta justa en efectivo, en cualquier condición, sin reparaciones y sin cargos.",
+      "Oferta justa en efectivo por su casa, en cualquier condición. Sin reparaciones, sin cargos y sin comisiones. Usted elige la fecha de cierre.",
     callButton: "Llame al (616) 275-4443",
   },
 
   sq: {
-    line1: "Investojmë në",
-    highlight: " Pasuri të Paluajtshme",
-    line2: "Krijojmë Mundësi.",
+    line1: "Shisni shtëpinë tuaj",
+    highlight: " shpejt",
+    line2: "Blejmë shtëpi në Michigan.",
     description:
       "Investojmë në prona rezidenciale dhe komerciale, duke ndihmuar njëkohësisht pronarët të gjejnë zgjidhje praktike për pronat e tyre në të gjithë Michigan-in.",
     primaryButton: "Kërkoni një Ofertë",
     secondaryButton: "Shikoni Shërbimet Tona",
     sellerLine:
-      "Blejmë shtëpi në Grand Rapids dhe në të gjithë Michigan-in. Ofertë e drejtë me para në dorë, në çdo gjendje, pa riparime dhe pa tarifa.",
+      "Ofertë e drejtë me para në dorë për shtëpinë tuaj, në çdo gjendje. Pa riparime, pa tarifa, pa komisione. Ju zgjidhni datën e mbylljes.",
     callButton: "Telefononi (616) 275-4443",
   },
 };
