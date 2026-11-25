@@ -40,7 +40,7 @@ const secondaryAreas = [
   {
     name: "Troy",
     description:
-      "Evaluating selected residential and investment opportunities in Troy as FAHOPROSO expands across Michigan.",
+      "Evaluating selected residential and property opportunities in Troy as FAHOPROSO expands across Michigan.",
     href: "/sell-my-house-troy",
     image: "/images/Troy.jpg",
   },
@@ -183,7 +183,7 @@ export default function ServiceAreasPage() {
 
               <p className="mt-6 text-lg leading-8 text-slate-600">
                 We are expanding carefully into communities where our approach,
-                resources, and investment strategy are a strong fit.
+                resources, and buying strategy are a strong fit.
               </p>
             </div>
 
@@ -263,7 +263,7 @@ export default function ServiceAreasPage() {
               <Building2 className="h-12 w-12 text-[#C9A227]" />
 
               <h3 className="mt-6 text-2xl font-bold">
-                Residential and Investment Properties
+                Residential and Rental Properties
               </h3>
 
               <p className="mt-4 leading-8 text-slate-300">

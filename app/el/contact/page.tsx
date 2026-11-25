@@ -8,7 +8,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Επικοινωνία",
   description:
-    "Επικοινωνήστε με τη FAHOPROSO για να συζητήσουμε το ακίνητό σας, μια πιθανή πώληση ή μια επενδυτική ευκαιρία στο Michigan.",
+    "Επικοινωνήστε με τη FAHOPROSO για να συζητήσουμε το ακίνητό σας, μια πιθανή πώληση ή μια ευκαιρία ακινήτων στο Michigan.",
   alternates: {
     canonical: "https://www.fahoproso.com/el/contact/",
     languages: {

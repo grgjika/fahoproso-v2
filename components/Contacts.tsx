@@ -30,7 +30,7 @@ const content = {
 
     talkTitle: "Let's Talk About Your Property",
     talkDescription:
-      "We work with homeowners, property owners, investors, and partners throughout West Michigan, the Greater Grand Rapids area, Troy, and surrounding Michigan communities.",
+      "We work with homeowners, property owners, buyers, and partners throughout West Michigan, the Greater Grand Rapids area, Troy, and surrounding Michigan communities.",
 
     phone: "Phone",
     email: "Email",
@@ -80,7 +80,7 @@ const content = {
 
     talkTitle: "Hablemos Sobre su Propiedad",
     talkDescription:
-      "Trabajamos con propietarios, inversionistas y socios en West Michigan, el área metropolitana de Grand Rapids, Troy y otras comunidades de Michigan.",
+      "Trabajamos con propietarios, compradores y socios en West Michigan, el área metropolitana de Grand Rapids, Troy y otras comunidades de Michigan.",
 
     phone: "Teléfono",
     email: "Correo Electrónico",
@@ -130,7 +130,7 @@ const content = {
 
     talkTitle: "Ας Μιλήσουμε για το Ακίνητό σας",
     talkDescription:
-      "Συνεργαζόμαστε με ιδιοκτήτες ακινήτων, επενδυτές και συνεργάτες στο West Michigan, στην ευρύτερη περιοχή του Grand Rapids, στο Troy και σε άλλες κοινότητες του Michigan.",
+      "Συνεργαζόμαστε με ιδιοκτήτες ακινήτων, αγοραστές και συνεργάτες στο West Michigan, στην ευρύτερη περιοχή του Grand Rapids, στο Troy και σε άλλες κοινότητες του Michigan.",
 
     phone: "Τηλέφωνο",
     email: "Email",
@@ -181,7 +181,7 @@ const content = {
 
     talkTitle: "Le të Flasim për Pronën Tuaj",
     talkDescription:
-      "Punojmë me pronarë, investitorë dhe partnerë në West Michigan, zonën e Greater Grand Rapids, Troy dhe komunitete të tjera në Michigan.",
+      "Punojmë me pronarë, blerës dhe partnerë në West Michigan, zonën e Greater Grand Rapids, Troy dhe komunitete të tjera në Michigan.",
 
     phone: "Telefon",
     email: "Email",

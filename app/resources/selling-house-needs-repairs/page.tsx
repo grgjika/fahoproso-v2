@@ -394,7 +394,7 @@ export default function SellingHouseNeedsRepairsPage() {
                 {
                   question: "Can I sell a house with water or fire damage?",
                   answer:
-                    "Yes. Buyers and investors may consider damaged properties, although the condition can affect value, insurance, financing, and the transaction process. See our guide to selling a fire-damaged house in Michigan for more detail.",
+                    "Yes. Buyers and cash buyers may consider damaged properties, although the condition can affect value, insurance, financing, and the transaction process. See our guide to selling a fire-damaged house in Michigan for more detail.",
                 },
                 {
                   question: "Should I get a home inspection first?",

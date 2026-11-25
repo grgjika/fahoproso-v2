@@ -44,9 +44,9 @@ const navText = {
     homeownerGuidesDescription:
       "Helpful information for property owners",
 
-    investmentInsights: "Investment Insights",
+    investmentInsights: "Market Insights",
     investmentInsightsDescription:
-      "Residential and commercial investing",
+      "Residential and commercial real estate",
 
     michiganGuides: "Michigan Guides",
     michiganGuidesDescription:
@@ -82,9 +82,9 @@ const navText = {
     homeownerGuidesDescription:
       "Información útil para propietarios de inmuebles",
 
-    investmentInsights: "Información para Inversionistas",
+    investmentInsights: "Información del Mercado",
     investmentInsightsDescription:
-      "Inversiones residenciales y comerciales",
+      "Propiedades residenciales y comerciales",
 
     michiganGuides: "Guías de Michigan",
     michiganGuidesDescription:
@@ -120,9 +120,9 @@ const navText = {
     homeownerGuidesDescription:
       "Χρήσιμες πληροφορίες για ιδιοκτήτες ακινήτων",
 
-    investmentInsights: "Επενδυτικές Πληροφορίες",
+    investmentInsights: "Πληροφορίες Αγοράς",
     investmentInsightsDescription:
-      "Επενδύσεις σε οικιστικά και επαγγελματικά ακίνητα",
+      "Οικιστικά και επαγγελματικά ακίνητα",
 
     michiganGuides: "Οδηγοί Michigan",
     michiganGuidesDescription:
@@ -158,9 +158,9 @@ const navText = {
     homeownerGuidesDescription:
       "Informacion i dobishëm për pronarët e pronave",
 
-    investmentInsights: "Informacion për Investime",
+    investmentInsights: "Informacion për Tregun",
     investmentInsightsDescription:
-      "Investime rezidenciale dhe komerciale",
+      "Prona rezidenciale dhe komerciale",
 
     michiganGuides: "Udhëzues për Michigan",
     michiganGuidesDescription:

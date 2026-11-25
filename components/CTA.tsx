@@ -7,33 +7,33 @@ type CTAProps = {
 const content = {
   en: {
     eyebrow: "Let's Work Together",
-    title: "Ready to Sell, Invest, or Partner?",
+    title: "Ready to Sell or Partner?",
     description:
-      "Whether you're selling a property, looking for your next investment, or exploring commercial opportunities, FAHOPROSO is ready to help.",
+      "Whether you're selling a property, looking to buy, or exploring commercial opportunities, FAHOPROSO is ready to help.",
     button: "Contact Us Today",
   },
 
   es: {
     eyebrow: "Trabajemos Juntos",
-    title: "¿Listo para Vender, Invertir o Colaborar?",
+    title: "¿Listo para Vender o Colaborar?",
     description:
-      "Ya sea que esté vendiendo una propiedad, buscando su próxima inversión o explorando oportunidades comerciales, FAHOPROSO está listo para ayudarle.",
+      "Ya sea que esté vendiendo una propiedad, buscando comprar o explorando oportunidades comerciales, FAHOPROSO está listo para ayudarle.",
     button: "Contáctenos Hoy",
   },
 
   el: {
     eyebrow: "Ας Συνεργαστούμε",
-    title: "Έτοιμοι να Πουλήσετε, να Επενδύσετε ή να Συνεργαστείτε;",
+    title: "Έτοιμοι να Πουλήσετε ή να Συνεργαστείτε;",
     description:
-      "Είτε θέλετε να πουλήσετε ένα ακίνητο, είτε αναζητάτε την επόμενη επένδυσή σας είτε εξετάζετε επαγγελματικές ευκαιρίες, η FAHOPROSO είναι έτοιμη να σας βοηθήσει.",
+      "Είτε θέλετε να πουλήσετε ένα ακίνητο, είτε θέλετε να αγοράσετε είτε εξετάζετε επαγγελματικές ευκαιρίες, η FAHOPROSO είναι έτοιμη να σας βοηθήσει.",
     button: "Επικοινωνήστε Μαζί μας",
   },
 
   sq: {
     eyebrow: "Le të Bashkëpunojmë",
-    title: "Gati për të Shitur, Investuar ose Bashkëpunuar?",
+    title: "Gati për të Shitur ose Bashkëpunuar?",
     description:
-      "Nëse po shisni një pronë, po kërkoni investimin tuaj të ardhshëm ose po eksploroni mundësi komerciale, FAHOPROSO është gati t'ju ndihmojë.",
+      "Nëse po shisni një pronë, po kërkoni të blini ose po eksploroni mundësi komerciale, FAHOPROSO është gati t'ju ndihmojë.",
     button: "Na Kontaktoni Sot",
   },
 };

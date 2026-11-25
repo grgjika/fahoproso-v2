@@ -9,7 +9,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Πληροφορίες",
   description:
-    "Εξερευνήστε οδηγούς και πληροφορίες της FAHOPROSO σχετικά με πωλήσεις ακινήτων, επενδύσεις και θέματα για ιδιοκτήτες στο Michigan.",
+    "Εξερευνήστε οδηγούς και πληροφορίες της FAHOPROSO σχετικά με πωλήσεις και αγορές ακινήτων και θέματα για ιδιοκτήτες στο Michigan.",
   alternates: {
     canonical: "https://www.fahoproso.com/el/resources/",
     languages: {
@@ -39,8 +39,8 @@ export default function ResourcesPageEL() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-              Εξερευνήστε χρήσιμες πληροφορίες σχετικά με την πώληση ακινήτων,
-              τις επενδύσεις και σημαντικά θέματα για ιδιοκτήτες στο Michigan.
+              Εξερευνήστε χρήσιμες πληροφορίες σχετικά με την πώληση και την αγορά ακινήτων
+              και σημαντικά θέματα για ιδιοκτήτες στο Michigan.
             </p>
           </div>
         </section>

@@ -23,9 +23,9 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Commercial Real Estate Investments",
+  title: "Commercial Real Estate",
   description:
-    "Learn how FAHOPROSO evaluates commercial real estate acquisitions, partnerships, development opportunities, and long-term investment potential.",
+    "Learn how FAHOPROSO evaluates commercial real estate acquisitions, partnerships, development opportunities, and long-term potential.",
 
     alternates: {
      canonical: "https://www.fahoproso.com/investment-focus/commercial/",
@@ -70,11 +70,11 @@ const benefits = [
     icon: Handshake,
     title: "Partnership Mindset",
     description:
-      "We value professional relationships with owners, brokers, investors, tenants, contractors, and community stakeholders.",
+      "We value professional relationships with owners, brokers, buyers, tenants, contractors, and community stakeholders.",
   },
   {
     icon: ShieldCheck,
-    title: "Responsible Investment",
+    title: "Responsible Ownership",
     description:
       "We seek opportunities that support sound ownership, realistic improvements, and long-term community value.",
   },
@@ -107,7 +107,7 @@ const processSteps = [
   },
   {
     number: "04",
-    title: "Investment Decision",
+    title: "Purchase Decision",
     description:
       "If the opportunity aligns with our strategy, we discuss transaction structure, documentation, approvals, and next steps.",
   },
@@ -117,7 +117,7 @@ const faqs = [
   {
     question: "What types of commercial properties do you consider?",
     answer:
-      "We may evaluate office, retail, industrial, warehouse, mixed-use, small multifamily, land, and other commercial opportunities that align with our investment criteria.",
+      "We may evaluate office, retail, industrial, warehouse, mixed-use, small multifamily, land, and other commercial opportunities that align with our buying criteria.",
   },
   {
     question: "Do you consider occupied commercial properties?",
@@ -127,12 +127,12 @@ const faqs = [
   {
     question: "Do you work with brokers and property owners?",
     answer:
-      "Yes. We welcome opportunities from owners, licensed real estate professionals, investors, developers, and other qualified partners.",
+      "Yes. We welcome opportunities from owners, licensed real estate professionals, buyers, developers, and other qualified partners.",
   },
   {
     question: "Do you consider properties that need improvements?",
     answer:
-      "Yes. Properties requiring repairs, modernization, repositioning, or operational improvements may be considered when the scope and investment plan are realistic.",
+      "Yes. Properties requiring repairs, modernization, repositioning, or operational improvements may be considered when the scope and plan are realistic.",
   },
   {
     question: "What documents are helpful during an initial review?",
@@ -156,7 +156,7 @@ export default function CommercialPage() {
         <section className="relative flex min-h-[560px] items-center overflow-hidden">
           <Image
             src="/images/property3.jpg"
-            alt="Commercial real estate investment"
+            alt="Commercial real estate"
             fill
             priority
             className="object-cover"
@@ -173,7 +173,7 @@ export default function CommercialPage() {
               <h1 className="mt-5 text-4xl font-bold leading-tight md:text-6xl">
                 Strategic Commercial
                 <br />
-                Investment Opportunities
+                Property Opportunities
               </h1>
 
               <div className="mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
@@ -181,7 +181,7 @@ export default function CommercialPage() {
               <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-200">
                 We evaluate commercial properties and partnerships through
                 disciplined analysis, responsible due diligence, and a
-                long-term investment perspective.
+                long-term perspective.
               </p>
 
               <Link
@@ -223,7 +223,7 @@ export default function CommercialPage() {
                   expenses, zoning requirements, maintenance obligations,
                   tenant considerations, environmental concerns, and capital
                   needs. These factors must be reviewed carefully before an
-                  investment decision is made.
+                  purchase decision is made.
                 </p>
 
                 <p>
@@ -236,8 +236,8 @@ export default function CommercialPage() {
 
                 <p>
                   Our goal is to identify opportunities where professional
-                  ownership, appropriate investment, and clear planning can
-                  support businesses, tenants, investors, and surrounding
+                  ownership, appropriate planning, and clear process can
+                  support businesses, tenants, buyers, and surrounding
                   communities.
                 </p>
               </div>
@@ -259,7 +259,7 @@ export default function CommercialPage() {
                 </p>
 
                 <p className="mt-2 text-2xl font-bold">
-                  Commercial Investment Analysis
+                  Commercial Property Analysis
                 </p>
               </div>
             </div>
@@ -281,7 +281,7 @@ export default function CommercialPage() {
               <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
 
               <p className="mt-6 text-lg leading-8 text-slate-600">
-                Each property must meet our investment standards and complete
+                Each property must meet our standards and complete
                 due-diligence requirements.
               </p>
             </div>
@@ -318,7 +318,7 @@ export default function CommercialPage() {
           <div className="mx-auto max-w-7xl px-6">
             <div className="max-w-3xl">
               <p className="font-semibold uppercase tracking-[0.25em] text-[#C9A227]">
-                Investment Evaluation
+                Property Evaluation
               </p>
 
               <div className="mt-3 h-1 w-16 rounded-full bg-[#C9A227]" />
@@ -328,7 +328,7 @@ export default function CommercialPage() {
               </h2>
 
               <p className="mt-6 text-lg leading-8 text-slate-600">
-                Commercial investment analysis includes the property itself,
+                Commercial property analysis includes the property itself,
                 its current operation, legal considerations, financial
                 performance, and future market position.
               </p>
@@ -366,7 +366,7 @@ export default function CommercialPage() {
           <div className="mx-auto max-w-7xl px-6">
             <div className="mx-auto max-w-3xl text-center">
               <p className="font-semibold uppercase tracking-[0.25em] text-[#C9A227]">
-                Our Investment Philosophy
+                Our Approach
               </p>
 
               <h2 className="mt-4 text-4xl font-bold md:text-5xl">
@@ -376,7 +376,7 @@ export default function CommercialPage() {
               <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
 
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                Strong commercial investments require careful underwriting,
+                Strong commercial purchases require careful underwriting,
                 realistic expectations, professional relationships, and a clear
                 operating strategy.
               </p>
@@ -454,7 +454,7 @@ export default function CommercialPage() {
                   and creates a stronger foundation for responsible ownership.
                   When information is incomplete or risks cannot be evaluated
                   appropriately, we may determine that an opportunity does not
-                  fit our investment strategy.
+                  fit our buying strategy.
                 </p>
               </div>
             </div>
@@ -480,7 +480,7 @@ export default function CommercialPage() {
               <p>
                 Commercial real estate often requires collaboration among
                 property owners, brokers, attorneys, lenders, inspectors,
-                contractors, engineers, tenants, property managers, investors,
+                contractors, engineers, tenants, property managers, buyers,
                 and local authorities. Successful transactions depend on clear
                 communication and professional coordination.
               </p>
@@ -489,7 +489,7 @@ export default function CommercialPage() {
                 FAHOPROSO values relationships built on integrity,
                 responsiveness, accurate information, and mutual respect. We
                 welcome opportunities to work with professionals who share a
-                commitment to responsible real estate investment and long-term
+                commitment to responsible real estate ownership and long-term
                 value creation.
               </p>
 
@@ -512,7 +512,7 @@ export default function CommercialPage() {
               </p>
 
               <h2 className="mt-4 text-4xl font-bold text-[#14213D] md:text-5xl">
-                From Opportunity Review to Investment Decision
+                From Opportunity Review to Purchase Decision
               </h2>
 
               <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
@@ -561,7 +561,7 @@ export default function CommercialPage() {
 
               <div className="mt-6 space-y-5 text-lg leading-8 text-slate-600">
                 <p>
-                  FAHOPROSO is building its commercial investment capabilities
+                  FAHOPROSO is building its commercial capabilities
                   with a long-term perspective. We are focused on disciplined
                   growth rather than pursuing every available opportunity.
                 </p>
@@ -575,7 +575,7 @@ export default function CommercialPage() {
 
                 <p>
                   Our goal is to grow thoughtfully while creating value for
-                  property owners, tenants, partners, investors, and the
+                  property owners, tenants, partners, buyers, and the
                   communities in which we operate.
                 </p>
               </div>

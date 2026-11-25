@@ -27,7 +27,7 @@ type FooterProps = {
 
 export const content = {
   en: {
-    tagline1: "Investing in Real Estate.",
+    tagline1: "Buying Homes.",
     tagline2: "Creating Opportunities.",
     showPhone: "Show phone number",
 
@@ -40,7 +40,7 @@ export const content = {
     contact: "Contact",
 
     servicesTitle: "Services",
-    residential: "Residential Investments",
+    residential: "Residential Properties",
     commercial: "Commercial Real Estate",
     rentals: "Rental Properties",
     solutions: "Property Solutions",
@@ -74,7 +74,7 @@ export const content = {
     contact: "Contacto",
 
     servicesTitle: "Servicios",
-    residential: "Inversiones Residenciales",
+    residential: "Propiedades Residenciales",
     commercial: "Bienes Raíces Comerciales",
     rentals: "Propiedades de Alquiler",
     solutions: "Soluciones Inmobiliarias",
@@ -95,7 +95,7 @@ export const content = {
   },
 
   el: {
-    tagline1: "Επενδύουμε στα Ακίνητα.",
+    tagline1: "Αγοράζουμε Σπίτια.",
     tagline2: "Δημιουργούμε Ευκαιρίες.",
     showPhone: "Εμφάνιση τηλεφώνου",
 
@@ -108,7 +108,7 @@ export const content = {
     contact: "Επικοινωνία",
 
     servicesTitle: "Υπηρεσίες",
-    residential: "Επενδύσεις σε Κατοικίες",
+    residential: "Οικιστικά Ακίνητα",
     commercial: "Επαγγελματικά Ακίνητα",
     rentals: "Ακίνητα προς Ενοικίαση",
     solutions: "Λύσεις Ακινήτων",
@@ -129,7 +129,7 @@ export const content = {
   },
 
   sq: {
-    tagline1: "Investojmë në Pasuri të Paluajtshme.",
+    tagline1: "Blejmë Shtëpi.",
     tagline2: "Krijojmë Mundësi.",
     showPhone: "Shfaq numrin e telefonit",
 
@@ -142,7 +142,7 @@ export const content = {
     contact: "Kontakt",
 
     servicesTitle: "Shërbimet",
-    residential: "Investime Rezidenciale",
+    residential: "Prona Rezidenciale",
     commercial: "Pasuri të Paluajtshme Komerciale",
     rentals: "Prona me Qira",
     solutions: "Zgjidhje për Pronat",

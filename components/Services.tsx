@@ -19,7 +19,7 @@ export const content = {
     eyebrow: "Our Services",
     title: "Real Estate Solutions You Can Trust",
     description:
-      "We provide practical real estate solutions for property owners, investors, and partners throughout West Michigan.",
+      "We provide practical real estate solutions for property owners, buyers, and partners throughout West Michigan.",
     services: [
       {
         title: "Buy Houses for Cash",
@@ -27,19 +27,19 @@ export const content = {
           "We purchase properties in any condition and provide fast, fair cash offers with no hidden fees.",
       },
       {
-        title: "Fix & Flip Investments",
+        title: "Fix & Flip Projects",
         description:
           "We identify, renovate, and transform properties to maximize their value and strengthen communities.",
       },
       {
-        title: "Rental Investments",
+        title: "Rental Properties",
         description:
           "We acquire quality rental properties that generate long-term income and lasting value.",
       },
       {
         title: "Commercial Real Estate",
         description:
-          "We invest in commercial properties and partner on opportunities that support long-term growth.",
+          "We buy commercial properties and partner on opportunities that support long-term growth.",
       },
     ],
   },
@@ -48,7 +48,7 @@ export const content = {
     eyebrow: "Nuestros Servicios",
     title: "Soluciones Inmobiliarias en las que Puede Confiar",
     description:
-      "Ofrecemos soluciones inmobiliarias prácticas para propietarios, inversionistas y socios en todo West Michigan.",
+      "Ofrecemos soluciones inmobiliarias prácticas para propietarios, compradores y socios en todo West Michigan.",
     services: [
       {
         title: "Compramos Casas en Efectivo",
@@ -56,19 +56,19 @@ export const content = {
           "Compramos propiedades en cualquier condición y ofrecemos propuestas rápidas y justas en efectivo, sin cargos ocultos.",
       },
       {
-        title: "Inversiones de Renovación y Reventa",
+        title: "Proyectos de Renovación y Reventa",
         description:
           "Identificamos, renovamos y transformamos propiedades para maximizar su valor y fortalecer las comunidades.",
       },
       {
-        title: "Inversiones en Propiedades de Alquiler",
+        title: "Propiedades de Alquiler",
         description:
           "Adquirimos propiedades de alquiler de calidad que generan ingresos a largo plazo y valor duradero.",
       },
       {
         title: "Bienes Raíces Comerciales",
         description:
-          "Invertimos en propiedades comerciales y colaboramos en oportunidades que apoyan el crecimiento a largo plazo.",
+          "Compramos propiedades comerciales y colaboramos en oportunidades que apoyan el crecimiento a largo plazo.",
       },
     ],
   },
@@ -77,7 +77,7 @@ export const content = {
     eyebrow: "Οι Υπηρεσίες μας",
     title: "Λύσεις Ακινήτων που Μπορείτε να Εμπιστευτείτε",
     description:
-      "Παρέχουμε πρακτικές λύσεις ακινήτων για ιδιοκτήτες, επενδυτές και συνεργάτες σε όλο το West Michigan.",
+      "Παρέχουμε πρακτικές λύσεις ακινήτων για ιδιοκτήτες, αγοραστές και συνεργάτες σε όλο το West Michigan.",
     services: [
       {
         title: "Αγοράζουμε Ακίνητα με Μετρητά",
@@ -85,19 +85,19 @@ export const content = {
           "Αγοράζουμε ακίνητα σε οποιαδήποτε κατάσταση και προσφέρουμε γρήγορες και δίκαιες προσφορές μετρητοίς, χωρίς κρυφές χρεώσεις.",
       },
       {
-        title: "Επενδύσεις Ανακαίνισης & Μεταπώλησης",
+        title: "Έργα Ανακαίνισης & Μεταπώλησης",
         description:
           "Εντοπίζουμε, ανακαινίζουμε και αναβαθμίζουμε ακίνητα με στόχο τη μεγιστοποίηση της αξίας τους και την ενίσχυση των κοινοτήτων.",
       },
       {
-        title: "Επενδύσεις σε Ακίνητα προς Ενοικίαση",
+        title: "Ακίνητα προς Ενοικίαση",
         description:
           "Αποκτούμε ποιοτικά ακίνητα προς ενοικίαση που μπορούν να δημιουργήσουν μακροπρόθεσμο εισόδημα και διαχρονική αξία.",
       },
       {
         title: "Επαγγελματικά Ακίνητα",
         description:
-          "Επενδύουμε σε επαγγελματικά ακίνητα και συνεργαζόμαστε σε ευκαιρίες που υποστηρίζουν τη μακροπρόθεσμη ανάπτυξη.",
+          "Αγοράζουμε επαγγελματικά ακίνητα και συνεργαζόμαστε σε ευκαιρίες που υποστηρίζουν τη μακροπρόθεσμη ανάπτυξη.",
       },
     ],
   },
@@ -106,7 +106,7 @@ export const content = {
     eyebrow: "Shërbimet Tona",
     title: "Zgjidhje për Pasuri të Paluajtshme që Mund t'u Besoni",
     description:
-      "Ofrojmë zgjidhje praktike për pronarë, investitorë dhe partnerë në të gjithë West Michigan.",
+      "Ofrojmë zgjidhje praktike për pronarë, blerës dhe partnerë në të gjithë West Michigan.",
     services: [
       {
         title: "Blejmë Shtëpi me Para në Dorë",
@@ -114,19 +114,19 @@ export const content = {
           "Blejmë prona në çdo gjendje dhe ofrojmë oferta të shpejta dhe të drejta në para, pa tarifa të fshehura.",
       },
       {
-        title: "Investime në Rinovim dhe Rishitje",
+        title: "Projekte Rinovimi dhe Rishitjeje",
         description:
           "Identifikojmë, rinovojmë dhe transformojmë prona për të maksimizuar vlerën e tyre dhe për të forcuar komunitetet.",
       },
       {
-        title: "Investime në Prona me Qira",
+        title: "Prona me Qira",
         description:
           "Blejmë prona cilësore me qira që krijojnë të ardhura afatgjata dhe vlerë të qëndrueshme.",
       },
       {
         title: "Pasuri të Paluajtshme Komerciale",
         description:
-          "Investojmë në prona komerciale dhe bashkëpunojmë në mundësi që mbështesin rritjen afatgjatë.",
+          "Blejmë prona komerciale dhe bashkëpunojmë në mundësi që mbështesin rritjen afatgjatë.",
       },
     ],
   },

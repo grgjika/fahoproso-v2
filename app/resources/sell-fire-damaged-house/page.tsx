@@ -26,7 +26,7 @@ const faqs = [
   {
     question: "Who buys a fire-damaged house?",
     answer:
-      "Investors and cash buyers, including companies like FAHOPROSO, review properties in their current condition. Buyers who need a mortgage often cannot qualify for a home that is not habitable or insurable, so cash buyers are frequently the main option.",
+      "Cash buyers, including companies like FAHOPROSO, review properties in their current condition. Buyers who need a mortgage often cannot qualify for a home that is not habitable or insurable, so cash buyers are frequently the main option.",
   },
   {
     question: "Does the mortgage have to be paid off when I sell?",
@@ -218,7 +218,7 @@ export default function SellFireDamagedHousePage() {
 
                 <p className="mt-5 leading-8 text-slate-600">
                   Selling in the current condition avoids repair costs and
-                  delays. Investors and cash buyers review damaged homes
+                  delays. Cash buyers review damaged homes
                   directly.
                 </p>
               </div>

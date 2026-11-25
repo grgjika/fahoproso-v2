@@ -14,7 +14,7 @@ const content = {
     highlight: " Fast",
     line2: "We Buy Houses in Michigan.",
     description:
-      "We invest in residential and commercial properties while helping property owners find practical real estate solutions throughout Michigan.",
+      "We buy residential and commercial properties while helping property owners find practical real estate solutions throughout Michigan.",
     primaryButton: "Get a Cash Offer",
     secondaryButton: "Explore Our Services",
     sellerLine:
@@ -27,7 +27,7 @@ const content = {
     highlight: " γρήγορα",
     line2: "Αγοράζουμε σπίτια στο Michigan.",
     description:
-      "Επενδύουμε σε οικιστικά και επαγγελματικά ακίνητα, βοηθώντας παράλληλα τους ιδιοκτήτες να βρουν πρακτικές λύσεις για τα ακίνητά τους σε όλο το Michigan.",
+      "Αγοράζουμε οικιστικά και επαγγελματικά ακίνητα, βοηθώντας παράλληλα τους ιδιοκτήτες να βρουν πρακτικές λύσεις για τα ακίνητά τους σε όλο το Michigan.",
     primaryButton: "Ζητήστε Προσφορά",
     secondaryButton: "Δείτε τις Υπηρεσίες μας",
     sellerLine:
@@ -40,7 +40,7 @@ const content = {
     highlight: " rápido",
     line2: "Compramos casas en Michigan.",
     description:
-      "Invertimos en propiedades residenciales y comerciales mientras ayudamos a los propietarios a encontrar soluciones inmobiliarias prácticas en todo Michigan.",
+      "Compramos propiedades residenciales y comerciales mientras ayudamos a los propietarios a encontrar soluciones inmobiliarias prácticas en todo Michigan.",
     primaryButton: "Solicite una Oferta",
     secondaryButton: "Explore Nuestros Servicios",
     sellerLine:
@@ -53,7 +53,7 @@ const content = {
     highlight: " shpejt",
     line2: "Blejmë shtëpi në Michigan.",
     description:
-      "Investojmë në prona rezidenciale dhe komerciale, duke ndihmuar njëkohësisht pronarët të gjejnë zgjidhje praktike për pronat e tyre në të gjithë Michigan-in.",
+      "Blejmë prona rezidenciale dhe komerciale, duke ndihmuar njëkohësisht pronarët të gjejnë zgjidhje praktike për pronat e tyre në të gjithë Michigan-in.",
     primaryButton: "Kërkoni një Ofertë",
     secondaryButton: "Shikoni Shërbimet Tona",
     sellerLine:
@@ -86,7 +86,7 @@ export default function Hero({ locale = "en" }: HeroProps) {
         <div className="hero-logo-wrap">
           <Image
             src="/images/logo-transparent.png"
-            alt="FAHOPROSO Real Estate Investment"
+            alt="FAHOPROSO Real Estate"
             width={620}
             height={413}
             priority

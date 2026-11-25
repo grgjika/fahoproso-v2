@@ -24,13 +24,13 @@ export const metadata: Metadata = {
     "sell house as-is Michigan",
     "sell inherited house Michigan",
     "sell house without repairs Michigan",
-    "real estate investment Michigan",
+    "real estate Michigan",
     "cash home buyers Michigan",
     "property solutions Michigan",
     "Grand Rapids real estate",
-    "Kent County real estate investors",
-    "Ottawa County real estate investors",
-    "residential investments",
+    "Kent County real estate buyers",
+    "Ottawa County real estate buyers",
+    "residential properties",
     "commercial real estate",
     "sell house for cash Grand Rapids",
     "sell my house Michigan",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
         url: "/images/social-preview.jpg",
         width: 1200,
         height: 630,
-        alt: "FAHOPROSO Real Estate Investment",
+        alt: "FAHOPROSO Real Estate",
       },
     ],
     locale: "en_US",
@@ -116,7 +116,7 @@ const organizationSchema = {
   image: "https://www.fahoproso.com/images/social-preview.jpg",
 
   description:
-    "FAHOPROSO provides residential and commercial real estate investment and property solutions throughout Michigan.",
+    "FAHOPROSO provides residential and commercial real estate and property solutions throughout Michigan.",
 
   email: "offers@fahoproso.com",
   telephone: "+1-616-275-4443",
@@ -188,9 +188,9 @@ const organizationSchema = {
   ],
 
   knowsAbout: [
-    "Residential real estate investment",
-    "Rental property investment",
-    "Commercial real estate investment",
+    "Residential real estate",
+    "Rental property",
+    "Commercial real estate",
     "Property acquisitions",
     "Property solutions",
   ],

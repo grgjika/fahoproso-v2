@@ -20,9 +20,9 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Rental Property Investments",
+  title: "Rental Properties",
   description:
-    "Learn how FAHOPROSO evaluates rental property opportunities and creates long-term value through responsible ownership and professional real estate investment.",
+    "Learn how FAHOPROSO evaluates rental property opportunities and creates long-term value through responsible ownership and professional management.",
 
     alternates: {
      canonical: "https://www.fahoproso.com/investment-focus/rentals/",
@@ -100,11 +100,11 @@ const processSteps = [
     number: "03",
     title: "Property Evaluation",
     description:
-      "We assess repairs, improvements, operations, management needs, and the property's long-term investment potential.",
+      "We assess repairs, improvements, operations, management needs, and the property's long-term potential.",
   },
   {
     number: "04",
-    title: "Investment Decision",
+    title: "Purchase Decision",
     description:
       "If the opportunity fits our strategy, we discuss next steps, due diligence, documentation, and possible transaction terms.",
   },
@@ -114,7 +114,7 @@ const faqs = [
   {
     question: "What types of rental properties do you consider?",
     answer:
-      "We may evaluate single-family rentals, duplexes, townhomes, small multifamily properties, and other residential income opportunities that align with our investment criteria.",
+      "We may evaluate single-family rentals, duplexes, townhomes, small multifamily properties, and other residential income opportunities that align with our buying criteria.",
   },
   {
     question: "Do you consider occupied properties?",
@@ -124,7 +124,7 @@ const faqs = [
   {
     question: "Do you only purchase fully renovated rentals?",
     answer:
-      "No. We may consider properties that require repairs or operational improvements when the opportunity supports a responsible and realistic investment plan.",
+      "No. We may consider properties that require repairs or operational improvements when the opportunity supports a responsible and realistic plan.",
   },
   {
     question: "What financial information is helpful?",
@@ -153,7 +153,7 @@ export default function RentalsPage() {
         <section className="relative flex min-h-[560px] items-center overflow-hidden">
           <Image
             src="/images/property2.jpg"
-            alt="Rental property investment"
+            alt="Rental property"
             fill
             priority
             className="object-cover"
@@ -164,7 +164,7 @@ export default function RentalsPage() {
           <div className="relative mx-auto w-full max-w-7xl px-6 py-24 text-white">
             <div className="max-w-3xl">
               <p className="font-semibold uppercase tracking-[0.25em] text-[#C9A227]">
-                Rental Investments
+                Rental Properties
               </p>
 
               <h1 className="mt-5 text-4xl font-bold leading-tight md:text-6xl">
@@ -212,7 +212,7 @@ export default function RentalsPage() {
                   are selected carefully, maintained responsibly, and managed
                   with discipline. At FAHOPROSO, we do not view rental
                   properties as short-term transactions. We approach them as
-                  long-term investments that affect residents, neighborhoods,
+                  long-term commitments that affect residents, neighborhoods,
                   operating partners, and the broader community.
                 </p>
 
@@ -228,7 +228,7 @@ export default function RentalsPage() {
                   property&apos;s location, physical condition, current occupancy,
                   rental demand, operating history, and long-term potential.
                   This disciplined process helps us identify opportunities that
-                  align with our investment standards and business goals.
+                  align with our standards and business goals.
                 </p>
               </div>
             </div>
@@ -249,7 +249,7 @@ export default function RentalsPage() {
                 </p>
 
                 <p className="mt-2 text-2xl font-bold">
-                  Long-Term Rental Investment
+                  Long-Term Rental Ownership
                 </p>
               </div>
             </div>
@@ -272,7 +272,7 @@ export default function RentalsPage() {
 
               <p className="mt-6 text-lg leading-8 text-slate-600">
                 Every rental opportunity is reviewed based on its complete
-                operating and investment profile.
+                operating profile.
               </p>
             </div>
 
@@ -302,7 +302,7 @@ export default function RentalsPage() {
           <div className="mx-auto max-w-7xl px-6">
             <div className="max-w-3xl">
               <p className="font-semibold uppercase tracking-[0.25em] text-[#C9A227]">
-                Investment Evaluation
+                Property Evaluation
               </p>
 
               <div className="mt-3 h-1 w-16 rounded-full bg-[#C9A227]" />
@@ -359,7 +359,7 @@ export default function RentalsPage() {
               <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
 
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                Sustainable rental investments require discipline,
+                Sustainable rental ownership requires discipline,
                 maintenance, communication, and a clear operating plan.
               </p>
             </div>
@@ -397,7 +397,7 @@ export default function RentalsPage() {
             <div className="relative h-[480px] overflow-hidden rounded-2xl shadow-lg">
               <Image
                 src="/images/property2.jpg"
-                alt="Residential rental investment property"
+                alt="Residential rental property"
                 fill
                 className="object-cover"
               />
@@ -449,7 +449,7 @@ export default function RentalsPage() {
               </p>
 
               <h2 className="mt-4 text-4xl font-bold text-[#14213D] md:text-5xl">
-                From Initial Review to Investment Decision
+                From Initial Review to Purchase Decision
               </h2>
 
               <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
@@ -499,7 +499,7 @@ export default function RentalsPage() {
                 <p>
                   FAHOPROSO seeks rental properties that can support responsible
                   ownership, sustainable operations, and long-term improvement.
-                  We believe the strongest investments create value for more
+                  We believe the strongest purchases create value for more
                   than the property owner alone.
                 </p>
 
@@ -531,7 +531,7 @@ export default function RentalsPage() {
               </p>
 
               <h2 className="mt-4 text-4xl font-bold text-[#14213D] md:text-5xl">
-                Rental Investment Questions
+                Rental Property Questions
               </h2>
 
               <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />

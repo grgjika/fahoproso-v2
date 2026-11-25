@@ -101,7 +101,7 @@ export default function SellRentalPropertyPage() {
                 <p>
                   Landlords choose to sell rental properties for many reasons,
                   including retirement, portfolio changes, maintenance costs,
-                  or changing investment goals.
+                  or changing goals.
                 </p>
 
                 <p>
@@ -160,7 +160,7 @@ export default function SellRentalPropertyPage() {
 
             <p className="mt-6 text-lg leading-8 text-slate-600">
               Before selling, review your lease agreements, occupancy status,
-              maintenance needs, and long-term investment goals. Planning ahead
+              maintenance needs, and long-term goals. Planning ahead
               can help make the selling process smoother.
             </p>
 
@@ -194,7 +194,7 @@ export default function SellRentalPropertyPage() {
                 "Maintenance Costs",
                 "Vacant Property",
                 "Tenant Challenges",
-                "Investment Strategy",
+                "Ownership Strategy",
               ].map((item) => (
 
                 <div
@@ -313,7 +313,7 @@ export default function SellRentalPropertyPage() {
 
               <div className="rounded-3xl bg-white p-8 shadow-lg">
                 <h3 className="text-2xl font-bold text-[#14213D]">
-                  Keep the Investment
+                  Keep the Property
                 </h3>
 
                 <p className="mt-5 leading-8 text-slate-600">
@@ -365,7 +365,7 @@ export default function SellRentalPropertyPage() {
 
                 <p className="mt-4 leading-8 text-slate-600">
                   It depends on your goals, budget, timeline, and the property&apos;s
-                  condition. Every investment property is different.
+                  condition. Every rental property is different.
                 </p>
               </div>
 

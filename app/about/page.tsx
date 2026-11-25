@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "About Us",
 
   description:
-    "Learn more about FAHOPROSO and our residential and commercial real estate investment approach in Grand Rapids, Michigan.",
+    "Learn more about FAHOPROSO and our residential and commercial real estate approach in Grand Rapids, Michigan.",
 
   alternates: {
     canonical: "https://www.fahoproso.com/about/",
@@ -38,7 +38,7 @@ export default function AboutPage() {
             </p>
 
             <h1 className="mt-4 text-4xl font-bold md:text-6xl">
-              Investing in Properties.
+              Buying Homes.
               <br />
               Creating Opportunities.
             </h1>
@@ -47,7 +47,7 @@ export default function AboutPage() {
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-200">
               Faithful Home & Property Solutions, LLC provides practical,
-              transparent, and professionally managed real estate investment
+              transparent, and professionally managed real estate
               solutions.
             </p>
           </div>

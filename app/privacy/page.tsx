@@ -77,7 +77,7 @@ export default function PrivacyPage() {
 
                 <ul className="mt-4 list-disc space-y-2 pl-6 leading-8">
                   <li>Respond to your inquiries.</li>
-                  <li>Evaluate properties and investment opportunities.</li>
+                  <li>Evaluate properties and property opportunities.</li>
                   <li>Prepare and communicate potential purchase offers.</li>
                   <li>Schedule appointments and property inspections.</li>
                   <li>Improve our website and services.</li>

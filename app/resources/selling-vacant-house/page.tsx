@@ -334,7 +334,7 @@ export default function SellingVacantHousePage() {
 
                 <p className="mt-5 leading-8 text-slate-600">
                   You may keep the home for future personal use or as a
-                  long-term investment.
+                  long-term rental.
                 </p>
               </div>
 

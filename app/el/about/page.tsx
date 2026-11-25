@@ -10,7 +10,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Σχετικά με Εμάς",
   description:
-    "Μάθετε περισσότερα για τη FAHOPROSO και την προσέγγισή μας στις επενδύσεις οικιστικών και επαγγελματικών ακινήτων στο Michigan.",
+    "Μάθετε περισσότερα για τη FAHOPROSO και την προσέγγισή μας στις οικιστικά και επαγγελματικά ακίνητα στο Michigan.",
   alternates: {
     canonical: "https://www.fahoproso.com/el/about/",
     languages: {
@@ -36,7 +36,7 @@ export default function AboutPageEL() {
             </p>
 
             <h1 className="mt-4 text-4xl font-bold md:text-6xl">
-              Επενδύουμε σε Ακίνητα.
+              Αγοράζουμε Ακίνητα.
               <br />
               Δημιουργούμε Ευκαιρίες.
             </h1>
@@ -45,8 +45,8 @@ export default function AboutPageEL() {
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-200">
               Η Faithful Home & Property Solutions, LLC παρέχει πρακτικές,
-              διαφανείς και επαγγελματικά διαχειριζόμενες λύσεις επενδύσεων
-              σε ακίνητα.
+              διαφανείς και επαγγελματικά διαχειριζόμενες λύσεις
+              για ακίνητα.
             </p>
           </div>
         </section>

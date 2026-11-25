@@ -9,7 +9,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Real Estate Projects",
   description:
-    "Explore FAHOPROSO residential and commercial real estate projects and investment opportunities.",
+    "Explore FAHOPROSO residential and commercial real estate projects and property opportunities.",
 
     alternates: {
      canonical: "https://www.fahoproso.com/projects/",
@@ -36,9 +36,9 @@ export default function ProjectsPage() {
             </p>
 
             <h1 className="mt-4 text-4xl font-bold md:text-6xl">
-              Properties and
+              Homes and
               <br />
-              Investment Opportunities
+              Property Opportunities
             </h1>
 
             <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />

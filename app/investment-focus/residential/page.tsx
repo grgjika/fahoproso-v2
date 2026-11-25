@@ -48,7 +48,7 @@ const evaluationFactors = [
   },
   {
     icon: Home,
-    title: "Investment Potential",
+    title: "Long-Term Potential",
     description:
       "We consider whether thoughtful improvements and responsible ownership can create sustainable long-term value.",
   },
@@ -92,7 +92,7 @@ const processSteps = [
     number: "02",
     title: "Property Review",
     description:
-      "We evaluate the property’s location, condition, local market information, and overall investment potential.",
+      "We evaluate the property’s location, condition, local market information, and overall potential.",
   },
   {
     number: "03",
@@ -132,7 +132,7 @@ const faqs = [
   {
     question: "What types of residential properties do you consider?",
     answer:
-      "We may consider single-family homes, townhomes, condominiums, duplexes, small multifamily properties, and other residential opportunities that align with our investment strategy.",
+      "We may consider single-family homes, townhomes, condominiums, duplexes, small multifamily properties, and other residential opportunities that align with our buying strategy.",
   },
   {
     question: "What areas do you serve?",
@@ -151,7 +151,7 @@ export default function ResidentialPage() {
         <section className="relative flex min-h-[560px] items-center overflow-hidden">
           <Image
             src="/images/property1.jpg"
-            alt="Residential property investment"
+            alt="Residential property"
             fill
             priority
             className="object-cover"
@@ -208,7 +208,7 @@ export default function ResidentialPage() {
                 <p>
                   Residential real estate represents more than land and
                   buildings. A property may hold years of memories, financial
-                  investment, family history, and important personal decisions.
+                  commitment, family history, and important personal decisions.
                   That is why FAHOPROSO approaches each residential opportunity
                   individually rather than relying on a one-size-fits-all
                   process.
@@ -224,7 +224,7 @@ export default function ResidentialPage() {
                 </p>
 
                 <p>
-                  Our investment philosophy focuses on identifying properties
+                  Our approach focuses on identifying properties
                   where responsible ownership and thoughtful improvements may
                   create lasting value. We aim to support homeowners while also
                   contributing positively to neighborhoods and surrounding
@@ -272,7 +272,7 @@ export default function ResidentialPage() {
 
               <p className="mt-6 text-lg leading-8 text-slate-600">
                 Every opportunity is reviewed on its own merits and must align
-                with our investment criteria.
+                with our buying criteria.
               </p>
             </div>
 
@@ -455,7 +455,7 @@ export default function ResidentialPage() {
               <div className="mt-3 h-1 w-16 rounded-full bg-[#C9A227]" />
 
               <h2 className="mt-6 text-4xl font-bold text-[#14213D] md:text-5xl">
-                Creating Value Through Integrity and Responsible Investment
+                Creating Value Through Integrity and Responsible Ownership
               </h2>
 
               <div className="mt-7 space-y-5 text-lg leading-8 text-slate-600">

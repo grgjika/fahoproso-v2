@@ -7,9 +7,9 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Proyectos de Inversión",
+  title: "Proyectos de Propiedades",
   description:
-    "Explore el enfoque de FAHOPROSO para inversiones residenciales, propiedades de alquiler y oportunidades inmobiliarias comerciales en Michigan.",
+    "Explore el enfoque de FAHOPROSO para propiedades residenciales, propiedades de alquiler y oportunidades inmobiliarias comerciales en Michigan.",
   alternates: {
     canonical: "https://www.fahoproso.com/es/projects/",
     languages: {

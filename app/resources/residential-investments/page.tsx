@@ -8,9 +8,9 @@ import RelatedGuides from "@/components/RelatedGuides";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Residential Real Estate Investing in Michigan",
+  title: "Residential Real Estate in Michigan",
   description:
-    "Residential real estate investing in Michigan: single-family and multifamily homes, cash flow, appreciation and long-term strategy.",
+    "Residential real estate in Michigan: single-family and multifamily homes, cash flow, appreciation and long-term strategy.",
 
     alternates: {
      canonical: "https://www.fahoproso.com/resources/residential-investments/",
@@ -36,13 +36,13 @@ export default function ResidentialInvestmentsPage() {
           <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-2">
             <div>
               <p className="font-semibold uppercase tracking-[0.25em] text-[#C9A227]">
-                Investment Insights
+                Market Insights
               </p>
 
               <h1 className="mt-5 text-5xl font-bold leading-tight md:text-6xl">
                 Residential Real Estate
                 <span className="block text-[#C9A227]">
-                  Investing in Michigan
+                  Buying in Michigan
                 </span>
               </h1>
 
@@ -51,7 +51,7 @@ export default function ResidentialInvestmentsPage() {
               <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-300">
                 Residential real estate can provide income, appreciation, and
                 long-term portfolio growth. This guide explains the main
-                property types, investment goals, and factors investors should
+                property types, goals, and factors buyers should
                 review before moving forward.
               </p>
 
@@ -66,7 +66,7 @@ export default function ResidentialInvestmentsPage() {
             <div>
               <Image
                 src="/images/residential-investments.jpg"
-                alt="Residential real estate investing in Michigan"
+                alt="Residential real estate in Michigan"
                 width={1200}
                 height={800}
                 priority
@@ -88,12 +88,12 @@ export default function ResidentialInvestmentsPage() {
               <div className="mt-3 h-1 w-16 rounded-full bg-[#C9A227]" />
 
               <h2 className="mt-6 text-4xl font-bold text-[#14213D] md:text-5xl">
-                Start With Clear Investment Goals
+                Start With Clear Goals
               </h2>
 
               <div className="mt-8 space-y-6 text-lg leading-8 text-slate-600">
                 <p>
-                  Residential investing can include single-family homes,
+                  Residential properties can include single-family homes,
                   duplexes, small multifamily properties, renovation projects,
                   and long-term rentals.
                 </p>
@@ -105,7 +105,7 @@ export default function ResidentialInvestmentsPage() {
                 </p>
 
                 <p>
-                  Before acquiring a property, investors should understand the
+                  Before acquiring a property, buyers should understand the
                   local market, expected expenses, potential income, and the
                   condition of the asset.
                 </p>
@@ -118,7 +118,7 @@ export default function ResidentialInvestmentsPage() {
               </h3>
 
               <ul className="mt-8 space-y-5 text-slate-700">
-                <li>✓ What is the investment objective?</li>
+                <li>✓ What is the goal?</li>
                 <li>✓ What return is realistic?</li>
                 <li>✓ What repairs or improvements are needed?</li>
                 <li>✓ What are the operating expenses?</li>
@@ -137,7 +137,7 @@ export default function ResidentialInvestmentsPage() {
               </p>
 
               <h2 className="mt-4 text-4xl font-bold text-[#14213D]">
-                Common Residential Investment Options
+                Common Residential Property Options
               </h2>
             </div>
 
@@ -145,7 +145,7 @@ export default function ResidentialInvestmentsPage() {
               {[
                 {
                   title: "Single-Family Homes",
-                  text: "Often simpler to manage and easier to understand for newer investors.",
+                  text: "Often simpler to manage and easier to understand for newer buyers.",
                 },
                 {
                   title: "Small Multifamily",
@@ -164,8 +164,8 @@ export default function ResidentialInvestmentsPage() {
                   text: "Properties where operational or physical improvements may increase income or long-term value.",
                 },
                 {
-                  title: "Owner-Occupied Investments",
-                  text: "Some investors begin by living in one unit while renting the others.",
+                  title: "Owner-Occupied Properties",
+                  text: "Some buyers begin by living in one unit while renting the others.",
                 },
               ].map((item) => (
                 <article
@@ -195,7 +195,7 @@ export default function ResidentialInvestmentsPage() {
               </p>
 
               <h2 className="mt-4 text-4xl font-bold text-[#14213D]">
-                How Residential Investments Can Create Value
+                How Residential Properties Can Create Value
               </h2>
             </div>
 
@@ -288,14 +288,14 @@ export default function ResidentialInvestmentsPage() {
               </p>
 
               <h2 className="mt-4 text-4xl font-bold text-[#14213D]">
-                Residential Investment FAQs
+                Residential Property FAQs
               </h2>
             </div>
 
             <div className="mt-14 space-y-8">
               <div className="rounded-2xl border border-slate-200 p-8">
                 <h3 className="text-xl font-bold text-[#14213D]">
-                  What type of residential property is best for investing?
+                  What type of residential property is best for buying?
                 </h3>
 
                 <p className="mt-4 leading-8 text-slate-600">
@@ -310,7 +310,7 @@ export default function ResidentialInvestmentsPage() {
                 </h3>
 
                 <p className="mt-4 leading-8 text-slate-600">
-                  Both can matter. Some investors prioritize immediate income,
+                  Both can matter. Some buyers prioritize immediate income,
                   while others focus more heavily on long-term value growth.
                 </p>
               </div>
@@ -321,7 +321,7 @@ export default function ResidentialInvestmentsPage() {
                 </h3>
 
                 <p className="mt-4 leading-8 text-slate-600">
-                  Renovations should support the investment plan. Review the
+                  Renovations should support the plan. Review the
                   cost, expected return, property condition, and local market
                   before moving forward.
                 </p>
@@ -343,7 +343,7 @@ export default function ResidentialInvestmentsPage() {
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-300">
-              FAHOPROSO evaluates selected residential investment opportunities
+              FAHOPROSO evaluates selected residential property opportunities
               throughout Michigan. Contact us to discuss a property, partnership,
               or potential acquisition.
             </p>

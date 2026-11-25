@@ -6,9 +6,9 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Udhëzues për Investimet Rezidenciale",
+  title: "Udhëzues për Pronat Rezidenciale",
   description:
-    "Eksploroni faktorët kryesorë që investitorët mund të marrin parasysh gjatë vlerësimit të mundësive për investime rezidenciale në Michigan.",
+    "Eksploroni faktorët kryesorë që blerësit mund të marrin parasysh gjatë vlerësimit të mundësive për prona rezidenciale në Michigan.",
   alternates: {
     canonical:
       "https://www.fahoproso.com/sq/resources/residential-investments/",
@@ -27,13 +27,13 @@ const factors = [
     number: "01",
     title: "Vendndodhja dhe tregu",
     description:
-      "Analizoni vendndodhjen e pronës, kërkesën lokale, shitjet e krahasueshme dhe karakteristikat e zonës. Tregu mund të ndikojë ndjeshëm në vlerën aktuale dhe të ardhshme të një investimi.",
+      "Analizoni vendndodhjen e pronës, kërkesën lokale, shitjet e krahasueshme dhe karakteristikat e zonës. Tregu mund të ndikojë ndjeshëm në vlerën aktuale dhe të ardhshme të një prone.",
   },
   {
     number: "02",
     title: "Çmimi i blerjes",
     description:
-      "Çmimi i blerjes mund të përcaktojë një pjesë të madhe të potencialit të investimit. Krahasoni koston e blerjes me vlerën aktuale dhe vlerën e mundshme të pronës pas përmirësimeve.",
+      "Çmimi i blerjes mund të përcaktojë një pjesë të madhe të potencialit të pronës. Krahasoni koston e blerjes me vlerën aktuale dhe vlerën e mundshme të pronës pas përmirësimeve.",
   },
   {
     number: "03",
@@ -43,9 +43,9 @@ const factors = [
   },
   {
     number: "04",
-    title: "Strategjia e investimit",
+    title: "Strategjia e blerjes",
     description:
-      "Përcaktoni nëse prona është më e përshtatshme për rinovim dhe rishitje, qira afatgjatë ose një strategji tjetër investimi para se të angazhoni kapital.",
+      "Përcaktoni nëse prona është më e përshtatshme për rinovim dhe rishitje, qira afatgjatë ose një strategji tjetër para se të angazhoni kapital.",
   },
   {
     number: "05",
@@ -57,7 +57,7 @@ const factors = [
     number: "06",
     title: "Strategjia e daljes dhe marzhi i sigurisë",
     description:
-      "Planifikoni mënyrën se si prisni ta përfundoni investimin dhe lini hapësirë për ndryshime të papritura në kosto, afate ose kushtet e tregut.",
+      "Planifikoni mënyrën se si prisni ta shisni pronën dhe lini hapësirë për ndryshime të papritura në kosto, afate ose kushtet e tregut.",
   },
 ];
 
@@ -70,15 +70,15 @@ export default function ResidentialInvestmentsSQ() {
         <section className="bg-[#14213D] py-20 text-white">
           <div className="mx-auto max-w-5xl px-6 text-center">
             <p className="font-semibold uppercase tracking-[0.25em] text-[#C9A227]">
-              Informacion për Investime
+              Informacion për Tregun
             </p>
 
             <h1 className="mt-5 text-4xl font-bold leading-tight md:text-6xl">
-              Investimet Rezidenciale
+              Pronat Rezidenciale
             </h1>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-              Një investim i mirë rezidencial fillon me një analizë të
+              Një blerje e mirë rezidenciale fillon me një analizë të
               kujdesshme të pronës, kostove, tregut dhe strategjisë përpara se
               të merret një vendim.
             </p>
@@ -88,7 +88,7 @@ export default function ResidentialInvestmentsSQ() {
         <section className="bg-white py-20">
           <div className="mx-auto max-w-4xl px-6">
             <p className="font-semibold uppercase tracking-widest text-[#C9A227]">
-              Para se të investoni
+              Para se të blini
             </p>
 
             <div className="mt-3 h-1 w-16 rounded-full bg-[#C9A227]" />
@@ -98,10 +98,10 @@ export default function ResidentialInvestmentsSQ() {
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Një pronë mund të duket tërheqëse, por rezultati i një investimi
+              Një pronë mund të duket tërheqëse, por rezultati i një blerjeje
               varet nga shumë më tepër sesa çmimi i blerjes. Riparimet,
               financimi, mirëmbajtja dhe kostot e shitjes mund të ndikojnë
-              gjithashtu në kthimin e investimit.
+              gjithashtu në kthimin financiar.
             </p>
           </div>
         </section>
@@ -161,7 +161,7 @@ export default function ResidentialInvestmentsSQ() {
               Riparimet, afatet dhe kushtet e tregut mund të ndryshojnë.
               Përdorimi i vlerësimeve konservatore dhe mbajtja e rezervave për
               shpenzime të paparashikuara mund të ndihmojnë në uljen e rrezikut
-              të investimit.
+              të blerjes.
             </p>
           </div>
         </section>

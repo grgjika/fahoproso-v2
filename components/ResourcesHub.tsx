@@ -7,7 +7,7 @@ const content = {
   es: {
     intro: "Aprenda antes de decidir",
     introText:
-      "Vender o invertir en bienes raíces es una decisión importante. Nuestras guías le ayudan a entender el proceso antes de asumir cualquier compromiso.",
+      "Vender o comprar bienes raíces es una decisión importante. Nuestras guías le ayudan a entender el proceso antes de asumir cualquier compromiso.",
     groups: [
       {
         title: "Guías para Propietarios",
@@ -20,9 +20,9 @@ const content = {
         ],
       },
       {
-        title: "Información para Inversionistas",
-        text: "Recursos sobre inversiones residenciales y comerciales.",
-        links: [["Guía de Inversiones Residenciales", "residential-investments"]],
+        title: "Información del Mercado",
+        text: "Recursos sobre propiedades residenciales y comerciales.",
+        links: [["Guía de Propiedades Residenciales", "residential-investments"]],
       },
       {
         title: "Guías de Michigan",
@@ -34,7 +34,7 @@ const content = {
   el: {
     intro: "Μάθετε πριν αποφασίσετε",
     introText:
-      "Η πώληση ή η επένδυση σε ακίνητα είναι σημαντική απόφαση. Οι οδηγοί μας σας βοηθούν να κατανοήσετε τη διαδικασία πριν αναλάβετε οποιαδήποτε δέσμευση.",
+      "Η πώληση ή η αγορά ακινήτων είναι σημαντική απόφαση. Οι οδηγοί μας σας βοηθούν να κατανοήσετε τη διαδικασία πριν αναλάβετε οποιαδήποτε δέσμευση.",
     groups: [
       {
         title: "Οδηγοί για Ιδιοκτήτες",
@@ -47,9 +47,9 @@ const content = {
         ],
       },
       {
-        title: "Επενδυτικές Πληροφορίες",
-        text: "Πόροι για οικιστικές και επαγγελματικές επενδύσεις.",
-        links: [["Οδηγός Επενδύσεων σε Κατοικίες", "residential-investments"]],
+        title: "Πληροφορίες Αγοράς",
+        text: "Πόροι για οικιστικά και επαγγελματικά ακίνητα.",
+        links: [["Οδηγός για Κατοικίες", "residential-investments"]],
       },
       {
         title: "Οδηγοί Michigan",
@@ -61,7 +61,7 @@ const content = {
   sq: {
     intro: "Mësoni përpara se të vendosni",
     introText:
-      "Shitja ose investimi në pasuri të paluajtshme është një vendim i rëndësishëm. Udhëzuesit tanë ju ndihmojnë ta kuptoni procesin para çdo angazhimi.",
+      "Shitja ose blerja e pasurive të paluajtshme është një vendim i rëndësishëm. Udhëzuesit tanë ju ndihmojnë ta kuptoni procesin para çdo angazhimi.",
     groups: [
       {
         title: "Udhëzues për Pronarët",
@@ -74,9 +74,9 @@ const content = {
         ],
       },
       {
-        title: "Informacion për Investitorët",
-        text: "Burime për investimet rezidenciale dhe komerciale.",
-        links: [["Udhëzues për Investimet Rezidenciale", "residential-investments"]],
+        title: "Informacion për Tregun",
+        text: "Burime për pronat rezidenciale dhe komerciale.",
+        links: [["Udhëzues për Pronat Rezidenciale", "residential-investments"]],
       },
       {
         title: "Udhëzues për Michigan",

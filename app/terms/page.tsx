@@ -50,7 +50,7 @@ export default function TermsPage() {
                 <p className="mt-4 leading-8">
                   Information on this website is provided for general
                   informational purposes only. It does not constitute legal,
-                  financial, tax, investment, or real estate advice.
+                  financial, tax, legal, or real estate advice.
                 </p>
               </div>
 
@@ -94,7 +94,7 @@ export default function TermsPage() {
                 <p className="mt-4 leading-8">
                   You should consult qualified legal, tax, financial, and real
                   estate professionals before making decisions concerning a
-                  property sale, investment, financing arrangement, or contract.
+                  property sale, purchase, financing arrangement, or contract.
                 </p>
               </div>
 

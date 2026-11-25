@@ -20,8 +20,8 @@ type ProjectsProps = {
 
 const content = {
   en: {
-    eyebrow: "Investment Projects",
-    title: "Investing in Properties. Building Stronger Communities.",
+    eyebrow: "Property Projects",
+    title: "Buying Homes. Building Stronger Communities.",
     description:
       "FAHOPROSO is building its portfolio through carefully selected residential, rental, and commercial real estate opportunities across Michigan.",
     shareOpportunity: "Share an Opportunity",
@@ -35,7 +35,7 @@ const content = {
           "We evaluate residential properties where thoughtful improvements and responsible ownership can create long-term value.",
       },
       {
-        title: "Rental Investments",
+        title: "Rental Properties",
         label: "Long-Term Ownership",
         description:
           "We pursue rental opportunities with a focus on stable operations, responsible maintenance, and sustainable portfolio growth.",
@@ -44,14 +44,14 @@ const content = {
         title: "Commercial Real Estate",
         label: "Strategic Expansion",
         description:
-          "We are expanding carefully into selected commercial opportunities, partnerships, and long-term investments.",
+          "We are expanding carefully into selected commercial opportunities, partnerships, and long-term projects.",
       },
     ],
 
     visionEyebrow: "Our Vision",
     visionTitle: "More Than Acquisitions",
     visionParagraph1:
-      "Our goal is to improve properties thoughtfully, create stronger investment opportunities, and contribute positively to the communities where we operate.",
+      "Our goal is to improve properties thoughtfully, create stronger property opportunities, and contribute positively to the communities where we operate.",
     visionParagraph2:
       "As our portfolio grows, this page will feature acquisitions, renovations, rental properties, commercial projects, and before-and-after stories from across Michigan.",
 
@@ -69,14 +69,14 @@ const content = {
     focusTitle:
       "Growing Through Careful Acquisitions and Partnerships",
     focusDescription:
-      "We welcome conversations with property owners, real estate professionals, contractors, investors, and community partners who share our commitment to responsible growth.",
+      "We welcome conversations with property owners, real estate professionals, contractors, buyers, and community partners who share our commitment to responsible growth.",
     workWithUs: "Work With Us",
   },
 
   es: {
-    eyebrow: "Proyectos de Inversión",
+    eyebrow: "Proyectos de Propiedades",
     title:
-      "Invertimos en Propiedades. Fortalecemos Comunidades.",
+      "Compramos Casas. Fortalecemos Comunidades.",
     description:
       "FAHOPROSO está desarrollando su portafolio mediante oportunidades cuidadosamente seleccionadas en propiedades residenciales, de alquiler y comerciales en Michigan.",
     shareOpportunity: "Comparta una Oportunidad",
@@ -90,7 +90,7 @@ const content = {
           "Evaluamos propiedades residenciales donde las mejoras bien planificadas y una administración responsable pueden crear valor a largo plazo.",
       },
       {
-        title: "Inversiones en Propiedades de Alquiler",
+        title: "Propiedades de Alquiler",
         label: "Propiedad a Largo Plazo",
         description:
           "Buscamos oportunidades de alquiler con un enfoque en operaciones estables, mantenimiento responsable y crecimiento sostenible del portafolio.",
@@ -99,14 +99,14 @@ const content = {
         title: "Bienes Raíces Comerciales",
         label: "Expansión Estratégica",
         description:
-          "Nos expandimos cuidadosamente hacia oportunidades comerciales seleccionadas, colaboraciones e inversiones a largo plazo.",
+          "Nos expandimos cuidadosamente hacia oportunidades comerciales seleccionadas, colaboraciones y proyectos a largo plazo.",
       },
     ],
 
     visionEyebrow: "Nuestra Visión",
     visionTitle: "Más que Adquisiciones",
     visionParagraph1:
-      "Nuestro objetivo es mejorar las propiedades de manera responsable, crear mejores oportunidades de inversión y contribuir positivamente a las comunidades donde operamos.",
+      "Nuestro objetivo es mejorar las propiedades de manera responsable, crear mejores oportunidades y contribuir positivamente a las comunidades donde operamos.",
     visionParagraph2:
       "A medida que crezca nuestro portafolio, esta página mostrará adquisiciones, renovaciones, propiedades de alquiler, proyectos comerciales e historias de antes y después en Michigan.",
 
@@ -124,14 +124,14 @@ const content = {
     focusTitle:
       "Creciendo Mediante Adquisiciones Cuidadosas y Colaboraciones",
     focusDescription:
-      "Estamos abiertos a conversar con propietarios, profesionales inmobiliarios, contratistas, inversionistas y socios comunitarios que compartan nuestro compromiso con un crecimiento responsable.",
+      "Estamos abiertos a conversar con propietarios, profesionales inmobiliarios, contratistas, compradores y socios comunitarios que compartan nuestro compromiso con un crecimiento responsable.",
     workWithUs: "Trabaje con Nosotros",
   },
 
   el: {
-    eyebrow: "Επενδυτικά Έργα",
+    eyebrow: "Έργα Ακινήτων",
     title:
-      "Επενδύουμε σε Ακίνητα. Ενισχύουμε τις Κοινότητες.",
+      "Αγοράζουμε Ακίνητα. Ενισχύουμε τις Κοινότητες.",
     description:
       "Η FAHOPROSO αναπτύσσει το χαρτοφυλάκιό της μέσα από προσεκτικά επιλεγμένες ευκαιρίες σε οικιστικά, ενοικιαζόμενα και επαγγελματικά ακίνητα σε όλο το Michigan.",
     shareOpportunity: "Μοιραστείτε μια Ευκαιρία",
@@ -145,7 +145,7 @@ const content = {
           "Αξιολογούμε οικιστικά ακίνητα όπου οι προσεκτικές βελτιώσεις και η υπεύθυνη ιδιοκτησία μπορούν να δημιουργήσουν μακροπρόθεσμη αξία.",
       },
       {
-        title: "Επενδύσεις σε Ακίνητα προς Ενοικίαση",
+        title: "Ακίνητα προς Ενοικίαση",
         label: "Μακροπρόθεσμη Ιδιοκτησία",
         description:
           "Αναζητούμε ευκαιρίες σε ακίνητα προς ενοικίαση με έμφαση στη σταθερή λειτουργία, την υπεύθυνη συντήρηση και τη βιώσιμη ανάπτυξη του χαρτοφυλακίου.",
@@ -154,14 +154,14 @@ const content = {
         title: "Επαγγελματικά Ακίνητα",
         label: "Στρατηγική Επέκταση",
         description:
-          "Επεκτεινόμαστε προσεκτικά σε επιλεγμένες επαγγελματικές ευκαιρίες, συνεργασίες και μακροπρόθεσμες επενδύσεις.",
+          "Επεκτεινόμαστε προσεκτικά σε επιλεγμένες επαγγελματικές ευκαιρίες, συνεργασίες και μακροπρόθεσμα έργα.",
       },
     ],
 
     visionEyebrow: "Το Όραμά μας",
     visionTitle: "Περισσότερο από Απλές Αγορές Ακινήτων",
     visionParagraph1:
-      "Στόχος μας είναι να βελτιώνουμε τα ακίνητα με προσοχή, να δημιουργούμε ισχυρότερες επενδυτικές ευκαιρίες και να συμβάλλουμε θετικά στις κοινότητες όπου δραστηριοποιούμαστε.",
+      "Στόχος μας είναι να βελτιώνουμε τα ακίνητα με προσοχή, να δημιουργούμε ισχυρότερες ευκαιρίες ακινήτων και να συμβάλλουμε θετικά στις κοινότητες όπου δραστηριοποιούμαστε.",
     visionParagraph2:
       "Καθώς το χαρτοφυλάκιό μας αναπτύσσεται, αυτή η σελίδα θα παρουσιάζει αγορές, ανακαινίσεις, ακίνητα προς ενοικίαση, επαγγελματικά έργα και ιστορίες πριν και μετά από όλο το Michigan.",
 
@@ -179,14 +179,14 @@ const content = {
     focusTitle:
       "Ανάπτυξη Μέσα από Προσεκτικές Αγορές και Συνεργασίες",
     focusDescription:
-      "Είμαστε ανοιχτοί σε συζητήσεις με ιδιοκτήτες ακινήτων, επαγγελματίες του real estate, εργολάβους, επενδυτές και συνεργάτες που μοιράζονται τη δέσμευσή μας για υπεύθυνη ανάπτυξη.",
+      "Είμαστε ανοιχτοί σε συζητήσεις με ιδιοκτήτες ακινήτων, επαγγελματίες του real estate, εργολάβους, αγοραστές και συνεργάτες που μοιράζονται τη δέσμευσή μας για υπεύθυνη ανάπτυξη.",
     workWithUs: "Συνεργαστείτε Μαζί μας",
   },
 
   sq: {
-    eyebrow: "Projektet e Investimeve",
+    eyebrow: "Projektet e Pronave",
     title:
-      "Investojmë në Prona. Ndërtojmë Komunitete më të Forta.",
+      "Blejmë Shtëpi. Ndërtojmë Komunitete më të Forta.",
     description:
       "FAHOPROSO po ndërton portofolin e saj përmes mundësive të përzgjedhura me kujdes në prona rezidenciale, me qira dhe komerciale në të gjithë Michigan-in.",
     shareOpportunity: "Ndani një Mundësi",
@@ -200,7 +200,7 @@ const content = {
           "Vlerësojmë prona rezidenciale ku përmirësimet e menduara mirë dhe pronësia e përgjegjshme mund të krijojnë vlerë afatgjatë.",
       },
       {
-        title: "Investime në Prona me Qira",
+        title: "Prona me Qira",
         label: "Pronësi Afatgjatë",
         description:
           "Kërkojmë mundësi në prona me qira me fokus në operacione të qëndrueshme, mirëmbajtje të përgjegjshme dhe rritje të qëndrueshme të portofolit.",
@@ -209,14 +209,14 @@ const content = {
         title: "Pasuri të Paluajtshme Komerciale",
         label: "Zgjerim Strategjik",
         description:
-          "Po zgjerohemi me kujdes në mundësi të përzgjedhura komerciale, partneritete dhe investime afatgjata.",
+          "Po zgjerohemi me kujdes në mundësi të përzgjedhura komerciale, partneritete dhe projekte afatgjata.",
       },
     ],
 
     visionEyebrow: "Vizioni Ynë",
     visionTitle: "Më Shumë se Blerje Pronash",
     visionParagraph1:
-      "Qëllimi ynë është të përmirësojmë pronat me kujdes, të krijojmë mundësi më të forta investimi dhe të kontribuojmë pozitivisht në komunitetet ku operojmë.",
+      "Qëllimi ynë është të përmirësojmë pronat me kujdes, të krijojmë mundësi më të forta dhe të kontribuojmë pozitivisht në komunitetet ku operojmë.",
     visionParagraph2:
       "Ndërsa portofoli ynë rritet, kjo faqe do të paraqesë blerje, rinovime, prona me qira, projekte komerciale dhe histori para dhe pas nga i gjithë Michigan-i.",
 
@@ -234,7 +234,7 @@ const content = {
     focusTitle:
       "Rritje Përmes Blerjeve të Kujdesshme dhe Partneriteteve",
     focusDescription:
-      "Mirëpresim biseda me pronarë, profesionistë të pasurive të paluajtshme, kontraktorë, investitorë dhe partnerë të komunitetit që ndajnë angazhimin tonë për rritje të përgjegjshme.",
+      "Mirëpresim biseda me pronarë, profesionistë të pasurive të paluajtshme, kontraktorë, blerës dhe partnerë të komunitetit që ndajnë angazhimin tonë për rritje të përgjegjshme.",
     workWithUs: "Bashkëpunoni me Ne",
   },
 };

@@ -10,7 +10,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Sobre Nosotros",
   description:
-    "Conozca FAHOPROSO y nuestro enfoque de inversión inmobiliaria residencial y comercial en Michigan.",
+    "Conozca FAHOPROSO y nuestro enfoque inmobiliario residencial y comercial en Michigan.",
   alternates: {
   canonical: "https://www.fahoproso.com/es/about/",
   languages: {
@@ -45,7 +45,7 @@ export default function AboutPageES() {
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-200">
               Faithful Home & Property Solutions, LLC ofrece soluciones de
-              inversión inmobiliaria prácticas, transparentes y gestionadas
+              bienes raíces prácticas, transparentes y gestionadas
               profesionalmente.
             </p>
           </div>
