@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FormEvent, useCallback, useEffect, useState } from "react";
 import PropertyLocation from "@/components/PropertyLocation";
 import FeedbackModal from "@/components/FeedbackModal";
+import BookCall from "@/components/BookCall";
 import HumanCheckModal from "@/components/HumanCheckModal";
 
 /**
@@ -638,7 +639,10 @@ export default function Contact({ locale = "en", asH1 = false }: ContactProps) {
     {text.reviewButton}
   </a>
 </section>
-    
+
+    <div className="mx-auto max-w-4xl px-6 pb-4">
+      <BookCall locale={locale} />
+    </div>
   </section>
 );
 }
