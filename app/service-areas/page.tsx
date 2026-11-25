@@ -91,7 +91,7 @@ export default function ServiceAreasPage() {
             <div>
               <div className="relative aspect-[1345/1170] w-full overflow-hidden rounded-2xl bg-[#0b1f4a] shadow-2xl ring-1 ring-white/10">
                 <Image
-                  src="/images/michigan-service-map.jpg"
+                  src="/images/michigan-service-map-2.jpg"
                   alt="Map of Michigan highlighting our areas: Kent County, Grand Rapids, Ottawa County, Troy and Detroit"
                   fill
                   priority
