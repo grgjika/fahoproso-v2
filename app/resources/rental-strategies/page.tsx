@@ -28,7 +28,7 @@ export default function RentalStrategiesPage() {
           <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-2">
             <div>
               <p className="font-semibold uppercase tracking-[0.25em] text-[#C9A227]">
-                Investment Insights
+                Market Insights
               </p>
 
               <h1 className="mt-5 text-5xl font-bold leading-tight md:text-6xl">
@@ -90,13 +90,13 @@ export default function RentalStrategiesPage() {
                 </p>
 
                 <p>
-                  Investors should review financing, market rent, tenant demand,
+                  Buyers should review financing, market rent, tenant demand,
                   maintenance needs, reserves, and expected operating expenses
                   before acquiring a property.
                 </p>
 
                 <p>
-                  A clear strategy helps investors make decisions that support
+                  A clear strategy helps buyers make decisions that support
                   both current cash flow and long-term portfolio goals.
                 </p>
               </div>
@@ -155,7 +155,7 @@ export default function RentalStrategiesPage() {
                 },
                 {
                   title: "Track Performance",
-                  text: "Review income, expenses, maintenance, occupancy, and return against the original investment plan.",
+                  text: "Review income, expenses, maintenance, occupancy, and return against the original plan.",
                 },
               ].map((item) => (
                 <article
@@ -292,7 +292,7 @@ export default function RentalStrategiesPage() {
 
                 <p className="mt-4 leading-8 text-slate-600">
                   Review market rent, property condition, operating expenses,
-                  financing, vacancy assumptions, and your long-term investment
+                  financing, vacancy assumptions, and your long-term
                   objectives before making a purchase.
                 </p>
               </div>
@@ -315,7 +315,7 @@ export default function RentalStrategiesPage() {
 
                 <p className="mt-4 leading-8 text-slate-600">
                   No. Property type, location, financing, tenant demand, and
-                  investment goals all influence the appropriate strategy.
+                  goals all influence the appropriate strategy.
                 </p>
               </div>
 
@@ -335,13 +335,13 @@ export default function RentalStrategiesPage() {
             </p>
 
             <h2 className="mt-4 text-5xl font-bold">
-              Build a Stronger Investment Portfolio
+              Build a Stronger Property Portfolio
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-300">
               Whether you&apos;re purchasing your first rental property or expanding
               an existing portfolio, FAHOPROSO is committed to thoughtful,
-              long-term real estate investing throughout Michigan.
+              long-term real estate ownership throughout Michigan.
             </p>
 
             <Link

@@ -9,7 +9,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Real Estate Resources",
   description:
-    "Helpful real estate resources, homeowner guides, investment insights, and Michigan market information from FAHOPROSO.",
+    "Helpful real estate resources, homeowner guides, market insights, and Michigan market information from FAHOPROSO.",
     alternates: {
      canonical: "https://www.fahoproso.com/resources/",
      languages: {
@@ -43,11 +43,11 @@ const homeownerResources = [
 
 const investingResources = [
   {
-    title: "Residential Investments",
+    title: "Residential Properties",
     href: "/resources/residential-investments",
   },
   {
-    title: "Commercial Investments",
+    title: "Commercial Properties",
     href: "/resources/commercial-investments",
   },
   {
@@ -108,7 +108,7 @@ export default function ResourcesPage() {
             <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
 
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-300">
-              Whether you&apos;re preparing to sell your home, exploring investment
+              Whether you&apos;re preparing to sell your home, exploring property
               opportunities, or simply learning about Michigan real estate,
               you&apos;ll find practical information and helpful guides here.
             </p>
@@ -129,9 +129,9 @@ export default function ResourcesPage() {
             </h2>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-              Selling or investing in real estate is an important decision.
+              Selling or buying real estate is an important decision.
               Our goal is to provide educational resources that help homeowners
-              and investors better understand the process before making any
+              and buyers better understand the process before making any
               commitments.
             </p>
 
@@ -192,11 +192,11 @@ export default function ResourcesPage() {
               <Building2 className="h-16 w-16 rounded-2xl bg-gradient-to-br from-[#14213D] to-[#2b3f6e] p-4 text-[#E5C766] shadow-lg shadow-slate-900/20" />
 
               <h2 className="mt-6 text-3xl font-bold text-[#14213D]">
-                Investment Insights
+                Market Insights
               </h2>
 
               <p className="mt-4 leading-8 text-slate-600">
-                Resources for residential and commercial investing.
+                Resources for residential and commercial real estate.
               </p>
 
               <ul className="mt-8 space-y-4">
@@ -312,7 +312,7 @@ export default function ResourcesPage() {
     Kingdom320
   </span>.
   Their knowledge and support helped us to build a strong foundation in faith and real
-  estate investing.
+  estate.
 </p>
 
   </div>

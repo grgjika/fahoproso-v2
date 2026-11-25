@@ -13,8 +13,8 @@ const guides = {
   "first-time-home-seller-guide": "First-Time Home Seller Guide",
   "property-evaluation": "Property Evaluation Guide",
   "rental-strategies": "Rental Property Strategies",
-  "residential-investments": "Residential Investments",
-  "commercial-investments": "Commercial Investments",
+  "residential-investments": "Residential Properties",
+  "commercial-investments": "Commercial Properties",
 } as const;
 
 export type GuideSlug = keyof typeof guides;

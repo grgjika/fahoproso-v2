@@ -77,7 +77,7 @@ const entries: Entry[] = [
   },
   {
     path: "/resources/sell-rental-property",
-    en: ["Selling a Rental Property", "landlord tenants lease investment property"],
+    en: ["Selling a Rental Property", "landlord tenants lease rental property"],
   },
   {
     path: "/resources/downsizing-your-home",
@@ -101,14 +101,14 @@ const entries: Entry[] = [
   },
   {
     path: "/resources/residential-investments",
-    en: ["Residential Investments", "invest homes buy hold"],
-    es: ["Guía de Inversiones Residenciales", "invertir inversión residencial casas"],
-    el: ["Οδηγός Επενδύσεων σε Κατοικίες", "επενδύσεις κατοικίες σπίτια"],
-    sq: ["Udhëzues për Investimet Rezidenciale", "investime rezidenciale shtëpi"],
+    en: ["Residential Properties", "homes buy hold"],
+    es: ["Guía de Propiedades Residenciales", "comprar propiedad residencial casas"],
+    el: ["Οδηγός για Κατοικίες", "αγορά κατοικίες σπίτια"],
+    sq: ["Udhëzues për Pronat Rezidenciale", "prona rezidenciale shtëpi"],
   },
   {
     path: "/resources/commercial-investments",
-    en: ["Commercial Investments", "commercial office retail industrial invest"],
+    en: ["Commercial Properties", "commercial office retail industrial"],
   },
   {
     path: "/resources/rental-strategies",
@@ -146,22 +146,22 @@ const entries: Entry[] = [
   },
   {
     path: "/projects",
-    en: ["Projects", "portfolio properties investments"],
+    en: ["Projects", "portfolio properties"],
     es: ["Proyectos", "proyectos propiedades portafolio"],
     el: ["Έργα", "έργα ακίνητα χαρτοφυλάκιο"],
     sq: ["Projektet", "projekte prona portofol"],
   },
   {
     path: "/investment-focus/residential",
-    en: ["Residential Investment Focus", "homes single family townhomes"],
+    en: ["Residential Property Focus", "homes single family townhomes"],
   },
   {
     path: "/investment-focus/rentals",
-    en: ["Rental Investment Focus", "duplex multifamily landlord"],
+    en: ["Rental Property Focus", "duplex multifamily landlord"],
   },
   {
     path: "/investment-focus/commercial",
-    en: ["Commercial Investment Focus", "office retail industrial"],
+    en: ["Commercial Property Focus", "office retail industrial"],
   },
   {
     path: "/about",

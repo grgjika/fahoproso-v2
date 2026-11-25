@@ -9,7 +9,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Burime",
   description:
-    "Eksploroni udhëzues dhe burime të FAHOPROSO rreth shitjes së pronave, investimeve dhe temave për pronarët në Michigan.",
+    "Eksploroni udhëzues dhe burime të FAHOPROSO rreth shitjes dhe blerjes së pronave dhe temave për pronarët në Michigan.",
   alternates: {
     canonical: "https://www.fahoproso.com/sq/resources/",
     languages: {
@@ -39,8 +39,8 @@ export default function ResourcesPageSQ() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-              Eksploroni informacione të dobishme rreth shitjes së pronave,
-              investimeve dhe çështjeve të rëndësishme për pronarët në Michigan.
+              Eksploroni informacione të dobishme rreth shitjes dhe blerjes së pronave
+              dhe çështjeve të rëndësishme për pronarët në Michigan.
             </p>
           </div>
         </section>

@@ -6,9 +6,9 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Guía de Inversiones Residenciales",
+  title: "Guía de Propiedades Residenciales",
   description:
-    "Explore los factores principales que los inversionistas pueden considerar al evaluar oportunidades de inversión residencial en Michigan.",
+    "Explore los factores principales que los compradores pueden considerar al evaluar oportunidades residenciales en Michigan.",
   alternates: {
     canonical:
       "https://www.fahoproso.com/es/resources/residential-investments/",
@@ -27,13 +27,13 @@ const factors = [
     number: "01",
     title: "Ubicación y mercado",
     description:
-      "Analice la ubicación de la propiedad, la demanda local, las ventas comparables y las características del vecindario. El mercado puede influir significativamente en el valor actual y futuro de una inversión.",
+      "Analice la ubicación de la propiedad, la demanda local, las ventas comparables y las características del vecindario. El mercado puede influir significativamente en el valor actual y futuro de una propiedad.",
   },
   {
     number: "02",
     title: "Precio de adquisición",
     description:
-      "El precio de compra puede determinar gran parte del potencial de una inversión. Compare el costo de adquisición con el valor actual de la propiedad y su posible valor después de mejoras.",
+      "El precio de compra puede determinar gran parte del potencial de una propiedad. Compare el costo de adquisición con el valor actual de la propiedad y su posible valor después de mejoras.",
   },
   {
     number: "03",
@@ -43,9 +43,9 @@ const factors = [
   },
   {
     number: "04",
-    title: "Estrategia de inversión",
+    title: "Estrategia de compra",
     description:
-      "Determine si la propiedad se adapta mejor a una renovación y reventa, una estrategia de alquiler a largo plazo u otro objetivo de inversión antes de comprometer capital.",
+      "Determine si la propiedad se adapta mejor a una renovación y reventa, una estrategia de alquiler a largo plazo u otro objetivo antes de comprometer capital.",
   },
   {
     number: "05",
@@ -57,7 +57,7 @@ const factors = [
     number: "06",
     title: "Salida y margen de seguridad",
     description:
-      "Planifique cómo espera salir de la inversión y deje margen para cambios inesperados en costos, plazos o condiciones del mercado.",
+      "Planifique cómo espera vender la propiedad y deje margen para cambios inesperados en costos, plazos o condiciones del mercado.",
   },
 ];
 
@@ -70,15 +70,15 @@ export default function ResidentialInvestmentsES() {
         <section className="bg-[#14213D] py-20 text-white">
           <div className="mx-auto max-w-5xl px-6 text-center">
             <p className="font-semibold uppercase tracking-[0.25em] text-[#C9A227]">
-              Perspectivas de Inversión
+              Perspectivas del Mercado
             </p>
 
             <h1 className="mt-5 text-4xl font-bold leading-tight md:text-6xl">
-              Inversiones Residenciales
+              Propiedades Residenciales
             </h1>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-              Una inversión residencial sólida comienza con un análisis
+              Una compra residencial sólida comienza con un análisis
               cuidadoso de la propiedad, los costos, el mercado y la estrategia
               antes de tomar una decisión.
             </p>
@@ -88,7 +88,7 @@ export default function ResidentialInvestmentsES() {
         <section className="bg-white py-20">
           <div className="mx-auto max-w-4xl px-6">
             <p className="font-semibold uppercase tracking-widest text-[#C9A227]">
-              Antes de invertir
+              Antes de comprar
             </p>
 
             <div className="mt-3 h-1 w-16 rounded-full bg-[#C9A227]" />
@@ -99,7 +99,7 @@ export default function ResidentialInvestmentsES() {
 
             <p className="mt-6 text-lg leading-8 text-slate-600">
               Una propiedad puede parecer atractiva, pero el resultado de una
-              inversión depende de mucho más que el precio de compra. Los
+              compra depende de mucho más que el precio de compra. Los
               costos de reparación, financiamiento, mantenimiento y venta
               también pueden afectar el rendimiento.
             </p>
@@ -161,7 +161,7 @@ export default function ResidentialInvestmentsES() {
               Las reparaciones, los plazos y las condiciones del mercado pueden
               cambiar. Utilizar estimaciones conservadoras y mantener reservas
               para gastos inesperados puede ayudar a reducir el riesgo de una
-              inversión.
+              compra.
             </p>
           </div>
         </section>

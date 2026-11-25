@@ -8,9 +8,9 @@ import RelatedGuides from "@/components/RelatedGuides";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Commercial Real Estate Investing in Michigan",
+  title: "Commercial Real Estate in Michigan",
   description:
-    "Explore commercial real estate investing in Michigan, including office, retail, industrial, mixed-use properties, due diligence, and long-term investment strategy.",
+    "Explore commercial real estate in Michigan, including office, retail, industrial, mixed-use properties, due diligence, and long-term strategy.",
     alternates: {
      canonical: "https://www.fahoproso.com/resources/commercial-investments/",
     },
@@ -28,13 +28,13 @@ export default function CommercialInvestmentsPage() {
           <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-2">
             <div>
               <p className="font-semibold uppercase tracking-[0.25em] text-[#C9A227]">
-                Investment Insights
+                Market Insights
               </p>
 
               <h1 className="mt-5 text-5xl font-bold leading-tight md:text-6xl">
                 Commercial Real Estate
                 <span className="block text-[#C9A227]">
-                  Investing in Michigan
+                  Buying in Michigan
                 </span>
               </h1>
 
@@ -43,7 +43,7 @@ export default function CommercialInvestmentsPage() {
               <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-300">
                 Commercial real estate can provide income, diversification, and
                 long-term value. This guide explains common property types,
-                investment goals, and the factors investors should review before
+                goals, and the factors buyers should review before
                 pursuing an opportunity.
               </p>
 
@@ -58,7 +58,7 @@ export default function CommercialInvestmentsPage() {
             <div>
               <Image
                 src="/images/commercial-investments.jpg"
-                alt="Commercial real estate investing in Michigan"
+                alt="Commercial real estate in Michigan"
                 width={1200}
                 height={800}
                 priority
@@ -95,7 +95,7 @@ export default function CommercialInvestmentsPage() {
                 </p>
 
                 <p>
-                  Before moving forward, investors should understand the local
+                  Before moving forward, buyers should understand the local
                   market, tenant demand, property condition, projected income,
                   and long-term exit strategy.
                 </p>
@@ -112,7 +112,7 @@ export default function CommercialInvestmentsPage() {
                 <li>✓ Who are the current or potential tenants?</li>
                 <li>✓ What lease terms are in place?</li>
                 <li>✓ What repairs or capital improvements are needed?</li>
-                <li>✓ What is the long-term investment plan?</li>
+                <li>✓ What is the long-term plan?</li>
               </ul>
             </div>
           </div>
@@ -127,7 +127,7 @@ export default function CommercialInvestmentsPage() {
               </p>
 
               <h2 className="mt-4 text-4xl font-bold text-[#14213D]">
-                Common Commercial Investment Options
+                Common Commercial Property Options
               </h2>
             </div>
 
@@ -147,7 +147,7 @@ export default function CommercialInvestmentsPage() {
                 },
                 {
                   title: "Mixed-Use Properties",
-                  text: "Buildings that combine residential, office, retail, or other uses within one investment.",
+                  text: "Buildings that combine residential, office, retail, or other uses within one property.",
                 },
                 {
                   title: "Multifamily Properties",
@@ -279,7 +279,7 @@ export default function CommercialInvestmentsPage() {
               </p>
 
               <h2 className="mt-4 text-4xl font-bold text-[#14213D]">
-                Commercial Investment FAQs
+                Commercial Property FAQs
               </h2>
             </div>
 
@@ -287,11 +287,11 @@ export default function CommercialInvestmentsPage() {
 
               <div className="rounded-2xl border border-slate-200 p-8">
                 <h3 className="text-xl font-bold text-[#14213D]">
-                  What types of commercial properties can investors purchase?
+                  What types of commercial properties can buyers purchase?
                 </h3>
 
                 <p className="mt-4 leading-8 text-slate-600">
-                  Commercial investments may include office buildings, retail
+                  Commercial properties may include office buildings, retail
                   centers, industrial facilities, mixed-use developments,
                   apartment communities, and specialty properties.
                 </p>
@@ -299,13 +299,13 @@ export default function CommercialInvestmentsPage() {
 
               <div className="rounded-2xl border border-slate-200 p-8">
                 <h3 className="text-xl font-bold text-[#14213D]">
-                  Is commercial investing different from residential investing?
+                  Is buying commercial property different from buying residential property?
                 </h3>
 
                 <p className="mt-4 leading-8 text-slate-600">
                   Yes. Commercial properties often involve different lease
                   structures, financing, operating expenses, tenant
-                  relationships, and investment analysis.
+                  relationships, and property analysis.
                 </p>
               </div>
 
@@ -317,7 +317,7 @@ export default function CommercialInvestmentsPage() {
                 <p className="mt-4 leading-8 text-slate-600">
                   Reviewing leases, financial information, physical condition,
                   environmental considerations, and market conditions helps
-                  investors make informed decisions.
+                  buyers make informed decisions.
                 </p>
               </div>
 
@@ -337,12 +337,12 @@ export default function CommercialInvestmentsPage() {
             </p>
 
             <h2 className="mt-4 text-5xl font-bold">
-              Let&apos;s Talk About Your Investment Goals
+              Let&apos;s Talk About Your Property Goals
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-300">
               FAHOPROSO is actively building long-term relationships with
-              property owners, investors, and commercial real estate
+              property owners, buyers, and commercial real estate
               professionals throughout Michigan.
             </p>
 

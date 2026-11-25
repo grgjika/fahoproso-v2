@@ -350,7 +350,7 @@ export default function SellInheritedHousePage() {
 
         <p className="mt-5 leading-8 text-slate-600">
           Some families choose to keep the home as a primary residence,
-          vacation property, or long-term investment.
+          vacation property, or long-term rental.
         </p>
       </div>
 

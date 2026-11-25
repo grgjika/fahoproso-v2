@@ -10,7 +10,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Real Estate Services",
   description:
-    "Explore FAHOPROSO residential, commercial, rental property, and real estate investment services in Grand Rapids, Michigan.",
+    "Explore FAHOPROSO residential, commercial, rental property, and real estate services in Grand Rapids, Michigan.",
     alternates: {
   canonical: "https://www.fahoproso.com/services/",
   languages: {

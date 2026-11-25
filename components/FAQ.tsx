@@ -21,7 +21,7 @@ export const content = {
       {
         question: "How does the FAHOPROSO process work?",
         answer:
-          "Start by contacting us and sharing basic information about your property. We review the details, discuss your situation, and may schedule a property visit. If the property fits our investment goals, we can present an offer for you to review. You are never required to accept it.",
+          "Start by contacting us and sharing basic information about your property. We review the details, discuss your situation, and may schedule a property visit. If the property fits our goals, we can present an offer for you to review. You are never required to accept it.",
       },
       {
         question: "Do I need to make repairs before selling?",
@@ -91,7 +91,7 @@ export const content = {
       {
         question: "Do you buy residential and commercial properties?",
         answer:
-          "Yes. Our investment focus includes residential homes, rental properties, multifamily opportunities, land, and selected commercial real estate.",
+          "Yes. Our focus includes residential homes, rental properties, multifamily opportunities, land, and selected commercial real estate.",
       },
       {
         question: "What areas do you serve?",
@@ -120,7 +120,7 @@ export const content = {
       {
         question: "¿Cómo funciona el proceso de FAHOPROSO?",
         answer:
-          "Comience contactándonos y compartiendo información básica sobre su propiedad. Revisamos los detalles, hablamos sobre su situación y, si es necesario, podemos programar una visita. Si la propiedad se ajusta a nuestros objetivos de inversión, podemos presentarle una oferta para que la considere. Nunca está obligado a aceptarla.",
+          "Comience contactándonos y compartiendo información básica sobre su propiedad. Revisamos los detalles, hablamos sobre su situación y, si es necesario, podemos programar una visita. Si la propiedad se ajusta a nuestros objetivos, podemos presentarle una oferta para que la considere. Nunca está obligado a aceptarla.",
       },
       {
         question: "¿Necesito hacer reparaciones antes de vender?",
@@ -190,7 +190,7 @@ export const content = {
       {
         question: "¿Compran propiedades residenciales y comerciales?",
         answer:
-          "Sí. Nuestro enfoque de inversión incluye viviendas residenciales, propiedades de alquiler, oportunidades multifamiliares, terrenos y determinadas propiedades comerciales.",
+          "Sí. Nuestro enfoque incluye viviendas residenciales, propiedades de alquiler, oportunidades multifamiliares, terrenos y determinadas propiedades comerciales.",
       },
       {
         question: "¿Qué áreas sirven?",
@@ -219,7 +219,7 @@ export const content = {
       {
         question: "Πώς λειτουργεί η διαδικασία της FAHOPROSO;",
         answer:
-          "Ξεκινήστε επικοινωνώντας μαζί μας και δίνοντάς μας βασικές πληροφορίες για το ακίνητό σας. Εξετάζουμε τα στοιχεία, συζητάμε την κατάστασή σας και, αν χρειάζεται, μπορεί να προγραμματίσουμε μια επίσκεψη στο ακίνητο. Αν το ακίνητο ταιριάζει στους επενδυτικούς μας στόχους, μπορούμε να σας παρουσιάσουμε μια προσφορά για να την αξιολογήσετε. Δεν είστε ποτέ υποχρεωμένοι να την αποδεχτείτε.",
+          "Ξεκινήστε επικοινωνώντας μαζί μας και δίνοντάς μας βασικές πληροφορίες για το ακίνητό σας. Εξετάζουμε τα στοιχεία, συζητάμε την κατάστασή σας και, αν χρειάζεται, μπορεί να προγραμματίσουμε μια επίσκεψη στο ακίνητο. Αν το ακίνητο ταιριάζει στους στόχους μας, μπορούμε να σας παρουσιάσουμε μια προσφορά για να την αξιολογήσετε. Δεν είστε ποτέ υποχρεωμένοι να την αποδεχτείτε.",
       },
       {
         question: "Χρειάζεται να κάνω επισκευές πριν πουλήσω;",
@@ -289,7 +289,7 @@ export const content = {
       {
         question: "Αγοράζετε οικιστικά και επαγγελματικά ακίνητα;",
         answer:
-          "Ναι. Η επενδυτική μας δραστηριότητα περιλαμβάνει κατοικίες, ενοικιαζόμενα ακίνητα, πολυκατοικίες, γη και επιλεγμένα επαγγελματικά ακίνητα.",
+          "Ναι. Η δραστηριότητά μας περιλαμβάνει κατοικίες, ενοικιαζόμενα ακίνητα, πολυκατοικίες, γη και επιλεγμένα επαγγελματικά ακίνητα.",
       },
       {
         question: "Ποιες περιοχές εξυπηρετείτε;",
@@ -318,7 +318,7 @@ export const content = {
       {
         question: "Si funksionon procesi i FAHOPROSO?",
         answer:
-          "Filloni duke na kontaktuar dhe duke ndarë informacion bazë për pronën tuaj. Ne shqyrtojmë detajet, diskutojmë situatën tuaj dhe, nëse është e nevojshme, mund të planifikojmë një vizitë në pronë. Nëse prona përputhet me objektivat tona të investimit, mund t'ju paraqesim një ofertë për ta shqyrtuar. Nuk jeni asnjëherë të detyruar ta pranoni.",
+          "Filloni duke na kontaktuar dhe duke ndarë informacion bazë për pronën tuaj. Ne shqyrtojmë detajet, diskutojmë situatën tuaj dhe, nëse është e nevojshme, mund të planifikojmë një vizitë në pronë. Nëse prona përputhet me objektivat tona, mund t'ju paraqesim një ofertë për ta shqyrtuar. Nuk jeni asnjëherë të detyruar ta pranoni.",
       },
       {
         question: "A duhet të bëj riparime para se të shes?",

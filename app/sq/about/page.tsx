@@ -10,7 +10,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Rreth Nesh",
   description:
-    "Mësoni më shumë rreth FAHOPROSO dhe qasjes sonë ndaj investimeve në pasuri të paluajtshme rezidenciale dhe komerciale në Michigan.",
+    "Mësoni më shumë rreth FAHOPROSO dhe qasjes sonë ndaj pasurive të paluajtshme rezidenciale dhe komerciale në Michigan.",
   alternates: {
   canonical: "https://www.fahoproso.com/sq/about/",
   languages: {
@@ -36,7 +36,7 @@ export default function AboutPageSQ() {
             </p>
 
             <h1 className="mt-4 text-4xl font-bold md:text-6xl">
-              Investojmë në Prona.
+              Blejmë Shtëpi.
               <br />
               Krijojmë Mundësi.
             </h1>
@@ -45,8 +45,8 @@ export default function AboutPageSQ() {
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-200">
               Faithful Home & Property Solutions, LLC ofron zgjidhje praktike,
-              transparente dhe të menaxhuara profesionalisht për investime në
-              pasuri të paluajtshme.
+              transparente dhe të menaxhuara profesionalisht për pasuri të
+              paluajtshme.
             </p>
           </div>
         </section>

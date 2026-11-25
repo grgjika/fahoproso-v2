@@ -10,7 +10,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Property Evaluation Guide",
   description:
-    "Learn the key factors that influence property value, including location, condition, comparable sales, market trends, and investment potential.",
+    "Learn the key factors that influence property value, including location, condition, comparable sales, market trends, and potential.",
 
     alternates: {
      canonical: "https://www.fahoproso.com/resources/property-evaluation/",
@@ -33,7 +33,7 @@ export default function PropertyEvaluationPage() {
             <div>
 
               <p className="font-semibold uppercase tracking-[0.25em] text-[#C9A227]">
-                Investment Insights
+                Market Insights
               </p>
 
               <h1 className="mt-5 text-5xl font-bold leading-tight md:text-6xl">
@@ -47,8 +47,8 @@ export default function PropertyEvaluationPage() {
 
               <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-300">
                 Understanding how a property is evaluated helps homeowners and
-                investors make informed decisions. This guide reviews the most
-                common factors that influence value and investment potential.
+                buyers make informed decisions. This guide reviews the most
+                common factors that influence value and potential.
               </p>
 
               <Link
@@ -110,7 +110,7 @@ export default function PropertyEvaluationPage() {
                 </p>
 
                 <p>
-                  Whether buying, selling, or investing, understanding these
+                  Whether buying, selling, or owning, understanding these
                   factors can support better decisions.
                 </p>
 
@@ -130,7 +130,7 @@ export default function PropertyEvaluationPage() {
                 <li>✓ Property condition</li>
                 <li>✓ Comparable sales</li>
                 <li>✓ Market trends</li>
-                <li>✓ Investment potential</li>
+                <li>✓ Long-term potential</li>
 
               </ul>
 
@@ -216,7 +216,7 @@ export default function PropertyEvaluationPage() {
                 "Review Location",
                 "Inspect Condition",
                 "Analyze Comparable Sales",
-                "Evaluate Investment Potential",
+                "Evaluate Long-Term Potential",
               ].map((step, index) => (
                 <div
                   key={step}
@@ -241,7 +241,7 @@ export default function PropertyEvaluationPage() {
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-center">
               <p className="font-semibold uppercase tracking-[0.25em] text-[#C9A227]">
-                Investment View
+                Buyer’s View
               </p>
 
               <h2 className="mt-4 text-4xl font-bold">
@@ -249,7 +249,7 @@ export default function PropertyEvaluationPage() {
               </h2>
 
               <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-                Investors may also consider repair costs, potential income,
+                Buyers may also consider repair costs, potential income,
                 renovation opportunities, financing, holding costs, and the
                 expected exit strategy.
               </p>

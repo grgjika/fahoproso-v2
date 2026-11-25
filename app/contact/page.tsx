@@ -8,7 +8,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact FAHOPROSO to discuss selling a property, receiving a cash offer, investing, or partnering on residential and commercial real estate opportunities.",
+    "Contact FAHOPROSO to discuss selling a property, receiving a cash offer, buying, or partnering on residential and commercial real estate opportunities.",
 
    alternates: {
   canonical: "https://www.fahoproso.com/contact/",
@@ -43,7 +43,7 @@ export default function ContactPage() {
             <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#C9A227]" />
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-200">
-              Tell us about your property, investment opportunity, or
+              Tell us about your property, a buying opportunity, or
               partnership goals. Our team will review your information and
               follow up with you.
             </p>

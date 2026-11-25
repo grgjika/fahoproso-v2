@@ -10,7 +10,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Servicios Inmobiliarios",
   description:
-    "Explore los servicios de inversión inmobiliaria residencial, comercial y de propiedades de alquiler de FAHOPROSO en Michigan.",
+    "Explore los servicios inmobiliarios residenciales, comerciales y de propiedades de alquiler de FAHOPROSO en Michigan.",
   alternates: {
   canonical: "https://www.fahoproso.com/es/services/",
   languages: {

@@ -21,7 +21,7 @@ export const kentCounty: LocationData = {
     "sell my house Kent County",
     "sell house as-is Kent County Michigan",
     "Kentwood Wyoming Walker house buyers",
-    "real estate investor Kent County",
+    "real estate buyer Kent County",
   ],
   leadA:
     "Kent County includes the city of Grand Rapids, the towns around it, and many small towns and townships farther out. If you own a house here that you don't want to keep, fix up or list, we're happy to talk it over with you.",
@@ -154,7 +154,7 @@ export const grandRapids: LocationData = {
     "sell my house Grand Rapids",
     "sell house as-is Grand Rapids MI",
     "we buy houses Grand Rapids",
-    "Grand Rapids real estate investor",
+    "Grand Rapids real estate buyer",
   ],
   leadA:
     "Grand Rapids has all kinds of houses, from old homes near downtown to mid-century houses on the edges of the city. If you'd rather sell yours than fix it up or list it, we can talk about your options.",
@@ -319,7 +319,7 @@ export const ottawaCounty: LocationData = {
         text: "A cottage or second home can take more work than the time you spend there is worth. We can talk about buying it as it is.",
       },
       {
-        title: "Student or Investment Rental",
+        title: "Student or Rental Property",
         text: "Some owners are ready to stop managing a rental near Allendale or elsewhere in the county. We buy rentals, whether tenants live there or not.",
       },
       {
@@ -591,7 +591,7 @@ export const michigan: LocationData = {
         text: "Owning a Michigan house from far away costs money and causes stress. Most of the process can be done from a distance.",
       },
       {
-        title: "Rental or Investment Property",
+        title: "Rental Property",
         text: "Some owners decide to sell one property, or a few. We buy rentals, whether tenants live there or not.",
       },
       {

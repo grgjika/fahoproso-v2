@@ -42,7 +42,7 @@ export const content = {
       {
         title: "Residential & Commercial",
         description:
-          "Our investment focus includes residential properties, rental opportunities, and commercial real estate.",
+          "Our focus includes residential properties, rental opportunities, and commercial real estate.",
       },
       {
         title: "Honest Communication",
@@ -82,7 +82,7 @@ export const content = {
       {
         title: "Residencial y Comercial",
         description:
-          "Nuestro enfoque de inversión incluye propiedades residenciales, oportunidades de alquiler y bienes raíces comerciales.",
+          "Nuestro enfoque incluye propiedades residenciales, oportunidades de alquiler y bienes raíces comerciales.",
       },
       {
         title: "Comunicación Honesta",
@@ -122,7 +122,7 @@ export const content = {
       {
         title: "Οικιστικά & Επαγγελματικά Ακίνητα",
         description:
-          "Η επενδυτική μας δραστηριότητα περιλαμβάνει οικιστικά ακίνητα, ακίνητα προς ενοικίαση και επαγγελματικά ακίνητα.",
+          "Η δραστηριότητά μας περιλαμβάνει οικιστικά ακίνητα, ακίνητα προς ενοικίαση και επαγγελματικά ακίνητα.",
       },
       {
         title: "Ειλικρινής Επικοινωνία",
@@ -162,7 +162,7 @@ export const content = {
       {
         title: "Rezidenciale & Komerciale",
         description:
-          "Fokusi ynë i investimeve përfshin prona rezidenciale, mundësi për prona me qira dhe pasuri të paluajtshme komerciale.",
+          "Fokusi ynë përfshin prona rezidenciale, mundësi për prona me qira dhe pasuri të paluajtshme komerciale.",
       },
       {
         title: "Komunikim i Sinqertë",

@@ -158,7 +158,7 @@ export default function SellHouseAsIsPage() {
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Every property is different. Before investing money into repairs,
+              Every property is different. Before putting money into repairs,
               compare the potential cost, timeline, and expected return. In some
               situations, selling the home in its current condition may be the
               most practical solution.
@@ -206,7 +206,7 @@ export default function SellHouseAsIsPage() {
 
                   <p className="mt-4 leading-8 text-slate-600">
                     Every homeowner&apos;s situation is unique. Understanding your
-                    options before investing additional time or money can help
+                    options before spending additional time or money can help
                     you make an informed decision.
                   </p>
 
@@ -296,7 +296,7 @@ export default function SellHouseAsIsPage() {
 
                 <p className="mt-5 leading-8 text-slate-600">
                   Completing repairs may improve presentation, but it also
-                  requires additional time, planning, and investment.
+                  requires additional time, planning, and money.
                 </p>
               </div>
 
@@ -318,7 +318,7 @@ export default function SellHouseAsIsPage() {
 
                 <p className="mt-5 leading-8 text-slate-600">
                   Some owners decide to keep the property for personal use or as
-                  a long-term investment.
+                  a long-term rental.
                 </p>
               </div>
 

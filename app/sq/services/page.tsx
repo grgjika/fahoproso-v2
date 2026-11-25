@@ -10,7 +10,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Shërbimet e Pasurive të Paluajtshme",
   description:
-    "Eksploroni shërbimet e FAHOPROSO për investime rezidenciale, komerciale dhe prona me qira në Michigan.",
+    "Eksploroni shërbimet e FAHOPROSO për prona rezidenciale, komerciale dhe prona me qira në Michigan.",
   alternates: {
   canonical: "https://www.fahoproso.com/sq/services/",
   languages: {

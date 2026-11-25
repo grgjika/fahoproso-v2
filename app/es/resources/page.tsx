@@ -9,7 +9,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Recursos",
   description:
-    "Explore guías y recursos de FAHOPROSO sobre venta de propiedades, inversiones inmobiliarias y temas para propietarios en Michigan.",
+    "Explore guías y recursos de FAHOPROSO sobre venta de propiedades, bienes raíces y temas para propietarios en Michigan.",
   alternates: {
     canonical: "https://www.fahoproso.com/es/resources/",
     languages: {
@@ -39,8 +39,8 @@ export default function ResourcesPageES() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-              Explore información útil sobre venta de propiedades, inversiones
-              inmobiliarias y temas importantes para propietarios en Michigan.
+              Explore información útil sobre venta de propiedades, compra de bienes
+              raíces y temas importantes para propietarios en Michigan.
             </p>
           </div>
         </section>
